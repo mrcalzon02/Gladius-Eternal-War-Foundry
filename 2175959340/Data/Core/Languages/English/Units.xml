@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="SpaceMarines/ImperialStrongpoint" value="Lesser Imperial Bastion"/>
+	<entry name="SpaceMarines/ImperialStrongpointDescription" value="Small Fortification with heavy bolters that can shelter some infantry."/>
+	<entry name="SpaceMarines/ImperialStrongpointFlavor" value="A lesser Imperial Bastion is an edifice built from foot-thick ferrocrete and the remains of faithful servants of the Imperium. As they are relatively easy to construct, some planets boast networks of Bastions that span entire continents. Built to withstand most orbital strikes and artillery bombardments, there are weapons capable of razing them in a single blow. It is with good reason that such fortresses often form part of a planet's defensive strategy."/>
+	<entry name="SpaceMarines/TechpriestEnginseer" value="TechpriestEnginseer"/>
+	<entry name="SpaceMarines/TechpriestEnginseerDescription" value="Infantry unit that supports vehicles and build Imperial defences."/>
+	<entry name="SpaceMarines/TechpriestEnginseerFlavor" value="Tech-Priest Enginseers serve as custodians for the vehicles and fortifications of the Imperialium. With binary prayers and mystic rites, the Enginseers soothe the machine spirits of their clanking congregation. Without the diligent maintenance of the Enginseers, the Imperialium would soon find themselves without the heavy armour vital to their very survival."/>
+	<entry name="SpaceMarines/Serfs" value="Chapter Serfs"/>
+	<entry name="SpaceMarines/SerfsDescription" value="Chapter Serfs unit."/>
+	<entry name="SpaceMarines/SerfsFlavor" value="A Chapter serf is a Human bondsman or bondswoman who acts as the indentured servant of a Space Marine Chapter for life.The battle-brothers themselves are far too few to fulfill all the tasks required to keep the Chapter running at peak efficiency. It is the Chapter serfs who perform most of these sometimes very menial but nevertheless vital functions, freeing up the Space Marines' time and allowing them to focus on training for and waging battle. "/>
+	<entry name="SpaceMarines/TacticalSpaceMarineVeterans" value="Veteran Space Marines"/>
+	<entry name="SpaceMarines/TacticalSpaceMarineVeteransDescription" value="Experienced infantry unit."/>
+	<entry name="SpaceMarines/TacticalSpaceMarineVeteransFlavor" value="Veteran Marines are those Astartes in the Loyalist Space Marine Chapters who have gained considerable experience in the service of their Chapter and often serve in the Chapter's elite 1st Company which is comprised solely of Veteran Squads or as an elite corps or Command Squad within a Chapter's other companies."/>
+	<entry name="SpaceMarines/Magos" value="Magos"/>
+	<entry name="SpaceMarines/MagosDescription" value=" Magos explorator."/>
+	<entry name="SpaceMarines/MagosFlavor" value="A breed apart from regular Tech-priests, any Explorator or member of their team will willingly walk into forgotten catacombs, even at the risk of death, for mere snippets of long-forgotten knowledge from the Age of Technology."/>
+</language>

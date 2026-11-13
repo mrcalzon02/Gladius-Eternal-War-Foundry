@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="SpaceMarines/Housing2" value="<string name='Buildings/SpaceMarines/Housing2'/>"/>
+	<entry name="SpaceMarines/Housing2Description" value="<string name='Buildings/SpaceMarines/Housing2Description'/>"/>
+	<entry name="SpaceMarines/Housing2Flavor" value="<string name='Buildings/SpaceMarines/Housing2Flavor'/>"/>
+	
+	<entry name="SpaceMarines/Entrenching" value="<string name='Traits/Entrenching'/>"/>
+	<entry name="SpaceMarines/EntrenchingDescription" value="<string name='Traits/SpaceMarines/EntrenchingDescription'/>"/>
+	<entry name="SpaceMarines/EntrenchingFlavor" value="Anceint tactics of Entrechment allow units to use the Planet itself as cover from incoming fire and bombardment."/>
+	
+</language>

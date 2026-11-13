@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="SpaceMarines/Housing2" value="Arming Chambers"/>
+	<entry name="SpaceMarines/Housing2Description" value="Building that increases population limit and Loyalty, also produces Veteran marrines and Serfs"/>
+	<entry name="SpaceMarines/Housing2Flavor" value="Arming chamber to allow for space marines and their ancillaries rapid deployment. Armor and weapons tooling areas, to greater allow for the care and repair of Advanced Wargear"/>
+</language>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit spawnCountMax="6" productionWeight="4">
+	<model>
+		<structureUnit mesh="Units/AstraMilitarum/ImperialStrongpoint"
+				material="Buildings/AstraMilitarum/Buildings"
+				groundMaterial="Units/AstraMilitarum/ImperialStrongpointGround"
+				idleAnimation=""
+				idleAnimationCount="0"
+				heatImpactSound="Impacts/HeatConcrete"
+				heatImpactSoundCount="4"
+				kineticImpactSound="Impacts/KineticConcrete"
+				kineticImpactSoundCount="5"
+				scale="0.5 0.5 0.5"
+				explosionsBone="Strongpoint"
+				uvAnimated="0"/>
+	</model>
+	<weapons>
+		<weapon name="HeavyBolter" count="3">
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/ImperialStrongpointWeapons"
+						material="Buildings/AstraMilitarum/Buildings"
+						bone="Strongpoint"
+						muzzleBone=".Muzzle"
+						muzzleCount="3"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<influence add="1"/>
+				<armor base="7"/> <!-- %armor base armor=14/14/14 -->
+				<cargoSlots base="2.0"/> <!-- %cargoSlots base capacity=20 -->
+				<hitpointsMax base="10.0"/> <!-- %hitpointsMax base armor=14/14/14 wounds=2 -->
+				<moraleMax base="10"/> <!-- %moraleMax base leadership=8 -->
+				<movementMax max="0"/>
+				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+				<requisitions mul="0.05"/> <!-- %requisitionsUpkeep base tier=6 factor=1 -->
+				<requisitionsCost base="10.0"/> <!-- %requisitionsCost base tier=6 factor=1 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<actions>
+		<attack>
+			<model>
+				<action beginFire="0.15" endFire="2.6"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action sound="Units/HeavyBuildingDie"
+						soundCount="3"/>
+			</model>
+		</die>
+	</actions>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfluenceScore base="1.0"/>
+				<increaseSupportScore base="1.0"/>
+				<increaseInfantryScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<traits>
+		<trait name="Fortification"/>
+		<trait name="Transport"/>
+		<trait name="Entrenching" requiredUpgrade="SpaceMarines/Entrenching"/>
+	</traits>
+</unit>

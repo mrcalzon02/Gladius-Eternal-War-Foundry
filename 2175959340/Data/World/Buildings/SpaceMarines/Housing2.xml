@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="25"/>
+				<requisitionsCost base="50"/>
+				<populationRequired base="1"/>
+				<slotsRequired base="1"/>
+				<energyUpkeep add="2"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<loyalty add="3"/>
+				<production add="8"/>
+				<populationLimit add="3"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<productionModifiers>
+		<modifier>
+			<effects>
+				
+			</effects>
+		</modifier>
+	</productionModifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryProductionScore base="2.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<produceUnit unit="SpaceMarines/TacticalSpaceMarineVeterans"/>
+		<produceUnit unit="SpaceMarines/Serfs"/>
+		<produceUnit unit="SpaceMarines/Magos"/>
+	</actions>
+</building>
