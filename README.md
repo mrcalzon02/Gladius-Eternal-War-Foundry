@@ -8,26 +8,27 @@ This repository is intended to collect, maintain, test, and eventually package t
 
 ## Current status
 
-**Repository initialized; mod content not yet imported.** No mod source, Workshop item ID, version, successful in-game test, or publishing automation should be considered verified simply because this repository exists.
+**Seven Steam Workshop mod directories have been recovered to `main`: 608 files (~267.7 MB) across seven original numeric Workshop ID folders.** The repository tree and all seven `SteamID.txt` values have been checked. Original unpublished development files remain unavailable. Byte-for-byte comparison with the local Workshop folders and in-game functionality have **not** yet been tested.
+
+See [`catalog/mods.json`](catalog/mods.json) for the file counts, source paths and recorded import commit. Workshop display names and published version numbers still require verification.
 
 ## Intended layout
 
-- `mods/<mod-slug>/` — each mod's actual source and assets, preserved independently
-- `catalog/mods.json` — per-mod display name, source folder, Steam Workshop item ID, version and release mapping (create when real identifiers are verified)
+- `<WorkshopItemID>/` — **preserved original imported Workshop directory**, containing each mod's actual published files (do not rename during recovery)
+- `catalog/mods.json` — checked-in source inventory, Workshop item IDs and tentative content areas; missing official titles and versions are deliberately not guessed
 - `tools/` — common validation/packaging utilities, as required
 - `.github/workflows/` — small, manually dispatched tests and publishing controls, added only after the mod build and upload processes are proven
 - `docs/` — intake, compatibility and release documentation
 
-Do not add empty placeholder mod folders as though they were imported mods.
+Do not add empty placeholder mod folders as though they were imported mods, and do not replace the numeric original folders with synthetic rearrangements before backup validation.
 
-## Import order
+## Recovery and validation milestones
 
-1. Obtain the **actual editable source** (or the current installable files, explicitly labeled as such) for each existing mod.
-2. Preserve original files and record where each copy came from. Avoid accidentally checking in personal credentials, workshop upload tokens, unrelated third-party content or generated caches.
-3. For each mod, record its Steam Workshop item ID, current published version (if known), dependencies, and required Gladius game version.
-4. Import one mod at a time, retaining its original layout wherever possible.
-5. Validate structure, launch/loading, and compatibility before declaring that mod ready.
-6. Add **per-mod**, opt-in package/publish automation only after successful tests. Never silently overwrite Workshop items.
+1. **Completed:** Import all seven downloaded Workshop directories without changing their original layouts; verify the seven `SteamID.txt` values match folder names.
+2. **Pending:** Verify official Workshop titles, versions, dependencies and current availability without overwriting this baseline.
+3. **Pending:** Compare the checked-in tree to local copies or known Steam manifests to detect any omitted files.
+4. **Pending:** Check XML syntax, internal resource references and per-mod compatibility; test each mod in Gladius before declaring it operational.
+5. **Pending:** Build per-mod package and publication tooling with explicit approval and protected Steam credentials. No automatic publishing is enabled.
 
 ## Development policy
 
@@ -40,4 +41,4 @@ Do not add empty placeholder mod folders as though they were imported mods.
 
 ## First practical milestone
 
-Import and verify the current files for **one** existing mod, then expand to the remaining collection and establish a tested per-mod release pipeline.
+Preserve the seven recovered mod baselines, fill in the authoritative Workshop titles and requirements, and validate one mod end-to-end before introducing any automated publication.
