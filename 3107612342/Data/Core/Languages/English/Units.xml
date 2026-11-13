@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<!-- Text keys match Data/World/Units/Neutral/<name>.xml precisely. -->
+	<entry name="Neutral/Boy" value="Ork Boyz"/>
+	<entry name="Neutral/BoyDescription" value="Roaming Ork infantry."/>
+	<entry name="Neutral/BoyFlavor" value="Ork Boyz travel across the wasteland in unruly packs, searching for a good fight."/>
+	<entry name="Neutral/FlayedOne" value="Necron Flayed Ones"/>
+	<entry name="Neutral/FlayedOneDescription" value="Necron melee infantry encountered among neutral forces."/>
+	<entry name="Neutral/FlayedOneFlavor" value="Flayed Ones stalk the battlefield, emerging to ambush unwary intruders."/>
+	<entry name="Neutral/Guardian" value="Aeldari Guardians"/>
+	<entry name="Neutral/GuardianDescription" value="Aeldari infantry encountered among neutral forces."/>
+	<entry name="Neutral/GuardianFlavor" value="Aeldari Guardians patrol the wilds with precise shuriken fire and swift manoeuvres."/>
+	<entry name="Neutral/Guardsman" value="Imperial Guardsmen"/>
+	<entry name="Neutral/GuardsmanDescription" value="Imperial infantry encountered among neutral forces."/>
+	<entry name="Neutral/GuardsmanFlavor" value="Isolated Guardsmen struggle to hold their positions far from any reliable command."/>
+	<entry name="Neutral/Immortal" value="Necron Immortals"/>
+	<entry name="Neutral/ImmortalDescription" value="Durable Necron infantry encountered among neutral forces."/>
+	<entry name="Neutral/ImmortalFlavor" value="Necron Immortals advance with the inexorable determination of an ancient dynasty."/>
+	<entry name="Neutral/ImperialStrongpoint" value="Imperial Strongpoint"/>
+	<entry name="Neutral/ImperialStrongpointDescription" value="An Imperial defensive structure guarded by neutral forces."/>
+	<entry name="Neutral/ImperialStrongpointFlavor" value="This isolated strongpoint remains a fortified obstacle long after its original defenders departed."/>
+	<entry name="Neutral/Raider" value="Drukhari Raider"/>
+	<entry name="Neutral/RaiderDescription" value="Swift Drukhari skimmer encountered among neutral forces."/>
+	<entry name="Neutral/RaiderFlavor" value="Drukhari Raiders hunt isolated targets and strike before their victims can respond."/>
+	<entry name="Neutral/Succubus" value="Drukhari Succubus"/>
+	<entry name="Neutral/SuccubusDescription" value="A dangerous Drukhari melee fighter encountered among neutral forces."/>
+	<entry name="Neutral/SuccubusFlavor" value="A Drukhari Succubus stalks the battlefield for victims worthy of her blades."/>
+</language>
