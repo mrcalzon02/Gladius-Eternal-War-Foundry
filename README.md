@@ -30,6 +30,13 @@ Do not add empty placeholder mod folders as though they were imported mods, and 
 4. **Pending:** Check XML syntax, internal resource references and per-mod compatibility; test each mod in Gladius before declaring it operational.
 5. **Pending:** Build per-mod package and publication tooling with explicit approval and protected Steam credentials. No automatic publishing is enabled.
 
+
+## Recovered Steam Workshop references
+
+Every Workshop directory now has a [WORKSHOP.md](2175959340/WORKSHOP.md) with links to the actual Steam item and its three preserved preview files. See the [seven-mod Workshop index](catalog/WORKSHOP_METADATA.md) for all titles and verification status.
+
+Steam blocked the direct item descriptions during the initial scrape. To retrieve the **exact live titles, descriptions and official thumbnail URLs** without guessing, run the [official Steam metadata sync script](tools/sync_workshop_metadata.py) on an internet-connected clone, then commit and push the generated metadata. No Steam publishing occurs.
+
 ## Development policy
 
 - Work on the single `main` branch unless explicitly directed otherwise.
