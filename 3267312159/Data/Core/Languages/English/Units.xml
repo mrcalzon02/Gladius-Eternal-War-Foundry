@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+		<entry name="Eldar/Constructs" value="Constructs"/>
+	<entry name="Eldar/ConstructsDescription" value="Holographic infantry unit."/>
+	<entry name="Eldar/ConstructsFlavor" value="The Constructs are disposable holographic units of the Eldar. Armed and armored like Eldar Guardians, they excel in deception and diversionary tactics. With shuriken catapults and lightweight armor, they distract enemies while gathering intelligence or executing swift strikes on key targets. Despite their fleeting nature, Constructs play a vital role in the Eldar's strategies of misdirection and subterfuge on the battlefield."/>
+	
+</language>

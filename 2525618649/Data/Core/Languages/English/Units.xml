@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="AstraMilitarum/Sargent" value="Sargent"/>
+	<entry name="AstraMilitarum/SargentDescription" value="Light infantry Commander."/>
+	<entry name="AstraMilitarum/SargentFlavor" value="In the vast Imperium, the humble Sargent provides the Frontline leadership for the Imperial Guard.Leading the massed wave assualt's and last ditch effort's across the empire."/>
+	<entry name="AstraMilitarum/Conscripts" value="Solar Auxilia Conscripts"/>
+	<entry name="AstraMilitarum/ConscriptsDescription" value="Light infantry."/>
+	<entry name="AstraMilitarum/ConscriptsFlavor" value="Solar Auxilia Conscripts constitute the majority of Imperial forces, originating from nearby solar systems. These rapidly enlisted infantry members are equipped with rudimentary lasguns and utilitarian armor. Their effectiveness is derived from sheer numerical superiority, strategically deployed to maintain defensive positions, fortify strongholds, and overpower adversaries with overwhelming firepower. Despite their deficiency in training and possession of subpar gear and inadequate equipment, resulting in shortened lifespans and a generally disposable nature, their distinct advantage lies in the relatively low cost of deployment."/>
+	<entry name="AstraMilitarum/Magos" value="Magos"/>
+	<entry name="AstraMilitarum/MagosDescription" value=" Magos explorator."/>
+	<entry name="AstraMilitarum/MagosFlavor" value="A breed apart from regular Tech-priests, any Explorator or member of their team will willingly walk into forgotten catacombs, even at the risk of death, for mere snippets of long-forgotten knowledge from the Age of Technology."/>
+	<entry name="AstraMilitarum/Cadetunit" value="Cadet Unit"/>
+	<entry name="AstraMilitarum/CadetunitDescription" value="Light infantry."/>
+	<entry name="AstraMilitarum/CadetunitFlavor" value="These young soldiers form their own units of ten Cadets, led by a veteran Commissar and armed with the ubiquitous Lasgun like all other regular Guardsmen..."/>
+		<entry name="AstraMilitarum/Officer" value="Officer"/>
+	<entry name="AstraMilitarum/OfficerDescription" value="infantry."/>
+	<entry name="AstraMilitarum/OfficerFlavor" value="The Officer serves as the stalwart leader of Imperial Guard forces on the battlefield. Clad in resplendent regalia and wielding command authority, these officers inspire and direct their troops with unwavering resolve. Armed with a laspistol and a trusty chainsword, they lead from the front lines, rallying their soldiers to face the grim challenges of the 41st Millennium. Masters of strategy and discipline, Astra Militarum Officers are the linchpin of any Imperial Guard detachment, ensuring the cohesion and effectiveness of their forces in the relentless fight for the Emperor's glory."/>
+</language>

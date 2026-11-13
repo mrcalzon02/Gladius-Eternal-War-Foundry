@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit spawnCountMax="1" productionWeight="0.1">
+	<model>
+		<unit mesh="Units/AstraMilitarum/TechpriestEnginseer"
+				material="Units/AstraMilitarum/TechpriestEnginseer"
+				idleAnimation="Units/AstraMilitarum/TechpriestEnginseerIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="1 1 1"
+				bloodBone="ChestBone"
+				walker="1"/>
+	</model>
+	<weapons>
+		<weapon name="PowerAxe">
+			<model>
+				<powerWeapon effectBoundingVolume="Blade"
+						mesh="Weapons/AstraMilitarum/TechpriestEnginseerPowerAxe"
+						material="Units/AstraMilitarum/TechpriestEnginseer"
+						bone="Axe"
+						fireInterval="1.0"/>
+			</model>
+		</weapon>
+		<weapon name="ServoArm" slotName="ServoArm" enabled="0">
+			<model>
+				<weapon fireInterval="1.0"/>
+			</model>
+		</weapon>
+		<weapon name="FragGrenade" slotName="FragGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="RightFingers2"/>
+			</model>		
+		</weapon>
+		<weapon name="KrakGrenade" slotName="KrakGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="RightFingers2"/>
+			</model>		
+		</weapon>
+		<weapon name="MeltaBomb" slotName="MeltaBomb" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="RightFingers2"/>
+			</model>		
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="8"/> <!-- %armor base armor=3+ -->
+				<hitpointsMax base="7"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<foodUpkeep base="2.0"/> <!-- %foodUpkeep base tier=6 factor=1 -->
+				<foodCost base="20.0"/>
+				<meleeAccuracy base="6"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="3"/>
+				<strengthDamage base="1"/> <!-- %strengthDamage base strength=3 -->
+				<!-- <meleeInitiative base="3"/> -->
+				<itemSlots base="5"/>
+				<levelMax base="9"/>
+				<moraleMax base="10"/> <!-- %moraleMax base leadership=8 -->
+				<movementMax base="3"/>
+				<productionCost base="32.0"/> <!-- %productionCost base tier=7 factor=1 -->
+				<oreCost base="20.0"/> <!-- %oreCost base tier=6 factor=0.5 -->
+				<rangedAccuracy base="3"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseSupportScore base="2.0"/>
+				<increaseHeroesScore base="1.0"/>				
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action	animation="Units/AstraMilitarum/TechpriestEnginseerMeleeAttack0"
+						chargeAnimation="Units/AstraMilitarum/TechpriestEnginseerCharge0"
+						meleeAnimation="Units/AstraMilitarum/TechpriestEnginseerMeleeAttack0"
+						meleeBeginSwing="0.5"
+						meleeEndSwing="1.0"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerDie"
+						animationCount="2"
+						sound="Units/MediumArmoredDie"
+						soundCount="4"
+						soundDelay="0.5"
+						voiceSound="Units/AstraMilitarum/InfantryDie"
+						voiceSoundCount="5"/>
+			</model>
+		</die>
+		<idle>
+			<model>
+				<action animationSpeed="1.0"/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerMove"
+						sound="Units/AstraMilitarum/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<useWeapon cooldown="2" weaponSlotName="ServoArm">
+			<model>
+				<action	chargeAnimation="Units/AstraMilitarum/TechpriestEnginseerCharge0"
+						meleeAnimation="Units/AstraMilitarum/TechpriestEnginseerServoArm"
+						meleeBeginSwing="0.5"
+						meleeEndSwing="1.0"/>
+			</model>	
+		</useWeapon>
+		<blessingsOfTheOmnissiah cooldown="1">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerAbility"
+						sound="Actions/Heal"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="2">
+					<conditions>
+						<unit>
+							<allied/>
+							<damaged/>
+						</unit>
+						<unit match="Any">
+							<trait name="Fortification"/>
+							<trait name="Vehicle"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints add="10"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</blessingsOfTheOmnissiah>
+		<enslavement cooldown="6">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerMeleeAttack0"
+						sound="Actions/PsychicDebuff"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<morale less="3.5"/>
+							<moraleMax greater="0.0"/>
+							<noTrait name="Headquarters"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Enslaved" removeOnSourceDeath="1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</enslavement>
+	</actions>
+	<traits>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="SpaceMarines/ExtraInfantryArmour"/>
+		<trait name="Entrenching" requiredUpgrade="SpaceMarines/Entrenching"/>
+		<trait name="Hero"/>
+		<trait name="LastStand" requiredUpgrade="SpaceMarines/LastStand"/>
+		<trait name="Relentless"/>
+		<trait name="Rosarius"/>
+		<trait name="Zealot"/>
+	</traits>
+</unit>

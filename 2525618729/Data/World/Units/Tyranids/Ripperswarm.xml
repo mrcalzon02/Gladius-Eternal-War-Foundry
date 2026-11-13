@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit dlc="Supplement2">
+	<model>
+		<unit mesh="Units/Tyranids/Hormagaunt"
+				material="Units/Tyranids/Hormagaunt"
+				scale="0.4 0.4 0.4"
+				idleAnimation="Units/Tyranids/HormagauntIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				bloodBone="BloodBone"
+				walker="1"/>
+	</model>
+	<group size="10" rowSize="6" memberDeltaX="10" memberDeltaY="10"/>
+	<weapons>
+		<weapon name="ScythingTalons">
+			<model>
+				<weapon fireInterval="0.4"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<influenceUpkeep add="2"/>
+				<armor base="1"/> <!-- %armor base armor=6+ -->
+				<biomassCost base="2.0"/> <!-- %biomassCost base tier=4 factor=1 -->
+				<hitpointsMax base="0.8"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<meleeAccuracy base="8"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="2"/>
+				<strengthDamage base=".5"/> <!-- %strengthDamage base strength=3 -->
+				<moraleMax base="2"/> <!-- %moraleMax base leadership=5 -->
+				<movementMax base="4"/>
+				<productionCost base="6.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<rangedAccuracy base="1"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseColonizersScore base="1.5"/>
+				<increaseSupportScore base="1.5"/>
+				<increaseInfantryScore base="1.5"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action chargeAnimation="Units/Tyranids/HormagauntCharge"
+						meleeAnimation="Units/Tyranids/HormagauntMelee"
+						meleeBeginSwing="0.3"
+						meleeEndSwing="0.8"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/Tyranids/HormagauntDie"
+						animationCount="2"
+						sound="Units/SmallUnarmoredDie"
+						soundCount="4"
+						soundDelay="0.5"
+						voiceSound="Units/Tyranids/SmallDie"
+						voiceSoundCount="4"/>
+			</model>
+		</die>
+		<move>
+			<model>
+				<action animation="Units/Tyranids/HormagauntMove"
+						sound="Units/Tyranids/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<foundCity>
+			<model>
+				<action sound="Actions/TyranidsFoundCity"
+						animation=""/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<biomassCost base="50"/>
+						<influenceCost base="50"/>
+					</effects>
+				</modifier>
+				<modifier requiredUpgrade="Tyranids/CityCost">
+					<effects>
+						<biomassCost mul="-0.9"/>
+						<influenceCost mul="-0.9"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</foundCity>
+		<consumeTile icon="Features/Bedrock"
+				name="Tyranids/ConsumeTile" 
+				costScalesWithPace="0">
+			<model>
+				<action animation=""/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="3"/>
+					</effects>
+				</modifier>
+				<modifier requiredUpgrade="Tyranids/ConsumeTile2">
+					<effects>
+						<influenceCost mul="-0.25"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<land/>
+							<noEnemyCity/>
+							<noEnemyPlayer/>
+							<noEnemyUnit/>
+							<noFeature name="Bedrock"/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<consumeResources/>
+										<removeFeature name="Brush"/>
+										<removeFeature name="Forest"/>
+										<removeFeature name="LightBrush"/>
+										<removeFeature name="OrkoidFungus"/>
+										<addFeature name="Bedrock"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</consumeTile>
+		<instinctiveBehaviourOverride consumedActionPoints="0"
+				consumedMovement="0"
+				cooldown="3"
+				name="Tyranids/InstinctiveBehaviourOverride"
+				requiredActionPoints="0">
+			<model>
+				<action sound="Actions/HiveMindBuff"/>
+			</model>
+			<modifiers>
+				<modifier requiredUpgrade="Tyranids/InstinctiveBehaviourOverride2">
+					<effects>
+						<influenceCost mul="-0.5"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<selfTarget>
+					<conditions>
+						<unit>
+							<noTrait name="Tyranids/InstinctiveBehaviourOverride"/>
+							<noTrait name="Tyranids/SynapseLink"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Tyranids/InstinctiveBehaviourOverride" duration="3"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</instinctiveBehaviourOverride>
+		<subterraneanAssault name="Tyranids/SubterraneanAssault"/>
+	</actions>
+	<traits>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="Tyranids/ExtraInfantryArmour"/>
+		<trait name="Fleet"/>
+		<trait name="HitAndRun"/>
+		<trait name="Tyranids/InstinctiveBehaviour"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="Tyranids/ToxinSacs" requiredUpgrade="Tyranids/ToxinSacs"/>
+	</traits>
+</unit>

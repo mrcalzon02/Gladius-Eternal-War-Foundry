@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+<entry name="Tyranids/Zoanthrope" value="Zoanthropes"/>
+	<entry name="Tyranids/ZoanthropeDescription" value="Synapse infantry unit with devastating psychic capabilities."/>
+	<entry name="Tyranids/ZoanthropeFlavor" value="Zoanthropes are created solely to harness the psychic potential of the Hive Mind, and their entire bodies are perfected towards such a function. If necessary, a Zoanthrope can be used to extend the range of the Hive Mind's synaptic control, utilising the beast's vast cerebral capacity to relay its instructions to lesser creatures. A Zoanthrope's link to the synaptic web is such that, by flexing the merest part of its mind, it can rain incandescent power on the enemy, projecting destructive bolts of energy that boils through adamantium plate and disintegrates flesh with equal ease. or over whelm the mental defences of Non-Tyranid living creatures"/>
+	<entry name="Tyranids/Ripperswarm" value="Ripperswarm"/>
+	<entry name="Tyranids/RipperswarmDescription" value="Basic unit."/>
+	<entry name="Tyranids/RipperswarmFlavor" value="Ripperswarms are Scuttling and cunning creatures. They are the smallest of the Hive Mind's warriors and were originally created to Consume Raw organic matter for the swarm In planetary invasions, Ripperswarms scuttle forwards on four legs whilst unleashing their clawed forelimbs on anything near them.Swarms have been See to Blanket entire battlefeilds in these hungry creatures"/>
+	
+</language>

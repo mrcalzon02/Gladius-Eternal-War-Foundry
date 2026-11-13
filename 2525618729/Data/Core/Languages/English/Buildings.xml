@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="Tyranids/Aircraft" value="Capillary Tower"/>
+	<entry name="Tyranids/AircraftDescription" value="Building that produces flying monstrous creatures and generates research as well as increases the loyalty and population limit."/>
+	<entry name="Tyranids/AircraftFlavor" value="Tall as a human Hive City, Capillary Towers are the backbone of Tyranid conquest. Here, the resources of the planet are siphoned from Reclamation Pools and fed up through the troposphere to meet the umbilical tongues of orbiting Hive ships. On Gladius, the Towers have no Hive Ships to feed. Instead, Gargoyles and Hive Crones crawl from birthing sacs on the Tower's sides and wait for their newborn wings to stiffen so they can join the war."/>
+	<entry name="Tyranids/Biomass" value="Reclamation Pool"/>
+	<entry name="Tyranids/BiomassDescription" value="Building that generates biomass."/>
+	<entry name="Tyranids/BiomassFlavor" value="A Reclamation Pool is one of the core structures of a Tyranid invasion, a wide bubbling cartilaginous pit bubbling with acids and enzymes. Irrespective of the war raging around it, the Hive's swarming rippers bring collected biomass to the Reclamation Pool where it is dissolved. In a normal situation, it would be fed through Capillary Towers up to the waiting Hive Fleet; on Gladius, the biomass is stored or used in the creation of more troops."/>
+	<entry name="Tyranids/Construction" value="Megafauna Sac"/>
+	<entry name="Tyranids/ConstructionDescription" value="Building that constructs new buildings as well as generates biomass and increases the population limit."/>
+	<entry name="Tyranids/ConstructionFlavor" value="Nothing reflects the inhumanity of a hive more than the Megafauna Sac. To a human eye, its smooth membranous dome is reminiscent of a design for a museum. However, when it tears itself asunder to reveal another giant biostructure, pulsating and screaming in its birth throes—when that building is half-dragged, half-crawls its towering flesh into position—when the Sac gums itself back together and ripper swarms consume its afterbirth—the human mind then sees it as truly alien."/>
+	<entry name="Tyranids/Headquarters" value="Norn Cyst"/>
+	<entry name="Tyranids/HeadquartersDescription" value="Headquarters building that generates resources."/>
+	<entry name="Tyranids/HeadquartersFlavor" value="The organising organism of a Tyranid's hive, the Norn Cyst is always the first biostructure to be placed. The Malanthrope places the hive in a suitable location and tends its exponential growth as the hive manages and defends any connected biostructures. "/>
+	<entry name="Tyranids/Heroes" value="Alpha Ovipository"/>
+	<entry name="Tyranids/HeroesDescription" value="Building that produces heroes as well as generates biomass and increases loyalty."/>
+	<entry name="Tyranids/HeroesFlavor" value="Whilst the Anthropia emerge solely from the Aedanthropum's long-gestation sacs, the most complex synapse creatures take even more of the Hive Mind's resources and, crucially, focus. Each Tyrant, Tervigon and Prime requires careful design from the Mind, to give it that balance between total control and useful independence. The concentrated sensoria of the Ovipository enable that focus."/>
+	<entry name="Tyranids/Housing" value="Hibernation Marsupia"/>
+	<entry name="Tyranids/HousingDescription" value="Building that increases population limit."/>
+	<entry name="Tyranids/HousingFlavor" value="Excess biomass and genetic data are simply stored in the thickened walls of the biostructures or flow twitching between them. But when a creature has been grown, sometimes the Hive Mind deems it more efficient to retain it but shut down its functions, stored in serried ranks of marsupia."/>
+	<entry name="Tyranids/Infantry" value="Brood Nest"/>
+	<entry name="Tyranids/InfantryDescription" value="Building that produces infantry and beasts as well as generates biomass."/>
+	<entry name="Tyranids/InfantryFlavor" value="While a Norn Queen normally produces all the creatures of a Tyranid invasion, in the circumstances that a brood is physically isolated from the Hive Fleet, certain specialised structures are used. Smaller creatures like Termagants are gestated in the pods of this nest, fed and warmed by the unthinking structures."/>
+	<entry name="Tyranids/Influence" value="Synapse Node"/>
+	<entry name="Tyranids/InfluenceDescription" value="Building that generates influence."/>
+	<entry name="Tyranids/InfluenceFlavor" value="The Hive Mind's capabilities aren't spread evenly throughout its structures—somewhere, there needs to be concentrated systems for thought. In the Hive Fleet, these are the Norn Queens. On the ground, these synapses act as temporary back-ups to the network effect from its individual creatures, allowing the Mind to focus on more objectives than simply controlling the swarm."/>
+	<entry name="Tyranids/Loyalty" value="Coherence Node"/>
+	<entry name="Tyranids/LoyaltyDescription" value="Building that increases loyalty."/>
+	<entry name="Tyranids/LoyaltyFlavor" value="An Imperial scholar, might make an analogy between a coherence node and something like a radio tower—and, certainly, it's orchid-ear appearance fits—but it doesn't transmit but receives. The node's folded surfaces track the locations of the Hive Mind's creatures for the most efficient deployment of its synapses, to prevent the Hive swarms falling into anarchy and chaos."/>
+	<entry name="Tyranids/Research" value="Genetic Epicure"/>
+	<entry name="Tyranids/ResearchDescription" value="Building that generates research."/>
+	<entry name="Tyranids/ResearchFlavor" value="Though the Malanthropes are responsible for physically collecting genetic data from a planet's population, the Epicure is the structure that processes those samples. Inside the Epicure's fluted mass, delicate structures pare and sort the genetic samples, testing them on a microscopic scale for useful innovations. When something is discovered, it is immediately communicated to the Norn Cyst and hence onto the Hive Mind."/>
+	<entry name="Tyranids/Thropes" value="Aedanthropum"/>
+	<entry name="Tyranids/ThropesDescription" value="Building that produces Thropes and generates research."/>
+	<entry name="Tyranids/ThropesFlavor" value="Not all Tyranid creatures are equal; whilst Termagants and Hormagaunts require little focus and unspecialised resources, the construction and gestation of more complex creatures can take more care. In isolated hives like that of Gladius, the diverse support creatures the Imperium calls Anthropia—Venomthropes, Zoanthropes and Malanthropes—all emerge from a specialised biostructure of gristly columns, podia and caverns."/>
+	<entry name="Tyranids/Vehicles" value="Brood Haunt"/>
+	<entry name="Tyranids/VehiclesDescription" value="Building that produces ground-based monstrous creatures and generates biomass."/>
+	<entry name="Tyranids/VehiclesFlavor" value="Some of the Hive Mind's creations are produced by separate biostructures because of the care and resources taken in their rendering. Others are simply large. The Brood Haunt houses those brutish giants that are far too big for the Brood Nest. Inside this high-spined haunt, womb-caverns of bone filled with suspensory fluid allow the layering of muscle and bone for these monstrous giants."/>
+</language>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="25"/>
+				<oreCost base="40"/>
+				<populationRequired base="1"/>
+				<slotsRequired base="3"/>
+				<energyUpkeep add="2"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<loyalty add="2"/>
+				<production add="8"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<productionModifiers>
+		<modifier>
+			<effects>
+				
+			</effects>
+		</modifier>
+	</productionModifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryProductionScore base="2.0"/>
+				<increaseLoyaltyScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<produceUnit unit="AstraMilitarum/Conscripts"/>
+		<produceUnit unit="AstraMilitarum/Guardsman"/>
+	</actions>
+</building>

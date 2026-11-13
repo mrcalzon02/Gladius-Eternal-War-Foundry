@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="Bayonet" value="Bayonet"/>
+	<entry name="BayonetFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
+	<entry name="CombatShovel" value="CombatShovel"/>
+	<entry name="CombatShovel" value="<string name='Weapons/MeleeFlavor'/>"/>
+</language>

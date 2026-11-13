@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait category="Buff">
+	<onUnitDisappearedModifiers>
+	<modifier>
+			<effects>
+				<removeFeature name="OrkoidFungus"/>
+				<removeFeature name="Forest"/>
+				<removeFeature name="Brush"/>
+				<removeFeature name="Rocks"/>
+				<removeFeature name="LightBrush"/>
+				<addFeature duration="4" name="Battlefield"/>
+			</effects>
+		</modifier>
+	</onUnitDisappearedModifiers>
+</trait>

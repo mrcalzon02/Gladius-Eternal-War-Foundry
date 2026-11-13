@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	
+	<entry name="Tyranids/Biovore" value="<string name='Units/Tyranids/Biovore'/>"/>
+	<entry name="Tyranids/BiovoreDescription" value="<string name='Units/Tyranids/BiovoreDescription'/>"/>
+	<entry name="Tyranids/BiovoreFlavor" value="<string name='Units/Tyranids/BiovoreFlavor'/>"/>
+	<entry name="Tyranids/Exocrine" value="<string name='Units/Tyranids/Exocrine'/>"/>
+	<entry name="Tyranids/ExocrineDescription" value="<string name='Units/Tyranids/ExocrineDescription'/>"/>
+	<entry name="Tyranids/ExocrineFlavor" value="<string name='Units/Tyranids/ExocrineFlavor'/>"/>
+	<entry name="Tyranids/Gargoyle" value="<string name='Units/Tyranids/Gargoyle'/>"/>
+	<entry name="Tyranids/GargoyleDescription" value="<string name='Units/Tyranids/GargoyleDescription'/>"/>
+	<entry name="Tyranids/GargoyleFlavor" value="<string name='Units/Tyranids/GargoyleFlavor'/>"/>
+	<entry name="Tyranids/Haruspex" value="<string name='Units/Tyranids/Haruspex'/>"/>
+	<entry name="Tyranids/HaruspexDescription" value="<string name='Units/Tyranids/HaruspexDescription'/>"/>
+	<entry name="Tyranids/HaruspexFlavor" value="<string name='Units/Tyranids/HaruspexFlavor'/>"/>
+	<entry name="Tyranids/HiveTyrant" value="<string name='Units/Tyranids/HiveTyrant'/>"/>
+	<entry name="Tyranids/HiveTyrantDescription" value="<string name='Units/Tyranids/HiveTyrantDescription'/>"/>
+	<entry name="Tyranids/HiveTyrantFlavor" value="<string name='Units/Tyranids/HiveTyrantFlavor'/>"/>
+	<entry name="Tyranids/Hormagaunt" value="<string name='Units/Tyranids/Hormagaunt'/>"/>
+	<entry name="Tyranids/HormagauntDescription" value="<string name='Units/Tyranids/HormagauntDescription'/>"/>
+	<entry name="Tyranids/HormagauntFlavor" value="<string name='Units/Tyranids/HormagauntFlavor'/>"/>
+	<entry name="Tyranids/Lictor" value="<string name='Units/Tyranids/Lictor'/>"/>
+	<entry name="Tyranids/LictorDescription" value="<string name='Units/Tyranids/LictorDescription'/>"/>
+	<entry name="Tyranids/LictorFlavor" value="<string name='Units/Tyranids/LictorFlavor'/>"/>
+	<entry name="Tyranids/Ravener" value="<string name='Units/Tyranids/Ravener'/>"/>
+	<entry name="Tyranids/RavenerDescription" value="<string name='Units/Tyranids/RavenerDescription'/>"/>
+	<entry name="Tyranids/RavenerFlavor" value="<string name='Units/Tyranids/RavenerFlavor'/>"/>
+	<entry name="Tyranids/ScythedHierodule" value="<string name='Units/Tyranids/ScythedHierodule'/>"/>
+	<entry name="Tyranids/ScythedHieroduleDescription" value="<string name='Units/Tyranids/ScythedHieroduleDescription'/>"/>
+	<entry name="Tyranids/ScythedHieroduleFlavor" value="<string name='Units/Tyranids/ScythedHieroduleFlavor'/>"/>
+	<entry name="Tyranids/Tervigon" value="<string name='Units/Tyranids/Tervigon'/>"/>
+	<entry name="Tyranids/TervigonDescription" value="<string name='Units/Tyranids/TervigonDescription'/>"/>
+	<entry name="Tyranids/TervigonFlavor" value="<string name='Units/Tyranids/TervigonFlavor'/>"/>
+	<entry name="Tyranids/Trygon" value="<string name='Units/Tyranids/Trygon'/>"/>
+	<entry name="Tyranids/TrygonDescription" value="<string name='Units/Tyranids/TrygonDescription'/>"/>
+	<entry name="Tyranids/TrygonFlavor" value="<string name='Units/Tyranids/TrygonFlavor'/>"/>
+	<entry name="Tyranids/Tyrannofex" value="<string name='Units/Tyranids/Tyrannofex'/>"/>
+	<entry name="Tyranids/TyrannofexDescription" value="<string name='Units/Tyranids/TyrannofexDescription'/>"/>
+	<entry name="Tyranids/TyrannofexFlavor" value="<string name='Units/Tyranids/TyrannofexFlavor'/>"/>
+	<entry name="Tyranids/Warrior" value="<string name='Units/Tyranids/Warrior'/>"/>
+	<entry name="Tyranids/WarriorDescription" value="<string name='Units/Tyranids/WarriorDescription'/>"/>
+	<entry name="Tyranids/WarriorFlavor" value="<string name='Units/Tyranids/WarriorFlavor'/>"/>
+	<entry name="Tyranids/Zoanthrope" value="<string name='Units/Tyranids/Zoanthrope'/>"/>
+	<entry name="Tyranids/ZoanthropeDescription" value="<string name='Units/Tyranids/ZoanthropeDescription'/>"/>
+	<entry name="Tyranids/ZoanthropeFlavor" value="<string name='Units/Tyranids/ZoanthropeFlavor'/>"/>
+
+	<!-- Other -->
+	
+	<entry name="Tyranids/AcidBlood" value="Acid Blood"/>
+	<entry name="Tyranids/AcidBloodDescription" value="Grants Tyranid monstrous creatures and Tyranid Primes the trait to damage all melee attackers."/>
+	<entry name="Tyranids/AcidBloodFlavor" value="<string name='Traits/Tyranids/AcidBloodFlavor'/>"/>
+	<entry name="Tyranids/AdrenalGlands" value="Adrenal Glands"/>
+	<entry name="Tyranids/AdrenalGlandsDescription" value="Grants units increased movement and increased melee damage."/>
+	<entry name="Tyranids/AdrenalGlandsFlavor" value="Adrenal glands saturate their host's bodies with chemicals that boost the creature's metabolism to a hyperactive state of frenzy."/>
+	<entry name="Tyranids/BiomorphDamage" value="<string name='Traits/Tyranids/BiomorphDamage'/>"/>
+	<entry name="Tyranids/BiomorphDamageDescription" value="Increases the armour penetration of biomorphs."/>
+	<entry name="Tyranids/BiomorphDamageFlavor" value="<string name='Traits/Tyranids/BiomorphDamageFlavor'/>"/>
+	<entry name="Tyranids/BioPlasma" value="Carnifex Bio-Plasma"/>
+	<entry name="Tyranids/BioPlasmaDescription" value="Grants Carnifexes an additional ranged weapon."/>
+	<entry name="Tyranids/BioPlasmaFlavor" value="<string name='Weapons/BioPlasmaFlavor'/>"/>
+	<entry name="Tyranids/BoneMace" value="Carnifex Bone Mace"/>
+	<entry name="Tyranids/BoneMaceDescription" value="Grants Carnifexes an additional melee weapon."/>
+	<entry name="Tyranids/BoneMaceFlavor" value="<string name='Weapons/BoneMaceFlavor'/>"/>
+	<entry name="Tyranids/CityCost" value="Metamorphic Malanthropes"/>
+	<entry name="Tyranids/CityCostDescription" value="Reduces the cost of founding new cities."/>
+	<entry name="Tyranids/CityCostFlavor" value="The role of the Malanthrope in founding new Tyranid hives has been little studied by Imperial Genetors, as in most circumstances they're dead or fleeing when the hive is founded. However, it's believed that they transport the city seed to new locations when a forward brood location is required. Unusual Malanthropes have sometimes been observed, with specialised physical structures that enable them to perform this task more efficiently."/>
+	<entry name="Tyranids/CityDamage" value="<string name='Traits/Tyranids/CityDamage'/>"/>
+	<entry name="Tyranids/CityDamageDescription" value="Enemy units in Tyranid cities take damage each turn."/>
+	<entry name="Tyranids/CityDamageFlavor" value="<string name='Traits/Tyranids/CityDamageFlavor'/>"/>
+	<entry name="Tyranids/CityGrowth" value="<string name='Traits/Tyranids/CityGrowth'/>"/>
+	<entry name="Tyranids/CityGrowthDescription" value="Increases the growth rate of Tyranid cities."/>
+	<entry name="Tyranids/CityGrowthFlavor" value="<string name='Traits/Tyranids/CityGrowthFlavor'/>"/>
+	<entry name="Tyranids/CityLoyalty" value="<string name='Traits/Tyranids/CityLoyalty'/>"/>
+	<entry name="Tyranids/CityLoyaltyDescription" value="Decreases the loyalty penalty from the amount of Tyranid cities."/>
+	<entry name="Tyranids/CityLoyaltyFlavor" value="<string name='Traits/Tyranids/CityLoyaltyFlavor'/>"/>
+	<entry name="Tyranids/CityPopulationLimit" value="<string name='Traits/Tyranids/CityPopulationLimit'/>"/>
+	<entry name="Tyranids/CityPopulationLimitDescription" value="Increases the population limit of Tyranid cities."/>
+	<entry name="Tyranids/CityPopulationLimitFlavor" value="<string name='Traits/Tyranids/CityPopulationLimitFlavor'/>"/>
+	<entry name="Tyranids/CityProduction" value="<string name='Traits/Tyranids/CityProduction'/>"/>
+	<entry name="Tyranids/CityProductionDescription" value="Increases the production output of Tyranid cities."/>
+	<entry name="Tyranids/CityProductionFlavor" value="<string name='Traits/Tyranids/CityProductionFlavor'/>"/>
+	<entry name="Tyranids/CityTier2" value="<string name='Traits/Tyranids/CityTier2'/>"/>
+	<entry name="Tyranids/CityTier2Description" value="Increases the tile acquisition radius of the city."/>
+	<entry name="Tyranids/CityTier2Flavor" value="<string name='Traits/Tyranids/CityTier2Flavor'/>"/>
+	<entry name="Tyranids/ConsumeTile2" value="Efficient Digestion"/>
+	<entry name="Tyranids/ConsumeTile2Description" value="Decreases the influence cost of consuming tiles."/>
+	<entry name="Tyranids/ConsumeTile2Flavor" value="Whilst a Malanthrope or Ripper's razor-edged jaws have no problem eating their way through flesh, bone or even plasteel, they are slowed by the necessity of consuming the huge quantities of soil and rock the Hive Mind demands at scale and speed. It is presumed that specialised organisms are deployed to consume these—though, again, none have survived to report them."/>
+	<entry name="Tyranids/Deathspitter" value="Ravener Deathspitter"/>
+	<entry name="Tyranids/DeathspitterDescription" value="Grants Raveners a ranged weapon."/>
+	<entry name="Tyranids/DeathspitterFlavor" value="<string name='Weapons/DeathspitterFlavor'/>"/>
+	<entry name="Tyranids/DesiccatorLarvae" value="<string name='Weapons/DesiccatorLarvae'/>"/>
+	<entry name="Tyranids/DesiccatorLarvaeDescription" value="Grants Hive Tyrants, Tervigons and Tyrannofexes a template weapon."/>
+	<entry name="Tyranids/DesiccatorLarvaeFlavor" value="<string name='Weapons/DesiccatorLarvaeFlavor'/>"/>
+	<entry name="Tyranids/ExtraInfantryArmour" value="<string name='Traits/ExtraInfantryArmour'/>"/>
+	<entry name="Tyranids/ExtraInfantryArmourDescription" value="<string name='Upgrades/AstraMilitarum/ExtraInfantryArmourDescription'/>"/>
+	<entry name="Tyranids/ExtraInfantryArmourFlavor" value="The Hive Mind is a frugal mentality. Why sacrifice resources armouring troops that will be reclaimed anyway? Only when the gamble makes sense, does it invest in extra-thick chitin and bone for its fauna."/>
+	<entry name="Tyranids/ExtraMonstrousCreatureArmour" value="<string name='Traits/ExtraMonstrousCreatureArmour'/>"/>
+	<entry name="Tyranids/ExtraMonstrousCreatureArmourDescription" value="Increases the armour of monstrous creatures."/>
+	<entry name="Tyranids/ExtraMonstrousCreatureArmourFlavor" value="Through a combination of hardened carapaces, disruptive fields and deadened nerve endings, the Hive Mind can alter the resilience of its larger creatures easily."/>
+	<entry name="Tyranids/FleshHooks" value="<string name='Weapons/FleshHooks'/>"/>
+	<entry name="Tyranids/FleshHooksDescription" value="Grants Tyranid Warriors, Tyranid Primes and Lictors an additional ranged weapon."/>
+	<entry name="Tyranids/FleshHooksFlavor" value="<string name='Weapons/FleshHooksFlavor'/>"/>
+	<entry name="Tyranids/HammerOfWrath" value="<string name='Actions/HammerOfWrath'/>"/>
+	<entry name="Tyranids/HammerOfWrathDescription" value="Grants Exocrines, Gargoyles, Haruspexes, Hive Crones, Hive Tyrants, Scythed Hierodules, Tervigons, Trygons and Tyrannofexes the ability to perform more devastating attacks."/>
+	<entry name="Tyranids/HammerOfWrathFlavor" value="<string name='Actions/HammerOfWrathFlavor'/>"/>
+	<entry name="Tyranids/InfantryUpkeep" value="<string name='Traits/Tyranids/InfantryUpkeep'/>"/>
+	<entry name="Tyranids/InfantryUpkeepDescription" value="Reduces the biomass upkeep of infantry."/>
+	<entry name="Tyranids/InfantryUpkeepFlavor" value="<string name='Traits/Tyranids/InfantryUpkeepFlavor'/>"/>
+	<entry name="Tyranids/InstinctiveBehaviourOverride2" value="Savage Apressants"/>
+	<entry name="Tyranids/InstinctiveBehaviourOverride2Description" value="Reduces the influence cost of overriding instinctive behaviour."/>
+	<entry name="Tyranids/InstinctiveBehaviourOverride2Flavor" value="Maintaining control of its troops is a major concern of the hive mind and one it seeks to overcome by various adaptations, such as its synapse creatures. A simpler one is to reduce the natural savagery of its units when they run feral, so they require less psychic effort to bring back under control."/>
+	<entry name="Tyranids/LongRangedDamage" value="<string name='Traits/Tyranids/LongRangedDamage'/>"/>
+	<entry name="Tyranids/LongRangedDamageDescription" value="Increases the armour penetration of long-ranged weapons."/>
+	<entry name="Tyranids/LongRangedDamageFlavor" value="<string name='Traits/Tyranids/LongRangedDamageFlavor'/>"/>
+	<entry name="Tyranids/MeleeDamage" value="<string name='Traits/Tyranids/MeleeDamage'/>"/>
+	<entry name="Tyranids/MeleeDamageDescription" value="Increases the armour penetration of melee weapons."/>
+	<entry name="Tyranids/MeleeDamageFlavor" value="<string name='Traits/Tyranids/MeleeDamageFlavor'/>"/>
+	<entry name="Tyranids/Paroxysm" value="<string name='Actions/Tyranids/Paroxysm'/>"/>
+	<entry name="Tyranids/ParoxysmDescription" value="Grants Zoanthropes the ability to curse enemy units so they have decreased accuracy, mind control and enslavement."/>
+	<entry name="Tyranids/ParoxysmFlavor" value="<string name='Actions/Tyranids/ParoxysmFlavor'/>"/>
+	<entry name="Tyranids/PreyAdaptation2" value="Malanthropic Gustarflagelli"/>
+	<entry name="Tyranids/PreyAdaptation2Description" value="Increases the research gained when enemies die in the area of a Malanthrope."/>
+	<entry name="Tyranids/PreyAdaptation2Flavor" value="An unusual adaptation of the Malanthropic form, gustarflagelli are filament thin tendrils that surround a malanthrope like a fleshy, wriggling cloud. It's presumed that they enable the Malanthrope to gather and retain more genetic data from recently-deceased enemies."/>
+	<entry name="Tyranids/ProductionBuildingUpkeep" value="<string name='Traits/Tyranids/ProductionBuildingUpkeep'/>"/>
+	<entry name="Tyranids/ProductionBuildingUpkeepDescription" value="Reduces the influence upkeep of production buildings."/>
+	<entry name="Tyranids/ProductionBuildingUpkeepFlavor" value="<string name='Traits/Tyranids/ProductionBuildingUpkeepFlavor'/>"/>
+	<entry name="Tyranids/Reclamation2" value="<string name='Traits/Tyranids/Reclamation2'/>"/>
+	<entry name="Tyranids/Reclamation2Description" value="Reduces the influence cost of reclamation."/>
+	<entry name="Tyranids/Reclamation2Flavor" value="<string name='Traits/Tyranids/Reclamation2Flavor'/>"/>
+	<entry name="Tyranids/Reclamation3" value="<string name='Traits/Tyranids/Reclamation3'/>"/>
+	<entry name="Tyranids/Reclamation3Description" value="Removes the cooldown of reclamation."/>
+	<entry name="Tyranids/Reclamation3Flavor" value="<string name='Traits/Tyranids/Reclamation3Flavor'/>"/>
+	<entry name="Tyranids/Regeneration" value="Regeneration"/>
+	<entry name="Tyranids/RegenerationDescription" value="Grants Tyranid monstrous creatures and Tyranid Primes hitpoint restoration each turn."/>
+	<entry name="Tyranids/RegenerationFlavor" value="<string name='Traits/RegenerationFlavor'/>"/>
+	<entry name="Tyranids/ResourceBuildingUpkeep" value="<string name='Traits/Tyranids/ResourceBuildingUpkeep'/>"/>
+	<entry name="Tyranids/ResourceBuildingUpkeepDescription" value="Reduces the influence upkeep of resource buildings."/>
+	<entry name="Tyranids/ResourceBuildingUpkeepFlavor" value="<string name='Traits/Tyranids/ResourceBuildingUpkeepFlavor'/>"/>
+	<entry name="Tyranids/ShortRangedDamage" value="<string name='Traits/Tyranids/ShortRangedDamage'/>"/>
+	<entry name="Tyranids/ShortRangedDamageDescription" value="Increases the armour penetration of short-ranged weapons."/>
+	<entry name="Tyranids/ShortRangedDamageFlavor" value="<string name='Traits/Tyranids/ShortRangedDamageFlavor'/>"/>
+	<entry name="Tyranids/StingerSalvo" value="<string name='Weapons/StingerSalvo'/>"/>
+	<entry name="Tyranids/StingerSalvoDescription" value="Grants Hive Crones an additional ranged weapon."/>
+	<entry name="Tyranids/StingerSalvoFlavor" value="<string name='Weapons/StingerSalvoFlavor'/>"/>
+	<entry name="Tyranids/ThresherScythe" value="<string name='Weapons/ThresherScythe'/>"/>
+	<entry name="Tyranids/ThresherScytheDescription" value="Grants Exocrines and Haruspexes an additional melee weapon."/>
+	<entry name="Tyranids/ThresherScytheFlavor" value="<string name='Weapons/ThresherScytheFlavor'/>"/>
+	<entry name="Tyranids/ToxinSacs" value="<string name='Traits/Tyranids/ToxinSacs'/>"/>
+	<entry name="Tyranids/ToxinSacsDescription" value="Increases the damage of melee weapons against infantry and monstrous creatures."/>
+	<entry name="Tyranids/ToxinSacsFlavor" value="<string name='Traits/Tyranids/ToxinSacsFlavor'/>"/>
+	<entry name="Tyranids/Toxinspike" value="Trygon Toxinspike"/>
+	<entry name="Tyranids/ToxinspikeDescription" value="Grants Trygons an additional melee weapon."/>
+	<entry name="Tyranids/ToxinspikeFlavor" value="<string name='Weapons/ToxinspikeFlavor'/>"/>
+	<entry name="Tyranids/Tunnel2" value="<string name='Traits/Tyranids/Tunnel2'/>"/>
+	<entry name="Tyranids/Tunnel2Description" value="Increases the hitpoints of Broodhives."/>
+	<entry name="Tyranids/Tunnel2Flavor" value="<string name='Traits/Tyranids/Tunnel2Flavor'/>"/>
+	<entry name="Tyranids/VehiclesUpkeep" value="<string name='Traits/Tyranids/VehiclesUpkeep'/>"/>
+	<entry name="Tyranids/VehiclesUpkeepDescription" value="Reduces the biomass upkeep of monstrous creatures."/>
+	<entry name="Tyranids/VehiclesUpkeepFlavor" value="<string name='Traits/Tyranids/VehiclesUpkeepFlavor'/>"/>
+	
+	<entry name="Missing" value="Missing"/>
+</language>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="20"/>
+				<oreCost base="15"/>
+				<populationRequired base="1"/>
+				<slotsRequired base="1"/>
+				<energyUpkeep add="1"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<loyalty add="4"/>
+				<production add="8"/>
+				<populationLimit add="2"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseLoyaltyScore base="1.0"/>
+				<increasePopulationLimitScore base="1.0"/>
+				<increaseInfantryProductionScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<produceUnit unit="AstraMilitarum/Magos"/>
+		<produceUnit unit="AstraMilitarum/Cadetunit"/>
+		<produceUnit unit="AstraMilitarum/Officer"/>
+		<produceUnit unit="AstraMilitarum/TempestusScion" requiredUpgrade="AstraMilitarum/TempestusScion"/>
+	</actions>
+</building>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+<entry name="Orks/Scrapper" value="Scrapper"/>
+	<entry name="Orks/ScrapperDescription" value="Infantry unit that repairs vehicles, clears tiles."/>
+	<entry name="Orks/ScrapperFlavor" value="the lone Ork Mek Boy, Scrapper, is a scavenger on the battlefield. His mek suit, a chaotic mishmash of salvaged parts, is adorned with trophies from fallen foes. Unlike his fellow Orks, Scrapper doesn't charge headlong into battle; instead, he surveys the field, keen on salvaging valuable wreckage. His crafty approach and scavenging obsession make him a formidable and unpredictable force. The patchwork masterpiece of his mek suit reflects Ork ingenuity and the ability to turn the chaos of battle into personal gain."/>
+	<entry name="Orks/Grotz" value="Grotz"/>
+	<entry name="Orks/GrotzDescription" value="light Infantry unit "/>
+	<entry name="Orks/GrotzFlavor" value="Gretchin, or *Grotz,* are pint-sized greenskin warriors. forming the vast cannon fodder of Ork hordes. Despite their diminutive stature, these scavengers wield makeshift weaponry and overwhelm foes through sheer numerical superiority. Acting as distractions and absorbing enemy fire, Gretchin may be small, but they are indispensable pawns in the brutal symphony of Ork warfare."/>
+	<entry name="Orks/Nobs" value="Nobz"/>
+	<entry name="Orks/NobsDescription" value="Infantry unit "/>
+	<entry name="Orks/NobsFlavor" value="Ork Nobz are powerful and heavily armored elite warriors within the Ork society in the Warhammer 40,000 universe. Towering over regular Orks, Nobz are characterized by their size, strength, and love for close combat. They serve as leaders and champions, often commanding groups of lesser Orks into battle. Clad in crude, yet formidable, armor and armed with a variety of brutal weapons, Ork Nobz embody the brutal and anarchic nature of their race. Their status is earned through combat prowess, and they are recognized as some of the toughest and most fearsome fighters in Ork warbands."/>
+	<entry name="Orks/GrotzKamando" value="GrotzKamando"/>
+	<entry name="Orks/GrotzKamandoDescription" value="light Infantry unit "/>
+	<entry name="Orks/GrotzKamandoFlavor" value="These shrewd greenskin operatives wield an arsenal of improvised weaponry, utilizing their craftiness to outsmart and outmaneuver adversaries. Despite their smaller size, the GrotzKamando unit excels in guerrilla tactics, relying on surprise attacks and strategic movements to gain the upper hand on the battlefield. Serving as more than mere cannon fodder, these intelligent Grotz play a pivotal role, disrupting enemy formations and creating chaos in the relentless and brutal dance of Ork warfare. In the symphony of battle, the GrotzKamando unit emerges as indispensable, proving that size is not the only factor that defines a warrior's strength on the war-torn frontlines."/>
+	<entry name="Orks/Grotpost" value="Grotpost"/>
+	<entry name="Orks/GrotpostDescription" value="Grot outpost "/>
+	<entry name="Orks/GrotpostFlavor" value="The Grotpost emerges as a rugged Ork stronghold. Crafted from salvaged debris, these hubs of greenskin activity epitomize Ork resourcefulness. Despite their haphazard appearance, Grotposts serve as essential outposts for Gretchin innovation and strategic launching points for Ork campaigns. These resilient strongholds embody the pragmatic spirit of the Orks, turning chaos into functional bastions within the relentless warfare of the 41st millennium."/>
+	<entry name="Orks/SqigHunter" value="SqigHunter"/>
+	<entry name="Orks/SqigHunterDescription" value="Infantry unit."/>
+	<entry name="Orks/SqigHunterFlavor" value="An Ork Squig Hunter is a uniquely skilled individual among the Ork race. Clad in makeshift armor and armed with a variety of weapons, they specialize in harnessing the untamed Squigs, using them both as companions and weapons. With whom thier would be no explosive squig mines and Squig-launchers, the hunter brings chaos to the battlefield. most often used as a scout, when not wrangling sqigs"/>
+</language>

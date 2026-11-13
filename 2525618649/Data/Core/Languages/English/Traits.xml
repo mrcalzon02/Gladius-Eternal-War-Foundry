@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="AstraMilitarum/ImperialLegacy" value="Imperial Legacy"/>
+	<entry name="AstraMilitarum/ImperialLegacyDescription" value="This Unit will Create a Battlefield on Death"/>
+	<entry name="AstraMilitarum/ImperialLegacyFlavor" value=" The Grand Scale of these units last stands, leaves Battlefields, massive Scars on the land."/>
+<entry name="Battlefield" value="Battlefield"/>
+	<entry name="BattlefieldDescription" value="Increases the ranged damage reduction of infantry units."/>
+	<entry name="BattlefieldFlavor" value="A twisted network of mud-soaked trenches, Amidst the Charnel house lie the remnants of conflict:, craters filled with Corpse's and Bloody fouled water,and ruined barbed wire entanglements,and Undetonated munitions lurking in the muck, adding an ominous layer to the treacherous terrain blasted Clean of life by Conflict."/>
+</language>

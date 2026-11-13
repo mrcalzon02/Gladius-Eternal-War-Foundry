@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<!-- Generic -->
+<entry name="Grotter" value="Grotter"/>
+	<entry name="GrotterFlavor" value="a compact yet deceptively potent sidearm wielded by the crafty GrotzKamando unit. Cunningly designed, this pint-sized firearm packs a punch, featuring ingenious modifications crafted from salvaged materials. Despite its unassuming appearance, the GrotKamando Pistol is a symbol of guerrilla firepower, offering the GrotzKamandos the means to strike swiftly and decisively in the heart of battle. With its makeshift ingenuity and surprising effectiveness, this sidearm embodies the resourcefulness of the GrotzKamando warriors on the chaotic canvas of Ork warfare."/>
+	<entry name="CuztomChoppa" value="CuztomChoppa"/>
+	<entry name="CuztomChoppaFlavor" value="the CuztomCopper or, an Ork Kustom Choppa, is a chaotic masterpiece of Greenskin engineering, Unlike the standard Choppa, the CuztomCopper is a wildly unique and menacing weapon, cobbled together from salvaged parts and adorned with scavenged trophies. Its haphazard construction, featuring additional blades, buzz saws, and makeshift spikes, sets it apart from the crude simplicity of its regular counterpart. "/>
+
+</language>

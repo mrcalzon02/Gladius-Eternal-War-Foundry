@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<model>
+		<unit mesh="Units/AstraMilitarum/Guardsman"
+				material="Units/AstraMilitarum/Guardsman"
+				idleAnimation="Units/AstraMilitarum/GuardsmanIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="0.8 0.8 0.8"
+				bloodBone="ChestBone"
+				walker="1"/>
+	</model>
+	<group size="1" rowSize="1" memberDeltaX="70" memberDeltaY="50"/>
+	<weapons>
+		<weapon name="Chainsword">
+			<model>
+				<weapon mesh="Weapons/SpaceMarines/Chainsword"
+						material="Weapons/SpaceMarines/Chainsword"
+						bone="LeftHand"/>
+			</model>
+		</weapon>
+		<weapon name="BoltPistol" slotName="BoltPistol">
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/LordCommissarBoltPistol"
+						material="Weapons/AstraMilitarum/LordCommissarBoltPistol"
+						bone="RightHandBone"
+						muzzleBone=".Muzzle0"
+						fireInterval="0.35"/>
+			</model>
+		</weapon>
+		<weapon name="FragGrenade" slotName="FragGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="LeftHandBone"/>
+			</model>
+		</weapon>
+		<weapon name="KrakGrenade" slotName="KrakGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="LeftHandBone"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="3"/> <!-- %armor base armor=5+ -->
+				<foodUpkeep base="2"/> <!-- %foodUpkeep base tier=4 factor=1 -->
+				<foodCost base="5.0"/> <!-- %foodCost base tier=4 factor=0.5 -->
+				<hitpointsMax base="2.7"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<meleeAccuracy base="8"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="4"/>
+				<!-- <meleeInitiative base="3"/> -->
+				<oreCost base="9.0"/> <!-- %oreCost base tier=4 factor=0.5 -->
+				<strengthDamage base="2"/> <!-- %strengthDamage base strength=3 -->
+				<moraleMax base="9"/> <!-- %moraleMax base leadership=6 -->
+				<movementMax base="2"/>
+				<productionCost base="26.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<rangedAccuracy base="7"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanAttack"
+						beginFire="0.35" endFire="2.5"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanDie"
+						animationCount="3"
+						sound="Units/MediumUnarmoredDie"
+						soundCount="4"
+						soundDelay="0.4"
+						voiceSound="Units/AstraMilitarum/InfantryDie"
+						voiceSoundCount="5"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanMove"
+						sound="Units/AstraMilitarum/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
+				requiredUpgrade="AstraMilitarum/FragGrenade">
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanGrenade"
+						beginFire="0.833333333333"/>
+			</model>
+		</throwGrenade>
+		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
+				requiredUpgrade="AstraMilitarum/KrakGrenade">
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanGrenade"
+						beginFire="0.833333333333"/>
+			</model>				
+		</throwGrenade>
+		<mediPack cooldown="10" requiredUpgrade="AstraMilitarum/MediPack">
+			<model>
+				<action bone="ChestBone"
+						sound="Actions/Heal"/>
+			</model>
+			<beginTargets>
+				<selfTarget>
+					<conditions>
+						<unit>
+							<damaged/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpointsFactorFromMax add="0.6"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</mediPack>
+	</actions>
+	<traits>
+		<trait name="Fleet"/>
+		<trait name="HitAndRun"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="Infiltrate"/>
+	</traits>
+</unit>

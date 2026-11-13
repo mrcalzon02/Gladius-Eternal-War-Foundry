@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Units/Orks/GrotpostGroundDiffuse"/>
+		<texture name="Units/Orks/GrotpostGroundNormal"/>
+		<texture name="Units/Orks/GrotpostGroundSIC"/>
+		<texture name="ShadowMapColor"/>
+	</textures>
+</material>

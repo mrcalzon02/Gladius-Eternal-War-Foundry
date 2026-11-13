@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="25"/>
+				<oreCost base="35"/>
+				<populationRequired base="1"/>
+				<slotsRequired base="1"/>
+				<energyUpkeep add="1"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<influence add="4"/>
+				<ore add="5"/>
+				<production add="6"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<productionModifiers>
+		<modifier>
+			<effects>
+				
+			</effects>
+		</modifier>
+	</productionModifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseConstructionScore base="2.0"/>
+				<increaseVehiclesProductionScore base="2.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<acquireTile>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost add="1"/>
+						<oreCost add="1"/>
+						<productionCost add="12"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</acquireTile>
+		<clearTile>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<productionCost add="10"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</clearTile>
+		<constructBuilding building="AstraMilitarum/Food2"/>
+		<constructBuilding building="AstraMilitarum/Ore2"/>
+		<constructBuilding building="AstraMilitarum/Bastion"/>
+		<constructBuilding building="AstraMilitarum/Vehicles1" requiredUpgrade="AstraMilitarum/Vehicles"/>
+		<constructBuilding building="AstraMilitarum/Vehicles2" requiredUpgrade="AstraMilitarum/Chimera"/>
+		<constructBuilding building="AstraMilitarum/Vehicles3" requiredUpgrade="AstraMilitarum/Hydra"/>
+		<constructBuilding building="AstraMilitarum/Vehicles4" requiredUpgrade="AstraMilitarum/Basilisk"/>
+		<constructBuilding building="AstraMilitarum/Vehicles5" requiredUpgrade="AstraMilitarum/DevilDog"/>
+		<constructBuilding building="AstraMilitarum/Vehicles6" requiredUpgrade="AstraMilitarum/LemanRussBattleTank"/>
+		<constructBuilding building="AstraMilitarum/Vehicles7" requiredUpgrade="AstraMilitarum/RogalDornBattleTank"/>
+		<constructBuilding building="AstraMilitarum/Vehicles8" requiredUpgrade="AstraMilitarum/Baneblade"/>
+	</actions>
+</building>

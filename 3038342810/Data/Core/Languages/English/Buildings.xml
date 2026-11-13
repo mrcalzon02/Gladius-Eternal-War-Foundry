@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+<entry name="Orks/Grothold" value="Grot-hold"/>
+	<entry name="Orks/GrotholdDescription" value="Grothold fo Grots"/>
+	<entry name="Orks/GrotholdFlavor" value="These tiny, often overlooked members inhabit makeshift strongholds crafted from salvaged materials. Armed with pint-sized weapons and piloting comically small vehicles, Grots within Grot-holdz exemplify the Orks' resourcefulness in integrating even the smallest members into their chaotic approach to warfare."/>
+	<entry name="Orks/Nobhuts" value="Nob-hutz"/>
+	<entry name="Orks/NobhutsDescription" value="Nob-huts"/>
+	<entry name="Orks/NobhutsFlavor" value="NobHutz is a chaotic fortress at the heart of an Ork settlement, serving as both housing for elite Ork Nobz and a secure vault for their plundered loot. Constructed from salvaged scrap, the exterior features a rugged, haphazard design with spikes and glyphs. Inside, reinforced living quarters for Nobz are filled with trophies, while a central Loot Room guards the amassed treasures. The fortress embodies Ork culture, reflecting their love for combat and the accumulation of plunder in a bustling, ramshackle charm."/>
+</language>

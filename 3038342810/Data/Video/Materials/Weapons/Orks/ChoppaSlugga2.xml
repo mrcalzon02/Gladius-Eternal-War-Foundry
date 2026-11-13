@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Weapons/Orks/ChoppaSlugga2Diffuse"/>
+		<texture name="Weapons/Orks/ChoppaSlugga2Normal"/>
+		<texture name="Weapons/Orks/ChoppaSlugga2SIC"/>
+		<texture name="ShadowMapColor"/>
+	</textures>
+</material>

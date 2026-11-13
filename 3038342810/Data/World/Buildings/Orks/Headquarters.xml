@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building disablable="0">
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="336"/>
+				<populationRequired base="0"/>
+				<slotsRequired base="1"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<cityRadius add="2"/>
+				<energy add="7"/>
+				<food add="5"/>
+				<loyalty add="10"/>
+				<influence add="10"/>
+				<ore add="6"/>
+				<populationLimit add="5"/>
+				<research add="8"/>
+				<production add="5"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<traits>
+		<trait name="Orks/CityTier2" requiredUpgrade="Orks/CityTier2"/>
+		<trait name="Orks/CityTier3" requiredUpgrade="Orks/CityTier3"/>
+		<trait name="Orks/GreenTideGrowth"/>
+		<trait name="Headquarters"/>
+	</traits>
+	<actions>
+		<produceUnit unit="Orks/Grotz"/>
+	</actions>
+</building>

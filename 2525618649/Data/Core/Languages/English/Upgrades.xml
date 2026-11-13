@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+<entry name="AstraMilitarum/Bayonet" value="<string name='Weapons/Bayonet'/>"/>
+	<entry name="AstraMilitarum/BayonetDescription" value="Grants Guardsmen the ability to affix Bayonets "/>
+	<entry name="AstraMilitarum/BayonetFlavor" value="Many a Commander has Yelled this famous command, but first your unit needs to have them to use them."/>
+
+</language>

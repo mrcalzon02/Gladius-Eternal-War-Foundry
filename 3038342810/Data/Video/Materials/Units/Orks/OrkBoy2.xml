@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Units/Orks/OrkBoy2Diffuse"/>
+		<texture name="Units/Orks/OrkBoy2Normal"/>
+		<texture name="Units/Orks/OrkBoy2SIC"/>
+		<texture name="ShadowMapColor"/>
+	</textures>
+</material>

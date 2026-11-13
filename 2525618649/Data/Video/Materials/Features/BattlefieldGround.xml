@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Features/BattlefieldGroundDiffuse"/>
+		<texture name="Features/BattlefieldGroundNormal"/>
+		<texture name="Features/BattlefieldGroundSIC"/>
+		<texture name="ShadowMapColor"/>
+		<texture name="Buildings/BuildingsGroundMask"/>
+		<texture name="Groundmap1"/>
+	</textures>
+</material>

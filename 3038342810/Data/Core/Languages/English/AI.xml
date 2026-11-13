@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="Orks0" value="Skar toof th'Bitey"/>
+	<entry name="Orks1" value="Ironrippa da Slazha"/>
+	<entry name="Orks2" value="Jum jum Jumpa"/>
+	<entry name="Orks3" value="Trionwulf"/>
+	<entry name="Orks4" value="Kommandaroot"/>
+	<entry name="Orks5" value="Badtoof Theff Nappa"/>
+	<entry name="Orks6" value="Aliencow24'da Dakkamoo"/>
+	<entry name="Orks7" value="Fogybattleshyper"/>
+	<entry name="Orks8" value="Herrox77 'da Shoota"/>
+	<entry name="Orks9" value="Ramzambam 'da Choppa"/>
+	<entry name="Orks10" value="Jaevrik da Waaaghbringer"/>
+	<entry name="Orks11" value="Shakkda Bashboy"/>
+	<entry name="Orks12" value="Bowmankrusha da Skarboy"/>
+	<entry name="Orks13" value="R4ndomblz da Waaaghmaker"/>
+	<entry name="Orks14" value="Moos3h'da Grotbasher"/>
+	<entry name="Orks15" value="Avicern 'da SkullStomper"/> 
+	<entry name="Orks16" value="Lushan'da mini Goff"/>
+	<entry name="Orks17" value="Spacebasha 'da drunk"/>
+	<entry name="Orks18" value="Klokwerk 'da Mekboy"/>
+	<entry name="Orks19" value="Gruk da 'Eadsmasha"/>
+	<entry name="Orks20" value="Moldark Sqiq herder"/>
+	<entry name="Orks21" value="W4sted da Warboss"/>
+	<entry name="OrksCount" value="21"/>
+
+</language>

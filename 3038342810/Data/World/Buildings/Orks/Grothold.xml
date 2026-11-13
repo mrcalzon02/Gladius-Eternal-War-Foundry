@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="20"/>
+				<oreCost base="25"/>
+				<populationRequired base="1"/>
+				<slotsRequired base="1"/>
+				<energyUpkeep add="1"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<food add="2"/>
+				<loyalty add="2"/>
+				<production add="6"/>
+				<ore add="2"/>
+				<populationLimit add="2"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseLoyaltyScore base="0.6"/>
+				<increaseOreScore base="0.6"/>
+				<increaseFoodScore base="0.6"/>
+				<increaseInfantryProductionScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+		<actions>
+		<produceUnit unit="Orks/Scrapper"/>
+		<produceUnit unit="Orks/Grotz"/>
+		<produceUnit unit="Orks/GrotzKamando"/>
+	</actions>
+</building>

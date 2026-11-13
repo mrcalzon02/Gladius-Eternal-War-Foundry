@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wildlife>
+	<packs>
+		<pack>
+			<unit type="Neutral/Boy"/>
+			<unit type="Neutral/Boy"/>
+			<unit type="Neutral/Boy"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/Guardian"/>
+			<unit type="Neutral/Guardian"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/FlayedOne"/>
+			<unit type="Neutral/Immortal"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/Guardian"/>
+			<unit type="Neutral/Guardian"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/Guardsman"/>
+			<unit type="Neutral/Guardsman"/>
+			<unit type="Neutral/Guardsman"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/ImperialStrongpoint"/>
+			<unit type="Neutral/Guardsman"/>
+		</pack>
+				<pack>
+			<unit type="Neutral/Raider"/>
+			<unit type="Neutral/Succubus"/>
+		</pack>
+	</packs>
+</wildlife>

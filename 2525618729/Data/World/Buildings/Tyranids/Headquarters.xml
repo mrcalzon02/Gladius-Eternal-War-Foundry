@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building disablable="0">
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost base="336"/>
+				<populationRequired base="0"/>
+				<slotsRequired base="1"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<biomass add="5"/>
+				<cityRadius add="2"/>
+				<influence add="10"/>
+				<loyalty add="6"/>
+				<populationLimit add="8"/>
+				<research add="5"/>
+				<production add="1"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<actions>
+		<produceUnit unit="Tyranids/Ripperswarm"/>
+	</actions>
+	<traits>
+		<trait name="Tyranids/CityGrowth" requiredUpgrade="Tyranids/CityGrowth"/>
+		<trait name="Tyranids/CityPopulationLimit" requiredUpgrade="Tyranids/CityPopulationLimit"/>
+		<trait name="Tyranids/CityTier2" requiredUpgrade="Tyranids/CityTier2"/>
+		<trait name="Headquarters"/>
+	</traits>
+</building>

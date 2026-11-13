@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Units/AstraMilitarum/LordCommissar2Diffuse"/>
+		<texture name="Units/AstraMilitarum/LordCommissar2Normal"/>
+		<texture name="Units/AstraMilitarum/LordCommissar2SIC"/>
+		<texture name="ShadowMapColor"/>
+	</textures>
+</material>
