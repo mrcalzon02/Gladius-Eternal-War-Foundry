@@ -1,29 +1,46 @@
-# Workshop 3267312159
+# Aeldari Ascendant
 
-**Candidate public title: Aeldari Ascendant**
+**Steam Workshop ID:** 3267312159
 
-**Steam Workshop ID:** 3267312159  
-**Workshop page:** [View current Steam item](https://steamcommunity.com/sharedfiles/filedetails/?id=3267312159)  
-**Status:** Direct item-page title and full description not yet verified. The Steam Workshop game index lists this title under Mrcalzon02; the imported files modify Eldar.
+**Source:** [Live Steam Workshop item](https://steamcommunity.com/sharedfiles/filedetails/?id=3267312159)
 
-## Recovered previews
+**Metadata retrieved (UTC):** 2026-11-13T23:02:05+00:00
 
-These images are already present in this exact Workshop directory. They are from the backed-up Steam install; they are **not** yet confirmed to be the current online Workshop gallery.
+**Content:** Recovered Steam Workshop install, not reconstructed source.
 
-![Original local preview 1](Preview.png)
+## Recovered preview files
 
-![Original local preview 2](Preview1.png)
+![Recovered Preview.png](Preview.png)
 
-![Original local preview 3](Preview2.png)
+![Recovered Preview1.png](Preview1.png)
 
-## Description status
+![Recovered Preview2.png](Preview2.png)
 
-The exact currently published Steam description could not be retrieved from the rate-limited item page in this session. The following is **not** represented as the official description:
+[Current Steam thumbnail](https://images.steamusercontent.com/ugc/2506896757667356102/A199EE07C54C358771D4769D3ACAB712F5D3AEB8/)
 
-> Craftworld Aeldari/Eldar faction, building, unit and material files, including custom construct definitions and textures. This is a summary of the recovered files, not the live Steam description.
 
-The live title, description, Steam preview URL, author ID and update date can be retrieved together using the repository's [Steam metadata sync utility](../tools/sync_workshop_metadata.py). It uses the official keyless Steam Web API and will replace this generated document with source-verified metadata. Run from a network-connected clone:
+## Steam Workshop description
 
-    python tools/sync_workshop_metadata.py
+Captured unchanged from Steam's GetPublishedFileDetails API. BBCode is retained literally rather than guessed or paraphrased.
 
-No original Gladius files were moved or edited to create this record.
+```text
+Economy rework and unit balance changes. adds a new unit to produce at HQ.
+
+* The reworks attempt to balance the Eldar against a larger initial resource start and slower gain of resources allowing them to produce units early and quickly while gaining technology at a better initial pace but slowing their overall growth allowing Eldar players and AI to focus down specific tech trees faster but slowing their overall growth to keep them in balance with the rest of my modified races*
+
+The Warlock stands resolute, his mind aflame with the swirling energies of the Warp. His ornate armor, adorned with arcane symbols and shimmering gemstones, reflects the ethereal glow of his psychic power. His voice, a commanding presence, reverberates through the gathering of Eldar warriors, each one a paragon of their ancient and noble race.
+
+"Brothers and sisters of the Eldari," he intones, his voice a harmonious blend of authority and urgency, "the time of maximum effort is upon us. Our race, once unparalleled in grace and knowledge, now stands on the precipice of annihilation. The ancient prophecies have come to pass; the shadows of our past deeds and the specters of our hubris loom over us. We must face the truth: the survival of our people hinges upon the battles we now fight."
+
+His eyes, pools of intense focus, scan the faces of his kin, drawing strength from their unwavering determination. "We must marshal all our resources, call upon every ounce of strength, every flicker of psychic energy, every shard of wisdom passed down through the ages. Our warriors, our seers, our artisans and war machines, all must converge into a single, indomitable force. The conflicts ahead are not mere skirmishes; they are crucibles upon which the fate of our civilization is forged."
+
+A hush falls over the assembly, the gravity of his words sinking deep into their hearts. "We have seen the enemy, and we know the stakes. To falter now is to consign our legacy to oblivion. But to fight, to give our all, is to honor our ancestors and to carve a future from the very essence of our spirit. We shall wield our weapons with precision, channel the Warp with unmatched mastery, and outmaneuver our foes with the elegance only the Eldari possess."
+
+He raises his witchblade, its blade humming with psychic energy, a beacon of hope and defiance. "Together, we will face the darkness. Together, we will reclaim our destiny. The future of the Eldari race depends on our unity, our resolve, and our unwavering belief in our cause. Let this be the hour we etch into the annals of history, where we fought with every fiber of our being and emerged victorious. For the Craftworlds! For the Eldari!"
+
+With a resounding cheer, the assembled Eldar warriors raise their weapons in unison, their spirits bolstered by the Warlock's fervent declaration. The path ahead is fraught with peril, but united in purpose, they stride forward, ready to confront the darkness and secure their future.
+
+The speaker is Warlock Elraith Starseer, a revered psyker hailing from the Craftworld Biel-Tan. Known for his unwavering dedication to the Eldari cause, he stands amidst the ancient and towering Wraithbone structures of Biel-Tan's central council chamber. Addressing a gathering of elite warriors, seers, and council members, Elraith's voice carries the weight of his people's history and the urgent need for unity. His impassioned speech rallies the assembled Eldari, preparing them to face the imminent conflicts that will determine the survival of their race.
+```
+
+Also saved as [raw Steam description](WORKSHOP_DESCRIPTION.txt).

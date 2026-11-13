@@ -1,0 +1,21 @@
+Report From Ordo Xenos, Cheif Xenobiologis of Gladius 
+
+  Lord Malthere of Ordo Xenos, this report concerns the captured strain of Tyranid originating from a single spore vacuum sealed in a sampling vessel from The first officially recorded contact with the Tyranids for the Imperium of Man came during a Tyranid attack on an Ocean World called Tyran, 
+
+it is my duty to report that even this sample allowed to  maturate in a sealed environment for a period of no less then 30 full Terra standard rotational periods. samples taken from the resulting Biomass showed disturbing signs of having incorporation of DNA fragments with strong indications of having come from the gene seed of the Ultramarines. this most distressing news means that the Tyranid bio forms from the point of very first contact have had access to the gene seed improvements  identical to those of the emperors finest creations. 
+
+Their are no reports of the composition of  tyrannic lifeforms NOT containing these samples taken to date.  It is my sad duty to inform you lord that any bio genetic weapon formed to target these genetic strings and remove them from the grasp of the Tyranoforms will result in the infection and subsequent cell death of ANY space marine exposed.  Its is theorized this may be why after initial contact the Tyranid fleets began using ever Larger more Focused and specialized Forms to better make use of the adsorbed gene forms, Include DNA sequenced to have come from an number of astropathic households.
+
+The Gladius strains in the early states of release into the eco-system have been observed Favoring the larger Form for a time. But soon further spread would resume making full use of the smaller gene forms available to it. It is known that a single Spore of  Tyranid can when left undetected can maturate. Even in this nascent state of Raw duplicating and expanding flesh it begins developing crude organs and a rudimentary nervous system, where it has been able to recoil when observed directly by human eyes. (including servitors) but not when observed buy a lone organ after separation from a human mind, indicting that the flesh is Psychically responding to the mind observing it not the act of observation.
+During limited Release and subsequent sterilization of  the experiment area,  Tyranoforms seamed to even on a animal level share information. 
+
+The shear speed at which the Hives where seen spreading and  the behavior of the Rippers consuming a large amount of bio matter and forming a new hive Growth was shocking. The newest strains seam to have the ability to disgorge inordinately large numbers of these smaller forms the longer its hives are allowed to mature.
+
+TLDR, Ripper Swarm unit added, many units increased in number, and other unit rebalances for tactical options
+Update 10/13/2021
+Fixed a Incorrect animation pointer
+
+
+[quote=author]"You know how you have that part of you that wants a Recafe or candy, and the other part of you that knows it should have a salad,  yeah with the nids hivemind that "Part of you" can be an entire planet-consuming armada " Xeno biologocs, Trevorit Manhouse	[/quote]
+
+[quote=author]"and in a screeching screaming carpet as far as the eye could see the beasts consumed one another in a battle for which fragment of the hive mind would dominate over the coming battles." - Lord Malthere from his orbital Cruiser-[/quote]

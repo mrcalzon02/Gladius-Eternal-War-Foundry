@@ -1,29 +1,50 @@
-# Workshop 2525618729
+# Horrors of The  Numberless Horde
 
-**Official title awaiting Steam lookup**
+**Steam Workshop ID:** 2525618729
 
-**Steam Workshop ID:** 2525618729  
-**Workshop page:** [View current Steam item](https://steamcommunity.com/sharedfiles/filedetails/?id=2525618729)  
-**Status:** Direct item-page title and full description not yet verified. No current Steam Workshop title verified from the public index.
+**Source:** [Live Steam Workshop item](https://steamcommunity.com/sharedfiles/filedetails/?id=2525618729)
 
-## Recovered previews
+**Metadata retrieved (UTC):** 2026-11-13T23:02:05+00:00
 
-These images are already present in this exact Workshop directory. They are from the backed-up Steam install; they are **not** yet confirmed to be the current online Workshop gallery.
+**Content:** Recovered Steam Workshop install, not reconstructed source.
 
-![Original local preview 1](Preview.png)
+## Recovered preview files
 
-![Original local preview 2](Preview1.png)
+![Recovered Preview.png](Preview.png)
 
-![Original local preview 3](Preview2.png)
+![Recovered Preview1.png](Preview1.png)
 
-## Description status
+![Recovered Preview2.png](Preview2.png)
 
-The exact currently published Steam description could not be retrieved from the rate-limited item page in this session. The following is **not** represented as the official description:
+[Current Steam thumbnail](https://images.steamusercontent.com/ugc/1688269127766375737/5DBB73F71DE95B124D93CC94D5BDF25278CFB922/)
 
-> Tyranid building, unit, upgrade and English-language definitions, including Zoanthrope and Ripperswarm localization. This is a summary of the recovered files, not the live Steam description.
 
-The live title, description, Steam preview URL, author ID and update date can be retrieved together using the repository's [Steam metadata sync utility](../tools/sync_workshop_metadata.py). It uses the official keyless Steam Web API and will replace this generated document with source-verified metadata. Run from a network-connected clone:
+## Steam Workshop description
 
-    python tools/sync_workshop_metadata.py
+Captured unchanged from Steam's GetPublishedFileDetails API. BBCode is retained literally rather than guessed or paraphrased.
 
-No original Gladius files were moved or edited to create this record.
+```text
+Report From Ordo Xenos, Cheif Xenobiologis of Gladius 
+
+  Lord Malthere of Ordo Xenos, this report concerns the captured strain of Tyranid originating from a single spore vacuum sealed in a sampling vessel from The first officially recorded contact with the Tyranids for the Imperium of Man came during a Tyranid attack on an Ocean World called Tyran, 
+
+it is my duty to report that even this sample allowed to  maturate in a sealed environment for a period of no less then 30 full Terra standard rotational periods. samples taken from the resulting Biomass showed disturbing signs of having incorporation of DNA fragments with strong indications of having come from the gene seed of the Ultramarines. this most distressing news means that the Tyranid bio forms from the point of very first contact have had access to the gene seed improvements  identical to those of the emperors finest creations. 
+
+Their are no reports of the composition of  tyrannic lifeforms NOT containing these samples taken to date.  It is my sad duty to inform you lord that any bio genetic weapon formed to target these genetic strings and remove them from the grasp of the Tyranoforms will result in the infection and subsequent cell death of ANY space marine exposed.  Its is theorized this may be why after initial contact the Tyranid fleets began using ever Larger more Focused and specialized Forms to better make use of the adsorbed gene forms, Include DNA sequenced to have come from an number of astropathic households.
+
+The Gladius strains in the early states of release into the eco-system have been observed Favoring the larger Form for a time. But soon further spread would resume making full use of the smaller gene forms available to it. It is known that a single Spore of  Tyranid can when left undetected can maturate. Even in this nascent state of Raw duplicating and expanding flesh it begins developing crude organs and a rudimentary nervous system, where it has been able to recoil when observed directly by human eyes. (including servitors) but not when observed buy a lone organ after separation from a human mind, indicting that the flesh is Psychically responding to the mind observing it not the act of observation.
+During limited Release and subsequent sterilization of  the experiment area,  Tyranoforms seamed to even on a animal level share information. 
+
+The shear speed at which the Hives where seen spreading and  the behavior of the Rippers consuming a large amount of bio matter and forming a new hive Growth was shocking. The newest strains seam to have the ability to disgorge inordinately large numbers of these smaller forms the longer its hives are allowed to mature.
+
+TLDR, Ripper Swarm unit added, many units increased in number, and other unit rebalances for tactical options
+Update 10/13/2021
+Fixed a Incorrect animation pointer
+
+
+[quote=author]"You know how you have that part of you that wants a Recafe or candy, and the other part of you that knows it should have a salad,  yeah with the nids hivemind that "Part of you" can be an entire planet-consuming armada " Xeno biologocs, Trevorit Manhouse	[/quote]
+
+[quote=author]"and in a screeching screaming carpet as far as the eye could see the beasts consumed one another in a battle for which fragment of the hive mind would dominate over the coming battles." - Lord Malthere from his orbital Cruiser-[/quote]
+```
+
+Also saved as [raw Steam description](WORKSHOP_DESCRIPTION.txt).

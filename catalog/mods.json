@@ -13,7 +13,7 @@
     {
       "workshop_id": "2175959340",
       "path": "2175959340",
-      "title": null,
+      "title": "Veteran Marines",
       "content_areas_detected": [
         "SpaceMarines"
       ],
@@ -31,12 +31,31 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2175959340",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1595571422,
+        "time_updated_unix": 1701736908,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/1461932727954767854/5629C73722ED1713BFB63F9C5342516FCCE723CE/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "2175959340/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "28eb1124bcd6da211943dcb77483e31ff048a8b16924940d204f4efaa14e7169"
+      }
     },
     {
       "workshop_id": "2525618649",
       "path": "2525618649",
-      "title": null,
+      "title": "Penal Legion",
       "content_areas_detected": [
         "AstraMilitarum"
       ],
@@ -54,12 +73,31 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2525618649",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1624504280,
+        "time_updated_unix": 1717888945,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/1688269127766375223/0983EC55F2C45FD12D5500BE3E1320CACD04879E/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "2525618649/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "3763ab09c8f585094c9daf9475e390dde05d0a9bd0a38a469dbb1c08036327f0"
+      }
     },
     {
       "workshop_id": "2525618729",
       "path": "2525618729",
-      "title": null,
+      "title": "Horrors of The  Numberless Horde",
       "content_areas_detected": [
         "Tyranids"
       ],
@@ -77,12 +115,31 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2525618729",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1624504288,
+        "time_updated_unix": 1700773779,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/1688269127766375737/5DBB73F71DE95B124D93CC94D5BDF25278CFB922/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "2525618729/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "96a50826c7ee7b1929f63c472aabbc2be7587ded84f2c26ce0b28140637ed143"
+      }
     },
     {
       "workshop_id": "3038342810",
       "path": "3038342810",
-      "title": null,
+      "title": "Proper wagh!",
       "content_areas_detected": [
         "Orks"
       ],
@@ -100,12 +157,31 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3038342810",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1695182408,
+        "time_updated_unix": 1701950625,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/2128570108343320977/B7FFB5ECECD5E4582E657F0087A5BBCDAEAA6ECC/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "3038342810/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "616198b018896ef331f10c0604482739ca77bb65717bd48a6e9f00ddeccd99c4"
+      }
     },
     {
       "workshop_id": "3107612342",
       "path": "3107612342",
-      "title": null,
+      "title": "Wonders and Horrors",
       "content_areas_detected": [
         "Neutral",
         "Terrain"
@@ -125,12 +201,31 @@
         "Preview1.png",
         "Preview2.png"
       ],
-      "description_mirror_url": "https://catalogue.smods.ru/archives/531411"
+      "description_mirror_url": "https://catalogue.smods.ru/archives/531411",
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3107612342",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1701946320,
+        "time_updated_unix": 1701953487,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/2319980071295428312/0A015FC1B9DD4349BFAD369C1FAB0C64A3E32719/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "3107612342/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "c9b20fbe5cd0196842a7e0280189ecccc8a0616a998c996e8a42a37987bb8141"
+      }
     },
     {
       "workshop_id": "3267312159",
       "path": "3267312159",
-      "title": null,
+      "title": "Aeldari Ascendant",
       "content_areas_detected": [
         "Eldar"
       ],
@@ -148,12 +243,31 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3267312159",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1718326382,
+        "time_updated_unix": 1718326382,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/2506896757667356102/A199EE07C54C358771D4769D3ACAB712F5D3AEB8/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "3267312159/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "1b65292dd5e707d4e9d26aafb37ad4402a6a67dfc42fe6e060d5f478c8b4dc95"
+      }
     },
     {
       "workshop_id": "3305007655",
       "path": "3305007655",
-      "title": null,
+      "title": "Reclamator Awakening",
       "content_areas_detected": [
         "Necrons"
       ],
@@ -171,7 +285,26 @@
         "Preview.png",
         "Preview1.png",
         "Preview2.png"
-      ]
+      ],
+      "title_status": "verified_live_steam_api",
+      "workshop": {
+        "lookup_status": "verified_live_steam_api",
+        "retrieved_at_utc": "2026-11-13T23:02:05+00:00",
+        "workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3305007655",
+        "author_steam_id": "76561198032366987",
+        "time_created_unix": 1723099438,
+        "time_updated_unix": 1723099438,
+        "visibility": 0,
+        "tags": [],
+        "preview_url": "https://images.steamusercontent.com/ugc/2522664248073305439/384B2E57C7ABC7403F964B761F87AECA2321A937/",
+        "local_preview_files": [
+          "Preview.png",
+          "Preview1.png",
+          "Preview2.png"
+        ],
+        "description_file": "3305007655/WORKSHOP_DESCRIPTION.txt",
+        "description_sha256": "cc1f555841b47c48046b889c9548f2c240a0b2ce2829f9b09d1b3dac8350648e"
+      }
     }
   ],
   "policy": {
