@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "project": "Gladius: Eternal War Foundry",
+  "source_game": "Warhammer 40,000: Gladius - Relics of War",
+  "steam_app_id": "489630",
+  "collection_name": "The Gift of Eternal War",
+  "provenance": {
+    "source": "Steam Workshop installed content directories, directly imported by the repository owner",
+    "baseline_import_commit": "4867f5cf86f1593d37f3ce4ae813642f60e3f98a",
+    "verification": "GitHub main tree plus per-folder SteamID.txt readback; no byte-for-byte local comparison or runtime tests performed"
+  },
+  "mods": [
+    {
+      "workshop_id": "2175959340",
+      "path": "2175959340",
+      "title": null,
+      "content_areas_detected": [
+        "SpaceMarines"
+      ],
+      "files": 44,
+      "xml_files": 21,
+      "dds_files": 19,
+      "bytes": 1116631
+    },
+    {
+      "workshop_id": "2525618649",
+      "path": "2525618649",
+      "title": null,
+      "content_areas_detected": [
+        "AstraMilitarum"
+      ],
+      "files": 195,
+      "xml_files": 140,
+      "dds_files": 47,
+      "bytes": 70210055
+    },
+    {
+      "workshop_id": "2525618729",
+      "path": "2525618729",
+      "title": null,
+      "content_areas_detected": [
+        "Tyranids"
+      ],
+      "files": 103,
+      "xml_files": 97,
+      "dds_files": 2,
+      "bytes": 575912
+    },
+    {
+      "workshop_id": "3038342810",
+      "path": "3038342810",
+      "title": null,
+      "content_areas_detected": [
+        "Orks"
+      ],
+      "files": 114,
+      "xml_files": 67,
+      "dds_files": 43,
+      "bytes": 22708411
+    },
+    {
+      "workshop_id": "3107612342",
+      "path": "3107612342",
+      "title": null,
+      "content_areas_detected": [
+        "Neutral",
+        "Terrain"
+      ],
+      "files": 93,
+      "xml_files": 17,
+      "dds_files": 71,
+      "bytes": 168587565
+    },
+    {
+      "workshop_id": "3267312159",
+      "path": "3267312159",
+      "title": null,
+      "content_areas_detected": [
+        "Eldar"
+      ],
+      "files": 39,
+      "xml_files": 30,
+      "dds_files": 5,
+      "bytes": 3258791
+    },
+    {
+      "workshop_id": "3305007655",
+      "path": "3305007655",
+      "title": null,
+      "content_areas_detected": [
+        "Necrons"
+      ],
+      "files": 20,
+      "xml_files": 14,
+      "dds_files": 0,
+      "bytes": 1239786
+    }
+  ],
+  "policy": {
+    "original_directory_paths_preserved": true,
+    "steam_id_txt_verified_for_all": true,
+    "no_auto_publish": true,
+    "game_runtime_validation": "pending",
+    "display_names": "pending official Workshop metadata mapping"
+  }
+}
