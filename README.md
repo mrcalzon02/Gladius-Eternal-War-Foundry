@@ -10,12 +10,12 @@ This repository is intended to collect, maintain, test, and eventually package t
 
 **Seven Steam Workshop mod directories have been recovered to `main`: 608 files (~267.7 MB) across seven original numeric Workshop ID folders.** The repository tree and all seven `SteamID.txt` values have been checked. Original unpublished development files remain unavailable. Byte-for-byte comparison with the local Workshop folders and in-game functionality have **not** yet been tested.
 
-See [`catalog/mods.json`](catalog/mods.json) for the file counts, source paths and recorded import commit. Workshop display names and published version numbers still require verification.
+See [`catalog/mods.json`](catalog/mods.json) for the file counts, source paths and recorded import commit. Workshop **titles, descriptions, source links and primary thumbnail URLs are now verified from Steam's API** (13 November 2026). Published version numbers and game compatibility still require verification.
 
 ## Intended layout
 
 - `<WorkshopItemID>/` — **preserved original imported Workshop directory**, containing each mod's actual published files (do not rename during recovery)
-- `catalog/mods.json` — checked-in source inventory, Workshop item IDs and tentative content areas; missing official titles and versions are deliberately not guessed
+- `catalog/mods.json` — checked-in source inventory, Workshop item IDs and tentative content areas; official Steam Workshop titles and descriptions are verified; mod versions remain unverified
 - `tools/` — common validation/packaging utilities, as required
 - `.github/workflows/` — small, manually dispatched tests and publishing controls, added only after the mod build and upload processes are proven
 - `docs/` — intake, compatibility and release documentation
@@ -25,7 +25,7 @@ Do not add empty placeholder mod folders as though they were imported mods, and 
 ## Recovery and validation milestones
 
 1. **Completed:** Import all seven downloaded Workshop directories without changing their original layouts; verify the seven `SteamID.txt` values match folder names.
-2. **Pending:** Verify official Workshop titles, versions, dependencies and current availability without overwriting this baseline.
+2. **Completed:** Recover the official Workshop titles, full published descriptions and current thumbnail URLs from Steam's API for all seven IDs. **Pending:** Independently verify game-version requirements, dependencies, and mod versions.
 3. **Pending:** Compare the checked-in tree to local copies or known Steam manifests to detect any omitted files.
 4. **Pending:** Check XML syntax, internal resource references and per-mod compatibility; test each mod in Gladius before declaring it operational.
 5. **Pending:** Build per-mod package and publication tooling with explicit approval and protected Steam credentials. No automatic publishing is enabled.
@@ -35,7 +35,7 @@ Do not add empty placeholder mod folders as though they were imported mods, and 
 
 Every Workshop directory now has a [WORKSHOP.md](2175959340/WORKSHOP.md) with links to the actual Steam item and its three preserved preview files. See the [seven-mod Workshop index](catalog/WORKSHOP_METADATA.md) for all titles and verification status.
 
-Steam blocked the direct item descriptions during the initial scrape. To retrieve the **exact live titles, descriptions and official thumbnail URLs** without guessing, run the [official Steam metadata sync script](tools/sync_workshop_metadata.py) on an internet-connected clone, then commit and push the generated metadata. No Steam publishing occurs.
+The [official Steam metadata sync script](tools/sync_workshop_metadata.py) successfully retrieved the seven published titles, descriptions and thumbnail URLs on 13 November 2026. Every numeric Workshop folder now has a `WORKSHOP.md` and a raw `WORKSHOP_DESCRIPTION.txt`. The script can be run again from an internet-connected clone to refresh this snapshot. No Steam publishing occurs.
 
 ## Development policy
 
@@ -48,4 +48,4 @@ Steam blocked the direct item descriptions during the initial scrape. To retriev
 
 ## First practical milestone
 
-Preserve the seven recovered mod baselines, fill in the authoritative Workshop titles and requirements, and validate one mod end-to-end before introducing any automated publication.
+Preserve the seven recovered mod baselines, verify each mod's dependencies and requirements, and validate one mod end-to-end before introducing any automated publication.

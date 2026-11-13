@@ -1,33 +1,39 @@
-# Workshop title, description and preview recovery
+# Workshop catalog — verified titles, descriptions and previews
 
-Seven Steam Workshop install folders are preserved on `main` under their original numeric IDs. Every imported `SteamID.txt` matches the containing folder and every folder has three local `Preview*.png` images. The corresponding `WORKSHOP.md` documents are placed **inside the correct Workshop folders**, not in a separate disconnected list.
+All seven recovered Gladius Workshop mods have been matched against Steam's **official GetPublishedFileDetails API**, including each ID's current published title, full description, source URL and thumbnail URL. The game app ID checked by the importer is **489630**, and all seven returned successful records.
 
-**Metadata status (13 November 2026):** The current Steam Workshop index lists four public titles by the author, but individual item pages refused automated fetches/rate-limited the session. These are **candidates**, not verified ID/title pairings. The other three titles are intentionally unknown until an authoritative item-specific response is available. Never treat source-derived summaries as the exact live descriptions.
+**Last metadata retrieval (UTC):** 2026-11-13T23:02:05+00:00  
+**Verified source backup:** The numeric Workshop folders on `main`; no original mod contents were renamed or edited.
 
-| Workshop ID | Candidate Steam title | Content observed | Metadata |
-|---|---|---|---|
-| [2175959340](../2175959340/WORKSHOP.md) | Veteran Marines | SpaceMarines | unconfirmed_id_mapping |
-| [2525618649](../2525618649/WORKSHOP.md) | Not retrieved | AstraMilitarum | not_resolved |
-| [2525618729](../2525618729/WORKSHOP.md) | Not retrieved | Tyranids | not_resolved |
-| [3038342810](../3038342810/WORKSHOP.md) | Proper wagh! | Orks | unconfirmed_id_mapping |
-| [3107612342](../3107612342/WORKSHOP.md) | Wonders and Horrors | Neutral, Terrain | unconfirmed_id_mapping |
-| [3267312159](../3267312159/WORKSHOP.md) | Aeldari Ascendant | Eldar | unconfirmed_id_mapping |
-| [3305007655](../3305007655/WORKSHOP.md) | Not retrieved | Necrons | not_resolved |
+| Local recovered preview | Official Steam title | Workshop folder | Published description | Content areas |
+|---|---|---|---|---|
+| <img src="../2175959340/Preview.png" width="110" alt="Veteran Marines preview"> | **[Veteran Marines](https://steamcommunity.com/sharedfiles/filedetails/?id=2175959340)** | [2175959340](../2175959340/WORKSHOP.md) | [Full Steam description](../2175959340/WORKSHOP_DESCRIPTION.txt) | SpaceMarines |
+| <img src="../2525618649/Preview.png" width="110" alt="Penal Legion preview"> | **[Penal Legion](https://steamcommunity.com/sharedfiles/filedetails/?id=2525618649)** | [2525618649](../2525618649/WORKSHOP.md) | [Full Steam description](../2525618649/WORKSHOP_DESCRIPTION.txt) | AstraMilitarum |
+| <img src="../2525618729/Preview.png" width="110" alt="Horrors of The  Numberless Horde preview"> | **[Horrors of The  Numberless Horde](https://steamcommunity.com/sharedfiles/filedetails/?id=2525618729)** | [2525618729](../2525618729/WORKSHOP.md) | [Full Steam description](../2525618729/WORKSHOP_DESCRIPTION.txt) | Tyranids |
+| <img src="../3038342810/Preview.png" width="110" alt="Proper wagh! preview"> | **[Proper wagh!](https://steamcommunity.com/sharedfiles/filedetails/?id=3038342810)** | [3038342810](../3038342810/WORKSHOP.md) | [Full Steam description](../3038342810/WORKSHOP_DESCRIPTION.txt) | Orks |
+| <img src="../3107612342/Preview.png" width="110" alt="Wonders and Horrors preview"> | **[Wonders and Horrors](https://steamcommunity.com/sharedfiles/filedetails/?id=3107612342)** | [3107612342](../3107612342/WORKSHOP.md) | [Full Steam description](../3107612342/WORKSHOP_DESCRIPTION.txt) | Neutral, Terrain |
+| <img src="../3267312159/Preview.png" width="110" alt="Aeldari Ascendant preview"> | **[Aeldari Ascendant](https://steamcommunity.com/sharedfiles/filedetails/?id=3267312159)** | [3267312159](../3267312159/WORKSHOP.md) | [Full Steam description](../3267312159/WORKSHOP_DESCRIPTION.txt) | Eldar |
+| <img src="../3305007655/Preview.png" width="110" alt="Reclamator Awakening preview"> | **[Reclamator Awakening](https://steamcommunity.com/sharedfiles/filedetails/?id=3305007655)** | [3305007655](../3305007655/WORKSHOP.md) | [Full Steam description](../3305007655/WORKSHOP_DESCRIPTION.txt) | Necrons |
 
-## Official metadata recovery
+Each Workshop folder contains:
 
-The script `tools/sync_workshop_metadata.py` calls Valve's public `ISteamRemoteStorage/GetPublishedFileDetails/v1/` POST endpoint for these exact IDs. It does not need a Steam API key. It preflights the folder names and `SteamID.txt` values, validates the game's app ID in the response, refuses to write incomplete responses by default, and generates:
+- `SteamID.txt`: exact Workshop ID matching the folder name.
+- `Preview.png`, `Preview1.png`, `Preview2.png`: three recovered local preview images from the installed Workshop files.
+- `WORKSHOP.md`: the official title, live Steam item link and thumbnail URL, all three local preview images, and the description captured from Steam.
+- `WORKSHOP_DESCRIPTION.txt`: full published Steam description as returned by the API, including original Steam BBCode.
 
-- The official live title and structured details in `catalog/mods.json`.
-- A `WORKSHOP.md` inside each corresponding numbered directory, with the exact current Steam description as captured, the recovered local previews and the live thumbnail link when returned.
-- A raw `WORKSHOP_DESCRIPTION.txt` inside each numbered directory, retaining Steam BBCode unchanged.
+The images recovered from the Steam installation are preserved as such; the API confirms the live primary thumbnail URL, **not** whether all three older local preview images still match the full online gallery. Descriptions are snapshots from the retrieval time rather than guaranteed future-live copies.
 
-From a network-connected clone, run:
+## Refresh the Steam metadata
 
-    python tools/sync_workshop_metadata.py --check-only
-    python tools/sync_workshop_metadata.py --dry-run
-    python tools/sync_workshop_metadata.py
+From an internet-connected clone, after pulling `main`:
 
-If Steam returns only some records (e.g. deleted or private items), the tool fails without writing by default. Use `--allow-partial` only if you intentionally want updates for the successful IDs. Review changes in GitKraken before committing and pushing; this tool **does not upload anything to Steam**.
+```powershell
+py -3 tools\sync_workshop_metadata.py --check-only
+py -3 tools\sync_workshop_metadata.py --dry-run
+py -3 tools\sync_workshop_metadata.py
+```
 
-Sources for initial candidate titles: [Steam Workshop public browse](https://steamcommunity.com/app/489630/workshop/?l=english&language=latam); [Wonders and Horrors mirror](https://catalogue.smods.ru/archives/531411). See each folder for link to its actual ID.
+The script queries Steam without a key, verifies each item ID, refuses incomplete API responses by default, and writes only documentation and catalog files. Review diffs in GitKraken before pushing. **It does not publish or update any Steam Workshop item.**
+
+The game mod files remain a recovered published baseline. Full in-game runtime compatibility, dependencies, and byte-for-byte comparison against Steam's local cache still require separate checks.
