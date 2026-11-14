@@ -201,3 +201,21 @@ Installed the corrected Energy XML into the active Veteran Marines Workshop
 folder with Gladius closed, after verifying the pre-repair version and saving
 original bytes and hashes under the local chat workspace backup directory
 `backups/energy-priority-227875e/`. Fresh game behavior is not yet verified.
+
+## Iteration 6: external construction experiment
+
+Prioritized the author's report that AI builders fail to place external defenses.
+Built an optional, builder-based construction pilot for Guard Strongpoints and
+Void Shields, Marine Strongpoints, and Ork Grotposts. Nearby Grotz remain required;
+no faction-wide call-in was added. Native AI action adapters retain the original
+range, costs, research and cooldowns, with experimental health, threat and reserve
+guards. All 27 tests pass. A fresh launch enabled the pilot and all seven Foundry
+mods with no startup warnings/errors. Generated unit stats and non-action data
+match their sources. Actual construction and placement remain unverified.
+
+The pilot is a separate local test mod, not a change to the seven published mod
+packages. Its source-hash manifest detects which unit versions it was built from.
+See [construction pilot guide](AI_CONSTRUCTION_PILOT.md) and
+[sanitized load evidence](../catalog/compatibility/2026-11-13-ai-construction-pilot.json).
+Army preservation and economy recovery need their own measured gameplay tests;
+no broad movement restrictions or hidden resource bonuses have been introduced.

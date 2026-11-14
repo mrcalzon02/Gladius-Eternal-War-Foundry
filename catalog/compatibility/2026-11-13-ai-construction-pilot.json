@@ -1,0 +1,99 @@
+{
+  "scope": "Construction pilot startup only; AI placement and match results unverified",
+  "pilot_enabled": true,
+  "startup_completed_utc": "2026-Nov-14 02:40:54 UTC",
+  "startup_warnings": [],
+  "startup_errors": [],
+  "source_sha256": {
+    "2175959340/Data/World/Units/SpaceMarines/TechpriestEnginseer.xml": "90542579b1a633974141c565c71488ed376ff44e0dbe4319c88dd09201dab013",
+    "2525618649/Data/World/Units/AstraMilitarum/TechpriestEnginseer.xml": "ccdf10f4db67d7bd61c51e31f2ac4c72426fe0a3e3e996eaccddafd684459d45",
+    "3038342810/Data/World/Units/Orks/Grotz.xml": "5b94d0c4ac79fd9b1f89bcf5c354368d589fdeb62d14b7d47f35be8276e59ed7"
+  },
+  "adapters": [
+    {
+      "builder": "SpaceMarines/TechpriestEnginseer",
+      "spawned_unit": "SpaceMarines/ImperialStrongpoint",
+      "action": "FoundryAI/MarineStrongpoint",
+      "cooldown": "4",
+      "target_ranges": [
+        "1"
+      ],
+      "costs": {
+        "requisitions": 10.0
+      },
+      "resource_balance_required_above": {
+        "requisitions": 20.0
+      }
+    },
+    {
+      "builder": "AstraMilitarum/TechpriestEnginseer",
+      "spawned_unit": "AstraMilitarum/ImperialStrongpoint",
+      "action": "FoundryAI/ImperialStrongpoint",
+      "cooldown": "5",
+      "target_ranges": [
+        "1"
+      ],
+      "costs": {
+        "ore": 40.0
+      },
+      "resource_balance_required_above": {
+        "ore": 80.0
+      }
+    },
+    {
+      "builder": "AstraMilitarum/TechpriestEnginseer",
+      "spawned_unit": "AstraMilitarum/VoidShieldGenerator",
+      "action": "FoundryAI/VoidShieldGenerator",
+      "cooldown": "5",
+      "target_ranges": [
+        "1"
+      ],
+      "costs": {
+        "energy": 20.0,
+        "ore": 20.0
+      },
+      "resource_balance_required_above": {
+        "energy": 40.0,
+        "ore": 40.0
+      }
+    },
+    {
+      "builder": "Orks/Grotz",
+      "spawned_unit": "Orks/Grotpost",
+      "action": "FoundryAI/Grotpost",
+      "cooldown": "10",
+      "target_ranges": [
+        "1"
+      ],
+      "costs": {
+        "ore": 20.0
+      },
+      "resource_balance_required_above": {
+        "ore": 40.0
+      }
+    }
+  ],
+  "non_action_unit_data_unchanged": true,
+  "regression_tests_passed": 27,
+  "gameplay_acceptance": "pending",
+  "primary_mod_data_changed_by_pilot": false,
+  "active_user_test": {
+    "configuration_source": "User statement; not independently verified in the game UI",
+    "teams": [
+      {
+        "faction": "AstraMilitarum",
+        "ai_players": 3
+      },
+      {
+        "faction": "Orks",
+        "ai_players": 3
+      }
+    ],
+    "difficulty": "Impossible",
+    "pilot": "enabled at verified startup",
+    "map_seed": null,
+    "map_settings": null,
+    "result": "pending observation",
+    "comparison": "Repeat identical settings without the pilot before attributing behavioral improvements"
+  }
+}
