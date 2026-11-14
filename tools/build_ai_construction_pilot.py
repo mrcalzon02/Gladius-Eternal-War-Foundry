@@ -33,7 +33,7 @@ def add_player_condition(action, condition):
     return player
 
 
-def adapt_action(original, action_name, reserve_multiplier, threat_range):
+def adapt_action(original, action_name, reserve_multiplier, threat_range, require_threat=True):
     if not math.isfinite(reserve_multiplier) or reserve_multiplier < 1 or threat_range < 1:
         raise ValueError('Reserve multiplier and threat range must be at least 1')
     human = copy.deepcopy(original)
@@ -55,10 +55,11 @@ def adapt_action(original, action_name, reserve_multiplier, threat_range):
             ET.SubElement(player, resource, greater=f'{amount * reserve_multiplier:g}')
     unit = ET.SubElement(ai.find('conditions'), 'unit')
     ET.SubElement(unit, 'hitpointsFraction', greater='0.6')
-    enemies = ET.SubElement(unit, 'unitsInRange', count='1', range=str(threat_range))
-    ET.SubElement(enemies, 'enemy')
-    ET.SubElement(enemies, 'noTrait', name='Invulnerable')
-    ET.SubElement(enemies, 'noType', name='Eldar/WebwayGate')
+    if require_threat:
+        enemies = ET.SubElement(unit, 'unitsInRange', count='1', range=str(threat_range))
+        ET.SubElement(enemies, 'enemy')
+        ET.SubElement(enemies, 'noTrait', name='Invulnerable')
+        ET.SubElement(enemies, 'noType', name='Eldar/WebwayGate')
     for tile in ai.findall('./beginTargets/target/conditions/tile'):
         if tile.find('noEnemyCity') is None:
             ET.SubElement(tile, 'noEnemyCity')
@@ -84,7 +85,8 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
         if len(candidates) != 1:
             raise ValueError(f'Expected one construction action: {relative}: {tag}: {spawned}')
         original = candidates[0]
-        human, ai, costs = adapt_action(original, action_name, reserve_multiplier, threat_range)
+        require_threat = action_name != 'Grotpost'
+        human, ai, costs = adapt_action(original, action_name, reserve_multiplier, threat_range, require_threat)
         parent = root.find('actions')
         position = list(parent).index(original)
         parent.remove(original)
@@ -93,12 +95,18 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
         actions.append(dict(builder=unit_name, spawned_unit=spawned,
                             action=ai.get('name'), cooldown=ai.get('cooldown'),
                             target_ranges=[n.get('rangeMax') for n in ai.findall('./beginTargets/target')],
-                            costs=costs, resource_balance_required_above={k:v*reserve_multiplier for k,v in costs.items()}))
+                            costs=costs, requires_nearby_enemy=require_threat,
+                            resource_balance_required_above={k:v*reserve_multiplier for k,v in costs.items()}))
         title = {'MarineStrongpoint': 'Imperial Strongpoint', 'ImperialStrongpoint': 'Imperial Strongpoint',
                  'VoidShieldGenerator': 'Void Shield Generator', 'Grotpost': 'Grotpost'}[action_name]
         strings['FoundryAI/' + action_name] = 'Construct ' + title
         strings['FoundryAI/' + action_name + 'Description'] = 'AI construction test: build ' + title + ' beside this builder.'
         strings['FoundryAI/' + action_name + 'Flavor'] = 'Prepared positions support the army.'
+        if original.get('name'):
+            # A custom human action needs its own scoped UI strings as well.
+            strings[original.get('name')] = 'Construct ' + title
+            strings[original.get('name') + 'Description'] = 'Build ' + title + ' beside this builder.'
+            strings[original.get('name') + 'Flavor'] = 'Prepared positions support the army.'
     manifest = dict(status='experimental; engine loading and actual AI construction unverified',
                     required_mods=sorted({spec[0] for spec in SPECS}), source_sha256=inputs,
                     reserve_multiplier=reserve_multiplier, threat_range=threat_range,
@@ -129,7 +137,8 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
         'Do not combine with another AI/unit override without comparing the sources.\n'
         'Disable the pilot to restore the original abilities. No SteamID is assigned.\n'
         'Builder, range, original costs, research requirements and cooldowns are retained.\n'
-        f'AI must have over 60% health, a non-invulnerable enemy within {threat_range} tiles,\n'
+        f'AI must have over 60% health; Guard/Marine defenses require an enemy within {threat_range} tiles.\n'
+        'Ork Grotposts do not require a nearby enemy, allowing proactive construction.\n'
         f'and resource balances above {reserve_multiplier:g} times each construction cost.\n'
         'This is a handler experiment, not proven intelligent placement.\n', encoding='utf-8')
     return manifest

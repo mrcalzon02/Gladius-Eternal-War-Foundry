@@ -67,6 +67,17 @@ def audit(repo, game, mods):
                 if node.get('name'):
                     reference(f"World/Weapons/{node.get('name')}.xml", relative)
             if relative.startswith('World/Units/'):
+                action_keys = languages.get('Actions', set()) | official_languages.get('Actions', set())
+                native_names = set()
+                if relative in official:
+                    native_names = {(a.tag, a.get('name')) for a in
+                                    ET.parse(game / relative).getroot().findall('./actions/*')}
+                for action in root.findall('./actions/*'):
+                    name = action.get('name')
+                    # Some native weapon actions obtain their text from Weapons,
+                    # not Actions (e.g. Frazzle). Do not misdiagnose inherited names.
+                    if name and name not in action_keys and (action.tag, name) not in native_names:
+                        issue('missing_action_localization', relative, target=name)
                 entity = relative[len('World/Units/'):-4]
                 # Validate both implicit icon paths only for genuinely new units.
                 if relative not in official:

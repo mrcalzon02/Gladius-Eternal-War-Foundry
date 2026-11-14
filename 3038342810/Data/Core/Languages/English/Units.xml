@@ -13,7 +13,7 @@
 	<entry name="Orks/GrotzKamandoDescription" value="light Infantry unit "/>
 	<entry name="Orks/GrotzKamandoFlavor" value="These shrewd greenskin operatives wield an arsenal of improvised weaponry, utilizing their craftiness to outsmart and outmaneuver adversaries. Despite their smaller size, the GrotzKamando unit excels in guerrilla tactics, relying on surprise attacks and strategic movements to gain the upper hand on the battlefield. Serving as more than mere cannon fodder, these intelligent Grotz play a pivotal role, disrupting enemy formations and creating chaos in the relentless and brutal dance of Ork warfare. In the symphony of battle, the GrotzKamando unit emerges as indispensable, proving that size is not the only factor that defines a warrior's strength on the war-torn frontlines."/>
 	<entry name="Orks/Grotpost" value="Grotpost"/>
-	<entry name="Orks/GrotpostDescription" value="Grot outpost "/>
+	<entry name="Orks/GrotpostDescription" value="Defensive outpost that harvests nearby resource features."/>
 	<entry name="Orks/GrotpostFlavor" value="The Grotpost emerges as a rugged Ork stronghold. Crafted from salvaged debris, these hubs of greenskin activity epitomize Ork resourcefulness. Despite their haphazard appearance, Grotposts serve as essential outposts for Gretchin innovation and strategic launching points for Ork campaigns. These resilient strongholds embody the pragmatic spirit of the Orks, turning chaos into functional bastions within the relentless warfare of the 41st millennium."/>
 	<entry name="Orks/SqigHunter" value="SqigHunter"/>
 	<entry name="Orks/SqigHunterDescription" value="Infantry unit."/>

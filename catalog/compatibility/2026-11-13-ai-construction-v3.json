@@ -1,0 +1,107 @@
+{
+  "status": "staged; gameplay and native harvesting behavior unverified",
+  "user_observations": [
+    "Grotpost construction action shows a question mark",
+    "No Ork construction observed; Space Marine global deployment observed"
+  ],
+  "changes": {
+    "grotpost_requires_nearby_grotz": true,
+    "grotpost_requires_enemy": false,
+    "grotpost_harvest_trait": "HarvestResourceFeatures",
+    "scoped_human_action": "Orks/ConsGrotpost"
+  },
+  "grotpost_source_sha256": "2203b23832ae974c7ac0bb17ab0ed1bd50e1ae15de717ef55c28aa0d38b396c6",
+  "pilot_manifest": {
+    "status": "experimental; engine loading and actual AI construction unverified",
+    "required_mods": [
+      "2175959340",
+      "2525618649",
+      "3038342810"
+    ],
+    "source_sha256": {
+      "2175959340/Data/World/Units/SpaceMarines/TechpriestEnginseer.xml": "90542579b1a633974141c565c71488ed376ff44e0dbe4319c88dd09201dab013",
+      "2525618649/Data/World/Units/AstraMilitarum/TechpriestEnginseer.xml": "ccdf10f4db67d7bd61c51e31f2ac4c72426fe0a3e3e996eaccddafd684459d45",
+      "3038342810/Data/World/Units/Orks/Grotz.xml": "5b94d0c4ac79fd9b1f89bcf5c354368d589fdeb62d14b7d47f35be8276e59ed7"
+    },
+    "reserve_multiplier": 2,
+    "threat_range": 3,
+    "minimum_builder_hitpoints_fraction": 0.6,
+    "actions": [
+      {
+        "builder": "SpaceMarines/TechpriestEnginseer",
+        "spawned_unit": "SpaceMarines/ImperialStrongpoint",
+        "action": "FoundryAI/MarineStrongpoint",
+        "cooldown": "4",
+        "target_ranges": [
+          "1"
+        ],
+        "costs": {
+          "requisitions": 10.0
+        },
+        "requires_nearby_enemy": true,
+        "resource_balance_required_above": {
+          "requisitions": 20.0
+        }
+      },
+      {
+        "builder": "AstraMilitarum/TechpriestEnginseer",
+        "spawned_unit": "AstraMilitarum/ImperialStrongpoint",
+        "action": "FoundryAI/ImperialStrongpoint",
+        "cooldown": "5",
+        "target_ranges": [
+          "1"
+        ],
+        "costs": {
+          "ore": 40.0
+        },
+        "requires_nearby_enemy": true,
+        "resource_balance_required_above": {
+          "ore": 80.0
+        }
+      },
+      {
+        "builder": "AstraMilitarum/TechpriestEnginseer",
+        "spawned_unit": "AstraMilitarum/VoidShieldGenerator",
+        "action": "FoundryAI/VoidShieldGenerator",
+        "cooldown": "5",
+        "target_ranges": [
+          "1"
+        ],
+        "costs": {
+          "energy": 20.0,
+          "ore": 20.0
+        },
+        "requires_nearby_enemy": true,
+        "resource_balance_required_above": {
+          "energy": 40.0,
+          "ore": 40.0
+        }
+      },
+      {
+        "builder": "Orks/Grotz",
+        "spawned_unit": "Orks/Grotpost",
+        "action": "FoundryAI/Grotpost",
+        "cooldown": "10",
+        "target_ranges": [
+          "1"
+        ],
+        "costs": {
+          "ore": 20.0
+        },
+        "requires_nearby_enemy": false,
+        "resource_balance_required_above": {
+          "ore": 40.0
+        }
+      }
+    ],
+    "limitations": [
+      "Stockpile reserves are not an income or upkeep forecast",
+      "Enemy proximity is not a battle-strength assessment",
+      "No mapwide deployment, army movement locks or stat bonuses",
+      "Duplicate-structure prevention beyond original cooldown is unverified",
+      "Rebuild from current sources after any dependent unit changes"
+    ]
+  },
+  "tests_passed": 34,
+  "active_match_changed": false
+}

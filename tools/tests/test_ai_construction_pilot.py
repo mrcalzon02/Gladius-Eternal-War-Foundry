@@ -62,6 +62,12 @@ class ConstructionPilotTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 MODULE.adapt_action(action(), 'Grotpost', multiplier, 3)
 
+    def test_proactive_outpost_does_not_require_an_enemy(self):
+        _, ai, _ = MODULE.adapt_action(action(), 'Grotpost', 2, 3, require_threat=False)
+        self.assertIsNone(ai.find('./conditions/unit/unitsInRange'))
+        self.assertIsNotNone(ai.find('./conditions/unit/hitpointsFraction'))
+        self.assertEqual('1', ai.find('./beginTargets/target').get('rangeMax'))
+
     def test_build_has_four_adapters_and_refuses_to_overwrite(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -71,11 +77,17 @@ class ConstructionPilotTests(unittest.TestCase):
                 p.parent.mkdir(parents=True, exist_ok=True)
                 tree = ET.parse(p) if p.exists() else ET.ElementTree(ET.fromstring('<unit><actions/></unit>'))
                 node = action();node.tag = tag;node.find('.//addUnit').set('name', spawned)
+                if spawned == 'Orks/Grotpost':
+                    node.set('name', 'Orks/ConsGrotpost')
                 tree.getroot().find('actions').append(node);tree.write(p)
             manifest = MODULE.build(repo, output)
             self.assertEqual(4, len(manifest['actions']))
+            grot = next(a for a in manifest['actions'] if a['spawned_unit'] == 'Orks/Grotpost')
+            self.assertFalse(grot['requires_nearby_enemy'])
             self.assertEqual(3, len(list((output/'Data/World/Units').rglob('*.xml'))))
-            self.assertEqual(12, len(ET.parse(output/'Data/Core/Languages/English/Actions.xml').getroot()))
+            entries = ET.parse(output/'Data/Core/Languages/English/Actions.xml').getroot()
+            self.assertEqual(15, len(entries))
+            self.assertIn('Orks/ConsGrotpost', {e.get('name') for e in entries})
             with self.assertRaises(ValueError):
                 MODULE.build(repo, output)
 

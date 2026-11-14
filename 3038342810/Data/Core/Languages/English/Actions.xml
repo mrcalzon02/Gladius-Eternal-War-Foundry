@@ -4,4 +4,7 @@
 	<entry name="ConsGrotpost" value="Construct <string name='Units/Orks/Grotpost'/>"/>
 	<entry name="ConsGrotpostDescription" value="<string name='Units/Orks/GrotpostDescription'/>"/>
 	<entry name="ConsGrotpostFlavor" value="<string name='Units/Orks/GrotpostFlavor'/>"/>
+	<entry name="Orks/ConsGrotpost" value="Construct <string name='Units/Orks/Grotpost'/>"/>
+	<entry name="Orks/ConsGrotpostDescription" value="<string name='Units/Orks/GrotpostDescription'/>"/>
+	<entry name="Orks/ConsGrotpostFlavor" value="<string name='Units/Orks/GrotpostFlavor'/>"/>
 </language>

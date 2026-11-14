@@ -62,6 +62,20 @@ class ResourceIntegrityTests(unittest.TestCase):
                    '<feature><traits><trait name="Flyer"/></traits></feature>')
         self.assertEqual([], self.findings())
 
+    def test_custom_action_requires_its_scoped_name(self):
+        self.write(self.game, 'World/Units/Guard/Builder.xml', '<unit/>')
+        self.write(self.data, 'World/Units/Guard/Builder.xml',
+                   '<unit><actions><constructImperialStrongpoint name="Guard/Construct"/></actions></unit>')
+        self.write(self.data, 'Core/Languages/English/Actions.xml',
+                   '<language><entry name="Construct" value="Build"/></language>')
+        self.assertEqual('missing_action_localization', self.findings()[0]['code'])
+
+    def test_inherited_native_action_can_use_weapon_naming(self):
+        value = '<unit><actions><frazzle name="Guard/Frazzle" weaponSlotName="Frazzle"/></actions></unit>'
+        self.write(self.game, 'World/Units/Guard/Weirdboy.xml', value)
+        self.write(self.data, 'World/Units/Guard/Weirdboy.xml', value)
+        self.assertEqual([], self.findings())
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -38,7 +38,8 @@ requirement or faction is substituted into the player's roster.
 ## Experimental AI guards
 
 - Builder health must be above 60%.
-- A non-invulnerable enemy other than a Webway Gate must be within three tiles.
+- Guard and Marine defenses require a non-invulnerable enemy other than a Webway Gate within three tiles.
+- Ork Grotposts do not require a nearby enemy in v3, permitting pre-combat consideration.
 - Each resource balance must exceed twice that action's resource cost.
 - Existing target-tile restrictions remain; AI targets also exclude enemy cities.
 - Original construction costs and cooldowns still apply.
@@ -59,7 +60,7 @@ python tools/build_ai_construction_pilot.py --output 'C:\path\to\new\Foundry AI 
 ```
 
 The generator refuses an existing output destination. It creates three unit XML
-overrides, twelve English action strings, a README and a source-hash manifest.
+overrides, fifteen English action strings (including the original scoped Grotpost action), a README and a source-hash manifest.
 It reads the current Foundry sources rather than shipping stale copied units.
 Optional `--reserve-multiplier` and `--threat-range` configure the test guards.
 
@@ -105,3 +106,31 @@ are still pending. Record the seed/map settings, successful and missed building
 opportunities, placement count, builder survival and resource depletion. Use the
 same configuration without the pilot as the comparison run. No victory or AI
 improvement claim is made from the selected difficulty alone.
+
+## V3 corrections from live observations
+
+The author reported no construction and identified a question-mark Grotpost action
+label. The original pilot's enemy-within-three-tiles condition prevented proactive
+Ork outpost building. V3 removes that condition for Grotposts while retaining the
+Grotz requirement, range 1, 20 ore cost, cooldown 10, health guard and ore reserve.
+This is a correction to an overly restrictive experiment, not evidence that the
+AI now plans builder journeys to resource objectives.
+
+The author explicitly requested resource harvesting. The playable Ork Grotpost
+now receives the base Fortress's `HarvestResourceFeatures` trait. Its other stats,
+upkeep and weapons are unchanged; neutral Grotposts are unchanged. This adds the
+native economic capability, which needs an in-game income/ownership check. It
+does not copy the Space Marines' global `deployFortress` player action.
+
+The human action asks for `Orks/ConsGrotpost`, whereas the mod supplied only
+`ConsGrotpost`. All three scoped aliases are supplied, retaining the original keys.
+New pilots also include the human action's scoped text. The resource audit now
+checks custom explicit action names, while accepting inherited native naming
+such as Frazzle's weapon-derived text. No Frazzle gameplay or labels were changed.
+
+Test v3 separately from the current run. Distinguish an affordable, healthy Grotz
+next to a legal resource-adjacent site that declines to build from an AI that never
+moves its Grotz to that site. Neither successful startup nor the harvesting trait
+proves that strategic travel behavior exists. Guard/Marine combat gates are still
+experimental. The previous no-construction observation is recorded as a user
+observation, not a controlled result with every precondition verified.

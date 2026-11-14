@@ -55,6 +55,7 @@
 	</actions>
 	<traits>
 		<trait name="Fortification"/>
+		<trait name="HarvestResourceFeatures"/>
 		<trait name="Transport"/>
 	</traits>
 </unit>
