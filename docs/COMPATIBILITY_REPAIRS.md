@@ -219,3 +219,22 @@ See [construction pilot guide](AI_CONSTRUCTION_PILOT.md) and
 [sanitized load evidence](../catalog/compatibility/2026-11-13-ai-construction-pilot.json).
 Army preservation and economy recovery need their own measured gameplay tests;
 no broad movement restrictions or hidden resource bonuses have been introduced.
+
+## Iteration 7: live-test feedback and carried weapon
+
+Fixed the reported Grotpost question mark by adding the scoped action keys the
+unit actually requests, retaining old aliases. Added a custom-action-name audit
+that respects native weapon-action naming. The reported absence of construction
+exposed the pilot's over-restrictive Ork combat gate: v3 permits proactive Grotpost
+consideration. Per explicit author request, playable Grotposts gain the native
+HarvestResourceFeatures trait. Nearby Grotz, costs, range, cooldown and reserves
+remain required. Travel planning, actual placement and harvesting income are
+unverified; a global Space Marine call-in has not been added.
+
+Moved Sargent's chainsword to a dedicated pelvis-attached, correctly oriented hip
+variant at the author's request. Its pistol and combat rules are unchanged. A
+static preview was inspected; animation behavior still needs in-game review.
+All 34 regression tests pass; the resource audit reports zero findings and the
+attachment-name audit reports zero errors. The earlier match is not evidence
+that these new corrections are loaded. See the construction and weapon guides.
+The Arming Chambers and Wraithknight reviews remain queued.

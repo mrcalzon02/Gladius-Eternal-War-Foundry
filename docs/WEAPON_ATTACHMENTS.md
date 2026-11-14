@@ -114,3 +114,23 @@ including numbered muzzle groups. Multi-level attachment hierarchies, animation
 tracks, pivot orientation, scale, surface appearance, DLC entitlements, and actual
 engine rendering are not attested by this check. Exit 0 means no errors in that
 limited scope; review items still require visual acceptance.
+
+## Sergeant hip-carried variant
+
+At the author's request, Sargent's chainsword is now carried at the left hip.
+It attaches to `HipBone`, so it follows the pelvis rather than the moving thigh.
+A new rigid `Weapons/AstraMilitarum/SargentHipChainsword.msh` variant bakes the
+required orientation and belt offset: (x,y,z) maps to (z,x,y), uniform scale 0.6,
+then hip-local offset (0,-6,12). This maps the blade axis down the model's side
+instead of pointing sideways. The unit's overall 0.8 scale is unchanged.
+
+The source sword, material and all other units remain unchanged. UVs, rigid bone
+weights, indices and tangent handedness are preserved; normals/tangents rotate
+with the vertices and mesh bounds are recomputed. The reproducible builder refuses
+unsupported layouts and overwrites. The pistol, combat values, melee action and
+all non-visual unit data are unchanged. This is a carried visual: drawing the sword
+for melee would require an animation/attachment-switching solution, not included.
+
+A textured static preview verifies the resting placement. In-game walking, idle
+and combat appearance remain to be checked after a reload. There are 34 passing
+regression tests and no missing attachment or muzzle names in the source audit.
