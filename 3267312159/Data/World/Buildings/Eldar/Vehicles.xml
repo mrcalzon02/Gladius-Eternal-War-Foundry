@@ -41,6 +41,7 @@
 		<produceUnit unit="Eldar/FirePrism" requiredUpgrade="Eldar/FirePrism"/>
 		<produceUnit unit="Eldar/WarWalker" requiredUpgrade="Eldar/WarWalker"/>
 		<produceUnit unit="Eldar/Scorpion" requiredUpgrade="Eldar/Scorpion"/>
+		<produceUnit unit="Eldar/Vyper" requiredUpgrade="Eldar/Vyper"/>
 	</actions>
 	<traits>
 		<trait name="Eldar/VehicleBuildingBonus" requiredUpgrade="Eldar/VehicleBuildingBonus"/>

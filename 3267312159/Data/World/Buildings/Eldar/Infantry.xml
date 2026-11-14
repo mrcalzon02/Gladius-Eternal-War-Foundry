@@ -43,6 +43,7 @@
 		<produceUnit unit="Eldar/Wraithblade" requiredUpgrade="Eldar/Wraithblade"/>
 		<produceUnit unit="Eldar/Wraithlord" requiredUpgrade="Eldar/Wraithlord"/>
 		<produceUnit unit="Eldar/Wraithknight" requiredUpgrade="Eldar/Wraithknight"/>
+		<produceUnit unit="Eldar/WarpSpider" requiredUpgrade="Eldar/WarpSpider"/>
 	</actions>
 	<traits>
 		<trait name="Eldar/InfantryBuildingBonus" requiredUpgrade="Eldar/InfantryBuildingBonus"/>
