@@ -64,3 +64,12 @@ bedroll, cigar, and idle, walk, firing and lunging melee animations. See the
 [sergeant asset and validation notes](docs/SERGEANT_MODEL.md) and
 [editable source](model-workbench/Sergeant-Headset-Variant/README.md). Native export
 checks pass; live Gladius combat verification is pending.
+
+
+## Grot replacement
+
+The accepted Grot model and fitted animations replace the miniature Ork model
+in the existing Ork and neutral Grot definitions. Stats and construction behavior
+are preserved. See [Grot integration notes](docs/GROT_REPLACEMENT.md) and
+[editable source](model-workbench/Grot-Sneak/README.md). Native asset checks pass;
+live Gladius combat verification remains pending.

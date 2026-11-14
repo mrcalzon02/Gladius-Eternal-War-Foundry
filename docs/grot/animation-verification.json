@@ -1,0 +1,92 @@
+{
+  "clips": {
+    "Idle": {
+      "max_joint_seam": 7.2629672106398665e-06,
+      "max_weapon_grip_error": 4.264961199760036e-06,
+      "minimum_mesh_z": 0.11999230086803436,
+      "max_skin_edge_stretch_ratio": 1.229004153542887,
+      "max_planted_ankle_error": 7.585496077505605e-06,
+      "loop_vertex_error": 0.0
+    },
+    "Snarl": {
+      "max_joint_seam": 7.024249965026967e-06,
+      "max_weapon_grip_error": 4.291534423828125e-06,
+      "minimum_mesh_z": 0.11999444663524628,
+      "max_skin_edge_stretch_ratio": 1.4790433693728033,
+      "max_planted_ankle_error": 5.683420868425473e-06,
+      "loop_vertex_error": null
+    },
+    "Sneak": {
+      "max_joint_seam": 6.325959759436416e-06,
+      "max_weapon_grip_error": 4.672030911985737e-06,
+      "minimum_mesh_z": 0.11999239027500153,
+      "max_skin_edge_stretch_ratio": 1.9022234496450001,
+      "max_planted_ankle_error": 7.587735074869605e-06,
+      "loop_vertex_error": 0.0
+    },
+    "Run": {
+      "max_joint_seam": 5.941360375584179e-06,
+      "max_weapon_grip_error": 4.3702847432669066e-06,
+      "minimum_mesh_z": 0.11999469250440598,
+      "max_skin_edge_stretch_ratio": 2.353902498960158,
+      "max_planted_ankle_error": 6.040982942256893e-06,
+      "loop_vertex_error": 0.0
+    },
+    "Pistol fire": {
+      "max_joint_seam": 5.642013342952362e-06,
+      "max_weapon_grip_error": 3.4385216478958026e-06,
+      "minimum_mesh_z": 0.11999444663524628,
+      "max_skin_edge_stretch_ratio": 1.907240256062805,
+      "max_planted_ankle_error": 5.683420868425473e-06,
+      "loop_vertex_error": null
+    },
+    "Shank stab": {
+      "max_joint_seam": 6.106495129998063e-06,
+      "max_weapon_grip_error": 4.3702847432669066e-06,
+      "minimum_mesh_z": 0.11999207735061646,
+      "max_skin_edge_stretch_ratio": 1.8998311654770257,
+      "max_planted_ankle_error": 9.519591405036415e-06,
+      "loop_vertex_error": null
+    },
+    "Hit reaction": {
+      "max_joint_seam": 6.03156597169567e-06,
+      "max_weapon_grip_error": 6.198883056640625e-06,
+      "minimum_mesh_z": 0.1199929267168045,
+      "max_skin_edge_stretch_ratio": 1.1434950416243141,
+      "max_planted_ankle_error": 8.221984911213103e-06,
+      "loop_vertex_error": null
+    },
+    "Death": {
+      "max_joint_seam": 7.864199877963372e-06,
+      "max_weapon_grip_error": 5.135693366178993e-06,
+      "minimum_mesh_z": 0.11999444663524628,
+      "max_skin_edge_stretch_ratio": 1.5625557667569108,
+      "max_planted_ankle_error": 0,
+      "loop_vertex_error": null
+    }
+  },
+  "failures": [],
+  "export_sha256": "bb506a10b845a24f45e01bc2580522c77604d5c7bda6c451fa56ac536c6c884d",
+  "source_sha256": "c94ba0d4c2b504acc3b2820df0b50985b05be638befce861eb18885ea4917509",
+  "roundtrip_joint_errors": {
+    "Death": 1.2418381350617807e-05,
+    "Hit reaction": 1.4843351761124974e-05,
+    "Idle": 1.005889087187242e-05,
+    "Pistol fire": 1.2768199767108807e-05,
+    "Run": 1.284269179488137e-05,
+    "Shank stab": 1.2138292371137481e-05,
+    "Snarl": 1.5757285730226807e-05,
+    "Sneak": 1.1439744799264328e-05
+  },
+  "roundtrip_skin_errors": {
+    "Death": 0.00024043234589044005,
+    "Hit reaction": 1.810098001442384e-05,
+    "Idle": 1.2178033102827612e-05,
+    "Pistol fire": 0.00020406082330737263,
+    "Run": 1.5193456420092843e-05,
+    "Shank stab": 2.869355375878513e-05,
+    "Snarl": 2.0004441466880962e-05,
+    "Sneak": 1.3587767170974985e-05
+  },
+  "native_engine_export_verified": false
+}

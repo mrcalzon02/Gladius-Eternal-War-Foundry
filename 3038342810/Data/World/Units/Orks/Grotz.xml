@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unit>
 	<model>
-		<unit mesh="Units/Orks/OrkBoy"
-				material="Units/Orks/OrkBoy"
-				idleAnimation="Units/Orks/OrkBoyIdle"
-				idleAnimationCount="3"
+		<unit mesh="Units/Foundry/GrotReplacement"
+				material="Units/Foundry/GrotReplacement"
+				idleAnimation="Units/Foundry/GrotReplacementIdle"
+				idleAnimationCount="1"
 				idleContinuously="1"
 				normalWeight="0.1"
-				scale=".5 .5 .5"
+				scale="1 1 1"
 				bloodBone="Torso"
 				walker="1"/>
 	</model>
@@ -15,17 +15,17 @@
 	<weapons>
 		<weapon name="Grotter">
 			<model>
-				<projectileWeapon mesh="Weapons/Orks/Slugga"
-						material="Weapons/Orks/ChoppaSlugga"
+				<projectileWeapon mesh="Weapons/Foundry/GrotPistol"
+						material="Units/Foundry/GrotReplacement"
 						muzzleBone=".Muzzle"
 						bone="RightHand"
-						fireInterval="0.5"/>
+						fireInterval=".25"/>
 			</model>
 		</weapon>
 		<weapon name="Choppa">
 			<model>
-				<weapon mesh="Weapons/Orks/Choppa"
-						material="Weapons/Orks/ChoppaSlugga"
+				<weapon mesh="Weapons/Foundry/GrotShank"
+						material="Units/Foundry/GrotReplacement"
 						bone="LeftHand"
 						fireInterval="0.5"/>
 			</model>
@@ -66,25 +66,25 @@
 	<actions>
 		<attack>
 			<model>
-				<action	animation="Units/Orks/OrkBoyAttack"
-						beginFire="0.83"
-						endFire="2.0"
-						chargeAnimation="Units/Orks/OrkBoyCharge"
-						chargeBeginFire="0.25"
-						chargeEndFire="1.1"
-						chargeDefenseAnimation="Units/Orks/OrkBoyChargeDefense"
-						chargeDefenseBeginFire="0.25"
-						chargeDefenseEndFire="1.5"
-						meleeAnimation="Units/Orks/OrkBoyMelee"
-						meleeDefenseAnimation="Units/Orks/OrkBoyMeleeDefense"
-						meleeBeginSwing="0.25"
-						meleeEndSwing="1.0"/>
+				<action	animation="Units/Foundry/GrotReplacementRanged"
+						beginFire="0.6666666666666666"
+						endFire="1.18"
+						chargeAnimation="Units/Foundry/GrotReplacementMelee"
+						chargeBeginFire="0.6666666666666666"
+						chargeEndFire="0.7916666666666666"
+						chargeDefenseAnimation="Units/Foundry/GrotReplacementMelee"
+						chargeDefenseBeginFire="0.6666666666666666"
+						chargeDefenseEndFire="0.7916666666666666"
+						meleeAnimation="Units/Foundry/GrotReplacementMelee"
+						meleeDefenseAnimation="Units/Foundry/GrotReplacementMelee"
+						meleeBeginSwing="0.6666666666666666"
+						meleeEndSwing="0.7916666666666666"/>
 			</model>
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Orks/OrkBoyDie"
-						animationCount="3"
+				<action animation="Units/Foundry/GrotReplacementDie"
+						animationCount="1"
 						sound="Units/MediumUnarmoredDie"
 						soundCount="4"
 						soundDelay="0.6"
@@ -99,7 +99,7 @@
 		</idle>
 		<move>
 			<model>
-				<action animation="Units/Orks/OrkBoyMove"
+				<action animation="Units/Foundry/GrotReplacementMove"
 						sound="Units/Orks/InfantryMove"
 						soundCount="4"/>
 			</model>
@@ -132,8 +132,8 @@
 		<throwGrenade weaponSlotName="Stikkbomb" cooldown="3"
 				requiredUpgrade="Orks/Stikkbomb">
 			<model>
-				<action animation="Units/Orks/OrkBoyGrenade"
-						beginFire="0.833333333333"/>
+				<action animation="Units/Foundry/GrotReplacementGrenade"
+						beginFire="0.6666666666666666"/>
 			</model>
 		</throwGrenade>
 		<constructImperialStrongpoint 
@@ -141,7 +141,7 @@
 				cooldown="10"
 				name="Orks/ConsGrotpost">
 			<model>
-				<action animation="Units/Orks/OrkBoyAttack"
+				<action animation="Units/Foundry/GrotReplacementConstruct"
 						sound="Actions/Construct"/>
 			</model>
 			<modifiers>
