@@ -1,0 +1,119 @@
+{
+  "failures": [],
+  "source": {
+    "actions": 15,
+    "squig_retained": true,
+    "images": [
+      {
+        "name": "ChoppaSlugga2Diffuse.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "ChoppaSlugga2Normal.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "ChoppaSlugga2SIC.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter black leather surface",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter braid cards painted atlas",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter brass trophies surface",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter goggles card painted atlas",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter trophy card painted atlas",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "Hunter worn steel surface",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "OrkBoy3Diffuse.dds.001",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "OrkBoy3Normal.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "OrkBoy3SIC.dds.001",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "WarbossSquigDiffuse.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "WarbossSquigNormal.dds",
+        "packed": true,
+        "readable": true
+      },
+      {
+        "name": "WarbossSquigSIC.dds",
+        "packed": true,
+        "readable": true
+      }
+    ],
+    "mesh_triangles": {
+      "Fitted braid ribbon -1 0": 36,
+      "Fitted braid ribbon -1 1": 36,
+      "Fitted braid ribbon 1 0": 36,
+      "Fitted braid ribbon 1 1": 36,
+      "Goggles single plane": 8,
+      "Brass neck chain": 36,
+      "Hunting trophy plane": 2,
+      "Belt hunting pouch -1": 12,
+      "Pouch clasp -1": 12,
+      "Belt hunting pouch 1": 12,
+      "Pouch clasp 1": 12,
+      "OrkBoy": 1042,
+      "Slugga": 44,
+      "WarbossSquig": 845,
+      "Choppa": 38
+    },
+    "source_sha256_before_export": "946a7b88c0b5a9e2e899d4dc2b0b692d648540ef71de370ff0468492f4067635"
+  },
+  "static_triangles": 2207,
+  "bounds": [
+    [
+      -40.195899963378906,
+      -29.915800094604492,
+      -1.301720380783081
+    ],
+    [
+      34.08156204223633,
+      93.18070220947266,
+      56.70100402832031
+    ]
+  ],
+  "static_review_only": true,
+  "engine_integration_verified": false,
+  "source_sha256": "946a7b88c0b5a9e2e899d4dc2b0b692d648540ef71de370ff0468492f4067635",
+  "export_sha256": "5aa72441be2293a5340ba156bec1ba702d9bbbcada20b2436f656ee9da9d7474"
+}

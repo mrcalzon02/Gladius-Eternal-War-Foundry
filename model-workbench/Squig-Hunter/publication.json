@@ -1,0 +1,26 @@
+{
+  "status": "user-corrected source approved for repository publication",
+  "engine_verified": false,
+  "source_sha256": "946a7b88c0b5a9e2e899d4dc2b0b692d648540ef71de370ff0468492f4067635",
+  "files": {
+    "model-workbench/Squig-Hunter/Squig-Hunter.blend": "946a7b88c0b5a9e2e899d4dc2b0b692d648540ef71de370ff0468492f4067635",
+    "model-workbench/Squig-Hunter/Squig-Hunter-review.glb": "5aa72441be2293a5340ba156bec1ba702d9bbbcada20b2436f656ee9da9d7474",
+    "model-workbench/Squig-Hunter/README.md": "479722954d51a1536f39a10ab77e73e1c1d9455e72dfa9709dcfc7c411b3cd6d",
+    "model-workbench/Squig-Hunter/verification.json": "bad50f9c479c190c7f81c064756e67924a2a757517e7cb44f31165d375802dad",
+    "model-workbench/Squig-Hunter/export-front.png": "fd0ef72e095a61f8dc4ebbd63d2ae5798ea59d9ec3e67a141084aeace01bdb50",
+    "model-workbench/Squig-Hunter/export-rear.png": "d9cee3b213054b6c7f9c201ee1700470e7f76a44e3ab30ffcf68963821cb4bdc",
+    "model-workbench/Squig-Hunter/export-side.png": "a22bc1277916b134c36f3d7c5403c5890103857f828fc7caddf32a3568599e43",
+    "model-workbench/Squig-Hunter/export-face.png": "c0fb03d3324079e0109d693634a17623e37fd170277078276ceccaacbaa56eec",
+    "model-workbench/Squig-Hunter/export-clay.png": "40aa50596094004c2a37a1fe431df556671643826cc0d8165658dad0e7f71620",
+    "model-workbench/Squig-Hunter/export-assembly.png": "fd61a4c4c71b47360d66c58e6c2bd07b797645c45b9edc7e4490ffe2192e35f3",
+    "model-workbench/Squig-Hunter/SquigHunterDiffuse.png": "4a7f1ab49810e3d63763550cdcb0908cf0cf3f12f658dcebc216aa2d21242541",
+    "model-workbench/Squig-Hunter/SquigHunterSIC.png": "5f25dec4326c6d1c1fd32a1636b5377565df38312edbd46f7525a3f3b24aa44f",
+    "model-workbench/Squig-Hunter/Hunter braid cards.png": "8b1eb627f9b6dec2c0ed7c9f0f6c00db337b499c83760a06e1579aeccfda96e9",
+    "model-workbench/Squig-Hunter/Hunter goggles card.png": "2fd4acc7aff4ce7b1a6d7b844df9184227b877310ad0a68ecd188b62cbac68d6",
+    "model-workbench/Squig-Hunter/Hunter trophy card.png": "f23892314c6219061d7b6cedcda6cb427e96f155bdda5cd63342ce2e1b2250bc",
+    "model-workbench/Squig-Hunter/black-leather.png": "b388d59822ebbb9dc5a98eccb7a6aeb0ba141c6c347f1198c7fc146a2b893a13",
+    "model-workbench/Squig-Hunter/brass-trophies.png": "22f7bb801f155205b39df8db5bd929386c872d9842c68baf34440941f3cd8dd5",
+    "model-workbench/Squig-Hunter/worn-steel.png": "df4f869c4d3c7a740ad486e75306a1f287ad8c9f23d908c65a947e880ecaee5b",
+    "tools/export_squig_hunter_review.py": "0fc5ba49f78e7d8e3ffc7239eed032e6c86320045a228076e82a68e1e16f5786"
+  }
+}
