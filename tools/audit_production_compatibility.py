@@ -99,6 +99,29 @@ def audit(repo, game_data, mod_ids, dependencies=()):
                           target=action.get('unit'), expected_action=action.attrib,
                           actual_actions=candidates)
 
+        # A custom role needs at least one advertised production route. Do not
+        # demand a build-priority effect from a fixed headquarters or every
+        # alternate producer (e.g. Ripper Swarms also train at Infantry).
+        producers = {}
+        for relative, root in roots.items():
+            if relative.startswith('World/Buildings/'):
+                for action in root.findall('./actions/produceUnit'):
+                    producers.setdefault(action.get('unit'), []).append((relative, root))
+        for relative, root in roots.items():
+            if not relative.startswith('World/Units/') or (game_data / relative).exists():
+                continue
+            name = relative[len('World/Units/'):-4]
+            traits = {node.get('name') for node in root.findall('./traits/trait')}
+            role = ('increaseHeroesProductionScore' if 'Hero' in traits else
+                    'increaseInfantryProductionScore' if root.find(
+                        './strategyModifiers/modifier/effects/increaseInfantryScore') is not None else None)
+            routes = producers.get(name, [])
+            if role and routes and not all(Path(path).stem == 'Headquarters' for path, _ in routes):
+                if not any(node.find('./strategyModifiers/modifier/effects/' + role) is not None
+                           for _, node in routes):
+                    issue(mod, 'missing_custom_role_strategy', relative, target=name,
+                          expected_effect=role, producers=[path for path, _ in routes])
+
         summaries.append(dict(mod=mod, world_xml=len(digests),
                               production_actions=production_count,
                               input_sha256=digests))

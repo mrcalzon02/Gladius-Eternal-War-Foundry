@@ -155,7 +155,7 @@ are copied into the repository by this audit.
 
 Installed 37 changed/new Data files into the active Workshop mods after checking
 existing files against known source versions and backing up originals. A fresh
-Gladius 1.18.3 launch completed at 5:07 PM Alaska time on 13 November with all
+Gladius 1.18.3 launch completed at 5:09 PM Alaska time on 13 November with all
 seven mods enabled, zero startup warnings, and no startup errors detected. The
 prior log contained 50 warning lines. This confirms startup/resource loading,
 not a full match, AI production, completed research, or balance acceptance. The
@@ -167,3 +167,21 @@ unverified on this installation. No DLC entitlement checks were bypassed.
 
 See [sanitized startup evidence](../catalog/compatibility/2026-11-13-resource-load.json).
 Full logs and original-file backups stay in the local chat workspace.
+
+## Iteration 4: custom-unit AI production roles
+
+Four custom units had no producer advertising the corresponding production role:
+Space Marines Magos (Housing2), Astra Militarum Magos and Officer (Schola), and
+Ork SqigHunter (Influence). Added the shipped-game default role score of 1.0:
+`increaseHeroesProductionScore` for Housing2 and Schola, and
+`increaseInfantryProductionScore` for Influence. Existing economy, other strategy
+effects, costs, units and production actions were retained.
+
+The production audit now checks that each custom hero or explicitly scored
+infantry unit has at least one producer advertising its role. Fixed-headquarters
+only units and valid alternate production routes are excluded to avoid forcing
+extra construction priorities everywhere. All 21 regression tests pass; the
+only remaining production-audit finding is the preserved Carnifex gate difference.
+This is a conservative source-level AI integration repair, not observed proof
+of improved AI selection. These three new building edits have not been deployed
+or loaded into the user's current game session. Matched AI runs are still needed.

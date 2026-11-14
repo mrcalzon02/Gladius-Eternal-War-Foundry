@@ -21,6 +21,7 @@
 		<modifier>
 			<effects>
 				<increaseInfluenceScore base="2.0"/>
+				<increaseInfantryProductionScore base="1.0"/>
 			</effects>
 		</modifier>
 	</strategyModifiers>

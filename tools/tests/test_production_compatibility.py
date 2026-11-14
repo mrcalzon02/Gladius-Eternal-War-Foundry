@@ -84,6 +84,25 @@ class ProductionCompatibilityTests(unittest.TestCase):
         report = MODULE.audit(self.repo, self.game, ['123'], ['456'])
         self.assertEqual([], report['findings'])
 
+    def test_custom_hero_needs_an_advertised_role(self):
+        self.write(self.mod, 'World/Units/Guard/Hero.xml',
+                   '<unit><traits><trait name="Hero"/></traits></unit>')
+        self.write(self.mod, 'World/Buildings/Guard/Academy.xml',
+                   '<building><actions><produceUnit unit="Guard/Hero"/></actions></building>')
+        self.assertIn('missing_custom_role_strategy', self.codes())
+
+    def test_one_valid_role_route_is_enough(self):
+        self.write(self.mod, 'World/Units/Guard/Hero.xml',
+                   '<unit><traits><trait name="Hero"/></traits></unit>')
+        self.write(self.mod, 'World/Buildings/Guard/Academy.xml',
+                   '<building><actions><produceUnit unit="Guard/Hero"/></actions></building>')
+        self.write(self.mod, 'World/Buildings/Guard/Heroes.xml',
+                   '<building><strategyModifiers><modifier><effects>'
+                   '<increaseHeroesProductionScore base="1.0"/></effects></modifier>'
+                   '</strategyModifiers><actions><produceUnit unit="Guard/Hero"/>'
+                   '</actions></building>')
+        self.assertNotIn('missing_custom_role_strategy', self.codes())
+
 
 if __name__ == '__main__':
     unittest.main()
