@@ -37,6 +37,12 @@ Every Workshop directory now has a [WORKSHOP.md](2175959340/WORKSHOP.md) with li
 
 The [official Steam metadata sync script](tools/sync_workshop_metadata.py) successfully retrieved the seven published titles, descriptions and thumbnail URLs on 13 November 2026. Every numeric Workshop folder now has a `WORKSHOP.md` and a raw `WORKSHOP_DESCRIPTION.txt`. The script can be run again from an internet-connected clone to refresh this snapshot. No Steam publishing occurs.
 
+## Compatibility repairs
+
+The [compatibility repair ledger](docs/COMPATIBILITY_REPAIRS.md) records the first
+23 restored DLC production actions, repeatable source checks, known remaining
+findings, and the pending gameplay and AI acceptance work.
+
 ## Development policy
 
 - Work on the single `main` branch unless explicitly directed otherwise.
