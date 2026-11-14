@@ -43,6 +43,8 @@
 		<produceUnit unit="Orks/Dakkajet" requiredUpgrade="Orks/Dakkajet"/>
 		<produceUnit unit="Orks/BurnaBommer" requiredUpgrade="Orks/BurnaBommer"/>
 		<produceUnit unit="Orks/KillBursta" requiredUpgrade="Orks/KillBursta"/>
+		<produceUnit unit="Orks/SquighogBoy" requiredUpgrade="Orks/SquighogBoy"/>
+		<produceUnit unit="Orks/WazbomBlastajet" requiredUpgrade="Orks/WazbomBlastajet"/>
 	</actions>
 	<traits>
 		<trait name="Orks/BonusVehiclesProduction" requiredUpgrade="Orks/BonusVehiclesProduction"/>

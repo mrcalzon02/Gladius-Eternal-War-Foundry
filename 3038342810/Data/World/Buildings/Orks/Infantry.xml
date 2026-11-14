@@ -41,6 +41,8 @@
 		<produceUnit unit="Orks/DeffDread" requiredUpgrade="Orks/DeffDread"/>
 		<produceUnit unit="Orks/Meganob" requiredUpgrade="Orks/Meganob"/>
 		<produceUnit unit="Orks/Gorkanaut" requiredUpgrade="Orks/Gorkanaut"/>
+		<produceUnit unit="Orks/BurnaBoy" requiredUpgrade="Orks/BurnaBoy"/>
+		<produceUnit unit="Orks/Kommando" requiredUpgrade="Orks/Kommando"/>
 	</actions>
 	<traits>
 		<trait name="Orks/BonusInfantryProduction" requiredUpgrade="Orks/BonusInfantryProduction"/>
