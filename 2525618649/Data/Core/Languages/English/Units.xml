@@ -15,4 +15,7 @@
 		<entry name="AstraMilitarum/Officer" value="Officer"/>
 	<entry name="AstraMilitarum/OfficerDescription" value="infantry."/>
 	<entry name="AstraMilitarum/OfficerFlavor" value="The Officer serves as the stalwart leader of Imperial Guard forces on the battlefield. Clad in resplendent regalia and wielding command authority, these officers inspire and direct their troops with unwavering resolve. Armed with a laspistol and a trusty chainsword, they lead from the front lines, rallying their soldiers to face the grim challenges of the 41st Millennium. Masters of strategy and discipline, Astra Militarum Officers are the linchpin of any Imperial Guard detachment, ensuring the cohesion and effectiveness of their forces in the relentless fight for the Emperor's glory."/>
+	<entry name="AstraMilitarum/CommissarYarrick" value="Commissar Sebastian Yarrick" />
+	<entry name="AstraMilitarum/CommissarYarrickDescription" value="The Old Man of Armageddon. Hero with bolt pistol, power claw, Bale Eye and Imperial support call-ins." />
+	<entry name="AstraMilitarum/CommissarYarrickFlavor" value="The Old Man stands. Armageddon answers." />
 </language>

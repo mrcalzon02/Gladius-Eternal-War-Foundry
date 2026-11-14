@@ -12,4 +12,18 @@
 	<entry name="AstraMilitarum/Entrenching" value="Entrenching"/>
 	<entry name="AstraMilitarum/EntrenchingDescription" value="Increases armour by 1."/>
 	<entry name="AstraMilitarum/EntrenchingFlavor" value="Prepared positions shelter troops from enemy fire."/>
+	<entry name="Foundry/ThisEndsHere" value="This Ends Here" />
+	<entry name="Foundry/ThisEndsHereDescription" value="+100% base weapon damage." />
+	<entry name="Foundry/ArmourPending" value="Armageddon Armour Inbound" />
+	<entry name="Foundry/ArmourPendingDescription" value="One Leman Russ is reserved. Use Armageddon Calls — Place Tank to deploy it." />
+	<entry name="Foundry/ArmourPendingTier0" value="Reserved Armour Experience" />
+	<entry name="Foundry/ArmourPendingTier0Description" value="The incoming Leman Russ starts with 0 experience levels." />
+	<entry name="Foundry/ArmourPendingTier1" value="Reserved Armour Experience" />
+	<entry name="Foundry/ArmourPendingTier1Description" value="The incoming Leman Russ starts with 1 experience levels." />
+	<entry name="Foundry/ArmourPendingTier2" value="Reserved Armour Experience" />
+	<entry name="Foundry/ArmourPendingTier2Description" value="The incoming Leman Russ starts with 2 experience levels." />
+	<entry name="Foundry/ArmourPendingTier3" value="Reserved Armour Experience" />
+	<entry name="Foundry/ArmourPendingTier3Description" value="The incoming Leman Russ starts with 3 experience levels." />
+	<entry name="Foundry/ArmageddonCallsCooldown" value="Armageddon Reinforcements Rearming" />
+	<entry name="Foundry/ArmageddonCallsCooldownDescription" value="Armageddon Calls is on its shared ten-round cooldown, including after Yarrick levels up." />
 </language>

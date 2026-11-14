@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "existing_workshop_id": "2525618649",
+  "hero_roster_preserved": true,
+  "single_yarrick_recruitment_entry": true,
+  "idempotent_merge": true,
+  "languages": [
+    {
+      "file": "Data\\Core\\Languages\\English\\Actions.xml",
+      "original_entries_preserved": 24
+    },
+    {
+      "file": "Data\\Core\\Languages\\English\\Traits.xml",
+      "original_entries_preserved": 26
+    },
+    {
+      "file": "Data\\Core\\Languages\\English\\Units.xml",
+      "original_entries_preserved": 18
+    },
+    {
+      "file": "Data\\Core\\Languages\\English\\Weapons.xml",
+      "original_entries_preserved": 8
+    }
+  ],
+  "new_mod_identity": false
+}

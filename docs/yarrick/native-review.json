@@ -1,0 +1,30 @@
+{
+  "native_import": "passed",
+  "eye_socket_max_error": {
+    "Idle0": 3.932099938981686e-06,
+    "Move": 8.280541890531662e-06,
+    "Attack": 7.043001956682413e-06,
+    "Melee": 9.889544033439583e-05,
+    "Shout": 1.1225945822709612e-05,
+    "Die": 7.64428116888113e-06
+  },
+  "claw_rest_bounds": [
+    [
+      -4.000000953674316,
+      12.707951545715332,
+      17.999996185302734
+    ],
+    [
+      25.0,
+      29.700000762939453,
+      37.0
+    ]
+  ],
+  "messages": [
+    "({'INFO'}, 'Imported Yarrick: 3162 verts, 1054 faces, 37 bones')",
+    "({'INFO'}, 'Imported LordCommissarBoltPistol: 198 verts, 66 faces, 2 bones')",
+    "({'INFO'}, 'Imported YarrickClaw: 2220 verts, 740 faces, 1 bones')",
+    "({'INFO'}, 'Imported CommissarYarrick: 2 attachment(s), 0 hidden variant(s), 15 body animation(s)')"
+  ],
+  "live_game_verified": false
+}

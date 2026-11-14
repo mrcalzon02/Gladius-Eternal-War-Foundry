@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<weapon attributesModifiedByUnit="0">
+  <modifiers>
+    <modifier>
+      <effects>
+        <attacks add="1" />
+        <rangedArmorPenetration add="4" />
+        <rangedDamage add="8" />
+        <strengthDamage base="0" />
+        <accuracy min="6" max="6" />
+      </effects>
+    </modifier>
+  </modifiers>
+  <target rangeMin="2" rangeMax="6" />
+  <traits>
+    <trait name="Barrage" />
+    <trait name="AstraMilitarum/BlastDamage" requiredUpgrade="AstraMilitarum/BlastDamage" />
+    <trait name="SpaceMarines/BlastDamage" requiredUpgrade="SpaceMarines/BlastDamage" />
+    <trait name="LargeBlast" />
+    <trait name="Ordnance" />
+  </traits>
+  <model>
+    <weapon explosionsBlueprint="Effects/MissileExplosions" explosionsEmitterBlueprint="Effects/BombardmentExplosionsEmitter" fireSound="Weapons/EarthshakerCannon" fireSoundCount="3" />
+  </model>
+</weapon>

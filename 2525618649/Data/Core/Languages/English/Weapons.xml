@@ -4,4 +4,8 @@
 	<entry name="BayonetFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
 	<entry name="CombatShovel" value="CombatShovel"/>
 	<entry name="CombatShovelFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
+	<entry name="Foundry/BaleEye" value="Bale Eye" />
+	<entry name="Foundry/BaleEyeDescription" value="Bionic laser eye. Uses standard Lasgun attack statistics and upgrades." />
+	<entry name="Foundry/YarrickEarthshaker" value="Yarrick’s Earthshaker Support" />
+	<entry name="Foundry/YarrickEarthshakerDescription" value="Standard Basilisk Earthshaker shell with Basilisk ranged accuracy." />
 </language>

@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<unit>
+  <model>
+    <unit mesh="Units/Foundry/Yarrick" material="Units/Foundry/Yarrick" idleAnimation="Units/Foundry/YarrickIdle" idleAnimationCount="3" idleContinuously="1" normalWeight="0.1" scale="1 1 1" bloodBone="ChestBone" walker="1" />
+  </model>
+  <weapons>
+    <weapon name="BoltPistol" slotName="BoltPistol">
+      <model>
+        <projectileWeapon mesh="Weapons/AstraMilitarum/LordCommissarBoltPistol" material="Weapons/AstraMilitarum/LordCommissarBoltPistol" bone="RightHandBone" muzzleBone=".Muzzle0" fireInterval="0.35" />
+      </model>
+    </weapon>
+    <weapon name="FragGrenade" slotName="FragGrenade" enabled="0">
+      <model>
+        <grenadeWeapon muzzleBone="RightHandBone" />
+      </model>
+    </weapon>
+    <weapon name="KrakGrenade" slotName="KrakGrenade" enabled="0">
+      <model>
+        <grenadeWeapon muzzleBone="RightHandBone" />
+      </model>
+    </weapon>
+    <weapon name="PowerKlaw">
+      <model>
+        <weapon mesh="Weapons/Foundry/YarrickClaw" material="Weapons/Foundry/YarrickKit" bone="LeftHandBone" fireInterval="1.0" />
+      </model>
+    </weapon>
+    <weapon name="Foundry/BaleEye">
+      <model>
+        <beamWeapon muzzleBone="YarrickEyeMuzzle" fireInterval="0.5" />
+      </model>
+    </weapon>
+  </weapons>
+  <modifiers>
+    <modifier visible="0">
+      <effects>
+        <armor base="6" />
+        <foodUpkeep base="2.0" />
+        <foodCost base="20.0" />
+        <hitpointsMax base="6.0" />
+        <influenceUpkeep base="4.0" />
+        <influenceCost base="80.0" />
+        <itemSlots base="6" />
+        <levelMax base="9" />
+        <meleeAccuracy base="10" />
+        <meleeAttacks base="3" />
+        <strengthDamage base="1" />
+        <moraleMax base="12" />
+        <movementMax base="3" />
+        <oreCost base="20.0" />
+        <productionCost base="36.0" />
+        <rangedAccuracy base="10" />
+      </effects>
+    </modifier>
+  </modifiers>
+  <strategyModifiers>
+    <modifier>
+      <effects>
+        <increaseHeroesScore base="1.0" />
+      </effects>
+    </modifier>
+  </strategyModifiers>
+  <actions>
+    <attack>
+      <model>
+        <action animation="Units/Foundry/YarrickAttack" beginFire="0.4" endFire="2.53" chargeAnimation="Units/Foundry/YarrickCharge" chargeBeginFire="0.25" chargeEndFire="1.1" meleeAnimation="Units/Foundry/YarrickMelee" meleeBeginSwing="0.15" meleeEndSwing="0.5" />
+      </model>
+    </attack>
+    <die>
+      <model>
+        <action animation="Units/Foundry/YarrickDie" sound="Units/MediumUnarmoredDie" soundCount="4" soundDelay="0.5" voiceSound="Units/AstraMilitarum/InfantryDie" voiceSoundCount="5" />
+      </model>
+    </die>
+    <idle>
+      <model>
+        <action animationSpeed="1.0" />
+      </model>
+    </idle>
+    <move>
+      <model>
+        <action animation="Units/Foundry/YarrickMove" sound="Units/AstraMilitarum/InfantryMove" soundCount="4" />
+      </model>
+    </move>
+    <throwGrenade weaponSlotName="FragGrenade" cooldown="10" requiredUpgrade="AstraMilitarum/FragGrenade">
+      <model>
+        <action animation="Units/Foundry/YarrickGrenade" beginFire="0.9" />
+      </model>
+    </throwGrenade>
+    <throwGrenade weaponSlotName="KrakGrenade" cooldown="10" requiredUpgrade="AstraMilitarum/KrakGrenade">
+      <model>
+        <action animation="Units/Foundry/YarrickGrenade" beginFire="0.9" />
+      </model>
+    </throwGrenade>
+    <levelUp />
+    <shop />
+    <bringItDown name="Foundry/OldManOfArmageddon" icon="Actions/SummaryExecution" cooldown="3" rank="0" rankMax="2" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <beginTargets>
+        <selfTarget>
+          <areas>
+            <area affects="Unit" radius="3">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <morale addMin="9" addMax="15" />
+                  </effects>
+                  <conditions>
+                    <unit>
+                      <allied />
+                    </unit>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </bringItDown>
+    <orbitalStrike name="Foundry/TargetedBasiliskStrike" icon="Actions/OrbitalStrike" cooldown="5" rank="-1" rankMax="2">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <beginTargets>
+        <target rangeMax="6" rangeMin="1">
+          <conditions>
+            <unit>
+              <enemy />
+            </unit>
+          </conditions>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <weaponDamage weapon="Foundry/YarrickEarthshaker" />
+                    <weaponDamage weapon="Foundry/YarrickEarthshaker" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+      </beginTargets>
+    </orbitalStrike>
+    <livingIncubator name="Foundry/ArmageddonCalls" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <noTrait name="Foundry/ArmourPending" />
+          <noTrait name="Foundry/ArmageddonCallsCooldown" />
+          <level greater="-0.5" less="0.5" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="0" levelMax="0" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCalls2" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <noTrait name="Foundry/ArmourPending" />
+          <noTrait name="Foundry/ArmageddonCallsCooldown" />
+          <level greater="0.5" less="1.5" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="0" levelMax="0" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                    <addTrait name="Foundry/ArmourPending" />
+                    <addTrait name="Foundry/ArmourPendingTier0" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCalls3" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <noTrait name="Foundry/ArmourPending" />
+          <noTrait name="Foundry/ArmageddonCallsCooldown" />
+          <level greater="1.5" less="2.5" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="1" levelMax="1" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                    <addTrait name="Foundry/ArmourPending" />
+                    <addTrait name="Foundry/ArmourPendingTier1" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCalls4" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <noTrait name="Foundry/ArmourPending" />
+          <noTrait name="Foundry/ArmageddonCallsCooldown" />
+          <level greater="2.5" less="3.5" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="2" levelMax="2" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                    <addTrait name="Foundry/ArmourPending" />
+                    <addTrait name="Foundry/ArmourPendingTier2" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCalls5" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <noTrait name="Foundry/ArmourPending" />
+          <noTrait name="Foundry/ArmageddonCallsCooldown" />
+          <level greater="3.5" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="3" levelMax="3" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                    <addTrait name="Foundry/ArmourPending" />
+                    <addTrait name="Foundry/ArmourPendingTier3" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCallsArmour" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <trait name="Foundry/ArmourPending" />
+          <trait name="Foundry/ArmourPendingTier0" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/LemanRussBattleTank" consumedAction="0" consumedMovement="0" levelMin="0" levelMax="0" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmourPending" />
+                    <removeTrait name="Foundry/ArmourPendingTier0" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCallsArmour1" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <trait name="Foundry/ArmourPending" />
+          <trait name="Foundry/ArmourPendingTier1" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/LemanRussBattleTank" consumedAction="0" consumedMovement="0" levelMin="1" levelMax="1" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmourPending" />
+                    <removeTrait name="Foundry/ArmourPendingTier1" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCallsArmour2" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <trait name="Foundry/ArmourPending" />
+          <trait name="Foundry/ArmourPendingTier2" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/LemanRussBattleTank" consumedAction="0" consumedMovement="0" levelMin="2" levelMax="2" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmourPending" />
+                    <removeTrait name="Foundry/ArmourPendingTier2" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <livingIncubator name="Foundry/ArmageddonCallsArmour3" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <conditions>
+        <unit>
+          <trait name="Foundry/ArmourPending" />
+          <trait name="Foundry/ArmourPendingTier3" />
+        </unit>
+      </conditions>
+      <beginTargets>
+        <target rangeMin="1" rangeMax="2">
+          <conditions>
+            <tile>
+              <land />
+              <noUnit />
+              <noEnemyCity />
+              <noFeature name="GravityWaves" />
+            </tile>
+          </conditions>
+          <areas>
+            <area affects="Tile">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addUnit name="AstraMilitarum/LemanRussBattleTank" consumedAction="0" consumedMovement="0" levelMin="3" levelMax="3" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+        <selfTarget>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmourPending" />
+                    <removeTrait name="Foundry/ArmourPendingTier3" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </selfTarget>
+      </beginTargets>
+    </livingIncubator>
+    <bringItDown name="Foundry/ThisEndsHere" icon="Actions/BringItDown" cooldown="5" rank="-1" rankMax="0" elite="1" levelUpPriority="1" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0">
+      <model>
+        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
+      </model>
+      <beginTargets>
+        <target rangeMax="3">
+          <conditions>
+            <unit>
+              <allied />
+            </unit>
+          </conditions>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ThisEndsHere" duration="2" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+        </target>
+      </beginTargets>
+    </bringItDown>
+  </actions>
+  <traits>
+    <trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour" />
+    <trait name="Hero" />
+    <trait name="RefractorField" />
+    <trait name="Stubborn" />
+  </traits>
+</unit>

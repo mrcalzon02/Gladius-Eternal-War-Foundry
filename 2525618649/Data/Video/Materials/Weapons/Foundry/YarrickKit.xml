@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<material>
+  <textures>
+    <texture name="Units/Foundry/YarrickDiffuse" />
+    <texture name="Units/Foundry/YarrickNormal" />
+    <texture name="Units/Foundry/YarrickSIC" />
+    <texture name="ShadowMapColor" />
+  </textures>
+</material>

@@ -79,3 +79,12 @@ live Gladius combat verification remains pending.
 The Tyranid Ripperswarm now uses the accepted 450-triangle textured and rigged
 creature. [Source, previews, provenance and validation](docs/RIPPER_MODEL.md).
 Native checks pass; live game validation is pending.
+
+
+## Commissar Sebastian Yarrick
+
+Yarrick joins the existing Penal Legion mod (`2525618649`) with a red power
+claw, bionic laser eye, Basilisk support and Armageddon reinforcements. See
+[the unit rules and validation notes](docs/YARRICK.txt) and
+[editable source](model-workbench/Yarrick/README.txt). Offline checks pass;
+live combat validation is pending. No separate mod or Workshop ID is created.

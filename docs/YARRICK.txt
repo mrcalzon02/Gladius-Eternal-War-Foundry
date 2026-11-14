@@ -1,0 +1,61 @@
+COMMISSAR SEBASTIAN YARRICK — PENAL LEGION
+
+Yarrick belongs to the existing Penal Legion mod, Workshop ID 2525618649,
+inside the Eternal War Foundry library. He has no separate mod identity,
+SteamID, distribution archive or load-order entry.
+
+Recruit from the existing Astra Militarum hero building. The normal Lord
+Commissar and all prior hero recruitment entries remain available.
+
+Weapons: existing bolt pistol, custom red power claw using Power Klaw rules,
+and Bale Eye using the complete standard Lasgun definition. The eye has a
+dedicated animated beam socket; the claw follows the original left hand.
+
+Old Man of Armageddon starts trained and restores 9 morale at rank one,
+matching vanilla Summary Execution's maximum. Further ranks restore 12/15.
+No allied soldier is executed. Radius 3; cooldown 3.
+
+Targeted Basilisk Strike resolves two standard Earthshaker shells against one
+enemy within 6 tiles. Accuracy 6, damage 8, penetration 4, Large Blast,
+Barrage and Ordnance. Cooldown 5. Personal hero damage bonuses do not apply.
+
+Armageddon Calls currently follows Yarrick's HERO LEVEL automatically:
+  Level 1: one fresh Guardsmen squad.
+  Level 2: one fresh Guardsmen squad plus one fresh Leman Russ.
+  Level 3: both start with 1 experience level above a fresh recruit.
+  Level 4: both start with 2 experience levels above a fresh recruit.
+  Level 5 and higher: both start with 3 experience levels above a fresh recruit.
+The game stores fresh recruits at internal experience level zero.
+Both placements must be on empty land within 2 tiles. From hero level 2,
+the tank is placed with a free contextual completion command. The native
+addUnit effect cannot relocate a second unit from an occupied tile, so
+two explicit placements prevent a lost reinforcement. Cooldown 10 is shared
+across all stages, including level-ups. Tank experience is reserved when the
+call starts and does not change if Yarrick levels up before tank placement.
+Reinforcements are permanent and pay normal upkeep.
+
+This Ends Here targets one ally within 3 tiles, adding +100% base damage for
+2 rounds. Cooldown 5. Other percentage damage bonuses are not compounded.
+
+INTEGRATION
+Runtime files live under 2525618649/Data/. English localization entries are
+merged by key, preserving unrelated text and the game's embedded markup.
+Heroes.xml receives one recruitment entry, preserving its previous content.
+Editable model and preview: model-workbench/Yarrick/.
+assets/yarrick-build is intermediate build staging, not an installable mod.
+tools/integrate_yarrick.py stages changes against the existing mod directory.
+No Steam Workshop publication is performed by these tools.
+
+VALIDATION
+Rules, reference integrity, mesh weights/bones and 14 native animation clips
+pass offline checks. Independent native import and render pass. The beam
+socket follows the head within 0.0001 model units in six animation types.
+Stage selection and starting experience are checked for hero levels 1-10.
+Live combat and save/load validation are pending; do not claim game acceptance.
+
+LIVE ACCEPTANCE
+Recruit Yarrick through the existing hero building. Verify 9-morale rally,
+pistol/claw/eye attacks, two artillery resolutions, and This Ends Here's
+two-round duration and five-round cooldown. Check all five reinforcement
+stages, blocked tiles, and level-ups during cooldown and tank reservation.
+Save/reload with both a pending tank and an active damage buff.

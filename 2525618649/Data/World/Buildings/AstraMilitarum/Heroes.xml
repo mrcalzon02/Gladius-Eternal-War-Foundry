@@ -36,5 +36,6 @@
 		<produceUnit unit="AstraMilitarum/LordCommissar"/>
 		<produceUnit unit="AstraMilitarum/TankCommander" requiredUpgrade="AstraMilitarum/TankCommander"/>
 		<produceUnit unit="AstraMilitarum/PrimarisPsyker" requiredUpgrade="AstraMilitarum/PrimarisPsyker"/>
+		<produceUnit unit="AstraMilitarum/CommissarYarrick"/>
 	</actions>
 </building>
