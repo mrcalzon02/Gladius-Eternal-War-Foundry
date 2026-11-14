@@ -35,10 +35,12 @@
 	<actions>
 		<produceUnit unit="AstraMilitarum/ScoutSentinel"/>
 		<produceUnit unit="AstraMilitarum/Chimera" requiredUpgrade="AstraMilitarum/Chimera"/>
+		<produceUnit unit="AstraMilitarum/ArmouredSentinel" requiredUpgrade="AstraMilitarum/ArmouredSentinel"/>
 		<produceUnit unit="AstraMilitarum/Hydra" requiredUpgrade="AstraMilitarum/Hydra"/>
 		<produceUnit unit="AstraMilitarum/Basilisk" requiredUpgrade="AstraMilitarum/Basilisk"/>
 		<produceUnit unit="AstraMilitarum/DevilDog" requiredUpgrade="AstraMilitarum/DevilDog"/>
 		<produceUnit unit="AstraMilitarum/LemanRussBattleTank" requiredUpgrade="AstraMilitarum/LemanRussBattleTank"/>
+		<produceUnit unit="AstraMilitarum/Deathstrike" requiredUpgrade="AstraMilitarum/Deathstrike"/>
 		<produceUnit unit="AstraMilitarum/RogalDornBattleTank" requiredUpgrade="AstraMilitarum/RogalDornBattleTank"/>
 		<produceUnit unit="AstraMilitarum/Baneblade" requiredUpgrade="AstraMilitarum/Baneblade"/>
 	</actions>
