@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <material>
 	<textures>
-		<texture name="Terrain/Ground/Battlfield1"/>
-		<texture name="Terrain/Ground/Battlfield1Normal"/>
-		<texture name="Terrain/Ground/Battlfield1SIC"/>
+		<texture name="Terrain/Ground/Battlefield1"/>
+		<texture name="Terrain/Ground/Battlefield1Normal"/>
+		<texture name="Terrain/Ground/Battlefield1SIC"/>
 	</textures>
 </material>

@@ -125,7 +125,7 @@
 		</jink>
 	</actions>
 	<traits>
-		<trait name="Imperial"/>
+		<trait name="AstraMilitarum/ImperialLegacy"/>
 		<trait name="ExtraVehicleArmour" requiredUpgrade="AstraMilitarum/ExtraVehicleArmour"/>
 		<trait name="Flyer"/>
 		<!-- <trait name="Hover"/> -->

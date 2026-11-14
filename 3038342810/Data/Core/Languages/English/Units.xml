@@ -18,4 +18,16 @@
 	<entry name="Orks/SqigHunter" value="SqigHunter"/>
 	<entry name="Orks/SqigHunterDescription" value="Infantry unit."/>
 	<entry name="Orks/SqigHunterFlavor" value="An Ork Squig Hunter is a uniquely skilled individual among the Ork race. Clad in makeshift armor and armed with a variety of weapons, they specialize in harnessing the untamed Squigs, using them both as companions and weapons. With whom thier would be no explosive squig mines and Squig-launchers, the hunter brings chaos to the battlefield. most often used as a scout, when not wrangling sqigs"/>
+	<entry name="Neutral/Grotpost" value="Grotpost"/>
+	<entry name="Neutral/GrotpostDescription" value="Grot outpost "/>
+	<entry name="Neutral/GrotpostFlavor" value="The Grotpost emerges as a rugged Ork stronghold. Crafted from salvaged debris, these hubs of greenskin activity epitomize Ork resourcefulness. Despite their haphazard appearance, Grotposts serve as essential outposts for Gretchin innovation and strategic launching points for Ork campaigns. These resilient strongholds embody the pragmatic spirit of the Orks, turning chaos into functional bastions within the relentless warfare of the 41st millennium."/>
+	<entry name="Neutral/Grotz" value="Grotz"/>
+	<entry name="Neutral/GrotzDescription" value="light Infantry unit "/>
+	<entry name="Neutral/GrotzFlavor" value="Gretchin, or *Grotz,* are pint-sized greenskin warriors. forming the vast cannon fodder of Ork hordes. Despite their diminutive stature, these scavengers wield makeshift weaponry and overwhelm foes through sheer numerical superiority. Acting as distractions and absorbing enemy fire, Gretchin may be small, but they are indispensable pawns in the brutal symphony of Ork warfare."/>
+	<entry name="Neutral/GrotzKamando" value="GrotzKamando"/>
+	<entry name="Neutral/GrotzKamandoDescription" value="light Infantry unit "/>
+	<entry name="Neutral/GrotzKamandoFlavor" value="These shrewd greenskin operatives wield an arsenal of improvised weaponry, utilizing their craftiness to outsmart and outmaneuver adversaries. Despite their smaller size, the GrotzKamando unit excels in guerrilla tactics, relying on surprise attacks and strategic movements to gain the upper hand on the battlefield. Serving as more than mere cannon fodder, these intelligent Grotz play a pivotal role, disrupting enemy formations and creating chaos in the relentless and brutal dance of Ork warfare. In the symphony of battle, the GrotzKamando unit emerges as indispensable, proving that size is not the only factor that defines a warrior's strength on the war-torn frontlines."/>
+	<entry name="Neutral/Nobs" value="Nobz"/>
+	<entry name="Neutral/NobsDescription" value="Infantry unit "/>
+	<entry name="Neutral/NobsFlavor" value="Ork Nobz are powerful and heavily armored elite warriors within the Ork society in the Warhammer 40,000 universe. Towering over regular Orks, Nobz are characterized by their size, strength, and love for close combat. They serve as leaders and champions, often commanding groups of lesser Orks into battle. Clad in crude, yet formidable, armor and armed with a variety of brutal weapons, Ork Nobz embody the brutal and anarchic nature of their race. Their status is earned through combat prowess, and they are recognized as some of the toughest and most fearsome fighters in Ork warbands."/>
 </language>

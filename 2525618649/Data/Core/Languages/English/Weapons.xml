@@ -3,5 +3,5 @@
 	<entry name="Bayonet" value="Bayonet"/>
 	<entry name="BayonetFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
 	<entry name="CombatShovel" value="CombatShovel"/>
-	<entry name="CombatShovel" value="<string name='Weapons/MeleeFlavor'/>"/>
+	<entry name="CombatShovelFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
 </language>

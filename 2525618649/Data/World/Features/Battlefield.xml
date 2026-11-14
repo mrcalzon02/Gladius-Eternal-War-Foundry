@@ -47,6 +47,6 @@
 		</modifier>
 	</modifiers>
 	<traits>
-		<trait name="battlefield"/>
+		<trait name="Battlefield"/>
 	</traits>
 </feature>

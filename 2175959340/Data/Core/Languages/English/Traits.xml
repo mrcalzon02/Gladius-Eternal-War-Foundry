@@ -2,4 +2,8 @@
 <language>
 	<entry name="Entrenching" value="Entrenching"/>
 	<entry name="SpaceMarines/EntrenchingDescription" value="Increases armour the Via use of trenches"/>
+	<entry name="SpaceMarines/Entrenching" value="Entrenching"/>
+	<entry name="SpaceMarines/EntrenchingFlavor" value="Prepared positions shelter troops from enemy fire."/>
+	<entry name="EntrenchingDescription" value="Increases armour by 1."/>
+	<entry name="EntrenchingFlavor" value="Prepared positions shelter troops from enemy fire."/>
 </language>

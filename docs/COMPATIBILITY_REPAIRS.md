@@ -35,9 +35,10 @@ is not proof of entitlement. Confirm actual DLC recognition in a fresh game laun
 before diagnosing this as a missing production action. File presence alone does
 not establish ownership or availability.
 
-### Remaining source findings
+### Findings from iteration 1
 
-The isolated-mod audit deliberately still exits 1 for these two findings:
+At iteration 1, the isolated-mod audit returned two findings. The Magos
+Entrenching dependency was resolved in iteration 3; the Carnifex difference remains:
 
 1. Penal Legion's `World/Units/AstraMilitarum/Magos.xml` requires
    `SpaceMarines/Entrenching`, supplied by Veteran Marines, not Penal Legion or the
@@ -106,3 +107,51 @@ The two hand-socket corrections were installed into the active local Penal Legio
 Workshop files after checking their pre-repair versions and backing up original
 bytes and hashes. In-game appearance remains unverified; no Workshop upload was
 performed.
+
+## Iteration 3: resources and faction research access
+
+The resource audit initially reported 21 issues and now reports zero across 356
+World XML files in seven isolated mods. This limited scope checks exact-case
+trait/feature/weapon references, material textures, new-unit English names and
+portraits/overlays, and duplicate language keys; it does not attest all assets or
+actual AI behavior. All 19 regression tests pass.
+
+- Penal Legion: corrected Battlefield's trait ID from `battlefield` to
+  `Battlefield` and three material texture paths from `Battlfield1` to
+  `Battlefield1`; the original DDS assets and trait already existed.
+- Added the missing Bayonet informational trait with the existing weapon icon
+  and English text. Weapon activation and damage definitions are unchanged.
+- Restored Valkyrie's intended `AstraMilitarum/ImperialLegacy` reference in place
+  of the nonexistent `Imperial` trait, matching the other Militarum units.
+- Fixed the duplicate CombatShovel localization key: the second entry is its
+  Flavor text, so the weapon name is no longer overwritten.
+- Veteran Marines: supplied the missing scoped Entrenching name/flavor and icon,
+  plus the shared description/flavor aliases. Existing icon art was reused.
+- Proper wagh!: supplied all 12 missing name/description/flavor entries for four
+  neutral variants, copied from their authored Ork counterparts. Their portrait
+  and overlay icons were already present and were not replaced.
+- Penal Legion Magos: moved Entrenching to a self-contained Astra Militarum trait
+  and research node with matching icon and localization. The existing +1 armour
+  effect, tier-1 position and infantry research score are preserved from the
+  authored Veteran Marines definition. This removes a cross-mod and cross-faction
+  research dependency. Its ExtraInfantryArmour gate now uses the existing
+  AstraMilitarum upgrade instead of the SpaceMarines upgrade.
+
+The production audit now reports only the existing Carnifex research-gate
+change. Magos still references the hidden `SpaceMarines/LastStand` upgrade;
+this existing quest/reward-related gate is recorded for further reachability
+review rather than silently granting the morale bonus.
+
+Repeat resource checks with:
+
+```powershell
+python tools/audit_resource_integrity.py --game-data 'C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40000 Gladius - Relics of War\Data' --report resources.json
+```
+
+The language scanner accepts Gladius embedded string markup. The file index
+checks identifier case even on Windows. Runtime render textures used by shipped
+materials are distinguished from missing DDS files. No proprietary game assets
+are copied into the repository by this audit.
+
+Deployment and a fresh engine-load check are the next acceptance step. No full
+match, AI production, research completion or balance acceptance is claimed yet.

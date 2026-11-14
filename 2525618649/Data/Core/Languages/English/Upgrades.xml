@@ -5,4 +5,7 @@
 	<entry name="AstraMilitarum/BayonetDescription" value="Grants Guardsmen the ability to affix Bayonets "/>
 	<entry name="AstraMilitarum/BayonetFlavor" value="Many a Commander has Yelled this famous command, but first your unit needs to have them to use them."/>
 
+	<entry name="AstraMilitarum/Entrenching" value="Entrenching"/>
+	<entry name="AstraMilitarum/EntrenchingDescription" value="Increases armour by 1."/>
+	<entry name="AstraMilitarum/EntrenchingFlavor" value="Prepared positions shelter troops from enemy fire."/>
 </language>

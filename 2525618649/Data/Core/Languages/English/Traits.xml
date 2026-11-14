@@ -6,4 +6,10 @@
 <entry name="Battlefield" value="Battlefield"/>
 	<entry name="BattlefieldDescription" value="Increases the ranged damage reduction of infantry units."/>
 	<entry name="BattlefieldFlavor" value="A twisted network of mud-soaked trenches, Amidst the Charnel house lie the remnants of conflict:, craters filled with Corpse's and Bloody fouled water,and ruined barbed wire entanglements,and Undetonated munitions lurking in the muck, adding an ominous layer to the treacherous terrain blasted Clean of life by Conflict."/>
+	<entry name="Bayonet" value="Bayonets"/>
+	<entry name="BayonetDescription" value="Equipped with bayonets after Bayonet research."/>
+	<entry name="BayonetFlavor" value="Affix bayonets."/>
+	<entry name="AstraMilitarum/Entrenching" value="Entrenching"/>
+	<entry name="AstraMilitarum/EntrenchingDescription" value="Increases armour by 1."/>
+	<entry name="AstraMilitarum/EntrenchingFlavor" value="Prepared positions shelter troops from enemy fire."/>
 </language>

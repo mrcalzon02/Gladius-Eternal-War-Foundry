@@ -174,8 +174,8 @@
 		</enslavement>
 	</actions>
 	<traits>
-		<trait name="ExtraInfantryArmour" requiredUpgrade="SpaceMarines/ExtraInfantryArmour"/>
-		<trait name="Entrenching" requiredUpgrade="SpaceMarines/Entrenching"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
+		<trait name="AstraMilitarum/Entrenching" requiredUpgrade="AstraMilitarum/Entrenching"/>
 		<trait name="Hero"/>
 		<trait name="LastStand" requiredUpgrade="SpaceMarines/LastStand"/>
 		<trait name="Relentless"/>
