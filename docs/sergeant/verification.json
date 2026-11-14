@@ -1,0 +1,30 @@
+{
+  "status": "Actual MSH/ANM/DDS files reimported and compared",
+  "sampled_poses": 19,
+  "max_body_vertex_world_error": 1.64698753730493e-05,
+  "max_bone_matrix_error": 3.814697265625e-06,
+  "max_weapon_vertex_world_error": 1.5845421455682048e-05,
+  "body_triangles": 954,
+  "native_bones": 28,
+  "skinning": "Linear engine skinning; source comparison evaluated with preserve-volume disabled.",
+  "editable_source": "model-workbench/Sergeant-Headset-Variant/Sergeant-Animation-Work.blend",
+  "source_sha256": "23c2c580b238e48ef36d73e01cba8b7c5d8be79118aa4d5bf23deff9c03a6692",
+  "runtime_files": {
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantIdle.anm": "f4075842cc5d814163db230d377f818fec384c769d63fa90afa23a3400cf3fb7",
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantMelee.anm": "acbb3e1728e581205ba10698c129f7f3feb8f58766d4d5746e9b2b781505fbce",
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantMove.anm": "b2b55e2e997675601fb87ca85067d7b53fe25d2e15cad2e985b2ceced28a6913",
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantMoveBegin.anm": "218b84fdc4fb287a997a6f538f1f9c79a5a21d2672ee8b19e11a33d1efa068f1",
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantMoveEnd.anm": "fd175e1a673e7699e2436d1f911de61c67362530431403385f5255049e53040a",
+    "2525618649/Data/Video/Animations/Units/Foundry/VeteranSergeantRanged.anm": "b464c7228c1e07f83510b75f07bd2e661a3298517ca3eac5185f9368628da270",
+    "2525618649/Data/Video/Materials/Units/Foundry/VeteranSergeant.xml": "48db4004dd3a825b88516f587cb2106af09edbe2acb877cf75524159f5770603",
+    "2525618649/Data/Video/Meshes/Units/Foundry/VeteranSergeant.msh": "60637861a7c1a475a613d0f227de4fb966ab9d21ed9a2228715640e31877421a",
+    "2525618649/Data/Video/Meshes/Weapons/Foundry/VeteranBoltPistol.msh": "4b3710bc8d54e5f0c9b535a74c1c4296da5da4073f427e2548da4651679945e0",
+    "2525618649/Data/Video/Meshes/Weapons/Foundry/VeteranChainsword.msh": "4ac36f5c7eccc240d06eba015163091b8dd6139117aa7e2cddfbc9c45c2ae18b",
+    "2525618649/Data/Video/Textures/Units/Foundry/VeteranSergeantDiffuse.dds": "03bc19f3e3b5719f02676ee12c4781146113447fb56956c6482735b33c6be245",
+    "2525618649/Data/Video/Textures/Units/Foundry/VeteranSergeantNormal.dds": "e2c0a2ffd08eb62447919257c332ce2185f573db31d2a686116911a90cc98507",
+    "2525618649/Data/Video/Textures/Units/Foundry/VeteranSergeantSIC.dds": "410603139efbe7b1709a8cfd08454eb5124526b757f6e6559499a30b82578fcf",
+    "2525618649/Data/World/Units/AstraMilitarum/Sargent.xml": "0a4e7700bd47fa5983c14a420e2c1107ebee45d9b1aaad3a85c991617f30db34"
+  },
+  "gameplay_sections_preserved": true,
+  "in_game_combat_verified": false
+}

@@ -55,3 +55,12 @@ findings, and the pending gameplay and AI acceptance work.
 ## First practical milestone
 
 Preserve the seven recovered mod baselines, verify each mod's dependencies and requirements, and validate one mod end-to-end before introducing any automated publication.
+
+
+## Veteran sergeant model
+
+Penal Legion's Sargent now includes the accepted pistol/chainsword model, backpack,
+bedroll, cigar, and idle, walk, firing and lunging melee animations. See the
+[sergeant asset and validation notes](docs/SERGEANT_MODEL.md) and
+[editable source](model-workbench/Sergeant-Headset-Variant/README.md). Native export
+checks pass; live Gladius combat verification is pending.

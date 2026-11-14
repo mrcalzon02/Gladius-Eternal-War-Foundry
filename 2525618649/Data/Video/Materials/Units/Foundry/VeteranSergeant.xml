@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<material>
+  <textures>
+    <texture name="Units/Foundry/VeteranSergeantDiffuse" />
+    <texture name="Units/Foundry/VeteranSergeantNormal" />
+    <texture name="Units/Foundry/VeteranSergeantSIC" />
+    <texture name="ShadowMapColor" />
+  </textures>
+</material>
