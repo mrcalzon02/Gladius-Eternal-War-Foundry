@@ -16,7 +16,9 @@
         0.9999992847442627,
         0.9999997615814209
       ],
-      "blade_body_intersection_frames": []
+      "blade_body_intersection_frames": [],
+      "pauldron_intersection_samples": [],
+      "minimum_pauldron_vertex_clearance_world": 0.6294226050376892
     },
     "Nob - Crab claw attack": {
       "frames": [
@@ -34,11 +36,17 @@
         0.9999992847442627,
         1.0
       ],
-      "blade_body_intersection_frames": []
+      "blade_body_intersection_frames": [],
+      "pauldron_intersection_samples": [],
+      "minimum_pauldron_vertex_clearance_world": 0.6294201016426086
     }
   },
   "failures": [],
-  "animated_export_sha256": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
+  "animated_export_sha256": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+  "reimport_pauldron": {
+    "intersection_samples": [],
+    "minimum_vertex_clearance_world": 0.6294212341308594
+  },
   "max_reimport_joint_position_error_world": 6.102968448460388e-05,
-  "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b"
+  "working_sha256": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8"
 }

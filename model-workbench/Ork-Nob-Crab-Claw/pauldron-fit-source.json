@@ -1,0 +1,16 @@
+{
+  "Ork-Nob-Crab-Claw.blend": {
+    "before": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
+    "after": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+    "all_actions_preserved": true,
+    "all_other_meshes_uvs_and_groups_preserved": true,
+    "checkpoint": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Ork-Nob-Crab-Claw\\checkpoints\\before-inner-liner-20261114-071145-Ork-Nob-Crab-Claw.blend"
+  },
+  "Nob-Animation-Work.blend": {
+    "before": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
+    "after": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
+    "all_actions_preserved": true,
+    "all_other_meshes_uvs_and_groups_preserved": true,
+    "checkpoint": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Ork-Nob-Crab-Claw\\checkpoints\\before-inner-liner-20261114-071145-Nob-Animation-Work.blend"
+  }
+}
