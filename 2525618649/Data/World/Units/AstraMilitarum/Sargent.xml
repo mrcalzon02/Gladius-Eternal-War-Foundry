@@ -17,7 +17,7 @@
 			<model>
 				<weapon mesh="Weapons/SpaceMarines/Chainsword"
 						material="Weapons/SpaceMarines/Chainsword"
-						bone="LeftHand"/>
+						bone="LeftHandBone"/>
 			</model>
 		</weapon>
 		<weapon name="BoltPistol" slotName="BoltPistol">

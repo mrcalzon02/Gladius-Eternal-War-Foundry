@@ -93,3 +93,13 @@ Do not mark a mod fully compatible until the relevant game tests pass. Do not
 overwrite divergent active Workshop files while deploying a test build; preserve
 them and use a reversible test copy. No Steam Workshop publication is performed
 by these tools.
+
+## Iteration 2: weapon attachment references
+
+Corrected two nonexistent LeftHand references to the verified Guardsman socket
+LeftHandBone. The mesh-aware audit checks 115 unit definitions with zero missing
+attachment/muzzle names after repair; 13 regression tests pass. Five custom
+weapon combinations across four units still require visual acceptance. See the
+[attachment guide](WEAPON_ATTACHMENTS.md) for exact XML examples, the repair
+evidence, pivot and animation constraints, and the remaining review queue.
+These repairs have not been deployed to the active Workshop installation.
