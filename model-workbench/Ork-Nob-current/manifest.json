@@ -1,0 +1,200 @@
+{
+  "meshes": [
+    {
+      "name": "OrkBoy",
+      "vertices": 3828,
+      "faces": 1276,
+      "vertex_groups": 16
+    },
+    {
+      "name": "Slugga",
+      "vertices": 132,
+      "faces": 44,
+      "vertex_groups": 2
+    },
+    {
+      "name": "Choppa",
+      "vertices": 114,
+      "faces": 38,
+      "vertex_groups": 1
+    }
+  ],
+  "rigs": [
+    {
+      "name": "OrkBoy_rig",
+      "bones": 32
+    },
+    {
+      "name": "Slugga_rig",
+      "bones": 4
+    },
+    {
+      "name": "Choppa_rig",
+      "bones": 2
+    }
+  ],
+  "actions": 15,
+  "messages": [
+    {
+      "level": [
+        "INFO"
+      ],
+      "message": "Imported OrkBoy: 3828 verts, 1276 faces, 16 bones"
+    },
+    {
+      "level": [
+        "INFO"
+      ],
+      "message": "Imported Slugga: 132 verts, 44 faces, 2 bones"
+    },
+    {
+      "level": [
+        "INFO"
+      ],
+      "message": "Imported Choppa: 114 verts, 38 faces, 1 bones"
+    },
+    {
+      "level": [
+        "INFO"
+      ],
+      "message": "Imported Nobs: 2 attachment(s), 0 hidden variant(s), 15 body animation(s)"
+    }
+  ],
+  "files": [
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyAttack.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyAttack.anm",
+      "sha256": "44988e3fd0b07752d30bda3bace0db69e40e49add2d2e4a8bb10b55ba0f1af57"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyCharge.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyCharge.anm",
+      "sha256": "213224f372c05c061821dc485c937538d12c8262f83a6eff3039d5f2ff0cf579"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyChargeDefense.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyChargeDefense.anm",
+      "sha256": "8573474ed33cd49443c0ca087c2a9c1bedde57c92a8ba12ae9e8d95049651998"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie0.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie0.anm",
+      "sha256": "24046bcfbd5a73834f5695f472d6f24dfef7a2e935317643df7a131763f74406"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie1.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie1.anm",
+      "sha256": "ce96c8d53bc58ddf6f08f0933bc2787f7326b59c29efa106581a11f19836763d"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie2.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyDie2.anm",
+      "sha256": "d779673da79ec12571193035968245dbf30aa0ddadd293fad63d472aa8f0c8f1"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyGrenade.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyGrenade.anm",
+      "sha256": "3c713d19eebc8d41a557ddd4973eed3762b66dbbc067e9dd562504985cf0eb34"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle0.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle0.anm",
+      "sha256": "56251d784d6a05840e6cff3341f796563493e5d9f0f0025b60d03cc13fede500"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle1.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle1.anm",
+      "sha256": "de72ee22cf7773c1b657cbad5713c6fc0022526d28ba9a952271e803410e9278"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle2.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyIdle2.anm",
+      "sha256": "1b6912b7a3648dc4335e5b995849d825d09744d8451ef91a8fb00fcb67688295"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyMelee.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyMelee.anm",
+      "sha256": "26af541b14f61a6af79b8f035a342e013cfe15c05028e0d6a0e76fedd5874236"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyMeleeDefense.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyMeleeDefense.anm",
+      "sha256": "23facea9837a3720658bd552a1c5b28fdcb707822577c4d44eed6f5169e6d57e"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyMove.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyMove.anm",
+      "sha256": "f12bb79426da58e60575a346a80ceefe6c7eff552225644bd1a28098d2ca45dc"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyMoveBegin.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyMoveBegin.anm",
+      "sha256": "14381d321191e3fc900b1064fd01b09fbe79176c9f80fcf7e8f61b70050ae353"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\Orks\\OrkBoyMoveEnd.anm",
+      "copy": "Data\\Video\\Animations\\Units\\Orks\\OrkBoyMoveEnd.anm",
+      "sha256": "2bb7ef49953105b52f14fd83b4e4f8409ddad5920644d990063a9ae95b2e67d7"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Meshes\\Units\\Orks\\OrkBoy.msh",
+      "copy": "Data\\Video\\Meshes\\Units\\Orks\\OrkBoy.msh",
+      "sha256": "ec60dff667541716f9f63a371b2260b22d584a54106111142294b1d3e16b7268"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Meshes\\Weapons\\Orks\\Choppa.msh",
+      "copy": "Data\\Video\\Meshes\\Weapons\\Orks\\Choppa.msh",
+      "sha256": "b0d72c388e72a51fe69040b9e2a7a54eb94020ea0fd65d48fc286a069cd5f9da"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Meshes\\Weapons\\Orks\\Slugga.msh",
+      "copy": "Data\\Video\\Meshes\\Weapons\\Orks\\Slugga.msh",
+      "sha256": "a9360414f48d20fc8ba646a102634a3034b446ba4ca84cc5c2fa6f9f06bad870"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Materials\\Units\\Orks\\OrkBoy3.xml",
+      "copy": "Data\\Video\\Materials\\Units\\Orks\\OrkBoy3.xml",
+      "sha256": "97a5033a520b539d9af54884c4d599e1322b83fd949f6dc5da16e25bb1781ae6"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Materials\\Weapons\\Orks\\ChoppaSlugga2.xml",
+      "copy": "Data\\Video\\Materials\\Weapons\\Orks\\ChoppaSlugga2.xml",
+      "sha256": "706951036490b81dd3aa8352c66003d8388a66646ed5409eefe2aa6b22972b17"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Units\\Orks\\OrkBoy3Diffuse.dds",
+      "copy": "Data\\Video\\Textures\\Units\\Orks\\OrkBoy3Diffuse.dds",
+      "sha256": "769c144dce00bb4695e766a6eea18f2307be03b4f18d93671e04401621d41ea4"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Units\\Orks\\OrkBoy3Normal.dds",
+      "copy": "Data\\Video\\Textures\\Units\\Orks\\OrkBoy3Normal.dds",
+      "sha256": "804710e6a95ab7b1193123c08d00440d682fa0d1ddadf54bd59e67ea7e4b0e12"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Units\\Orks\\OrkBoy3SIC.dds",
+      "copy": "Data\\Video\\Textures\\Units\\Orks\\OrkBoy3SIC.dds",
+      "sha256": "4f9e6ae2a5b7d7d515fa357d557d654cfcc06fcb26254729699f7ae487aedc17"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2Diffuse.dds",
+      "copy": "Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2Diffuse.dds",
+      "sha256": "c16fd562c375cd927bc0300dc83727b2742177cab316d7341bf15fb1b35f8712"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2Normal.dds",
+      "copy": "Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2Normal.dds",
+      "sha256": "bfa174e466f4faa5821050c0287e19020fe6c722b1276d7f986e47272ef3ddff"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2SIC.dds",
+      "copy": "Data\\Video\\Textures\\Weapons\\Orks\\ChoppaSlugga2SIC.dds",
+      "sha256": "04f635573b0850f9bc11d9b9e5b1cb2e20f533528dba6a144ab2c1c6b0da54a3"
+    },
+    {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\489630\\3038342810\\Data\\World\\Units\\Orks\\Nobs.xml",
+      "copy": "Data\\World\\Units\\Orks\\Nobs.xml",
+      "sha256": "81044122e07dc94ca805a4440edc97292a2440f574d1f74f2c75830c397c6a98"
+    }
+  ]
+}

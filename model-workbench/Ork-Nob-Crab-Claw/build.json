@@ -1,0 +1,18 @@
+{
+  "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Ork-Nob-current\\Ork-Nob-current.blend",
+  "source_sha256": "9e58b8a3fe090b7fb9ca3328177cb4615de82a31ea4124665bed2770c2958e22",
+  "added_triangles": 1436,
+  "body_triangles": 1200,
+  "added_objects": 51,
+  "role": "Regular Nob; two-jaw crab claw replaces organic left hand; original LeftHand joint drives claw",
+  "removed_organic_hand_faces": 76,
+  "claw_axis_world": [
+    0.29515519738197327,
+    0.5026803016662598,
+    -0.8125244379043579
+  ],
+  "claw_attachment": "Rear-entry tapered octagonal socket, aligned elbow to wrist",
+  "palette": "Unmodified OrkBoy3 native diffuse / normal / SIC; authored UV patches",
+  "hat": "Faceted scrap top hat attached to Head joint",
+  "integration": "Editable local candidate; not deployed to game"
+}

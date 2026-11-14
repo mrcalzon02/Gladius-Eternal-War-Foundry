@@ -1,0 +1,73 @@
+{
+  "status": "Local authored animation ready for user review",
+  "visual_scores_out_of_10": {
+    "hinge_and_closure": 9,
+    "mechanical_attachment": 8,
+    "attack_silhouette": 8,
+    "timing_and_recovery": 8
+  },
+  "observations": [
+    "Open jaw stays hinged at axle; tips meet at closure.",
+    "Wrist stays aligned with forearm at half-frame samples.",
+    "Barrel length remains fixed; piston telescopes; clevis pin seats against moving jaw.",
+    "Anticipation, downstroke, snapping grip, wrench and recovery read in rendered contact sheet.",
+    "Hat, jaw and standard move with their supporting joints."
+  ],
+  "technical": {
+    "clips": {
+      "Nob - Crab claw mechanism": {
+        "frames": [
+          1,
+          49
+        ],
+        "max_hinge_drift_world": 5.170166121054039e-06,
+        "max_hand_forearm_transform_difference": 4.291534423828125e-06,
+        "max_foot_drift_world": 1.5993604499100135e-06,
+        "jaw_tip_gap_world": [
+          1.9073486328125e-06,
+          20.219241737682882
+        ],
+        "barrel_world_scale_range": [
+          0.9999992847442627,
+          0.9999997615814209
+        ],
+        "blade_body_intersection_frames": []
+      },
+      "Nob - Crab claw attack": {
+        "frames": [
+          1,
+          65
+        ],
+        "max_hinge_drift_world": 1.311085422980072e-05,
+        "max_hand_forearm_transform_difference": 9.5367431640625e-06,
+        "max_foot_drift_world": 1.5993604499100135e-06,
+        "jaw_tip_gap_world": [
+          3.814697265625e-06,
+          20.219242119438118
+        ],
+        "barrel_world_scale_range": [
+          0.9999992847442627,
+          1.0
+        ],
+        "blade_body_intersection_frames": []
+      }
+    },
+    "failures": [],
+    "animated_export_sha256": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
+    "max_reimport_joint_position_error_world": 6.102968448460388e-05,
+    "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b"
+  },
+  "limitations": [
+    "Native Gladius skeleton export and gameplay events are not yet verified.",
+    "Preview GLB contains the attack; mechanism clip is in the editable blend."
+  ],
+  "hashes": {
+    "Nob-Animation-Work.blend": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
+    "Nob-Claw-Attack-review.glb": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
+    "nob-attack.gif": "6b8c790a254ea87539ae7a43a4ab5acd4fbd147c9f0d67b0ade561257acaca18",
+    "nob-claw.gif": "e6f4f4345232780052e7f4681e48851ba5f4d00bb5c01204358401a795a091f3",
+    "attack-contact-sheet.jpg": "72fe776a3d902b53bae80b0fd35d8c1ed60387ab667e4e37d10342c7a4d5f9e6",
+    "animation-previews\\reimport-16.png": "a4d6414d875b9b6ae1374181f8d92af1891423d0a1f53e176bfdb891e2c2993e",
+    "animation-previews\\reimport-30.png": "4f08dffc7a30b35e87db9a85dc12d86aa771fcd4641bb20eb54688fe49785661"
+  }
+}
