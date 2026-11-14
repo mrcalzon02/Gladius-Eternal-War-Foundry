@@ -52,6 +52,8 @@
 		<produceUnit unit="Necrons/TriarchPraetorian" requiredUpgrade="Necrons/TriarchPraetorian"/>
 		<produceUnit unit="Necrons/SkorpekhDestroyer" requiredUpgrade="Necrons/SkorpekhDestroyer"/>
 		<produceUnit unit="Necrons/TranscendentCtan" requiredUpgrade="Necrons/TranscendentCtan"/>
+		<produceUnit unit="Necrons/CanoptekReanimator" requiredUpgrade="Necrons/CanoptekReanimator"/>
+		<produceUnit unit="Necrons/HexmarkDestroyer" requiredUpgrade="Necrons/HexmarkDestroyer"/>
 	</actions>
 	<traits>
 		<trait name="Necrons/InfantryBuildingBonus" requiredUpgrade="Necrons/InfantryBuildingBonus"/>
