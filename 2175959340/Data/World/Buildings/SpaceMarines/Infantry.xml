@@ -41,5 +41,10 @@
 		<produceUnit unit="SpaceMarines/Apothecary" requiredUpgrade="SpaceMarines/Apothecary"/>
 		<produceUnit unit="SpaceMarines/Terminator" requiredUpgrade="SpaceMarines/Terminator"/>
 		<produceUnit unit="SpaceMarines/DevastatorCenturion" requiredUpgrade="SpaceMarines/DevastatorCenturion"/>
+		<produceUnit unit="SpaceMarines/PrimarisIntercessor" requiredUpgrade="SpaceMarines/PrimarisIntercessor"/>
+		<produceUnit unit="SpaceMarines/PrimarisAggressor" requiredUpgrade="SpaceMarines/PrimarisAggressor"/>
+		<produceUnit unit="SpaceMarines/PrimarisHellblaster" requiredUpgrade="SpaceMarines/PrimarisHellblaster"/>
+		<produceUnit unit="SpaceMarines/PrimarisInceptor" requiredUpgrade="SpaceMarines/PrimarisInceptor"/>
+		<produceUnit unit="SpaceMarines/AssaultTerminator" requiredUpgrade="SpaceMarines/AssaultTerminator"/>
 	</actions>
 </building>
