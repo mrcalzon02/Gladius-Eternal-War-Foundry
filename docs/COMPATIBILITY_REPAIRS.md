@@ -185,3 +185,19 @@ only remaining production-audit finding is the preserved Carnifex gate differenc
 This is a conservative source-level AI integration repair, not observed proof
 of improved AI selection. These three new building edits have not been deployed
 or loaded into the user's current game session. Matched AI runs are still needed.
+
+## Iteration 5: preserve power generation as the primary role
+
+Per the author's clarification, Veteran Marines' Energy building is primarily
+power infrastructure; recruiting its Techpriest is an additional function.
+Restored the shipped `increaseEnergyScore base="1.0"` in place of the incorrect
+infantry-production priority. No extra factory-construction priority was added.
+The +6 energy, loyalty, production, costs, upkeep and existing Techpriest
+production action are unchanged. The current Magos production route remains
+Housing2. Exact non-strategy XML equivalence and the shipped energy score were
+verified. AI construction/recruitment behavior still needs a matched game test.
+
+Installed the corrected Energy XML into the active Veteran Marines Workshop
+folder with Gladius closed, after verifying the pre-repair version and saving
+original bytes and hashes under the local chat workspace backup directory
+`backups/energy-priority-227875e/`. Fresh game behavior is not yet verified.

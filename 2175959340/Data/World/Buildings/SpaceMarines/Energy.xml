@@ -28,7 +28,7 @@
 	<strategyModifiers>
 		<modifier>
 			<effects>
-				<increaseInfantryProductionScore base="1.0"/>
+				<increaseEnergyScore base="1.0"/>
 			</effects>
 		</modifier>
 	</strategyModifiers>
