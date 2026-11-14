@@ -102,4 +102,7 @@ attachment/muzzle names after repair; 13 regression tests pass. Five custom
 weapon combinations across four units still require visual acceptance. See the
 [attachment guide](WEAPON_ATTACHMENTS.md) for exact XML examples, the repair
 evidence, pivot and animation constraints, and the remaining review queue.
-These repairs have not been deployed to the active Workshop installation.
+The two hand-socket corrections were installed into the active local Penal Legion
+Workshop files after checking their pre-repair versions and backing up original
+bytes and hashes. In-game appearance remains unverified; no Workshop upload was
+performed.

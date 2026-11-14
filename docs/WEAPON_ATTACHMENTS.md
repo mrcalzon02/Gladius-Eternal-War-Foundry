@@ -8,7 +8,11 @@ Space Marine chainsword meshes. The actual Guardsman mesh bone table contains
 statistics, weapon identities, meshes, materials, or animations were changed.
 
 This corrects a missing attachment reference; final grip and animation fit still
-require a rendered or in-game check. No changes were deployed to Workshop files.
+require a rendered or in-game check. The two corrected XML files were installed
+into the active local Penal Legion Workshop folder with Gladius closed, after
+confirming both matched their pre-repair source versions. Original bytes and
+before/after hashes are backed up under the chat workspace at
+`backups/weapon-attachments-2764f24/`. No Steam Workshop upload was performed.
 
 ## The three separate parts
 
