@@ -1,0 +1,19 @@
+{
+  "triangles": 2680,
+  "bounds": [
+    [
+      -33.569854736328125,
+      -44.87369918823242,
+      -1.9525805711746216
+    ],
+    [
+      46.80000686645508,
+      59.74643325805664,
+      125.00001525878906
+    ]
+  ],
+  "failures": [],
+  "static_review_only": true,
+  "source_sha256": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
+  "export_sha256": "859dac4cac6befff0f2d72085dce926a363aeb7861d2dd9c2378cbfb326ea0ec"
+}

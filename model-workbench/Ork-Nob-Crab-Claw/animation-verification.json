@@ -1,0 +1,44 @@
+{
+  "clips": {
+    "Nob - Crab claw mechanism": {
+      "frames": [
+        1,
+        49
+      ],
+      "max_hinge_drift_world": 5.170166121054039e-06,
+      "max_hand_forearm_transform_difference": 4.291534423828125e-06,
+      "max_foot_drift_world": 1.5993604499100135e-06,
+      "jaw_tip_gap_world": [
+        1.9073486328125e-06,
+        20.219241737682882
+      ],
+      "barrel_world_scale_range": [
+        0.9999992847442627,
+        0.9999997615814209
+      ],
+      "blade_body_intersection_frames": []
+    },
+    "Nob - Crab claw attack": {
+      "frames": [
+        1,
+        65
+      ],
+      "max_hinge_drift_world": 1.311085422980072e-05,
+      "max_hand_forearm_transform_difference": 9.5367431640625e-06,
+      "max_foot_drift_world": 1.5993604499100135e-06,
+      "jaw_tip_gap_world": [
+        3.814697265625e-06,
+        20.219242119438118
+      ],
+      "barrel_world_scale_range": [
+        0.9999992847442627,
+        1.0
+      ],
+      "blade_body_intersection_frames": []
+    }
+  },
+  "failures": [],
+  "animated_export_sha256": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
+  "max_reimport_joint_position_error_world": 6.102968448460388e-05,
+  "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b"
+}

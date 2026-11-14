@@ -1,0 +1,34 @@
+{
+  "source_sha256": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
+  "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
+  "clips": [
+    {
+      "name": "Nob - Crab claw mechanism",
+      "frames": [
+        1.0,
+        49.0
+      ]
+    },
+    {
+      "name": "Nob - Crab claw attack",
+      "frames": [
+        1.0,
+        65.0
+      ]
+    }
+  ],
+  "original_15_actions_unchanged": true,
+  "geometry_changes": [
+    "Crab actuator barrel",
+    "Crab actuator piston",
+    "Crab actuator jaw clevis pin"
+  ],
+  "hinge_bone": "Nob_ClawJaw",
+  "closed_degrees": 9.939481456220609,
+  "open_degrees": -42,
+  "impact_frame": 30,
+  "fps": 24,
+  "limitations": [
+    "Local Blender animation; native Gladius exporter and in-game timing unverified."
+  ]
+}

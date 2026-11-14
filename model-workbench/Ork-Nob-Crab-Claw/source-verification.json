@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "name": "ChoppaSlugga2Diffuse.dds",
+      "packed": true,
+      "loaded": true
+    },
+    {
+      "name": "ChoppaSlugga2Normal.dds",
+      "packed": true,
+      "loaded": true
+    },
+    {
+      "name": "ChoppaSlugga2SIC.dds",
+      "packed": true,
+      "loaded": true
+    },
+    {
+      "name": "OrkBoy3Diffuse.dds",
+      "packed": true,
+      "loaded": true
+    },
+    {
+      "name": "OrkBoy3Normal.dds",
+      "packed": true,
+      "loaded": true
+    },
+    {
+      "name": "OrkBoy3SIC.dds",
+      "packed": true,
+      "loaded": true
+    }
+  ],
+  "actions": 15,
+  "hat_parts": [
+    "Bent eight-sided scrap hat brim",
+    "Crooked faceted top hat crown",
+    "Ochre scrap crown repair 0",
+    "Ochre scrap crown repair 4",
+    "Riveted ochre metal hatband",
+    "Jagged scrap hat feather",
+    "Seated top hat band rivet",
+    "Seated top hat band rivet.001",
+    "Seated top hat band rivet.002",
+    "Seated top hat band rivet.003"
+  ],
+  "hat_weights_all_head": true,
+  "failures": []
+}
