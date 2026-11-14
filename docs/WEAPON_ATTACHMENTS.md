@@ -4,7 +4,8 @@
 
 Penal Legion's modified Guardsman and Sargent used `bone="LeftHand"` for their
 Space Marine chainsword meshes. The actual Guardsman mesh bone table contains
-`LeftHandBone`, not `LeftHand`. Both references now use `LeftHandBone`. No combat
+`LeftHandBone`, not `LeftHand`. Both were corrected to `LeftHandBone` in the initial pass; Sargent now uses the
+hip-carried variant described below. No combat
 statistics, weapon identities, meshes, materials, or animations were changed.
 
 This corrects a missing attachment reference; final grip and animation fit still
@@ -134,3 +135,7 @@ for melee would require an animation/attachment-switching solution, not included
 A textured static preview verifies the resting placement. In-game walking, idle
 and combat appearance remain to be checked after a reload. There are 34 passing
 regression tests and no missing attachment or muzzle names in the source audit.
+
+The hip asset and updated Sargent XML were installed with Gladius closed and
+original-file backups preserved. They load on the next launch; no live unit was
+hot-reloaded. The static preview does not attest animated in-game appearance.

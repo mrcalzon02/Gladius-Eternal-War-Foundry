@@ -183,8 +183,8 @@ only units and valid alternate production routes are excluded to avoid forcing
 extra construction priorities everywhere. All 21 regression tests pass; the
 only remaining production-audit finding is the preserved Carnifex gate difference.
 This is a conservative source-level AI integration repair, not observed proof
-of improved AI selection. These three new building edits have not been deployed
-or loaded into the user's current game session. Matched AI runs are still needed.
+of improved AI selection. At iteration 4 these building edits were not yet deployed. They were included
+in the later backed-up 12-file next-test update; AI behavior remains unverified. Matched AI runs are still needed.
 
 ## Iteration 5: preserve power generation as the primary role
 
@@ -238,3 +238,13 @@ All 34 regression tests pass; the resource audit reports zero findings and the
 attachment-name audit reports zero errors. The earlier match is not evidence
 that these new corrections are loaded. See the construction and weapon guides.
 The Arming Chambers and Wraithknight reviews remain queued.
+
+### Next-test deployment
+
+With Gladius confirmed closed, installed and verified 12 changed/new files,
+including the pending three AI role settings, scoped Grotpost labels, approved
+harvesting trait, v3 pilot and Sergeant hip sword. Original files and hashes are
+backed up under the local workspace at `backups/test-update-d7ee311/`. The next
+launch is required to load these changes; no live match was hot-reloaded. A fresh
+skirmish is the intended construction/harvesting acceptance test. No in-game
+success is claimed yet for these new corrections.

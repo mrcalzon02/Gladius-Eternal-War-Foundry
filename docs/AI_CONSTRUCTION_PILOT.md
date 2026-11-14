@@ -134,3 +134,8 @@ moves its Grotz to that site. Neither successful startup nor the harvesting trai
 proves that strategic travel behavior exists. Guard/Marine combat gates are still
 experimental. The previous no-construction observation is recorded as a user
 observation, not a controlled result with every precondition verified.
+
+V3 and its required base-mod changes were installed with the game closed. The
+next launch loads the new definitions; the original pilot's clean startup does
+not attest v3. The 12-file update is backed up under the local chat workspace at
+`backups/test-update-d7ee311/`. No current match was changed through hot reload.

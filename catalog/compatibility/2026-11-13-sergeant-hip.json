@@ -1,0 +1,30 @@
+{
+  "vertices": 1011,
+  "triangles": 337,
+  "scale": 0.6,
+  "rotation": "(x,y,z) -> (z,x,y)",
+  "hip_local_offset": [
+    0,
+    -6,
+    12
+  ],
+  "attachment": "HipBone",
+  "bounds_min": [
+    -5.216123771667481,
+    -4.098462009429932,
+    9.970025968551635
+  ],
+  "bounds_max": [
+    26.618939208984376,
+    3.8417404174804677,
+    13.099859976768494
+  ],
+  "source_sha256": "aaa0dabe181ae686b3adb9340f2ce24eb6a4d1d1c0f860c18c212413e3121d97",
+  "output_sha256": "cdff84290cb743949a3b1847ccaa9fea04129f687fced25f2f1aa57dbb3d94e7",
+  "reproducible": true,
+  "shared_mesh_modified": false,
+  "pistol_and_combat_rules_modified": false,
+  "visual_check": "Textured static preview inspected; in-game animation pending",
+  "installed_for_next_launch": true,
+  "regression_tests_passed": 34
+}

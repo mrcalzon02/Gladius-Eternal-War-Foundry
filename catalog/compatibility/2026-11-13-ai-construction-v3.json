@@ -1,5 +1,5 @@
 {
-  "status": "staged; gameplay and native harvesting behavior unverified",
+  "status": "installed for next launch; behavior and resource harvesting unverified",
   "user_observations": [
     "Grotpost construction action shows a question mark",
     "No Ork construction observed; Space Marine global deployment observed"
@@ -103,5 +103,9 @@
     ]
   },
   "tests_passed": 34,
-  "active_match_changed": false
+  "active_match_changed": false,
+  "installed_for_next_launch": true,
+  "game_closed_for_install": true,
+  "installed_file_count": 12,
+  "fresh_engine_load_after_update": "pending"
 }
