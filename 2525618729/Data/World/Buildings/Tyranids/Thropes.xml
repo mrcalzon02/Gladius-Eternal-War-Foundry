@@ -50,6 +50,7 @@
 		<produceUnit unit="Tyranids/Malanthrope"/>
 		<produceUnit unit="Tyranids/Zoanthrope" requiredUpgrade="Tyranids/Zoanthrope"/>
 		<produceUnit unit="Tyranids/Ripperswarm"/>
+		<produceUnit unit="Tyranids/Venomthrope" requiredUpgrade="Tyranids/Venomthrope"/>
 	</actions>
 	<traits>
 		<trait name="Tyranids/ProductionBuildingUpkeep" requiredUpgrade="Tyranids/ProductionBuildingUpkeep"/>

@@ -55,6 +55,7 @@
 		<produceUnit unit="Tyranids/Ravener" requiredUpgrade="Tyranids/Ravener"/>
 		<produceUnit unit="Tyranids/Biovore" requiredUpgrade="Tyranids/Biovore"/>
 		<produceUnit unit="Tyranids/Lictor" requiredUpgrade="Tyranids/Lictor"/>
+		<produceUnit unit="Tyranids/Genestealer" requiredUpgrade="Tyranids/Genestealer"/>
 	</actions>
 	<traits>
 		<trait name="Tyranids/ProductionBuildingUpkeep" requiredUpgrade="Tyranids/ProductionBuildingUpkeep"/>

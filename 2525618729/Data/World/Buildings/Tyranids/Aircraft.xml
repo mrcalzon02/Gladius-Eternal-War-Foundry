@@ -51,6 +51,7 @@
 		<produceUnit unit="Tyranids/HiveCrone"/>
 		<produceUnit unit="Tyranids/Ripperswarm"/>
 		<produceUnit unit="Tyranids/Gargoyle" requiredUpgrade="Tyranids/Gargoyle"/>
+		<produceUnit unit="Tyranids/Harpy" requiredUpgrade="Tyranids/Harpy"/>
 	</actions>
 	<traits>
 		<trait name="Tyranids/ProductionBuildingUpkeep" requiredUpgrade="Tyranids/ProductionBuildingUpkeep"/>
