@@ -1,0 +1,210 @@
+{
+  "status": "Native MSH/ANM/DDS round trip checked",
+  "triangles": 450,
+  "source_checks": {
+    "packed_images": [
+      "Ripper Diffuse 512",
+      "Ripper Normal 512",
+      "Ripper Roughness 512",
+      "Ripper SIC 512"
+    ],
+    "rest_ground_z": 0.0,
+    "components": [
+      {
+        "vertices": 165,
+        "nonmanifold_edges": 0,
+        "signed_volume": 180.81181984757626
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.516760458548864
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.8236223527540762
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.2213179518779118
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.2570078944166502
+      },
+      {
+        "vertices": 6,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.3012370880072317
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 0.8712816995879016
+      },
+      {
+        "vertices": 11,
+        "nonmanifold_edges": 0,
+        "signed_volume": 3.8296160909036794
+      },
+      {
+        "vertices": 4,
+        "nonmanifold_edges": 4,
+        "signed_volume": null
+      },
+      {
+        "vertices": 4,
+        "nonmanifold_edges": 4,
+        "signed_volume": null
+      },
+      {
+        "vertices": 4,
+        "nonmanifold_edges": 4,
+        "signed_volume": null
+      },
+      {
+        "vertices": 4,
+        "nonmanifold_edges": 4,
+        "signed_volume": null
+      }
+    ],
+    "core": {
+      "vertices": 165,
+      "nonmanifold_edges": 0,
+      "signed_volume": 180.81181984757626
+    },
+    "intentional_eye_surface_inlays": 4,
+    "connected_teeth": 6,
+    "shared_gum_root_vertices": 18,
+    "native_tooth_gum_seam_gap": 0,
+    "deform_group_totals": {
+      "Tail04": 3.957874272717163,
+      "Tail05": 5.537746146321297,
+      "Tail06": 7.320441877702251,
+      "Tail07": 3.92270664870739,
+      "Tail08": 0.3118270933628082,
+      "Tail09": 3.870130270719528,
+      "Tail10": 14.756410419940948,
+      "Unused_Bone.013": 0,
+      "Head": 58.31876402488615,
+      "Jaw": 31.058562312522554,
+      "Body": 22.61863881757108,
+      "Tail01": 18.49237198877381,
+      "Tail02": 8.185910462401807,
+      "Tail03": 2.648615512327524,
+      "LLeg1.Upper": 3.533137410879135,
+      "LLeg1.Shin": 4.072837814688683,
+      "LLeg1.Claw": 3.394024834036827,
+      "LLeg2.Upper": 4.753178507089615,
+      "LLeg2.Shin": 4.162366057641066,
+      "LLeg2.Claw": 2.08445543050766,
+      "LLeg3.Upper": 4.295587450265884,
+      "LLeg3.Shin": 3.798234567162581,
+      "LLeg3.Claw": 2.90617798268795,
+      "RLeg3.Upper": 4.899898797273636,
+      "RLeg3.Shin": 3.6883077526581474,
+      "RLeg3.Claw": 2.411793500185013,
+      "Tongue": 6.0,
+      "RLeg2.Upper": 4.806162714958191,
+      "RLeg2.Shin": 3.50243013956333,
+      "RLeg2.Claw": 2.691407188773155,
+      "RLeg1.Upper": 4.509578347206116,
+      "RLeg1.Shin": 3.7855468057096004,
+      "RLeg1.Claw": 2.704874813556671
+    }
+  },
+  "sampled_native_poses": 16,
+  "max_vertex_error": 3.8517700246342445e-06,
+  "max_bone_error": 8.642673492431641e-07,
+  "samples": {
+    "Idle 1": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Idle 17": {
+      "vertex_error": 2.900487198971853e-06,
+      "bone_matrix_error": 8.344650268554688e-07
+    },
+    "Idle 33": {
+      "vertex_error": 1.998311831264521e-06,
+      "bone_matrix_error": 7.897615432739258e-07
+    },
+    "Idle 49": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Move 1": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Move 9": {
+      "vertex_error": 2.900487198971853e-06,
+      "bone_matrix_error": 8.344650268554688e-07
+    },
+    "Move 17": {
+      "vertex_error": 1.998311831264521e-06,
+      "bone_matrix_error": 7.897615432739258e-07
+    },
+    "Move 25": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Melee 1": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Melee 9": {
+      "vertex_error": 2.949677236475616e-06,
+      "bone_matrix_error": 8.046627044677734e-07
+    },
+    "Melee 13": {
+      "vertex_error": 3.4240261593687705e-06,
+      "bone_matrix_error": 8.642673492431641e-07
+    },
+    "Melee 21": {
+      "vertex_error": 3.8517700246342445e-06,
+      "bone_matrix_error": 8.046627044677734e-07
+    },
+    "Die 1": {
+      "vertex_error": 2.9394216551632767e-06,
+      "bone_matrix_error": 7.152557373046875e-07
+    },
+    "Die 13": {
+      "vertex_error": 2.922451656372848e-06,
+      "bone_matrix_error": 6.556510925292969e-07
+    },
+    "Die 25": {
+      "vertex_error": 3.1291019316689224e-06,
+      "bone_matrix_error": 7.748603820800781e-07
+    },
+    "Die 37": {
+      "vertex_error": 2.2492363767758854e-06,
+      "bone_matrix_error": 6.854534149169922e-07
+    }
+  },
+  "glb_meshes": 1,
+  "glb_actions": [
+    "Ripper Die",
+    "Ripper Idle",
+    "Ripper Melee",
+    "Ripper Move"
+  ],
+  "glb_baked_material_channels": [
+    {
+      "Base Color": true,
+      "Normal": true,
+      "Roughness": true
+    }
+  ],
+  "native_images": [
+    "RipperDiffuse.dds",
+    "RipperNormal.dds",
+    "RipperSIC.dds"
+  ],
+  "failures": [],
+  "source_sha256": "8b11c1e438fcec368761513ada6cdb55f10b57c2027d42b7fcdc5cd028f7ca8b",
+  "engine_in_game_verified": false
+}

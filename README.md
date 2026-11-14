@@ -73,3 +73,9 @@ in the existing Ork and neutral Grot definitions. Stats and construction behavio
 are preserved. See [Grot integration notes](docs/GROT_REPLACEMENT.md) and
 [editable source](model-workbench/Grot-Sneak/README.md). Native asset checks pass;
 live Gladius combat verification remains pending.
+
+## Ripper model
+
+The Tyranid Ripperswarm now uses the accepted 450-triangle textured and rigged
+creature. [Source, previews, provenance and validation](docs/RIPPER_MODEL.md).
+Native checks pass; live game validation is pending.

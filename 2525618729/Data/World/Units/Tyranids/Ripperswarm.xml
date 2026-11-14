@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unit dlc="Supplement2">
 	<model>
-		<unit mesh="Units/Tyranids/Hormagaunt"
-				material="Units/Tyranids/Hormagaunt"
-				scale="0.4 0.4 0.4"
-				idleAnimation="Units/Tyranids/HormagauntIdle"
-				idleAnimationCount="3"
+		<unit mesh="Units/Foundry/Ripper"
+				material="Units/Foundry/Ripper"
+				scale="1 1 1"
+				idleAnimation="Units/Foundry/RipperIdle"
+				idleAnimationCount="1"
 				idleContinuously="1"
 				normalWeight="0.1"
 				bloodBone="BloodBone"
@@ -48,16 +48,16 @@
 	<actions>
 		<attack>
 			<model>
-				<action chargeAnimation="Units/Tyranids/HormagauntCharge"
-						meleeAnimation="Units/Tyranids/HormagauntMelee"
+				<action chargeAnimation="Units/Foundry/RipperMove"
+						meleeAnimation="Units/Foundry/RipperMelee"
 						meleeBeginSwing="0.3"
 						meleeEndSwing="0.8"/>
 			</model>
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Tyranids/HormagauntDie"
-						animationCount="2"
+				<action animation="Units/Foundry/RipperDie"
+						animationCount="1"
 						sound="Units/SmallUnarmoredDie"
 						soundCount="4"
 						soundDelay="0.5"
@@ -67,7 +67,7 @@
 		</die>
 		<move>
 			<model>
-				<action animation="Units/Tyranids/HormagauntMove"
+				<action animation="Units/Foundry/RipperMove"
 						sound="Units/Tyranids/InfantryMove"
 						soundCount="4"/>
 			</model>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<material>
+  <textures>
+    <texture name="Units/Foundry/RipperDiffuse" />
+    <texture name="Units/Foundry/RipperNormal" />
+    <texture name="Units/Foundry/RipperSIC" />
+    <texture name="ShadowMapColor" />
+  </textures>
+</material>
