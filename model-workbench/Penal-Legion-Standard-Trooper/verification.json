@@ -1,0 +1,176 @@
+{
+  "asset": "Penal Legion standard trooper",
+  "stage": "approved modeling baseline; Gladius runtime export/in-game animation unvalidated",
+  "source_user_edit_sha256": "6c6e9438a19233e493162c6b501a5cb14ed6491b724e719df3e1aafb4e0a8b6f",
+  "geometry_unchanged": true,
+  "body_uv_unchanged": true,
+  "triangles": 1293,
+  "atlas_size": [
+    512,
+    512
+  ],
+  "cleanup": {
+    "ear_loops": 60,
+    "temple_loops": 15
+  },
+  "max_uv_change_pixels": 0.7680053686684477,
+  "animation_actions": 11,
+  "rig": "Guardsman_rig",
+  "meshes": [
+    {
+      "name": "Simple leather utility belt",
+      "vertices": 48,
+      "triangles": 48,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Knife worn wrapped handle",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Knife crossguard",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Penal combat knife blade",
+      "vertices": 9,
+      "triangles": 14,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest sewn cloth patch",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest seam stitch 0",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest seam stitch 1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest seam stitch 2",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest seam stitch 3",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Chest seam stitch 4",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic sewn cloth patch",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic seam stitch 0",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic seam stitch 1",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic seam stitch 2",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic seam stitch 3",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Lower tunic seam stitch 4",
+      "vertices": 8,
+      "triangles": 12,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Penal Legion bald Guardsman head",
+      "vertices": 180,
+      "triangles": 324,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Low poly ragged tunic",
+      "vertices": 48,
+      "triangles": 80,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Right low poly cloth sleeve",
+      "vertices": 40,
+      "triangles": 70,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Left low poly cloth sleeve",
+      "vertices": 40,
+      "triangles": 70,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "Original Guardsman trousers boots and rifle hands",
+      "vertices": 933,
+      "triangles": 323,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "GuardsmanLasgun",
+      "vertices": 588,
+      "triangles": 196,
+      "degenerate_faces": 0
+    }
+  ],
+  "review_export_reimported": true,
+  "hashes": {
+    "export-front.png": "ab9dabb180763800d0d169feff73e4d03c7eed82bd13d202e7990171e75caa8f",
+    "export-head-closeup.png": "de3f74ff154475ea72fe7b555bc74b04e789a74a2c4379984858b0c4a686531e",
+    "export-rear.png": "763ce10b3bd0f40306f32b10a4e7735b8af5e83c670a85909bfff92c91886624",
+    "front.png": "ba0d94ee40d329fc5b18ab09cfae1b3a75aa42e260552692b248a1a481f70a7f",
+    "head-closeup.png": "30fadf3ce81082fae8d914ab52a64dabfdef2fc5744e9c60b2a1fa06217aed4d",
+    "rear.png": "648c9928448619af09eebe623144ac5d96e5f4d193562b77cb0e983e389c298f",
+    "Standard-Trooper-Diffuse512.png": "f1fa515c4146272ebd0eacebd54765409b9471fd4acf40f4ff30a99175036b46",
+    "Standard-Trooper-review.glb": "8db573fb32157263b884477fdaa3e6420bc6ea3591a8b969db5faba4c407f717",
+    "Standard-Trooper.blend": "4fafa0935604df16a33b5da34eb9ae7ac0e18a79005bf683a6e5362ec26e527c"
+  },
+  "source_reopened": {
+    "atlas_loaded": true,
+    "atlas_packed": true,
+    "atlas_size": [
+      512,
+      512
+    ],
+    "rig_present": true,
+    "actions": 11
+  },
+  "visual_review": "Viewed source head and reimported static preview; minor UV cleanup accepted within user-approved geometry. Static preview shader differences are documented; game integration remains unvalidated."
+}

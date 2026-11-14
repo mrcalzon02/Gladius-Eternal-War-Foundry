@@ -1,0 +1,12 @@
+{
+  "asset": "Penal Legion standard trooper",
+  "version": 1,
+  "status": "approved-modeling-baseline",
+  "source": "Penal-Legion-Standard-Trooper/Standard-Trooper.blend",
+  "diffuse": "Penal-Legion-Standard-Trooper/Standard-Trooper-Diffuse512.png",
+  "preview": "Penal-Legion-Standard-Trooper/Standard-Trooper-review.glb",
+  "verification": "Penal-Legion-Standard-Trooper/verification.json",
+  "triangles": 1293,
+  "texture_size": [512, 512],
+  "game_runtime_validated": false
+}
