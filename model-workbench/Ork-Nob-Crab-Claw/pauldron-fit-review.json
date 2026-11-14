@@ -1,0 +1,128 @@
+{
+  "status": "Reviewed locally; zero pauldron/liner intersections in static and animated checks",
+  "changes": [
+    "Removed the added claw-side yellow shell and two rivets.",
+    "Added a concealed 0.7-unit dark liner following the native rim.",
+    "Liner weights follow Torso with the original pauldron.",
+    "Model source and animation source corrected; existing action data preserved."
+  ],
+  "visual_scores_out_of_10": {
+    "native_shoulder_silhouette": 9,
+    "layer_fit": 9,
+    "low_poly_style": 8
+  },
+  "minimum_vertex_clearance_world": 0.6294212341308594,
+  "geometry_and_action_preservation": {
+    "Ork-Nob-Crab-Claw.blend": {
+      "before": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
+      "after": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+      "all_actions_preserved": true,
+      "all_other_meshes_uvs_and_groups_preserved": true,
+      "checkpoint": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Ork-Nob-Crab-Claw\\checkpoints\\before-inner-liner-20261114-071145-Ork-Nob-Crab-Claw.blend"
+    },
+    "Nob-Animation-Work.blend": {
+      "before": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
+      "after": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
+      "all_actions_preserved": true,
+      "all_other_meshes_uvs_and_groups_preserved": true,
+      "checkpoint": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Ork-Nob-Crab-Claw\\checkpoints\\before-inner-liner-20261114-071145-Nob-Animation-Work.blend"
+    }
+  },
+  "animation_checks": {
+    "clips": {
+      "Nob - Crab claw mechanism": {
+        "frames": [
+          1,
+          49
+        ],
+        "max_hinge_drift_world": 5.170166121054039e-06,
+        "max_hand_forearm_transform_difference": 4.291534423828125e-06,
+        "max_foot_drift_world": 1.5993604499100135e-06,
+        "jaw_tip_gap_world": [
+          1.9073486328125e-06,
+          20.219241737682882
+        ],
+        "barrel_world_scale_range": [
+          0.9999992847442627,
+          0.9999997615814209
+        ],
+        "blade_body_intersection_frames": [],
+        "pauldron_intersection_samples": [],
+        "minimum_pauldron_vertex_clearance_world": 0.6294226050376892
+      },
+      "Nob - Crab claw attack": {
+        "frames": [
+          1,
+          65
+        ],
+        "max_hinge_drift_world": 1.311085422980072e-05,
+        "max_hand_forearm_transform_difference": 9.5367431640625e-06,
+        "max_foot_drift_world": 1.5993604499100135e-06,
+        "jaw_tip_gap_world": [
+          3.814697265625e-06,
+          20.219242119438118
+        ],
+        "barrel_world_scale_range": [
+          0.9999992847442627,
+          1.0
+        ],
+        "blade_body_intersection_frames": [],
+        "pauldron_intersection_samples": [],
+        "minimum_pauldron_vertex_clearance_world": 0.6294201016426086
+      }
+    },
+    "failures": [],
+    "animated_export_sha256": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+    "reimport_pauldron": {
+      "intersection_samples": [],
+      "minimum_vertex_clearance_world": 0.6294212341308594
+    },
+    "max_reimport_joint_position_error_world": 6.102968448460388e-05,
+    "working_sha256": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8"
+  },
+  "static_checks": {
+    "triangles": 2544,
+    "bounds": [
+      [
+        -33.569854736328125,
+        -44.87369918823242,
+        -1.9525805711746216
+      ],
+      [
+        46.80000686645508,
+        59.74643325805664,
+        125.00001525878906
+      ]
+    ],
+    "failures": [],
+    "static_review_only": true,
+    "source_sha256": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+    "export_sha256": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5"
+  },
+  "reference_sha256": "9e58b8a3fe090b7fb9ca3328177cb4615de82a31ea4124665bed2770c2958e22",
+  "hashes": {
+    "attack-contact-sheet.jpg": "8acf6f81769110d1b8a54f9310f12099bcbfa4d7297b4bb9731fd623fd17139a",
+    "claw-closeup.png": "f9920ceef371517f793162b878b74bef2285064190192ae251342fccc42addcf",
+    "export-clay.png": "491bebcdbdb851bc242fe76d040e928ef5a3947707233f598dfb13626df04975",
+    "export-front.png": "0e05fae211f3b8c468d52f0f905379f90439630f02b4a5b60ed746a67fc91c95",
+    "export-rear.png": "716bbd291d8b14cfe9393f738955c266260dce88c1b400f38be68de19295d360",
+    "export-side.png": "329adaa6fa9b432f6766c2328e075d7b633002560d0843b16645fb8ab8350ef1",
+    "front.png": "ca0ab86e583bc73ed719a15decc05254a343e3ee4c736ee07085e7674bbff5c2",
+    "Nob-Animation-Work.blend": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
+    "nob-attack.gif": "db8a2562b9112b7355ddd95b12ffd0045dfb6b3a67e3aea3b10e8a1b8dee7ab4",
+    "Nob-Claw-Attack-review.glb": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+    "nob-claw.gif": "a1cfee4ace04c14e673ec20026a3905e30b39319c252fe2e30f4be313ccff2ff",
+    "Ork-Nob-Crab-Claw-review.glb": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5",
+    "Ork-Nob-Crab-Claw.blend": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+    "OrkBoy_Gladius-review-color.png": "30768708beb8630383de1afd784cf6b7d59313db997a14010c7f6fac227c4efb",
+    "pauldron-fit-raised.png": "c1006bf194bd48ccfe9a020f6ff8887b81a425c23ae19f9fdea861ff8046024b",
+    "pauldron-fit-rest.png": "2871e890dbe6feab34982990a05a67a6ab613490b684dd986f7516b57f789559",
+    "pauldron-fit-strike.png": "bcc6e7f27470c2bcc27ecd41767320c9936b37c091086d4bbe0090fe5dec429c",
+    "rear.png": "6f76d36141e9c35c35228c16625b35a067108fde91345c2c305caa9982f57b4c",
+    "shoulder-closeup.png": "272c4540c22e94163ab586cb00414c9f1fd775ee5cd0794c762612b70df38d30",
+    "Slugga_Gladius-review-color.png": "647116bc578a15b48e3ee3e1d8655e4510795419fbd8b645ab11887f08bf28dd"
+  },
+  "limits": [
+    "Gameplay and native Gladius deployment remain unverified."
+  ]
+}

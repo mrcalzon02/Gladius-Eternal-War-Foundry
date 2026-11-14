@@ -68,6 +68,7 @@ bvh=BVHTree.FromPolygons(worldverts,[tuple(p.vertices) for p in body.data.polygo
 for side,bone,start,end in [
  (-1,'RightUpperArm',(4.676,-21.673,75.481),(-7.121,-38.647,61.675)),
  (1,'LeftUpperArm',(13.409,18.378,75.779),(-6.04,28.265,63.867))]:
+ if side==1:continue # Claw side uses a concealed liner beneath its native pauldron.
  start,end=Vector(start),Vector(end);axis=(end-start).normalized()
  u=Vector((1,0,0));u=(u-axis*u.dot(axis)).normalized();v=axis.cross(u).normalized()
  # Cover the outer and upper arm, leaving the armpit open. A broad middle
@@ -106,6 +107,10 @@ for side,bone,start,end in [
  for j in [2,6]:
   a=outer[9+j];direction=(a-(start+axis*5)).normalized()
   rod('Pauldron flush rivet '+str(side),a-direction*.25,a+direction*.65,1,'steel',bone,6)
+import sys
+sys.path.insert(0,str(R/'tools'))
+from nob_pauldron_liner import fit_inner_liner
+added.append(fit_inner_liner(scene,rig,mat))
 # Crab claw is authored in the forearm frame: the wrist enters the BACK
 # of the socket and the pincer tips continue down the elbow-to-wrist axis.
 wrist=rig.matrix_world@rig.data.bones['LeftHand'].head_local

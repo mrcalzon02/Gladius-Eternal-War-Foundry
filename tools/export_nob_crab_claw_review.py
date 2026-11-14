@@ -48,7 +48,7 @@ center=Vector((0,3,61));camera=scene.camera
 for name,offset in [('export-front',(230,-260,120)),('export-rear',(-230,260,120)),('export-side',(30,300,50))]:
  camera.location=center+Vector(offset);camera.rotation_euler=(center-camera.location).to_track_quat('-Z','Y').to_euler();scene.render.filepath=str(D/(name+'.png'));bpy.ops.render.render(write_still=True)
 # Tight views verify the forearm termination and fitted shoulder interfaces.
-for name,focus,offset,scale in [('claw-closeup',(5,47,32),(100,145,55),68),('shoulder-closeup',(3,-25,73),(100,-145,90),70)]:
+for name,focus,offset,scale in [('claw-closeup',(5,47,32),(100,145,55),68),('shoulder-closeup',(10,23,74),(110,180,70),83)]:
  focus=Vector(focus);camera.location=focus+Vector(offset);camera.rotation_euler=(focus-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.ortho_scale=scale
  scene.render.filepath=str(D/(name+'.png'));bpy.ops.render.render(write_still=True)
 camera.data.ortho_scale=163

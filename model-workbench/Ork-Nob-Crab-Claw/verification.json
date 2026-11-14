@@ -1,5 +1,5 @@
 {
-  "triangles": 2680,
+  "triangles": 2544,
   "bounds": [
     [
       -33.569854736328125,
@@ -14,6 +14,6 @@
   ],
   "failures": [],
   "static_review_only": true,
-  "source_sha256": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
-  "export_sha256": "859dac4cac6befff0f2d72085dce926a363aeb7861d2dd9c2378cbfb326ea0ec"
+  "source_sha256": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+  "export_sha256": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5"
 }

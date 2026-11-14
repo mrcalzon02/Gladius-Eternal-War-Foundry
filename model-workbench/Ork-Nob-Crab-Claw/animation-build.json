@@ -1,6 +1,6 @@
 {
-  "source_sha256": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
-  "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
+  "source_sha256": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+  "working_sha256": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
   "clips": [
     {
       "name": "Nob - Crab claw mechanism",
@@ -30,5 +30,6 @@
   "fps": 24,
   "limitations": [
     "Local Blender animation; native Gladius exporter and in-game timing unverified."
-  ]
+  ],
+  "pauldron_refinement": "Claw-side inner liner fitted without changing any action data"
 }

@@ -1,17 +1,20 @@
 {
-  "status": "Local authored animation ready for user review",
+  "status": "Refined shoulder fit ready for user review",
   "visual_scores_out_of_10": {
     "hinge_and_closure": 9,
     "mechanical_attachment": 8,
     "attack_silhouette": 8,
-    "timing_and_recovery": 8
+    "timing_and_recovery": 8,
+    "shoulder_fit": 9
   },
   "observations": [
     "Open jaw stays hinged at axle; tips meet at closure.",
     "Wrist stays aligned with forearm at half-frame samples.",
     "Barrel length remains fixed; piston telescopes; clevis pin seats against moving jaw.",
     "Anticipation, downstroke, snapping grip, wrench and recovery read in rendered contact sheet.",
-    "Hat, jaw and standard move with their supporting joints."
+    "Hat, jaw and standard move with their supporting joints.",
+    "Claw-side projecting shell removed; thin dark liner sits within the original pauldron rim.",
+    "Original pauldron and inner liner share Torso; source and animated GLB have no intersecting surfaces across checked animation samples."
   ],
   "technical": {
     "clips": {
@@ -31,7 +34,9 @@
           0.9999992847442627,
           0.9999997615814209
         ],
-        "blade_body_intersection_frames": []
+        "blade_body_intersection_frames": [],
+        "pauldron_intersection_samples": [],
+        "minimum_pauldron_vertex_clearance_world": 0.6294226050376892
       },
       "Nob - Crab claw attack": {
         "frames": [
@@ -49,25 +54,44 @@
           0.9999992847442627,
           1.0
         ],
-        "blade_body_intersection_frames": []
+        "blade_body_intersection_frames": [],
+        "pauldron_intersection_samples": [],
+        "minimum_pauldron_vertex_clearance_world": 0.6294201016426086
       }
     },
     "failures": [],
-    "animated_export_sha256": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
+    "animated_export_sha256": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+    "reimport_pauldron": {
+      "intersection_samples": [],
+      "minimum_vertex_clearance_world": 0.6294212341308594
+    },
     "max_reimport_joint_position_error_world": 6.102968448460388e-05,
-    "working_sha256": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b"
+    "working_sha256": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8"
   },
   "limitations": [
     "Native Gladius skeleton export and gameplay events are not yet verified.",
     "Preview GLB contains the attack; mechanism clip is in the editable blend."
   ],
   "hashes": {
-    "Nob-Animation-Work.blend": "768adab64acd45cbeba1070095395066f6f7e2fb8118e77c349ef4bd5dff248b",
-    "Nob-Claw-Attack-review.glb": "14907db2eed961db570e9d93dcf0e5df9ba61a4ebafdd79bc03c70c9ae654eff",
-    "nob-attack.gif": "6b8c790a254ea87539ae7a43a4ab5acd4fbd147c9f0d67b0ade561257acaca18",
-    "nob-claw.gif": "e6f4f4345232780052e7f4681e48851ba5f4d00bb5c01204358401a795a091f3",
-    "attack-contact-sheet.jpg": "72fe776a3d902b53bae80b0fd35d8c1ed60387ab667e4e37d10342c7a4d5f9e6",
-    "animation-previews\\reimport-16.png": "a4d6414d875b9b6ae1374181f8d92af1891423d0a1f53e176bfdb891e2c2993e",
-    "animation-previews\\reimport-30.png": "4f08dffc7a30b35e87db9a85dc12d86aa771fcd4641bb20eb54688fe49785661"
+    "attack-contact-sheet.jpg": "8acf6f81769110d1b8a54f9310f12099bcbfa4d7297b4bb9731fd623fd17139a",
+    "claw-closeup.png": "f9920ceef371517f793162b878b74bef2285064190192ae251342fccc42addcf",
+    "export-clay.png": "491bebcdbdb851bc242fe76d040e928ef5a3947707233f598dfb13626df04975",
+    "export-front.png": "0e05fae211f3b8c468d52f0f905379f90439630f02b4a5b60ed746a67fc91c95",
+    "export-rear.png": "716bbd291d8b14cfe9393f738955c266260dce88c1b400f38be68de19295d360",
+    "export-side.png": "329adaa6fa9b432f6766c2328e075d7b633002560d0843b16645fb8ab8350ef1",
+    "front.png": "ca0ab86e583bc73ed719a15decc05254a343e3ee4c736ee07085e7674bbff5c2",
+    "Nob-Animation-Work.blend": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
+    "nob-attack.gif": "db8a2562b9112b7355ddd95b12ffd0045dfb6b3a67e3aea3b10e8a1b8dee7ab4",
+    "Nob-Claw-Attack-review.glb": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+    "nob-claw.gif": "a1cfee4ace04c14e673ec20026a3905e30b39319c252fe2e30f4be313ccff2ff",
+    "Ork-Nob-Crab-Claw-review.glb": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5",
+    "Ork-Nob-Crab-Claw.blend": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+    "OrkBoy_Gladius-review-color.png": "30768708beb8630383de1afd784cf6b7d59313db997a14010c7f6fac227c4efb",
+    "pauldron-fit-raised.png": "c1006bf194bd48ccfe9a020f6ff8887b81a425c23ae19f9fdea861ff8046024b",
+    "pauldron-fit-rest.png": "2871e890dbe6feab34982990a05a67a6ab613490b684dd986f7516b57f789559",
+    "pauldron-fit-strike.png": "bcc6e7f27470c2bcc27ecd41767320c9936b37c091086d4bbe0090fe5dec429c",
+    "rear.png": "6f76d36141e9c35c35228c16625b35a067108fde91345c2c305caa9982f57b4c",
+    "shoulder-closeup.png": "272c4540c22e94163ab586cb00414c9f1fd775ee5cd0794c762612b70df38d30",
+    "Slugga_Gladius-review-color.png": "647116bc578a15b48e3ee3e1d8655e4510795419fbd8b645ab11887f08bf28dd"
   }
 }

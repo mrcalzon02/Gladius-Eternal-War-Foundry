@@ -1,7 +1,7 @@
 {
-  "status": "Modeling handoff with scrap top hat; no animation changes yet",
+  "status": "Refined shoulder fit ready for user review",
   "technical": {
-    "triangles": 2680,
+    "triangles": 2544,
     "bounds": [
       [
         -33.569854736328125,
@@ -16,13 +16,13 @@
     ],
     "failures": [],
     "static_review_only": true,
-    "source_sha256": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
-    "export_sha256": "859dac4cac6befff0f2d72085dce926a363aeb7861d2dd9c2378cbfb326ea0ec"
+    "source_sha256": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
+    "export_sha256": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5"
   },
   "visual_review": {
     "low_poly_silhouette": 8,
     "crab_pincer_readability": 8,
-    "shoulder_fit": 7,
+    "shoulder_fit": 9,
     "attachment_construction": 7,
     "palette_continuity": 8,
     "closeup_texture_quality": 6,
@@ -32,9 +32,10 @@
   "observations": [
     "Claw follows the forearm downward, with rear-entry tapered octagonal socket and extended steel ferrule.",
     "Organic left hand removed; replacement driven by LeftHand joint.",
-    "Fitted faceted shoulder shells follow upper arms.",
     "Scrap top hat rests on scalp and follows Head joint; source images packed and readable.",
-    "Coarse native texture patch wear remains stretched at close range."
+    "Coarse native texture patch wear remains stretched at close range.",
+    "Claw-side projecting shell removed; thin dark liner sits within the original pauldron rim.",
+    "Original pauldron and inner liner share Torso; source and animated GLB have no intersecting surfaces across checked animation samples."
   ],
   "limits": [
     "Static artifact verification only; animations and native engine export unverified.",
@@ -42,17 +43,25 @@
     "No claim of user approval or in-game integration."
   ],
   "hashes": {
-    "claw-closeup.png": "f5fa786c4526c8b77d9dd33fd54e2c903fc6e2aabd7fc6cb583e0e816dc01f4e",
-    "export-clay.png": "26c18f55ed7d6ebc92e6a79768842d0f9ca4f7f63fd66a9018ead86bb9fa38df",
-    "export-front.png": "50f366cb15d0f77256f5dc2a6cbc220a010a72ad64aca56f18fb09a3d6b50d70",
-    "export-rear.png": "4dd20e5c1ea89883bb1c3c132533b2f081c00fd8af03b363ad723821c15cc5d2",
-    "export-side.png": "ee42fd2e27c48af9620d121780dafe0775493901f00134b9710ffa18ed96ac5f",
-    "front.png": "a916c07cd8ed15b6df17ede6795e1d7fd194f9dda81795c2f2f64875cd7f1163",
-    "Ork-Nob-Crab-Claw-review.glb": "859dac4cac6befff0f2d72085dce926a363aeb7861d2dd9c2378cbfb326ea0ec",
-    "Ork-Nob-Crab-Claw.blend": "90bb0f7903a0f9623613a9b002c9e0099fd2bf157f455479f6f7ef4739caa5dd",
+    "attack-contact-sheet.jpg": "8acf6f81769110d1b8a54f9310f12099bcbfa4d7297b4bb9731fd623fd17139a",
+    "claw-closeup.png": "f9920ceef371517f793162b878b74bef2285064190192ae251342fccc42addcf",
+    "export-clay.png": "491bebcdbdb851bc242fe76d040e928ef5a3947707233f598dfb13626df04975",
+    "export-front.png": "0e05fae211f3b8c468d52f0f905379f90439630f02b4a5b60ed746a67fc91c95",
+    "export-rear.png": "716bbd291d8b14cfe9393f738955c266260dce88c1b400f38be68de19295d360",
+    "export-side.png": "329adaa6fa9b432f6766c2328e075d7b633002560d0843b16645fb8ab8350ef1",
+    "front.png": "ca0ab86e583bc73ed719a15decc05254a343e3ee4c736ee07085e7674bbff5c2",
+    "Nob-Animation-Work.blend": "45116431600678d928614b319302444ec052cf85ab3e98e1e805ab99f95180d8",
+    "nob-attack.gif": "db8a2562b9112b7355ddd95b12ffd0045dfb6b3a67e3aea3b10e8a1b8dee7ab4",
+    "Nob-Claw-Attack-review.glb": "ee14863c7c9c1f76e5c36e7e5499b5ac3af2b46249012b424aabb8f8bbb24b7f",
+    "nob-claw.gif": "a1cfee4ace04c14e673ec20026a3905e30b39319c252fe2e30f4be313ccff2ff",
+    "Ork-Nob-Crab-Claw-review.glb": "8f5d242a38b49f9c71822f34ebbb8d906a775b11517f10c3292364d34ca3eaa5",
+    "Ork-Nob-Crab-Claw.blend": "1251394befb5c142a29b49fbef896fc7daa53d6dfdc832de8b95c8af8be064da",
     "OrkBoy_Gladius-review-color.png": "30768708beb8630383de1afd784cf6b7d59313db997a14010c7f6fac227c4efb",
-    "rear.png": "8fdff1d1c4603f11adf4bf670e37cd6739cc493ea1d99dc84d3128d7275a42d0",
-    "shoulder-closeup.png": "89884e0210920197daa34d299413c7ab784fc7cbac0cd03605485b575865f5d2",
+    "pauldron-fit-raised.png": "c1006bf194bd48ccfe9a020f6ff8887b81a425c23ae19f9fdea861ff8046024b",
+    "pauldron-fit-rest.png": "2871e890dbe6feab34982990a05a67a6ab613490b684dd986f7516b57f789559",
+    "pauldron-fit-strike.png": "bcc6e7f27470c2bcc27ecd41767320c9936b37c091086d4bbe0090fe5dec429c",
+    "rear.png": "6f76d36141e9c35c35228c16625b35a067108fde91345c2c305caa9982f57b4c",
+    "shoulder-closeup.png": "272c4540c22e94163ab586cb00414c9f1fd775ee5cd0794c762612b70df38d30",
     "Slugga_Gladius-review-color.png": "647116bc578a15b48e3ee3e1d8655e4510795419fbd8b645ab11887f08bf28dd"
   },
   "source_verification": {
