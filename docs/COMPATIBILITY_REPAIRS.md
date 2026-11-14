@@ -153,5 +153,17 @@ checks identifier case even on Windows. Runtime render textures used by shipped
 materials are distinguished from missing DDS files. No proprietary game assets
 are copied into the repository by this audit.
 
-Deployment and a fresh engine-load check are the next acceptance step. No full
-match, AI production, research completion or balance acceptance is claimed yet.
+Installed 37 changed/new Data files into the active Workshop mods after checking
+existing files against known source versions and backing up originals. A fresh
+Gladius 1.18.3 launch completed at 5:07 PM Alaska time on 13 November with all
+seven mods enabled, zero startup warnings, and no startup errors detected. The
+prior log contained 50 warning lines. This confirms startup/resource loading,
+not a full match, AI production, completed research, or balance acceptance. The
+user took over game controls; no further UI automation was performed.
+
+The fresh launch still recognizes DLC only through Supplement8, so DLC-present
+production of Rogal Dorn (Supplement12) and the newer restored units remains
+unverified on this installation. No DLC entitlement checks were bypassed.
+
+See [sanitized startup evidence](../catalog/compatibility/2026-11-13-resource-load.json).
+Full logs and original-file backups stay in the local chat workspace.

@@ -1,0 +1,35 @@
+{
+  "source_commit": "2e98139",
+  "game_version": "1.18.3",
+  "steam_build": "24676278",
+  "scope": "All-seven-mod startup only; no AI match or completed production attested",
+  "enabled_mods": [
+    "3305007655",
+    "3267312159",
+    "2175959340",
+    "2525618649",
+    "2525618729",
+    "3038342810",
+    "3107612342"
+  ],
+  "startup_completed_utc": "2026-Nov-14 02:09:10 UTC",
+  "startup_warning_count": 0,
+  "startup_errors": [],
+  "previous_log_warning_count": 50,
+  "current_startup_warnings": [],
+  "startup_excerpt_sha256": "1cd65ca03d3ad55267706f3c34620563e666ed23a0489ca4b599784389b4eda3",
+  "recognized_dlc": [
+    "LordOfSkulls",
+    "Supplement1",
+    "Supplement2",
+    "Supplement3",
+    "Supplement4",
+    "Supplement5",
+    "Supplement6",
+    "Supplement7",
+    "Supplement8"
+  ],
+  "installed_repair_files": 37,
+  "backups": "Local chat workspace backups/resource-repair-2e98139; full logs are not published",
+  "user_control": "User took over game controls; no further UI automation performed"
+}
