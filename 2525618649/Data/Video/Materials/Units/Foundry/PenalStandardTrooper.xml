@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<material>
+  <textures>
+    <texture name="Units/Foundry/PenalStandardTrooperDiffuse" />
+    <texture name="Units/Foundry/PenalStandardTrooperNormal" />
+    <texture name="Units/Foundry/PenalStandardTrooperSIC" />
+    <texture name="ShadowMapColor" />
+  </textures>
+</material>

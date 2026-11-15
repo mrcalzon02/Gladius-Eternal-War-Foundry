@@ -97,3 +97,11 @@ The former local Foundry AI, Sergeant, Grot and Ripper entries are retired.
 See [package ownership, installation and validation](docs/MOD_INTEGRATION.md).
 DDS exports use legacy DXT compression required by Gladius; a format check guards
 against the November 15 texture-loading crash.
+
+
+## Penal Legion standard trooper
+
+The approved bald, ragged-clothed standard trooper now replaces the existing
+Guardsman model directly in Penal Legion. The source-only handoff has been
+completed with native MSH/DDS/XML integration and 33 checked animation poses.
+See [the runtime model and validation](docs/PENAL_STANDARD_TROOPER.md).

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unit>
 	<model>
-		<unit mesh="Units/AstraMilitarum/Guardsman"
-				material="Units/AstraMilitarum/Guardsman"
+		<unit mesh="Units/Foundry/PenalStandardTrooper"
+				material="Units/Foundry/PenalStandardTrooper"
 				idleAnimation="Units/AstraMilitarum/GuardsmanIdle"
 				idleAnimationCount="3"
 				idleContinuously="1"
@@ -16,9 +16,7 @@
 		<weapon name="Bayonet" count="1"
 				requiredUpgrade="AstraMilitarum/Bayonet">
 			<model>
-				<weapon mesh="Weapons/SpaceMarines/Chainsword"
-						material="Weapons/SpaceMarines/Chainsword"
-						bone="LeftHandBone"/>
+				<weapon/>
 			</model>
 		</weapon>
 		<weapon name="Lasgun">

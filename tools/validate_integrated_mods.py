@@ -42,7 +42,20 @@ def validate(root):
             assert action.find('model/action').get('animation', '').startswith('Units/'), name
             for suffix in ('', 'Description', 'Flavor'):
                 assert name + suffix in keys, name + suffix
-    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; four AI actions and scoped strings in three parent mods.')
+    for mod, unit, model in (
+        ('2525618649', 'AstraMilitarum/Guardsman', 'PenalStandardTrooper'),
+        ('2525618649', 'AstraMilitarum/Sargent', 'VeteranSergeant'),
+        ('2525618649', 'AstraMilitarum/CommissarYarrick', 'Yarrick'),
+        ('3038342810', 'Orks/Grotz', 'GrotReplacement'),
+        ('2525618729', 'Tyranids/Ripperswarm', 'Ripper'),
+    ):
+        data = root / mod / 'Data'
+        node = ET.parse(data / ('World/Units/' + unit + '.xml')).find('model/unit')
+        expected = 'Units/Foundry/' + model
+        assert node.get('mesh') == node.get('material') == expected, f'Approved model is not wired into {unit}'
+        assert (data / ('Video/Meshes/' + expected + '.msh')).is_file(), unit
+        assert (data / ('Video/Materials/' + expected + '.xml')).is_file(), unit
+    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; four AI actions; five approved models wired into their parent mods.')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)

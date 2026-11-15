@@ -1,0 +1,16 @@
+{
+  "source_front_sha256": "ba0d94ee40d329fc5b18ab09cfae1b3a75aa42e260552692b248a1a481f70a7f",
+  "source_blend_sha256": "4fafa0935604df16a33b5da34eb9ae7ac0e18a79005bf683a6e5362ec26e527c",
+  "runtime_renders": {
+    "runtime-front.png": "45bb43b76487bbddec6ff73ca6ed7b65d6d9705e10ec9d64d46252f7b5f9615e",
+    "runtime-head-closeup.png": "cef2eedd1bb157387a270bb84d9fe62c4cd03a5aa6cdf0c1bfa3064f2bb75035",
+    "runtime-rear.png": "64d7c965ddaa44f4c5112973bbe48b08a50b58ce307d2de40701fb2c8d947b84"
+  },
+  "review": "Viewed source front/rear and actual-runtime front/rear/head renders. Approved silhouette, head, native cloth UVs, belt, knife and lasgun retained. Added padding prevents donor team mask and normals leaking onto the scalp. Seven zero-area triangulation artifacts omitted without changing the visible surface.",
+  "scores_0_to_5": {
+    "geometry_correspondence": 5,
+    "surface_correspondence": 4,
+    "runtime_export_validation": 5
+  },
+  "in_game_combat_reviewed": false
+}

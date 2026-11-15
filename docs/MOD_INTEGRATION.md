@@ -5,7 +5,7 @@ The seven original Workshop IDs are the runtime mod packages.
 | Existing mod | Integrated content |
 |---|---|
 | Veteran Marines (`2175959340`) | Marine Techpriest AI construction |
-| Penal Legion (`2525618649`) | Veteran Sergeant, Yarrick, Guard Techpriest AI construction |
+| Penal Legion (`2525618649`) | Standard trooper, Veteran Sergeant, Yarrick, Guard Techpriest AI construction |
 | Proper wagh! (`3038342810`) | Playable/neutral Grot models; playable Grot AI construction |
 | Tyranid mod (`2525618729`) | Ripperswarm model and animations |
 
@@ -24,7 +24,8 @@ checks were removed because Gladius 1.18.3 rejects player conditions named
 The November 15 startup failure came from unsupported uncompressed DDS exports.
 All 12 affected atlases now use legacy DXT5; packaging selects it explicitly.
 Run `python tools/validate_integrated_mods.py`, the Grot and Ripper repository
-validators, and the Sergeant package validator before installation.
+validators, the Sergeant package validator, and `tools/validate_standard_trooper.py`
+before installation.
 
 Use `tools/deploy_integrated_mods.py` with `--workshop`, `--config`, and a new
 `--backup` directory. Its default is a read-only plan; add `--apply` with Gladius

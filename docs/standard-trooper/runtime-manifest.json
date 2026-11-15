@@ -1,0 +1,19 @@
+{
+  "mod": "2525618649",
+  "unit": "AstraMilitarum/Guardsman",
+  "source_sha256": "4fafa0935604df16a33b5da34eb9ae7ac0e18a79005bf683a6e5362ec26e527c",
+  "body_triangles": 1090,
+  "native_bones": 28,
+  "native_animations_retained": true,
+  "gameplay_signature": "5cdd0dc2c14ed3a538dd5d99a164fcd53130a7a1bdeb0d647ccb791d081ccc28",
+  "files": {
+    "2525618649/Data/Video/Materials/Units/Foundry/PenalStandardTrooper.xml": "1f2f959cf75f406e3519adfabe8b54ddc0b261ed926d2f29d527ab1e6d4c3ec7",
+    "2525618649/Data/Video/Meshes/Units/Foundry/PenalStandardTrooper.msh": "7c2353ee1e05c7d7135c644bf8344f66756f17326da227a20f8b2eaabffd2ddb",
+    "2525618649/Data/Video/Textures/Units/Foundry/PenalStandardTrooperDiffuse.dds": "1ddf333f53d70473d7c8e45b484b52f14c3c46606cfda4801b29f3a8132eea0a",
+    "2525618649/Data/Video/Textures/Units/Foundry/PenalStandardTrooperNormal.dds": "c57f4f105896e80f470d4d895fb29a2f0bb019c4f5f0c51538f9039d58d8ba96",
+    "2525618649/Data/Video/Textures/Units/Foundry/PenalStandardTrooperSIC.dds": "3036300b3514b0b9af924d3b5d3fc8c312430b33263595325b51fa0858ea52bb",
+    "2525618649/Data/World/Units/AstraMilitarum/Guardsman.xml": "cbdb2727fa44e8e74c52e586613a29156a56b4e1fd92e3fae6c472ef2863a1cb"
+  },
+  "runtime_hash_format": "XML CRLF normalized to LF; other files raw SHA-256",
+  "live_combat_verified": false
+}

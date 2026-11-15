@@ -1,0 +1,108 @@
+{
+  "status": "Actual MSH/DDS/XML independently reimported; original native animations compared",
+  "source_sha256": "4fafa0935604df16a33b5da34eb9ae7ac0e18a79005bf683a6e5362ec26e527c",
+  "sampled_poses": 33,
+  "native_clips": 11,
+  "maximum_world_vertex_error": 2.8546580404464274e-05,
+  "body_triangles": 1090,
+  "native_bones": 28,
+  "samples": {
+    "Idle0 0.0": 8.537416109940471e-06,
+    "Idle0 40.0": 8.740569486533813e-06,
+    "Idle0 80.0": 6.12508419926888e-06,
+    "Idle1 0.0": 6.12508419926888e-06,
+    "Idle1 32.0": 1.2072552586719669e-05,
+    "Idle1 64.0": 1.206313194339134e-05,
+    "Idle2 0.0": 1.206313194339134e-05,
+    "Idle2 24.0": 1.2406932669885338e-05,
+    "Idle2 48.0": 9.196902047150569e-06,
+    "Move 0.0": 1.217803267395223e-05,
+    "Move 8.0": 1.2072552586719669e-05,
+    "Move 16.0": 1.217803267395223e-05,
+    "MoveBegin 0.0": 6.109112635710628e-06,
+    "MoveBegin 4.0": 9.573181396920134e-06,
+    "MoveBegin 8.0": 1.217803267395223e-05,
+    "MoveEnd 0.0": 1.217803267395223e-05,
+    "MoveEnd 4.0": 6.9141387939453125e-06,
+    "MoveEnd 8.0": 7.703540049268489e-06,
+    "Attack 0.0": 1.2795438920718674e-05,
+    "Attack 36.0": 9.854073790518076e-06,
+    "Attack 72.0": 1.2425817336524378e-05,
+    "Die0 0.0": 6.109112635710628e-06,
+    "Die0 9.600000381469727": 1.2138292371137481e-05,
+    "Die0 19.200000762939453": 1.5258940521037867e-05,
+    "Die1 0.0": 8.740569486533813e-06,
+    "Die1 9.600000381469727": 9.344061823971473e-06,
+    "Die1 19.200000762939453": 9.681673290370442e-06,
+    "Die2 0.0": 8.1490689090312e-06,
+    "Die2 10.0": 1.0326579965452058e-05,
+    "Die2 20.0": 1.1601948795887412e-05,
+    "Grenade 0.0": 8.543240007004221e-06,
+    "Grenade 16.0": 2.8546580404464274e-05,
+    "Grenade 32.0": 1.3257445120294422e-05
+  },
+  "images": [
+    {
+      "name": "GuardsmanLasgunDiffuse.dds",
+      "size": [
+        512,
+        256
+      ],
+      "loaded": true
+    },
+    {
+      "name": "GuardsmanLasgunNormal.dds",
+      "size": [
+        512,
+        256
+      ],
+      "loaded": true
+    },
+    {
+      "name": "GuardsmanLasgunSIC.dds",
+      "size": [
+        512,
+        256
+      ],
+      "loaded": true
+    },
+    {
+      "name": "PenalStandardTrooperDiffuse.dds",
+      "size": [
+        1024,
+        1024
+      ],
+      "loaded": true
+    },
+    {
+      "name": "PenalStandardTrooperNormal.dds",
+      "size": [
+        1024,
+        1024
+      ],
+      "loaded": true
+    },
+    {
+      "name": "PenalStandardTrooperSIC.dds",
+      "size": [
+        1024,
+        1024
+      ],
+      "loaded": true
+    }
+  ],
+  "messages": [
+    "({'INFO'}, 'Imported PenalStandardTrooper: 3270 verts, 1090 faces, 28 bones')",
+    "({'INFO'}, 'Imported GuardsmanLasgun: 588 verts, 196 faces, 2 bones')",
+    "({'INFO'}, 'Imported Guardsman: 1 attachment(s), 0 hidden variant(s), 11 body animation(s)')"
+  ],
+  "failures": [],
+  "gameplay_preserved": true,
+  "engine_startup_verified": false,
+  "in_game_combat_verified": false,
+  "renders": {
+    "runtime-front.png": "45bb43b76487bbddec6ff73ca6ed7b65d6d9705e10ec9d64d46252f7b5f9615e",
+    "runtime-head-closeup.png": "cef2eedd1bb157387a270bb84d9fe62c4cd03a5aa6cdf0c1bfa3064f2bb75035",
+    "runtime-rear.png": "64d7c965ddaa44f4c5112973bbe48b08a50b58ce307d2de40701fb2c8d947b84"
+  }
+}
