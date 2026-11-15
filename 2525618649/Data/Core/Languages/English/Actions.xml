@@ -23,4 +23,10 @@
 	<entry name="Foundry/ArmageddonCallsArmour2Description" value="Complete the reserved reinforcement call: deploy one Leman Russ with 2 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
 	<entry name="Foundry/ArmageddonCallsArmour3" value="Armageddon Calls — Place Tank" />
 	<entry name="Foundry/ArmageddonCallsArmour3Description" value="Complete the reserved reinforcement call: deploy one Leman Russ with 3 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
+	<entry name="FoundryAI/ImperialStrongpoint" value="Construct Imperial Strongpoint" />
+	<entry name="FoundryAI/ImperialStrongpointDescription" value="AI construction test: build Imperial Strongpoint beside this builder." />
+	<entry name="FoundryAI/ImperialStrongpointFlavor" value="Prepared positions support the army." />
+	<entry name="FoundryAI/VoidShieldGenerator" value="Construct Void Shield Generator" />
+	<entry name="FoundryAI/VoidShieldGeneratorDescription" value="AI construction test: build Void Shield Generator beside this builder." />
+	<entry name="FoundryAI/VoidShieldGeneratorFlavor" value="Prepared positions support the army." />
 </language>

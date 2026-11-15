@@ -50,9 +50,9 @@ def adapt_action(original, action_name, reserve_multiplier, threat_range, requir
         if node.tag.endswith('Cost') and node.tag != 'productionCost' and 'base' in node.attrib:
             resource = node.tag[:-4]
             costs[resource] = costs.get(resource, 0) + float(node.get('base'))
-    for resource, amount in costs.items():
-        if amount > 0:
-            ET.SubElement(player, resource, greater=f'{amount * reserve_multiplier:g}')
+    # Gladius 1.18.3 PlayerConditions accepts influence but not ore, energy or
+    # requisitions. Keep normal action costs; extra stockpile guards cannot be
+    # expressed here. Retain the argument for older development callers only.
     unit = ET.SubElement(ai.find('conditions'), 'unit')
     ET.SubElement(unit, 'hitpointsFraction', greater='0.6')
     if require_threat:
@@ -96,7 +96,7 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
                             action=ai.get('name'), cooldown=ai.get('cooldown'),
                             target_ranges=[n.get('rangeMax') for n in ai.findall('./beginTargets/target')],
                             costs=costs, requires_nearby_enemy=require_threat,
-                            resource_balance_required_above={k:v*reserve_multiplier for k,v in costs.items()}))
+                            resource_reserve_guard_supported=False))
         title = {'MarineStrongpoint': 'Imperial Strongpoint', 'ImperialStrongpoint': 'Imperial Strongpoint',
                  'VoidShieldGenerator': 'Void Shield Generator', 'Grotpost': 'Grotpost'}[action_name]
         strings['FoundryAI/' + action_name] = 'Construct ' + title
@@ -109,9 +109,9 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
             strings[original.get('name') + 'Flavor'] = 'Prepared positions support the army.'
     manifest = dict(status='experimental; engine loading and actual AI construction unverified',
                     required_mods=sorted({spec[0] for spec in SPECS}), source_sha256=inputs,
-                    reserve_multiplier=reserve_multiplier, threat_range=threat_range,
+                    requested_reserve_multiplier=reserve_multiplier, resource_reserve_guard_supported=False, threat_range=threat_range,
                     minimum_builder_hitpoints_fraction=0.6, actions=actions,
-                    limitations=['Stockpile reserves are not an income or upkeep forecast',
+                    limitations=['Extra stockpile reserve checks are unsupported; original construction costs still apply',
                                  'Enemy proximity is not a battle-strength assessment',
                                  'No mapwide deployment, army movement locks or stat bonuses',
                                  'Duplicate-structure prevention beyond original cooldown is unverified',
@@ -139,7 +139,7 @@ def build(repo, output, reserve_multiplier=2.0, threat_range=3):
         'Builder, range, original costs, research requirements and cooldowns are retained.\n'
         f'AI must have over 60% health; Guard/Marine defenses require an enemy within {threat_range} tiles.\n'
         'Ork Grotposts do not require a nearby enemy, allowing proactive construction.\n'
-        f'and resource balances above {reserve_multiplier:g} times each construction cost.\n'
+        'Extra stockpile reserve checks are unsupported; original construction costs still apply.\n'
         'This is a handler experiment, not proven intelligent placement.\n', encoding='utf-8')
     return manifest
 

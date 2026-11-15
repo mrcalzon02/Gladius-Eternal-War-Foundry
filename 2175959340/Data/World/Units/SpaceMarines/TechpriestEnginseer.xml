@@ -186,16 +186,14 @@
 				</modifier>
 			</modifiers>
 		</orbitalDeployment>
-		<constructImperialStrongpoint icon="Units/AstraMilitarum/ImperialStrongpoint"
-				cooldown="4">
+		<constructImperialStrongpoint icon="Units/AstraMilitarum/ImperialStrongpoint" cooldown="4" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild"
-						sound="Actions/Construct"/>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="1">
 					<effects>
-						<requisitionsCost base="10.0"/> 
+						<requisitionsCost base="10.0" />
 					</effects>
 				</modifier>
 			</modifiers>
@@ -203,14 +201,14 @@
 				<target rangeMax="1">
 					<conditions>
 						<tile>
-							<noFeatureCategory name="Resource"/>
-							<noFeatureCategory name="WireWeed"/>
-							<land/>
-							<noEnemyCity/>
-							<noEnemyPlayer/>
-							<noEnemyUnit/>
-							<noUnit/>
-							<noFeature name="GravityWaves"/>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noEnemyCity />
+							<noEnemyPlayer />
+							<noEnemyUnit />
+							<noUnit />
+							<noFeature name="GravityWaves" />
 						</tile>
 					</conditions>
 					<areas>
@@ -218,7 +216,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="SpaceMarines/ImperialStrongpoint"/>
+										<addUnit name="SpaceMarines/ImperialStrongpoint" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -226,7 +224,66 @@
 					</areas>
 				</target>
 			</beginTargets>
+			<conditions>
+				<player>
+					<notAIControlled />
+				</player>
+			</conditions>
 		</constructImperialStrongpoint>
+		<constructNoctilithCrown icon="Units/AstraMilitarum/ImperialStrongpoint" cooldown="4" name="FoundryAI/MarineStrongpoint" useConditionsForVisiblity="1">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
+			</model>
+			<modifiers>
+				<modifier visible="1">
+					<effects>
+						<requisitionsCost base="10.0" />
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noEnemyCity />
+							<noEnemyPlayer />
+							<noEnemyUnit />
+							<noUnit />
+							<noFeature name="GravityWaves" />
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="SpaceMarines/ImperialStrongpoint" />
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<conditions>
+				<player>
+					<aiControlled />
+					<noFaction name="Neutral" />
+
+				</player>
+				<unit>
+					<hitpointsFraction greater="0.6" />
+					<unitsInRange count="1" range="3">
+						<enemy />
+						<noTrait name="Invulnerable" />
+						<noType name="Eldar/WebwayGate" />
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</constructNoctilithCrown>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="SpaceMarines/ExtraInfantryArmour"/>

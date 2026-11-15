@@ -36,5 +36,5 @@ Validate the repository package without Blender or third-party modules:
 The runtime/source hashes and preserved gameplay signatures are recorded in
 `docs/grot/manifest.json`. Blender export/verification helpers are in `tools`;
 they require an installed Gladius copy and the local community importer used
-for the existing project workflow. Installed local AI-pilot overrides remain
-separate and should retain their own gameplay while pointing to these assets.
+for the existing project workflow. Playable Grot AI construction is integrated into this same Proper wagh! package.
+No separate Grot or AI-pilot override is needed; see [installation](MOD_INTEGRATION.md).

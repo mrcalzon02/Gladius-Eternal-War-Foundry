@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="FoundryAI/MarineStrongpoint" value="Construct Imperial Strongpoint" />
+	<entry name="FoundryAI/MarineStrongpointDescription" value="AI construction test: build Imperial Strongpoint beside this builder." />
+	<entry name="FoundryAI/MarineStrongpointFlavor" value="Prepared positions support the army." />
+</language>

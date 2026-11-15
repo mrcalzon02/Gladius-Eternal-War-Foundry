@@ -11,7 +11,7 @@ for role in ('Diffuse','Normal','SIC'):
     else:atlas=Image.open(OUT/('kit-'+role+'.png')).convert('RGBA')
     native=Image.open(GAME/('Video/Textures/Units/AstraMilitarum/Guardsman'+role+'.dds')).convert('RGBA')
     assert native.size==(512,512)
-    atlas.paste(native,(0,0));dest=DATA/('Video/Textures/Units/Foundry/VeteranSergeant'+role+'.dds');atlas.save(dest)
+    atlas.paste(native,(0,0));dest=DATA/('Video/Textures/Units/Foundry/VeteranSergeant'+role+'.dds');atlas.save(dest,pixel_format='DXT5')
     atlas.save(OUT/('atlas-'+role+'.png'))
     with Image.open(dest) as loaded:assert loaded.size==(1024,1024)
 material=ET.Element('material');textures=ET.SubElement(material,'textures')

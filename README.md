@@ -88,3 +88,12 @@ claw, bionic laser eye, Basilisk support and Armageddon reinforcements. See
 [the unit rules and validation notes](docs/YARRICK.txt) and
 [editable source](model-workbench/Yarrick/README.txt). Offline checks pass;
 live combat validation is pending. No separate mod or Workshop ID is created.
+
+
+## Integrated local installation
+
+The seven original mods contain the models and builder AI actions directly.
+The former local Foundry AI, Sergeant, Grot and Ripper entries are retired.
+See [package ownership, installation and validation](docs/MOD_INTEGRATION.md).
+DDS exports use legacy DXT compression required by Gladius; a format check guards
+against the November 15 texture-loading crash.

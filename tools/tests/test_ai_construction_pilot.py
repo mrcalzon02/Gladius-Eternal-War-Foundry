@@ -48,9 +48,15 @@ class ConstructionPilotTests(unittest.TestCase):
         self.assertIsNone(ai.find('./conditions/player/notAIControlled'))
         self.assertEqual('constructNoctilithCrown', ai.tag)
 
-    def test_ai_reserves_threat_and_health_guards(self):
+    def test_ai_uses_native_conditions_with_threat_and_health_guards(self):
         _, ai, _ = MODULE.adapt_action(action(), 'Grotpost', 2, 3)
-        self.assertEqual('40', ai.find('./conditions/player/ore').get('greater'))
+        # Native PlayerConditions::deserializeNode rejects resource names other
+        # than influence. This used to pass synthetic tests and crash the game.
+        native = {'aiControlled', 'influence', 'faction', 'noFaction', 'noTrait',
+                  'noUpgrade', 'notAIControlled', 'outposts', 'trait', 'upgrade'}
+        self.assertLessEqual({n.tag for p in ai.findall('./conditions/player') for n in p}, native)
+        self.assertIsNone(ai.find('./conditions/player/ore'))
+        self.assertEqual('20', ai.find('./modifiers/modifier/effects/oreCost').get('base'))
         self.assertEqual('0.6', ai.find('./conditions/unit/hitpointsFraction').get('greater'))
         enemies = ai.find('./conditions/unit/unitsInRange')
         self.assertEqual({'count':'1','range':'3'}, enemies.attrib)

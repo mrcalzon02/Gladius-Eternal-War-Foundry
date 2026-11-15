@@ -12,7 +12,7 @@ for role in ('Diffuse','Normal','SIC'):
   value=(*color,255) if role=='Diffuse' else ((128,128,255,255) if role=='Normal' else (80,255 if i==5 else 0,0,255))
   draw.rectangle((512,int((5-i)*1024/6),1023,int((6-i)*1024/6)),fill=value)
  native=Image.open(G/('Video/Textures/Units/AstraMilitarum/LordCommissar'+role+'.dds')).convert('RGBA');assert native.size==(512,512);im.paste(native,(0,0))
- path=D/('Video/Textures/Units/Foundry/Yarrick'+role+'.dds');path.parent.mkdir(parents=True,exist_ok=True);im.save(path)
+ path=D/('Video/Textures/Units/Foundry/Yarrick'+role+'.dds');path.parent.mkdir(parents=True,exist_ok=True);im.save(path,pixel_format='DXT5')
 for path in ('Units/Foundry/Yarrick','Weapons/Foundry/YarrickKit'):
  mat=E.Element('material');tex=E.SubElement(mat,'textures')
  for role in ('Diffuse','Normal','SIC'):E.SubElement(tex,'texture',name='Units/Foundry/Yarrick'+role)

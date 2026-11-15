@@ -136,18 +136,14 @@
 						beginFire="0.6666666666666666"/>
 			</model>
 		</throwGrenade>
-		<constructImperialStrongpoint 
-				icon="Units/Orks/Grotpost"
-				cooldown="10"
-				name="Orks/ConsGrotpost">
+		<constructImperialStrongpoint icon="Units/Orks/Grotpost" cooldown="10" name="Orks/ConsGrotpost" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/Foundry/GrotReplacementConstruct"
-						sound="Actions/Construct"/>
+				<action animation="Units/Foundry/GrotReplacementConstruct" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<oreCost base="20"/>
+						<oreCost base="20" />
 					</effects>
 				</modifier>
 			</modifiers>
@@ -155,12 +151,12 @@
 				<target rangeMax="1">
 					<conditions>
 						<tile>
-							<noFeatureCategory name="Resource"/>
-							<noFeatureCategory name="WireWeed"/>
-							<land/>
-							<noEnemyCity/>
-							<noUnit/>
-							<noFeature name="GravityWaves"/>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noEnemyCity />
+							<noUnit />
+							<noFeature name="GravityWaves" />
 						</tile>
 					</conditions>
 					<areas>
@@ -168,7 +164,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="Orks/Grotpost"/>
+										<addUnit name="Orks/Grotpost" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -176,7 +172,59 @@
 					</areas>
 				</target>
 			</beginTargets>
+			<conditions>
+				<player>
+					<notAIControlled />
+				</player>
+			</conditions>
 		</constructImperialStrongpoint>
+		<constructNoctilithCrown icon="Units/Orks/Grotpost" cooldown="10" name="FoundryAI/Grotpost" useConditionsForVisiblity="1">
+			<model>
+				<action animation="Units/Foundry/GrotReplacementConstruct" sound="Actions/Construct" />
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<oreCost base="20" />
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noEnemyCity />
+							<noUnit />
+							<noFeature name="GravityWaves" />
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="Orks/Grotpost" />
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<conditions>
+				<player>
+					<aiControlled />
+					<noFaction name="Neutral" />
+
+				</player>
+				<unit>
+					<hitpointsFraction greater="0.6" />
+				</unit>
+			</conditions>
+		</constructNoctilithCrown>
 	</actions>
 	<traits>
 		<trait name="Bosspole" requiredUpgrade="Orks/Bosspole"/>

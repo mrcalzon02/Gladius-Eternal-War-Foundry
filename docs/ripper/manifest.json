@@ -16,9 +16,9 @@
     "2525618729/Data/Video/Animations/Units/Foundry/RipperMoveEnd.anm": "cfa56650b2b7fae02a0dc76203bfa9c39aa645be56f08b51b06e14b0bab9dc78",
     "2525618729/Data/Video/Materials/Units/Foundry/Ripper.xml": "2f5beae22dde24dc0cd58b38fc98b77b3c1192a2d76369203ca916f4099d32ff",
     "2525618729/Data/Video/Meshes/Units/Foundry/Ripper.msh": "17211e98a680e1b78d2f809cba348ea128f87a93350bca63f3f33e7162e4d0f0",
-    "2525618729/Data/Video/Textures/Units/Foundry/RipperDiffuse.dds": "4d0b84fb9d4b33fd56b8c30e9696e0cc16e23d5c1ed8a22428b2660e0d296963",
-    "2525618729/Data/Video/Textures/Units/Foundry/RipperNormal.dds": "ed08aa0a1e4dc08ecdbe47624a35b4fe337e17bd718394dcabb3becc0c7436a0",
-    "2525618729/Data/Video/Textures/Units/Foundry/RipperSIC.dds": "6fd8440da2654e38253c22052714991fcd4833e4b0b1e5d02e2a86ce22338a55",
+    "2525618729/Data/Video/Textures/Units/Foundry/RipperDiffuse.dds": "f5a11058ea5bd897733cb40fbd70abd182e4c23dc97b89e4ec24f872b426b869",
+    "2525618729/Data/Video/Textures/Units/Foundry/RipperNormal.dds": "50debcf60d6ff87cadf2f5ad9fc9de390e115daca2b656f2fb3bd371169fcd39",
+    "2525618729/Data/Video/Textures/Units/Foundry/RipperSIC.dds": "66bc40b44dfe58842414fbc10bc0f0acbc23b4d8589d69c529546a705a69a37e",
     "2525618729/Data/World/Units/Tyranids/Ripperswarm.xml": "30f173b0bda51d104fbc2e981f80e495f4dd5310046e986b80fa809729af2c2d",
     "model-workbench/Ripper/low-poly/Ripper-LowPoly.blend": "8b11c1e438fcec368761513ada6cdb55f10b57c2027d42b7fcdc5cd028f7ca8b",
     "model-workbench/Ripper/low-poly/Ripper-LowPoly.glb": "4c290bea41166069823014237f8492e6a13cd417e349008eada9f73d75a95749",
@@ -36,7 +36,7 @@
     "docs/ripper/teeth-proof.png": "f6e4c3475eaf2e7b7e255ce17383dc30d2722f59dc6dea8967d94305c85f5eeb",
     "docs/ripper/native-verification.json": "e4ac690d1592cb4dbbf02c5a91a09e5674c5313a7767d93faeb2e67bed99b2e6",
     "tools/export_ripper_native.py": "7213ca6e939d4b2113bbee1512e0cd0a3cd0766f8733b4df9fd6b14fcac9c5c4",
-    "tools/package_ripper.py": "fa1223ffbf1c424f9b929014d78c0fb0372261ef00edfd51c1cf048f51c76d02",
+    "tools/package_ripper.py": "4a0b0d771eac13cee9dec39917aeec75e323aca12e90eb64a90dfbed8cae2f01",
     "tools/verify_ripper_native.py": "68e11d2a12434b163c3acce4b430b634c110a26e367908a4bf94ee7c7d283418",
     "tools/ripper_mouth.py": "29a46a869d772953c5a9c4d23b7b239d57f32fee8678b10c30fcdac0d80c32c4",
     "tools/render_ripper_motion.py": "2f6b1193b45e2ddf03e06bcbc89225ea3754d87228f9e125f473216bd40dfdf1",
@@ -45,7 +45,7 @@
     "tools/prepare_ripper_repository.py": "93fca92650bc4413a6aac7cc98a49237413076801f8c553d310d2a5ee16cc5c4",
     "model-workbench/Ripper/low-poly/README.md": "f91997d3b62765a85fa455c8c79af211a8c1a8ce3ef2bc355de0de9ef8382578",
     "docs/RIPPER_MODEL.md": "125bd06ed1eb92ee26083be29bb433146a078caa73ccce4dfd975aea4df1850a",
-    "README.md": "952a48866d09b830c81d19738ae9ab3c4e7bb7f1ef735498a71c10d15fe8d17b"
+    "README.md": "ebb235ad2212bf848a27572d6366401a20d5de1222c2b33c3aed7abc04f76dcb"
   },
   "engine_in_game_verified": false
 }

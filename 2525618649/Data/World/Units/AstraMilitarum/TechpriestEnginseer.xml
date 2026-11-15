@@ -218,17 +218,14 @@
 				</target>
 			</beginTargets>
 		</awakenTheMachine>
-		<constructImperialStrongpoint icon="Units/AstraMilitarum/ImperialStrongpoint"
-				requiredUpgrade="AstraMilitarum/ImperialStrongpoint"
-				cooldown="5">
+		<constructImperialStrongpoint icon="Units/AstraMilitarum/ImperialStrongpoint" requiredUpgrade="AstraMilitarum/ImperialStrongpoint" cooldown="5" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild"
-						sound="Actions/Construct"/>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<oreCost base="40"/>
+						<oreCost base="40" />
 					</effects>
 				</modifier>
 			</modifiers>
@@ -236,11 +233,11 @@
 				<target rangeMax="1">
 					<conditions>
 						<tile>
-							<noFeatureCategory name="Resource"/>
-							<noFeatureCategory name="WireWeed"/>
-							<land/>
-							<noUnit/>
-							<noFeature name="GravityWaves"/>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noUnit />
+							<noFeature name="GravityWaves" />
 						</tile>
 					</conditions>
 					<areas>
@@ -248,7 +245,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="AstraMilitarum/ImperialStrongpoint"/>
+										<addUnit name="AstraMilitarum/ImperialStrongpoint" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -256,19 +253,20 @@
 					</areas>
 				</target>
 			</beginTargets>
+			<conditions>
+				<player>
+					<notAIControlled />
+				</player>
+			</conditions>
 		</constructImperialStrongpoint>
-		<constructVoidShieldGenerator icon="Units/AstraMilitarum/VoidShieldGenerator"
-				requiredUpgrade="AstraMilitarum/VoidShieldGenerator"
-				cooldown="5">
+		<constructNoctilithCrown icon="Units/AstraMilitarum/ImperialStrongpoint" requiredUpgrade="AstraMilitarum/ImperialStrongpoint" cooldown="5" name="FoundryAI/ImperialStrongpoint" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild"
-						sound="Actions/Construct"/>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<energyCost base="20"/>
-						<oreCost base="20"/>
+						<oreCost base="40" />
 					</effects>
 				</modifier>
 			</modifiers>
@@ -276,11 +274,12 @@
 				<target rangeMax="1">
 					<conditions>
 						<tile>
-							<noFeatureCategory name="Resource"/>
-							<noFeatureCategory name="WireWeed"/>
-							<land/>
-							<noUnit/>
-							<noFeature name="GravityWaves"/>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noUnit />
+							<noFeature name="GravityWaves" />
+							<noEnemyCity />
 						</tile>
 					</conditions>
 					<areas>
@@ -288,7 +287,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<addUnit name="AstraMilitarum/VoidShieldGenerator"/>
+										<addUnit name="AstraMilitarum/ImperialStrongpoint" />
 									</effects>
 								</modifier>
 							</modifiers>
@@ -296,7 +295,118 @@
 					</areas>
 				</target>
 			</beginTargets>
+			<conditions>
+				<player>
+					<aiControlled />
+					<noFaction name="Neutral" />
+
+				</player>
+				<unit>
+					<hitpointsFraction greater="0.6" />
+					<unitsInRange count="1" range="3">
+						<enemy />
+						<noTrait name="Invulnerable" />
+						<noType name="Eldar/WebwayGate" />
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</constructNoctilithCrown>
+		<constructVoidShieldGenerator icon="Units/AstraMilitarum/VoidShieldGenerator" requiredUpgrade="AstraMilitarum/VoidShieldGenerator" cooldown="5" useConditionsForVisiblity="1">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<energyCost base="20" />
+						<oreCost base="20" />
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noUnit />
+							<noFeature name="GravityWaves" />
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="AstraMilitarum/VoidShieldGenerator" />
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<conditions>
+				<player>
+					<notAIControlled />
+				</player>
+			</conditions>
 		</constructVoidShieldGenerator>
+		<constructNoctilithCrown icon="Units/AstraMilitarum/VoidShieldGenerator" requiredUpgrade="AstraMilitarum/VoidShieldGenerator" cooldown="5" name="FoundryAI/VoidShieldGenerator" useConditionsForVisiblity="1">
+			<model>
+				<action animation="Units/AstraMilitarum/TechpriestEnginseerBuild" sound="Actions/Construct" />
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<energyCost base="20" />
+						<oreCost base="20" />
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource" />
+							<noFeatureCategory name="WireWeed" />
+							<land />
+							<noUnit />
+							<noFeature name="GravityWaves" />
+							<noEnemyCity />
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addUnit name="AstraMilitarum/VoidShieldGenerator" />
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+			<conditions>
+				<player>
+					<aiControlled />
+					<noFaction name="Neutral" />
+
+
+				</player>
+				<unit>
+					<hitpointsFraction greater="0.6" />
+					<unitsInRange count="1" range="3">
+						<enemy />
+						<noTrait name="Invulnerable" />
+						<noType name="Eldar/WebwayGate" />
+					</unitsInRange>
+				</unit>
+			</conditions>
+		</constructNoctilithCrown>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
