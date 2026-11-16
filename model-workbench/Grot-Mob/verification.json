@@ -1,0 +1,379 @@
+{
+  "mek": {
+    "file": "Grot-Mek.glb",
+    "sha256": "921fc4f08181a7e07e8bfbca4c5b6bcfa378a6be553eb3d1da8e9148d78a8236",
+    "skins": 1,
+    "bones": 17,
+    "mesh_nodes": 34,
+    "clips": [
+      "mek | Idle",
+      "mek | Spanner strike"
+    ],
+    "diffuse": {
+      "sha256": "4b1c7bc6f802fec7a21d6a547a599a1c04843010b8925331b113fefc2f7dbfbd",
+      "bytes": 871839,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "same_bytes_as_loose_png": true,
+      "occupied_uv_coverage_512": 0.492279052734375,
+      "distinct_sampled_srgb_colours": 15921,
+      "occupied_texel_luma_p2_p50_p98": [
+        90.8304,
+        131.9668,
+        187.64099999999996
+      ]
+    },
+    "measured_glb_native_height": {
+      "sole": -5.960464477539063e-08,
+      "naked_crown": 26.209491729736328,
+      "sole_to_crown": 26.209491789340973,
+      "relative_to_uploaded_ork": 0.44940579364796346
+    },
+    "triangles": 1517,
+    "min_world_triangle_area": 0.006119521800428629,
+    "min_uv_triangle_area": 3.63185460372506e-07,
+    "zero_area_triangles": 0,
+    "zero_area_uv_triangles": 0,
+    "max_joint_weight_sum_error": 5.960464477539063e-08,
+    "uv_area_sum": 0.49267188804309997,
+    "minimum_grip_to_palm_vertex_distance": 0.05772295966744423,
+    "minimum_grip_to_palm_surface_distance": 0.0,
+    "rest_bounds": [
+      [
+        -12.724298477172852,
+        -11.475335121154785,
+        -5.960464477539063e-08
+      ],
+      [
+        7.846322059631348,
+        3.8352749347686768,
+        28.849824905395508
+      ]
+    ],
+    "animations": {
+      "mek | Spanner strike": {
+        "frames": [
+          1,
+          7,
+          13,
+          19,
+          25,
+          31,
+          37
+        ],
+        "peak_prop_travel": 5.860629558563232,
+        "max_prop_to_hand_drift": 9.69047596299788e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 5.860629558563232,
+        "whole_figure_return_error": 0.0
+      },
+      "mek | Idle": {
+        "frames": [
+          1,
+          9,
+          17,
+          25,
+          33,
+          41,
+          49
+        ],
+        "peak_prop_travel": 0.22325189411640167,
+        "max_prop_to_hand_drift": 8.649042683828156e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 0.3625282049179077,
+        "whole_figure_return_error": 0.0
+      }
+    },
+    "status": "pass",
+    "source_blend_sha256": "8cb485c88a98d7a0eb271550d41bcddbd168213419a2055e40a9854beb830de9",
+    "measured_source_native_height": {
+      "sole": -2.9802322387695312e-08,
+      "naked_crown": 26.209501266479492,
+      "sole_to_crown": 26.209501296281815,
+      "relative_to_uploaded_ork": 0.4494059566604449
+    }
+  },
+  "gunner": {
+    "file": "Grot-Gunner.glb",
+    "sha256": "4062ae442ac9ea7f26f6c2c59ec2923718aec3e8ee7d575d0facd3b41fa37801",
+    "skins": 1,
+    "bones": 17,
+    "mesh_nodes": 37,
+    "clips": [
+      "gunner | Idle",
+      "gunner | Pistol recoil"
+    ],
+    "diffuse": {
+      "sha256": "98af1442e129734a5eb1db9097ba5e34e745179aa4cf26be8a7efd9200b6b863",
+      "bytes": 860754,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "same_bytes_as_loose_png": true,
+      "occupied_uv_coverage_512": 0.5095176696777344,
+      "distinct_sampled_srgb_colours": 15768,
+      "occupied_texel_luma_p2_p50_p98": [
+        91.19539999999999,
+        131.0152,
+        189.0734
+      ]
+    },
+    "measured_glb_native_height": {
+      "sole": 8.940696716308594e-08,
+      "naked_crown": 26.209495544433594,
+      "sole_to_crown": 26.209495455026627,
+      "relative_to_uploaded_ork": 0.44940585650230586
+    },
+    "triangles": 1457,
+    "min_world_triangle_area": 0.006093013100326061,
+    "min_uv_triangle_area": 1.040750534642143e-07,
+    "zero_area_triangles": 0,
+    "zero_area_uv_triangles": 0,
+    "max_joint_weight_sum_error": 5.21540641784668e-08,
+    "uv_area_sum": 0.5094422549577164,
+    "minimum_grip_to_palm_vertex_distance": 1.0039169788360596,
+    "minimum_grip_to_palm_surface_distance": 0.0,
+    "rest_bounds": [
+      [
+        -12.945173263549805,
+        -20.921924591064453,
+        8.940696716308594e-08
+      ],
+      [
+        9.968073844909668,
+        4.1492228507995605,
+        26.209495544433594
+      ]
+    ],
+    "animations": {
+      "gunner | Pistol recoil": {
+        "frames": [
+          1,
+          6,
+          11,
+          16,
+          21,
+          26,
+          31
+        ],
+        "peak_prop_travel": 5.172347545623779,
+        "max_prop_to_hand_drift": 6.67572021484375e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 5.172347545623779,
+        "whole_figure_return_error": 0.0
+      },
+      "gunner | Idle": {
+        "frames": [
+          1,
+          9,
+          17,
+          25,
+          33,
+          41,
+          49
+        ],
+        "peak_prop_travel": 0.4620494246482849,
+        "max_prop_to_hand_drift": 7.136645308492007e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 0.4620494246482849,
+        "whole_figure_return_error": 0.0
+      }
+    },
+    "status": "pass",
+    "source_blend_sha256": "8cb485c88a98d7a0eb271550d41bcddbd168213419a2055e40a9854beb830de9",
+    "measured_source_native_height": {
+      "sole": -1.4901161193847656e-08,
+      "naked_crown": 26.209501266479492,
+      "sole_to_crown": 26.209501281380653,
+      "relative_to_uploaded_ork": 0.44940595640493947
+    },
+    "cartridge_vest_contact_per_clip": {
+      "gunner | Pistol recoil": {
+        "sampled_frames": 31,
+        "frames_with_vest_contact": {
+          "Shell in leather keeper": 31,
+          "Shell in leather keeper.001": 31,
+          "Shell in leather keeper.002": 31
+        }
+      },
+      "gunner | Idle": {
+        "sampled_frames": 49,
+        "frames_with_vest_contact": {
+          "Shell in leather keeper": 49,
+          "Shell in leather keeper.001": 49,
+          "Shell in leather keeper.002": 49
+        }
+      }
+    },
+    "muzzle_check": {
+      "source": "measured on reimported GLB in Blender world coordinates",
+      "units": "source distance units and degrees",
+      "angle_order": [
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "spine",
+        "head"
+      ],
+      "samples": [
+        {
+          "frame": 1,
+          "muzzle_lift": 0.0,
+          "kickback": -0.0,
+          "elevation": 1.136248910066985,
+          "angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 9,
+          "muzzle_lift": 2.249452590942383,
+          "kickback": 0.5550455376505852,
+          "elevation": 8.454839988648583,
+          "angles": [
+            5.785723472323571,
+            7.781363875149665,
+            7.781363875149665,
+            1.0001370229238566,
+            1.5606870195688065
+          ]
+        },
+        {
+          "frame": 11,
+          "muzzle_lift": 4.75227165222168,
+          "kickback": 1.7056531012058258,
+          "elevation": 20.647345610249648,
+          "angles": [
+            9.958192121183274,
+            19.813420848175895,
+            19.813381574588167,
+            2.9999652922065208,
+            4.112283583214488
+          ]
+        },
+        {
+          "frame": 31,
+          "muzzle_lift": 0.0,
+          "kickback": -0.0,
+          "elevation": 1.136248910066985,
+          "angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "cutter": {
+    "file": "Grot-Cutter.glb",
+    "sha256": "ed29e75ad46b5e5830ebbba5386e88beb00a5be46833eec2f370d1ebadb9237b",
+    "skins": 1,
+    "bones": 17,
+    "mesh_nodes": 33,
+    "clips": [
+      "cutter | Blade feint",
+      "cutter | Idle"
+    ],
+    "diffuse": {
+      "sha256": "b937d4b705bce3447136524accdeb6a594e54c74310e8555adec61122bf20e76",
+      "bytes": 857083,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "same_bytes_as_loose_png": true,
+      "occupied_uv_coverage_512": 0.49927520751953125,
+      "distinct_sampled_srgb_colours": 14679,
+      "occupied_texel_luma_p2_p50_p98": [
+        93.65740000000001,
+        136.4882,
+        191.0614
+      ]
+    },
+    "measured_glb_native_height": {
+      "sole": 6.407499313354492e-07,
+      "naked_crown": 26.209505081176758,
+      "sole_to_crown": 26.209504440426826,
+      "relative_to_uploaded_ork": 0.4494060105720963
+    },
+    "triangles": 1512,
+    "min_world_triangle_area": 0.005797265563160181,
+    "min_uv_triangle_area": 4.2435137004304124e-07,
+    "zero_area_triangles": 0,
+    "zero_area_uv_triangles": 0,
+    "max_joint_weight_sum_error": 5.21540641784668e-08,
+    "uv_area_sum": 0.49936846390977285,
+    "minimum_grip_to_palm_vertex_distance": 0.821224570274353,
+    "minimum_grip_to_palm_surface_distance": 0.0,
+    "rest_bounds": [
+      [
+        -13.293689727783203,
+        -12.863006591796875,
+        6.407499313354492e-07
+      ],
+      [
+        7.708370208740234,
+        4.6959309577941895,
+        26.209505081176758
+      ]
+    ],
+    "animations": {
+      "cutter | Idle": {
+        "frames": [
+          1,
+          9,
+          17,
+          25,
+          33,
+          41,
+          49
+        ],
+        "peak_prop_travel": 0.17796777188777924,
+        "max_prop_to_hand_drift": 6.555427262355806e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 0.35498952865600586,
+        "whole_figure_return_error": 0.0
+      },
+      "cutter | Blade feint": {
+        "frames": [
+          1,
+          6,
+          12,
+          17,
+          22,
+          28,
+          33
+        ],
+        "peak_prop_travel": 3.1785547733306885,
+        "max_prop_to_hand_drift": 6.106495220592478e-06,
+        "max_planted_boot_travel": 0.0,
+        "return_to_rest_error": 0.0,
+        "whole_figure_peak_travel": 3.1785547733306885,
+        "whole_figure_return_error": 0.0
+      }
+    },
+    "status": "pass",
+    "source_blend_sha256": "8cb485c88a98d7a0eb271550d41bcddbd168213419a2055e40a9854beb830de9",
+    "measured_source_native_height": {
+      "sole": -8.195638656616211e-07,
+      "naked_crown": 26.209501266479492,
+      "sole_to_crown": 26.209502086043358,
+      "relative_to_uploaded_ork": 0.4494059702022341
+    }
+  }
+}
