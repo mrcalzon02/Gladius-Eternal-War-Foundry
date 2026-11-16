@@ -2,6 +2,8 @@
 
 Open **Grot-Mob.blend** to edit the three painted, rigged figures together. Each character also has a standalone GLB with its own skeleton, actions, and embedded diffuse atlas. The individual files open with the origin between the boots.
 
+[Six-member animated formation](Formation/README.md) — two of each role in one unit, with grouped idle, advance, and scrap actions.
+
 ![Three textured Grot models](Grot-Mob.jpg)
 
 | Figure | GLB | Triangles, including equipment | Actions |
