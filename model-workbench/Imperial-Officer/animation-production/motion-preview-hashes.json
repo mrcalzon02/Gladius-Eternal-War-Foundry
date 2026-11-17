@@ -1,0 +1,13 @@
+{
+  "Idle0.gif": "5e68c7b6cee525364cfab9da2d739d9704c586d038e5eadb54c5b49700a0072c",
+  "Move.gif": "dc9e6afaa9b29d1789b3f5db3c7aa3728bd3d0396657ff537cd6c2bbf5cf7476",
+  "Attack.gif": "953fb61c34c8fe235fe9772f8fd12dec7f845b4de284051e222035e6e3ffbb91",
+  "Melee.gif": "1d3de1eb7ce7c2d286e568b63d14e6ac8b6c9c89d9f55388b88af8077ab2800b",
+  "MeleeDefense.gif": "0c2553a06f4fd2fcfbe0e10ee7e020ceb8f6b9d7c0c8936b7d7caf7a474de112",
+  "Charge.gif": "3cb62f2a2580f86f83997cf586c668e1039acd8466c7b2e7cd323465fd39a873",
+  "ChargeDefense.gif": "5be659bd38e1d75b1fc1a0ec40bdadcb4c869980f7d72c0e5778902da347d523",
+  "Grenade.gif": "1106192c9c2ae8583c662a4501ca439582c0c46c2e51e7c55ac61d4dab8758bf",
+  "Shout.gif": "ed4a38e88ee4ab9fce1a04d21c54180c88553ddc8b85469d3ba9ff9acf76db32",
+  "Die.gif": "c3e44cc8a7332e1d4adc7b389d8c103beba03d6db4a408450c04d7f8dc6c6df4",
+  "Animation-Contact-Sheet.png": "801bd3a285ff04a311d0df6200e0ceaea6424e9bc43f63c63fe4d71e18408e19"
+}

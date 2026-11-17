@@ -1,0 +1,472 @@
+{
+  "body_objects": [
+    "Native Guardsman body - officer uniform",
+    "Officer Left closed weapon fist",
+    "Officer Right closed weapon fist",
+    "Officer head sides and hair - native neck boundary",
+    "Right low-poly ear",
+    "Left low-poly ear",
+    "Officer proportioned peaked-cap band",
+    "Officer shallow khaki cap crown",
+    "Officer short curved cap peak",
+    "Officer compact rear hip canteen"
+  ],
+  "body_triangles": 892,
+  "retained_native_triangles": 602,
+  "removed_native_triangles": 292,
+  "native_bones": [
+    "AbdomenBone",
+    "ChestBone",
+    "Head",
+    "HipBone",
+    "LeftFingerBone0",
+    "LeftFingerBone1",
+    "LeftFootBone",
+    "LeftHandBone",
+    "LeftHipBone",
+    "LeftLowerArmBone",
+    "LeftShinBone",
+    "LeftSoulderBone",
+    "LeftThumbBone0",
+    "LeftThumbBone1",
+    "LeftThumbBone2",
+    "LeftUpperArmBone",
+    "RightFingerBone0",
+    "RightFingerBone1",
+    "RightFootBone",
+    "RightHandBone",
+    "RightHipBone",
+    "RightLowerArmBone",
+    "RightShinBone",
+    "RightShoulderBone",
+    "RightThumbBone0",
+    "RightThumbBone1",
+    "RightThumbBone2",
+    "RightUpperArmBone"
+  ],
+  "bone_order": [
+    "AbdomenBone",
+    "ChestBone",
+    "Head",
+    "HipBone",
+    "LeftFingerBone0",
+    "LeftFingerBone1",
+    "LeftFootBone",
+    "LeftHandBone",
+    "LeftHipBone",
+    "LeftLowerArmBone",
+    "LeftShinBone",
+    "LeftSoulderBone",
+    "LeftThumbBone0",
+    "LeftThumbBone1",
+    "LeftThumbBone2",
+    "LeftUpperArmBone",
+    "RightFingerBone0",
+    "RightFingerBone1",
+    "RightFootBone",
+    "RightHandBone",
+    "RightHipBone",
+    "RightLowerArmBone",
+    "RightShinBone",
+    "RightShoulderBone",
+    "RightThumbBone0",
+    "RightThumbBone1",
+    "RightThumbBone2",
+    "RightUpperArmBone",
+    "OfficerPistolGrip",
+    "OfficerChainswordGrip"
+  ],
+  "baseline_bind_matrices_unchanged": true,
+  "attachments": {
+    "pistol": {
+      "mesh": "Weapons/AstraMilitarum/PrimarisPsykerLaspistol",
+      "material": "Weapons/AstraMilitarum/WyrdvanePsykerLaspistol",
+      "body_hand": "RightHandBone",
+      "local_grip": [
+        4.25,
+        -1.5499999523162842,
+        -0.20000000298023224
+      ],
+      "anchor_bind": [
+        [
+          -0.2023138552904129,
+          0.412045955657959,
+          -0.029782794415950775,
+          10.410654067993164
+        ],
+        [
+          0.26260092854499817,
+          0.15386688709259033,
+          0.3449138402938843,
+          -5.164046287536621
+        ],
+        [
+          0.31891945004463196,
+          0.13469554483890533,
+          -0.3028983175754547,
+          38.38328552246094
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_sha256": "dd7420e7381d29fd08889b531a310e0ad343cafaa577821486ebaf3e4dd71a15",
+      "native_model_unchanged": true,
+      "bone": "OfficerPistolGrip",
+      "rest_hand_grip": [
+        8.918105125427246,
+        -4.35546875,
+        39.59049606323242
+      ],
+      "uniform_scale": 0.46,
+      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded"
+    },
+    "sword": {
+      "mesh": "Weapons/SpaceMarines/Chainsword",
+      "material": "Weapons/SpaceMarines/Chainsword",
+      "body_hand": "LeftHandBone",
+      "local_grip": [
+        5.730360984802246,
+        -1.6769931316375732,
+        1.6437163352966309
+      ],
+      "anchor_bind": [
+        [
+          0.2020750641822815,
+          -0.08722802251577377,
+          0.558172881603241,
+          2.7838211059570312
+        ],
+        [
+          -0.4863556921482086,
+          0.2747577130794525,
+          0.21901263296604156,
+          16.195655822753906
+        ],
+        [
+          -0.2874438464641571,
+          -0.5262125730514526,
+          0.02182978391647339,
+          33.05533981323242
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_sha256": "aaa0dabe181ae686b3adb9340f2ce24eb6a4d1d1c0f860c18c212413e3121d97",
+      "native_model_unchanged": true,
+      "bone": "OfficerChainswordGrip",
+      "rest_hand_grip": [
+        5.005542755126953,
+        13.307890892028809,
+        32.32651901245117
+      ],
+      "uniform_scale": 0.6,
+      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded",
+      "grip_placement": {
+        "guard_local": [
+          6.070149898529053,
+          -1.5437500476837158,
+          3.813230037689209
+        ],
+        "handle_base_local": [
+          4.658569812774658,
+          -2.0972800254821777,
+          -5.199550151824951
+        ],
+        "pommel_local": [
+          4.111,
+          -2.312,
+          -8.694
+        ],
+        "grip_from_guard_local": 2.2,
+        "grip_from_guard_world": 1.32,
+        "handle_fraction_from_base": 0.7592847440793665,
+        "palm_fit": {
+          "left_palm_rest": [
+            5.005542755126953,
+            13.307890892028809,
+            32.32651901245117
+          ],
+          "distal_distance": 2.8,
+          "lateral_offset": -1.8,
+          "volar_offset": 0,
+          "minimum_pommel_forearm_distance": 2.593008279800415,
+          "probe_poses": [
+            "Idle0 0",
+            "Idle0 0.5",
+            "Idle0 1",
+            "Move 0",
+            "Move 0.5",
+            "Move 1",
+            "Melee 0",
+            "Melee 0.5",
+            "Melee 1"
+          ],
+          "reason": "Minimal grip-center adjustment clearing the cuff while preserving the user-specified level-forward blade and lower guard.",
+          "ready_grip_idle_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "grip_frame": {
+          "blade_axis_idle_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "shaft_axis_hand_rest": [
+            0.9606091976165771,
+            0.26250141859054565,
+            -0.09123067557811737
+          ],
+          "guard_side_idle_world": [
+            0,
+            0,
+            -1
+          ],
+          "thumb_side_hand_rest": [
+            -0.1907145082950592,
+            0.8614727854728699,
+            0.47063010931015015
+          ],
+          "carry": "Forward ready: blade level straight ahead; toothed edge and knuckle guard underneath.",
+          "thumb": "Thumb over the top of the handle; fingers curled underneath, above the lower guard.",
+          "reference": "references/Chainsword-Hand-Guard-Reference.png",
+          "thumb_quad_band": 1,
+          "palm_radius": [
+            2.02,
+            1.79
+          ],
+          "index_radius": [
+            1.85,
+            1.62
+          ],
+          "hand_fullness_scale": 1.12,
+          "thumb_base_ridge": 0.42,
+          "thumb_tip_ridge": 0.45,
+          "index_axial_extent": 1.12,
+          "body_animation_hand_correction_preserved": true,
+          "weapon_mesh_or_material_modified": false
+        },
+        "intent": "Forward ready: blade level straight ahead; toothed edge and knuckle guard underneath. Thumb over the top of the handle; fingers curled underneath, above the lower guard."
+      }
+    }
+  },
+  "animations": {
+    "OfficerGuardAttack.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanAttack.anm",
+      "source_sha256": "ce722d1520856e7f6969427d6d71a0d44491e3771e54155b08d69387042cbafd",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 91,
+      "fps": 30
+    },
+    "OfficerGuardDie0.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanDie0.anm",
+      "source_sha256": "88bd18156b03a39c7bb7fb5302c4e28bc5749f7b98a7cf7b426e99125363b7a1",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 25,
+      "fps": 30
+    },
+    "OfficerGuardDie1.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanDie1.anm",
+      "source_sha256": "633e7571dea1f016e2b583c77b9ddd02cc89e9bcf8bd873550da0ee5cb8c8ac5",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 25,
+      "fps": 30
+    },
+    "OfficerGuardDie2.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanDie2.anm",
+      "source_sha256": "a839b3efc02e76c6affc7515a80c975a2a19e4790902c3f9cd5559bf958caaf5",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 26,
+      "fps": 30
+    },
+    "OfficerGuardGrenade.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanGrenade.anm",
+      "source_sha256": "5e4532a804fe1eda6a0c40421cc02c285b88840639cef5d0ba9853ff671a15a7",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 41,
+      "fps": 30
+    },
+    "OfficerGuardIdle0.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanIdle0.anm",
+      "source_sha256": "33794b8ec104332a0dfd46b1b68c9cc6b5c50006ef90b12320f1f62677f3436a",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 101,
+      "fps": 30
+    },
+    "OfficerGuardIdle1.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanIdle1.anm",
+      "source_sha256": "eff653301b2fbaa376e0371dfb95820374062535c6a172d113ec10c5ad62951e",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 81,
+      "fps": 30
+    },
+    "OfficerGuardIdle2.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanIdle2.anm",
+      "source_sha256": "f85ece97b804990992cfd941c0cfaba119e98eeee4cf83f20e7fc2c44fed7283",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 61,
+      "fps": 30
+    },
+    "OfficerGuardMove.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanMove.anm",
+      "source_sha256": "c448e91f683e4291bdd9745c55ee6780ee330d11bf1bd61f7b6ea32d98431635",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 21,
+      "fps": 30
+    },
+    "OfficerGuardMoveBegin.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanMoveBegin.anm",
+      "source_sha256": "3fa50d3f3b4d9a5947527947afff160e3d43246ed93bffda356f4a09adf50e07",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 11,
+      "fps": 30
+    },
+    "OfficerGuardMoveEnd.anm": {
+      "source": "C:\\Users\\Admin\\Documents\\ChatGPT\\Gladius-Eternal-War-Foundry\\model-workbench\\Imperial-Model-Library\\Guardsman\\Data\\Video\\Animations\\Units\\AstraMilitarum\\GuardsmanMoveEnd.anm",
+      "source_sha256": "5c05bbf3ba72c44d225bab33b8d0f47b34f59bad2c226db33f10b85fc090f471",
+      "original_28_body_channels_byte_identical": true,
+      "frames": 11,
+      "fps": 30
+    },
+    "OfficerAttack.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarAttack.anm",
+      "source_sha256": "f155d0f9c591868b29a32f0ecc3810b421496c3b07252240cd5dafeb13340bda",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 361,
+      "fps": 120
+    },
+    "OfficerCharge.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarCharge.anm",
+      "source_sha256": "fd30899eb97a3b82e0d9614251a2b5f68b9b37bdb7e46255f4ecbb445a30c56c",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 181,
+      "fps": 120
+    },
+    "OfficerChargeDefense.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarChargeDefense.anm",
+      "source_sha256": "733d982d2811b07ef49e9956f31dc62ef6e6716794837d2beed85dba4cf5dc2b",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 181,
+      "fps": 120
+    },
+    "OfficerDie.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarDie.anm",
+      "source_sha256": "6b59e162ce6a990b5337e7b0520344b3396ff7b8d60b76db1be89f96d88bf6e5",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 89,
+      "fps": 120
+    },
+    "OfficerGrenade.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarGrenade.anm",
+      "source_sha256": "2685af7b36d71ea32f79bc11c9d5bc8b2b76284ce08017d934c8c407573ca0e5",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 141,
+      "fps": 120
+    },
+    "OfficerIdle0.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarIdle0.anm",
+      "source_sha256": "477787b4137ab7403f32b20c5ecd04a1fc7e2b2182044b74dbd9cb139507dda0",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 301,
+      "fps": 120
+    },
+    "OfficerIdle1.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarIdle1.anm",
+      "source_sha256": "81bbaf746e104ea2113312df3413aaaa05f75b1b572c3a2689a2b5e75b0f3b22",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 261,
+      "fps": 120
+    },
+    "OfficerIdle2.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarIdle2.anm",
+      "source_sha256": "8ba9465d06f38be064e32c3f6d8fa298ead2f4bd35ed75e8a3fe2e2601b178f7",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 241,
+      "fps": 120
+    },
+    "OfficerMelee.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarMelee.anm",
+      "source_sha256": "385d2d0a6a323e5c3bb2fa4d1e638d25877d27515e45f300b10947e89497ed40",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 181,
+      "fps": 120
+    },
+    "OfficerMeleeDefense.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarMeleeDefense.anm",
+      "source_sha256": "9ef30c11024270c71d99898d10cbbab63b7565cda86e4771bf9e324888ae97b8",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 181,
+      "fps": 120
+    },
+    "OfficerMove.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarMove.anm",
+      "source_sha256": "9be446aff6849e776da4f3918e70e968a10d7445b499957af94ca616311b3d9a",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 81,
+      "fps": 120
+    },
+    "OfficerMoveBegin.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarMoveBegin.anm",
+      "source_sha256": "fa8c20f581e9276294cbe635864f94a0f02bbf52d0dfc62979af1f45a39df2f6",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 41,
+      "fps": 120
+    },
+    "OfficerMoveEnd.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarMoveEnd.anm",
+      "source_sha256": "ad670aaf5dec2920491b96604bc74eeac31bc53c9d92b15420a5cdff1fa6c47f",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 41,
+      "fps": 120
+    },
+    "OfficerShout.anm": {
+      "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40000 Gladius - Relics of War\\Data\\Video\\Animations\\Units\\AstraMilitarum\\LordCommissarShout.anm",
+      "source_sha256": "e2b72e064c800d3954bf696a6dbd69acc92486b6d8e79f43999e7de934f29924",
+      "retargeted_to_native_guardsman_binds": true,
+      "frames": 241,
+      "fps": 120
+    }
+  },
+  "left_hand": {
+    "triangles": 98,
+    "vertices": 53,
+    "anatomy": "Connected palm, four individually curled fingers with four-sided knuckles, and opposed thumb",
+    "uv": "Dedicated padded 64px tile in freed helmet space of the existing 512px atlas",
+    "wrist": "Exact original six-point boundary; cuff seam and hand both rebound to LeftHandBone",
+    "rebound_cuff_vertices": 6,
+    "bone": "LeftHandBone",
+    "budget_reallocation": {
+      "cap_band_and_crown_saved": 20,
+      "canteen_saved": 18,
+      "visor_saved": 4,
+      "old_hand_triangles": 56
+    }
+  },
+  "surface_plan": {
+    "cloth": "native painted khaki folds and stitching",
+    "armor": "curved original Guardsman forms, neutral gray/black with SIC.B player color; protected insignia",
+    "head": "repainted exposed face; tapered low-poly skull, cropped hair and bionic optic",
+    "hands": "Left: anatomical palm, four curled fingers and thumb with separate UV charts and a color-only skin bake. Right pistol fist preserved.",
+    "cap": "shallow khaki crown, black band, short dark visor; painted brass eagle and trim",
+    "kit": "original belt equipment and holster; compact polygonal hip canteen; painted fastenings",
+    "gaiters": "olive gaiters and dark boots painted on original leg mesh"
+  },
+  "reference_sha256": {
+    "ChatGPT Image Nov 15, 2026, 05_12_25 PM.png": "437bd796fa7718b2e2616a281c52d132975b6342e3663c3abf43228797593759",
+    "ChatGPT Image Nov 15, 2026, 05_12_16 PM.png": "ec2146ebabc0a0216baa52289a8d66d9d23d92b66b2197824ca679c04ad6497c",
+    "ChatGPT Image Nov 15, 2026, 05_12_09 PM.png": "0deecee9ef0bb9c6e9d25eee83bbe40feffd6664c26b715152365392b8f6ebf1"
+  },
+  "installed": false,
+  "published": false,
+  "dense_officer_geometry_used": false
+}

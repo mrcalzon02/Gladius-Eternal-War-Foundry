@@ -1,0 +1,23 @@
+{
+  "native_grip": [
+    4.25,
+    -1.5499999523162842,
+    -0.20000000298023224
+  ],
+  "native_muzzle": [
+    26.800899505615234,
+    -4.306739807128906,
+    -3.2916200160980225
+  ],
+  "native_forward": [
+    0.9786678552627563,
+    -0.17121998965740204,
+    0.11354698240756989
+  ],
+  "native_barrel_up": [
+    0.14450109004974365,
+    0.18078769743442535,
+    -0.9728490114212036
+  ],
+  "up_definition": "Actual handle grip toward actual muzzle, perpendicular to barrel; not the mesh +Z axis"
+}

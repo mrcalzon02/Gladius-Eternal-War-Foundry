@@ -1,0 +1,894 @@
+{
+  "status": "passed",
+  "mesh_sha256": "1d354977f3812808eabd9d0a4cd33bd99cbfb06d0dc741401fef2aa9a74a0cad",
+  "clips_tested": 14,
+  "poses_tested": 4118,
+  "samples": {
+    "Idle0": {
+      "poses": 301,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.00297164916992,
+      "maximum_edge_stretch_ratio": 1.4125457304162985,
+      "maximum_limb_length_relative_error": 5.365672023360801e-07,
+      "maximum_handle_error": 1.0831658069229648e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.2,
+        "rest_points": [
+          [
+            5.654660224914551,
+            -13.435500144958496,
+            43.650901794433594
+          ],
+          [
+            5.928450107574463,
+            -12.605799674987793,
+            49.979698181152344
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              0.5059459805488586
+            ],
+            [
+              "RightLowerArmBone",
+              0.324964314699173
+            ],
+            [
+              "RightHandBone",
+              0.08555784821510315
+            ],
+            [
+              "RightUpperArmBone",
+              0.08353185653686523
+            ]
+          ],
+          [
+            [
+              "RightShoulderBone",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Idle1": {
+      "poses": 301,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.00297164916992,
+      "maximum_edge_stretch_ratio": 1.5086348950392132,
+      "maximum_limb_length_relative_error": 5.365672023360801e-07,
+      "maximum_handle_error": 1.0831658069229648e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 1.25,
+        "rest_points": [
+          [
+            0.1789734810590744,
+            -2.6441268920898438,
+            57.44559860229492
+          ],
+          [
+            0.7053340077400208,
+            -2.002934455871582,
+            56.99440002441406
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              1.0
+            ]
+          ],
+          [
+            [
+              "Head",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Idle2": {
+      "poses": 301,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.00297164916992,
+      "maximum_edge_stretch_ratio": 1.4125457304162985,
+      "maximum_limb_length_relative_error": 5.365672023360801e-07,
+      "maximum_handle_error": 1.0831658069229648e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.2,
+        "rest_points": [
+          [
+            5.654660224914551,
+            -13.435500144958496,
+            43.650901794433594
+          ],
+          [
+            5.928450107574463,
+            -12.605799674987793,
+            49.979698181152344
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              0.5059459805488586
+            ],
+            [
+              "RightLowerArmBone",
+              0.324964314699173
+            ],
+            [
+              "RightHandBone",
+              0.08555784821510315
+            ],
+            [
+              "RightUpperArmBone",
+              0.08353185653686523
+            ]
+          ],
+          [
+            [
+              "RightShoulderBone",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Move": {
+      "poses": 81,
+      "minimum_body_Z": -0.610100269317627,
+      "minimum_sword_Z": 31.28480339050293,
+      "maximum_edge_stretch_ratio": 1.9205903310436492,
+      "maximum_limb_length_relative_error": 8.222231631105359e-07,
+      "maximum_handle_error": 1.1613120336969983e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.0,
+        "rest_points": [
+          [
+            2.402909994125366,
+            0.06734079867601395,
+            55.500099182128906
+          ],
+          [
+            2.460390090942383,
+            0.06733950227499008,
+            56.284000396728516
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              1.0
+            ]
+          ],
+          [
+            [
+              "Head",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "MoveBegin": {
+      "poses": 41,
+      "minimum_body_Z": -0.6100986003875732,
+      "minimum_sword_Z": 31.284807205200195,
+      "maximum_edge_stretch_ratio": 1.9205903310436492,
+      "maximum_limb_length_relative_error": 6.677821509093462e-07,
+      "maximum_handle_error": 1.1000892634448364e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.3333333333333333,
+        "rest_points": [
+          [
+            2.402909994125366,
+            0.06734079867601395,
+            55.500099182128906
+          ],
+          [
+            2.460390090942383,
+            0.06733950227499008,
+            56.284000396728516
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              1.0
+            ]
+          ],
+          [
+            [
+              "Head",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "MoveEnd": {
+      "poses": 41,
+      "minimum_body_Z": -0.6100985407829285,
+      "minimum_sword_Z": 31.284807205200195,
+      "maximum_edge_stretch_ratio": 1.9205903310436492,
+      "maximum_limb_length_relative_error": 6.677821509093462e-07,
+      "maximum_handle_error": 1.1000892634448364e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.0,
+        "rest_points": [
+          [
+            2.402909994125366,
+            0.06734079867601395,
+            55.500099182128906
+          ],
+          [
+            2.460390090942383,
+            0.06733950227499008,
+            56.284000396728516
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              1.0
+            ]
+          ],
+          [
+            [
+              "Head",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Attack": {
+      "poses": 1441,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.016727447509766,
+      "maximum_edge_stretch_ratio": 1.571373133002127,
+      "maximum_limb_length_relative_error": 0.00031057608835605155,
+      "maximum_handle_error": 0.0003821557551992247,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 0.9936076998710632,
+      "firing_barrel_up_minimum": 0.993607759475708,
+      "firing_muzzle_above_grip_minimum": 2.6532440185546875,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.3,
+        "rest_points": [
+          [
+            1.8141299486160278,
+            -13.281299591064453,
+            45.072200775146484
+          ],
+          [
+            0.6492249965667725,
+            -16.69070053100586,
+            42.54410171508789
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "RightLowerArmBone",
+              0.2916415333747864
+            ],
+            [
+              "RightUpperArmBone",
+              0.25301215052604675
+            ],
+            [
+              "RightHandBone",
+              0.23062892258167267
+            ],
+            [
+              "ChestBone",
+              0.2247173935174942
+            ]
+          ],
+          [
+            [
+              "ChestBone",
+              0.43326666951179504
+            ],
+            [
+              "RightLowerArmBone",
+              0.26099613308906555
+            ],
+            [
+              "RightUpperArmBone",
+              0.21142469346523285
+            ],
+            [
+              "RightHandBone",
+              0.09431249648332596
+            ]
+          ]
+        ]
+      }
+    },
+    "Melee": {
+      "poses": 361,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 14.016196250915527,
+      "maximum_edge_stretch_ratio": 1.7870797795828448,
+      "maximum_limb_length_relative_error": 0.004786478050444742,
+      "maximum_handle_error": 0.0032291768641570817,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.5166666666666667,
+        "rest_points": [
+          [
+            -1.8865599632263184,
+            18.031200408935547,
+            43.96799850463867
+          ],
+          [
+            -1.1995899677276611,
+            16.109600067138672,
+            42.070098876953125
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "LeftLowerArmBone",
+              0.3896200358867645
+            ],
+            [
+              "ChestBone",
+              0.2684178948402405
+            ],
+            [
+              "LeftHandBone",
+              0.19124019145965576
+            ],
+            [
+              "LeftUpperArmBone",
+              0.15072187781333923
+            ]
+          ],
+          [
+            [
+              "ChestBone",
+              0.4608350694179535
+            ],
+            [
+              "LeftLowerArmBone",
+              0.34053534269332886
+            ],
+            [
+              "LeftUpperArmBone",
+              0.10159178823232651
+            ],
+            [
+              "LeftHandBone",
+              0.09703779965639114
+            ]
+          ]
+        ]
+      }
+    },
+    "MeleeDefense": {
+      "poses": 361,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.016727447509766,
+      "maximum_edge_stretch_ratio": 1.4125457978716958,
+      "maximum_limb_length_relative_error": 0.0006771333077746355,
+      "maximum_handle_error": 0.001376005311626518,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.06666666666666667,
+        "rest_points": [
+          [
+            5.654660224914551,
+            -13.435500144958496,
+            43.650901794433594
+          ],
+          [
+            5.928450107574463,
+            -12.605799674987793,
+            49.979698181152344
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              0.5059459805488586
+            ],
+            [
+              "RightLowerArmBone",
+              0.324964314699173
+            ],
+            [
+              "RightHandBone",
+              0.08555784821510315
+            ],
+            [
+              "RightUpperArmBone",
+              0.08353185653686523
+            ]
+          ],
+          [
+            [
+              "RightShoulderBone",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Charge": {
+      "poses": 181,
+      "minimum_body_Z": -0.6100999116897583,
+      "minimum_sword_Z": 19.77530860900879,
+      "maximum_edge_stretch_ratio": 1.7214285226614967,
+      "maximum_limb_length_relative_error": 7.625527749244299e-07,
+      "maximum_handle_error": 1.068636647749661e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.5,
+        "rest_points": [
+          [
+            -4.110380172729492,
+            0.06733649969100952,
+            28.729900360107422
+          ],
+          [
+            -5.8542799949646,
+            2.0325798988342285,
+            26.6481990814209
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "AbdomenBone",
+              0.9771983027458191
+            ],
+            [
+              "ChestBone",
+              0.022801706567406654
+            ]
+          ],
+          [
+            [
+              "AbdomenBone",
+              0.46233877539634705
+            ],
+            [
+              "LeftHipBone",
+              0.4608525335788727
+            ],
+            [
+              "HipBone",
+              0.07680866867303848
+            ]
+          ]
+        ]
+      }
+    },
+    "ChargeDefense": {
+      "poses": 181,
+      "minimum_body_Z": -0.6100991368293762,
+      "minimum_sword_Z": 28.391447067260742,
+      "maximum_edge_stretch_ratio": 1.6832386588186827,
+      "maximum_limb_length_relative_error": 7.309625678075804e-07,
+      "maximum_handle_error": 9.560601743959372e-06,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 1.425,
+        "rest_points": [
+          [
+            -7.136630058288574,
+            7.650539875030518,
+            55.38690185546875
+          ],
+          [
+            -6.862800121307373,
+            7.4965901374816895,
+            54.68389892578125
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "LeftSoulderBone",
+              1.0
+            ]
+          ],
+          [
+            [
+              "ChestBone",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Grenade": {
+      "poses": 141,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.016727447509766,
+      "maximum_edge_stretch_ratio": 1.5746316895417007,
+      "maximum_limb_length_relative_error": 6.397019642889745e-07,
+      "maximum_handle_error": 1.2212990259996125e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.2833333333333333,
+        "rest_points": [
+          [
+            6.69189977645874,
+            -15.119600296020508,
+            45.87189865112305
+          ],
+          [
+            6.8493499755859375,
+            -18.15290069580078,
+            44.2765007019043
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              0.5360664129257202
+            ],
+            [
+              "RightLowerArmBone",
+              0.29101455211639404
+            ],
+            [
+              "RightUpperArmBone",
+              0.09842243045568466
+            ],
+            [
+              "RightHandBone",
+              0.07449660450220108
+            ]
+          ],
+          [
+            [
+              "RightLowerArmBone",
+              0.36820122599601746
+            ],
+            [
+              "ChestBone",
+              0.29302918910980225
+            ],
+            [
+              "RightHandBone",
+              0.1794666349887848
+            ],
+            [
+              "RightUpperArmBone",
+              0.1593029648065567
+            ]
+          ]
+        ]
+      }
+    },
+    "Shout": {
+      "poses": 241,
+      "minimum_body_Z": -0.6100947260856628,
+      "minimum_sword_Z": 32.016727447509766,
+      "maximum_edge_stretch_ratio": 1.4125458586073953,
+      "maximum_limb_length_relative_error": 7.028823829635655e-07,
+      "maximum_handle_error": 1.1182302000474091e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.11666666666666667,
+        "rest_points": [
+          [
+            5.654660224914551,
+            -13.435500144958496,
+            43.650901794433594
+          ],
+          [
+            5.928450107574463,
+            -12.605799674987793,
+            49.979698181152344
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "ChestBone",
+              0.5059459805488586
+            ],
+            [
+              "RightLowerArmBone",
+              0.324964314699173
+            ],
+            [
+              "RightHandBone",
+              0.08555784821510315
+            ],
+            [
+              "RightUpperArmBone",
+              0.08353185653686523
+            ]
+          ],
+          [
+            [
+              "RightShoulderBone",
+              1.0
+            ]
+          ]
+        ]
+      }
+    },
+    "Die": {
+      "poses": 145,
+      "minimum_body_Z": -0.6105232238769531,
+      "minimum_sword_Z": 3.0939366817474365,
+      "maximum_edge_stretch_ratio": 1.8830212745049215,
+      "maximum_limb_length_relative_error": 1.001234306352572e-06,
+      "maximum_handle_error": 1.4115104785552678e-05,
+      "sword_body_intersections": 0,
+      "pistol_body_intersections": 0,
+      "firing_muzzle_forward_minimum": 1.0,
+      "firing_barrel_up_minimum": 1.0,
+      "firing_muzzle_above_grip_minimum": 1000000000.0,
+      "collision_body_bones": {
+        "sword": {},
+        "pistol": {}
+      },
+      "peak_stretch": {
+        "time": 0.225,
+        "rest_points": [
+          [
+            -5.8542799949646,
+            2.0325798988342285,
+            26.6481990814209
+          ],
+          [
+            -7.890649795532227,
+            3.7585299015045166,
+            29.477500915527344
+          ]
+        ],
+        "weights": [
+          [
+            [
+              "AbdomenBone",
+              0.46233877539634705
+            ],
+            [
+              "LeftHipBone",
+              0.4608525335788727
+            ],
+            [
+              "HipBone",
+              0.07680866867303848
+            ]
+          ],
+          [
+            [
+              "AbdomenBone",
+              0.7543627619743347
+            ],
+            [
+              "HipBone",
+              0.24563723802566528
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "loop_matrix_errors": {
+    "Idle0": 0.0,
+    "Idle1": 0.0,
+    "Idle2": 0.0,
+    "Move": 0.0,
+    "MoveBegin": 15.534910202026367,
+    "MoveEnd": 15.534910202026367,
+    "Attack": 0.0,
+    "Melee": 0.0,
+    "MeleeDefense": 0.0,
+    "Charge": 0.0,
+    "ChargeDefense": 0.0,
+    "Grenade": 0.0,
+    "Shout": 0.0,
+    "Die": 67.38706648349762
+  },
+  "maximum_handle_attachment_error": 0.0032291768641570817,
+  "maximum_left_hand_affine_error": 1.0831658069229648e-05,
+  "weapon_body_intersections": [],
+  "unit_animation_resource_references": [
+    "Units/Foundry/ImperialOfficerGuardsmanAttack",
+    "Units/Foundry/ImperialOfficerGuardsmanCharge",
+    "Units/Foundry/ImperialOfficerGuardsmanChargeDefense",
+    "Units/Foundry/ImperialOfficerGuardsmanDie",
+    "Units/Foundry/ImperialOfficerGuardsmanGrenade",
+    "Units/Foundry/ImperialOfficerGuardsmanIdle0",
+    "Units/Foundry/ImperialOfficerGuardsmanIdle1",
+    "Units/Foundry/ImperialOfficerGuardsmanIdle2",
+    "Units/Foundry/ImperialOfficerGuardsmanMelee",
+    "Units/Foundry/ImperialOfficerGuardsmanMeleeDefense",
+    "Units/Foundry/ImperialOfficerGuardsmanMove",
+    "Units/Foundry/ImperialOfficerGuardsmanMoveBegin",
+    "Units/Foundry/ImperialOfficerGuardsmanMoveEnd",
+    "Units/Foundry/ImperialOfficerGuardsmanShout"
+  ],
+  "geometry_materials_and_bind_frames_preserved": true,
+  "source_blend_sha256": "4e905ab91fdaf113e7493e02c2b9b9b233dd6fb7cbbc39d607eb34e91fdc8a5f",
+  "gameplay_preserved": true,
+  "images": {
+    "ChainswordDiffuse.dds": [
+      256,
+      256
+    ],
+    "ChainswordNormal.dds": [
+      256,
+      256
+    ],
+    "ChainswordSIC.dds": [
+      256,
+      256
+    ],
+    "ImperialOfficerGuardsmanDiffuse.dds": [
+      512,
+      512
+    ],
+    "ImperialOfficerGuardsmanNormal.dds": [
+      512,
+      512
+    ],
+    "ImperialOfficerGuardsmanSIC.dds": [
+      512,
+      512
+    ],
+    "WyrdvanePsykerLaspistolDiffuse.dds": [
+      128,
+      128
+    ],
+    "WyrdvanePsykerLaspistolNormal.dds": [
+      256,
+      256
+    ],
+    "WyrdvanePsykerLaspistolSIC.dds": [
+      128,
+      128
+    ]
+  },
+  "messages": [
+    "({'INFO'}, 'Imported ImperialOfficerGuardsman: 2676 verts, 892 faces, 30 bones')",
+    "({'INFO'}, 'Imported PrimarisPsykerLaspistol: 186 verts, 62 faces, 1 bones')",
+    "({'INFO'}, 'Imported Chainsword: 1011 verts, 337 faces, 1 bones')",
+    "({'INFO'}, 'Imported Officer: 2 attachment(s), 0 hidden variant(s), 0 body animation(s)')"
+  ],
+  "installed": false,
+  "published": false,
+  "live_engine_verified": false,
+  "native_review_blend_sha256": "bc40fe7201e83e50cb6535164f103dcdd4c01ab9e56e32128d2a86481b471468",
+  "render_sha256": {
+    "ready.png": "f9d487e1efeb831b8b608fab2e9b2c1f0c1b9da5ee247231e850ee6dd8f49204",
+    "walk.png": "850b0944751b1c440740eb9231ec3ec9607a552fd23bb1614347ab89866356df",
+    "pistol.png": "9a0833fb8005d612f66b41974029409154a4710bb93bce555d205c907d3386ea",
+    "wind-up.png": "046eb819ca38dab6cdcd1552c18759c38e0fe18f9c32c3c448f44dbc5a1b6ca1",
+    "sword-strike.png": "bb6efeb8d059dc9198e9cc3fa223e11c0175c7ac32b7343f7a22547e2916a5a6",
+    "follow-through.png": "b10fb61302ebec80c96251013ad80a677e9a5e2396cc4e039c12431c6311bf23",
+    "parry.png": "cfa6218b0cca4daddc17e7143a18ff58f1975f13d8f3f607c8382d6a52901f79",
+    "command.png": "889293a35d11fe4185d1635b7799f38eef34ddf5bf51574a7c72e012dc280565",
+    "grenade.png": "2067ab331221eeccf7d7f397f23747f9112d3ce438ef911bb56337c1fe002ab9",
+    "death.png": "f519d10783818bd0a773bba4fc7dd158ec7bb07a5739613a2672c534f3941b57"
+  }
+}

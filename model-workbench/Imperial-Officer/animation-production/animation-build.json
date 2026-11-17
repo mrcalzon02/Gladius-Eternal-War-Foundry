@@ -1,0 +1,411 @@
+{
+  "status": "authored; independent native verification pending",
+  "model_appearance_user_accepted": true,
+  "source_model_sha256": "60e5a60484555c7d7369d14a9f3bf557cd3e12743df979f826c1e20a287ba0fd",
+  "animation_source_sha256": "4e905ab91fdaf113e7493e02c2b9b9b233dd6fb7cbbc39d607eb34e91fdc8a5f",
+  "approved_geometry_materials_bind_frames_unchanged": true,
+  "skinning_refinement": {
+    "Left": {
+      "sleeve_positions_refined": 38,
+      "cuff_positions": 6,
+      "cuff_bone": "LeftHandBone",
+      "shoulder_boundary_positions_preserved": 5,
+      "torso_boundary_positions_preserved": 4,
+      "knee_positions_blended": 33
+    },
+    "Right": {
+      "sleeve_positions_refined": 38,
+      "cuff_positions": 6,
+      "cuff_bone": "RightHandBone",
+      "shoulder_boundary_positions_preserved": 5,
+      "torso_boundary_positions_preserved": 4,
+      "knee_positions_blended": 32
+    },
+    "native_records_refined": 1097
+  },
+  "attachments": {
+    "pistol": {
+      "mesh": "Weapons/AstraMilitarum/PrimarisPsykerLaspistol",
+      "material": "Weapons/AstraMilitarum/WyrdvanePsykerLaspistol",
+      "body_hand": "RightHandBone",
+      "local_grip": [
+        4.25,
+        -1.5499999523162842,
+        -0.20000000298023224
+      ],
+      "anchor_bind": [
+        [
+          -0.2023138552904129,
+          0.412045955657959,
+          -0.029782794415950775,
+          10.410654067993164
+        ],
+        [
+          0.26260092854499817,
+          0.15386688709259033,
+          0.3449138402938843,
+          -5.164046287536621
+        ],
+        [
+          0.31891945004463196,
+          0.13469554483890533,
+          -0.3028983175754547,
+          38.38328552246094
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_sha256": "dd7420e7381d29fd08889b531a310e0ad343cafaa577821486ebaf3e4dd71a15",
+      "native_model_unchanged": true,
+      "bone": "OfficerPistolGrip",
+      "rest_hand_grip": [
+        8.918105125427246,
+        -3.7554688453674316,
+        39.59049606323242
+      ],
+      "uniform_scale": 0.46,
+      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded",
+      "grip_adjustment": [
+        0.0,
+        0.6,
+        0.0
+      ]
+    },
+    "sword": {
+      "mesh": "Weapons/SpaceMarines/Chainsword",
+      "material": "Weapons/SpaceMarines/Chainsword",
+      "body_hand": "LeftHandBone",
+      "local_grip": [
+        5.730360984802246,
+        -1.6769931316375732,
+        1.6437163352966309
+      ],
+      "anchor_bind": [
+        [
+          0.2020750641822815,
+          -0.08722802251577377,
+          0.558172881603241,
+          2.7838211059570312
+        ],
+        [
+          -0.4863556921482086,
+          0.2747577130794525,
+          0.21901263296604156,
+          16.195655822753906
+        ],
+        [
+          -0.2874438464641571,
+          -0.5262125730514526,
+          0.02182978391647339,
+          33.05533981323242
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_sha256": "aaa0dabe181ae686b3adb9340f2ce24eb6a4d1d1c0f860c18c212413e3121d97",
+      "native_model_unchanged": true,
+      "bone": "OfficerChainswordGrip",
+      "rest_hand_grip": [
+        5.005542755126953,
+        13.307890892028809,
+        32.32651901245117
+      ],
+      "uniform_scale": 0.6,
+      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded",
+      "grip_placement": {
+        "guard_local": [
+          6.070149898529053,
+          -1.5437500476837158,
+          3.813230037689209
+        ],
+        "handle_base_local": [
+          4.658569812774658,
+          -2.0972800254821777,
+          -5.199550151824951
+        ],
+        "pommel_local": [
+          4.111,
+          -2.312,
+          -8.694
+        ],
+        "grip_from_guard_local": 2.2,
+        "grip_from_guard_world": 1.32,
+        "handle_fraction_from_base": 0.7592847440793665,
+        "palm_fit": {
+          "left_palm_rest": [
+            5.005542755126953,
+            13.307890892028809,
+            32.32651901245117
+          ],
+          "distal_distance": 2.8,
+          "lateral_offset": -1.8,
+          "volar_offset": 0,
+          "minimum_pommel_forearm_distance": 2.593008279800415,
+          "probe_poses": [
+            "Idle0 0",
+            "Idle0 0.5",
+            "Idle0 1",
+            "Move 0",
+            "Move 0.5",
+            "Move 1",
+            "Melee 0",
+            "Melee 0.5",
+            "Melee 1"
+          ],
+          "reason": "Minimal grip-center adjustment clearing the cuff while preserving the user-specified level-forward blade and lower guard.",
+          "ready_grip_idle_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "grip_frame": {
+          "blade_axis_idle_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "shaft_axis_hand_rest": [
+            0.9606091976165771,
+            0.26250141859054565,
+            -0.09123067557811737
+          ],
+          "guard_side_idle_world": [
+            0,
+            0,
+            -1
+          ],
+          "thumb_side_hand_rest": [
+            -0.1907145082950592,
+            0.8614727854728699,
+            0.47063010931015015
+          ],
+          "carry": "Forward ready: blade level straight ahead; toothed edge and knuckle guard underneath.",
+          "thumb": "Thumb over the top of the handle; fingers curled underneath, above the lower guard.",
+          "reference": "references/Chainsword-Hand-Guard-Reference.png",
+          "thumb_quad_band": 1,
+          "palm_radius": [
+            2.02,
+            1.79
+          ],
+          "index_radius": [
+            1.85,
+            1.62
+          ],
+          "hand_fullness_scale": 1.12,
+          "thumb_base_ridge": 0.42,
+          "thumb_tip_ridge": 0.45,
+          "index_axial_extent": 1.12,
+          "body_animation_hand_correction_preserved": true,
+          "weapon_mesh_or_material_modified": false
+        },
+        "intent": "Forward ready: blade level straight ahead; toothed edge and knuckle guard underneath. Thumb over the top of the handle; fingers curled underneath, above the lower guard."
+      }
+    }
+  },
+  "frozen_asset_sha256": {
+    "Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh": "1d354977f3812808eabd9d0a4cd33bd99cbfb06d0dc741401fef2aa9a74a0cad",
+    "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanDiffuse.dds": "5f3f1e8ec1c741604b84eaba86e4fd5683ff026ea3949cc3ee05901dd4765bce",
+    "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanNormal.dds": "095efeec51b076f74024c25e458e2bc5cca5bacad3a71e2ac031ab90fb9164e8",
+    "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanSIC.dds": "4df66b3b90e1a22c0feee947101a12bb823d12677a483e3bbb3abef29c0e9e6c",
+    "Video/Materials/Units/Foundry/ImperialOfficerGuardsman.xml": "31471a54555fde8b95084a0725041c1b5eec75aa9accf0b25013da7b1e17beac"
+  },
+  "original_bones": 28,
+  "weapon_sockets": 2,
+  "clips": {
+    "Idle0": {
+      "frames": 301,
+      "fps": 120,
+      "duration": 2.5,
+      "sha256": "e473d35b08ddf6dff60fa529cd0bd60be6a4f65895fd42b0f065c29ed8b5b364",
+      "description": "Forward-ready breathing loop",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Idle1": {
+      "frames": 301,
+      "fps": 120,
+      "duration": 2.5,
+      "sha256": "f582f6b10b0b5fd99b39cc1e006f4941558da7dd7d6a86f7193de83b8748cb03",
+      "description": "Ready stance, scan left and return",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Idle2": {
+      "frames": 301,
+      "fps": 120,
+      "duration": 2.5,
+      "sha256": "5fd64b87ec4632e6e837f1f6796ea20ca9030d8c58514e94babe082a604eb7f3",
+      "description": "Ready stance, scan right and return",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Move": {
+      "frames": 81,
+      "fps": 120,
+      "duration": 0.6666666666666666,
+      "sha256": "92b406f4d5749b21413ee98e25820b8193b86808787a6f6eadb57c9f7dc5b6bd",
+      "description": "Native officer gait with fitted forward-ready arms",
+      "source_motion": "Existing game motion fitted to the accepted officer; original source provenance retained"
+    },
+    "MoveBegin": {
+      "frames": 41,
+      "fps": 120,
+      "duration": 0.3333333333333333,
+      "sha256": "38839c7ae4f4817993f2e5d8cf49955c21e37d69c7f8f117abda3d9304c350ca",
+      "description": "Ready-to-walk transition",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "MoveEnd": {
+      "frames": 41,
+      "fps": 120,
+      "duration": 0.3333333333333333,
+      "sha256": "d8622132e7f8000930cf765a4f92d0bbc755082ff1b9d2c3358d6bfa0e69d14c",
+      "description": "Walk-to-ready transition",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Attack": {
+      "frames": 721,
+      "fps": 240,
+      "duration": 3.0,
+      "sha256": "1491c8baea8d25d75f856c937531f3ee87d80ed0ee937ce612aab331b6e78d5e",
+      "description": "One-handed laspistol aim, seven timed recoil pulses, recovery",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Melee": {
+      "frames": 181,
+      "fps": 120,
+      "duration": 1.5,
+      "sha256": "37106a9dfdd8ae47b1c4aded47874c268a2b57ffa4dd68e4d571bfd78a3f9ba9",
+      "description": "Chainsword anticipation, overhead cut, follow-through, recovery",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "MeleeDefense": {
+      "frames": 181,
+      "fps": 120,
+      "duration": 1.5,
+      "sha256": "d910cb1f5c7c8d71ba3fd5bf75c50a309473eaba00a09105d1d9aa19c2ab97ac",
+      "description": "Raised chainsword parry and return",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Charge": {
+      "frames": 181,
+      "fps": 120,
+      "duration": 1.5,
+      "sha256": "cc57e9948e8f3fd767ab11ecc621b0b6615b71f3c39dcf95b3cf88d59f275836",
+      "description": "Native charge stance with forward chainsword threat",
+      "source_motion": "Existing game motion fitted to the accepted officer; original source provenance retained"
+    },
+    "ChargeDefense": {
+      "frames": 181,
+      "fps": 120,
+      "duration": 1.5,
+      "sha256": "fac4baf04c34905d33cfc9f44a82e9d839747c90db1d63ecd6fce0d3df82f8b2",
+      "description": "Native brace with raised chainsword guard",
+      "source_motion": "Existing game motion fitted to the accepted officer; original source provenance retained"
+    },
+    "Grenade": {
+      "frames": 141,
+      "fps": 120,
+      "duration": 1.1666666666666667,
+      "sha256": "6d8e1d3db378bd348f403c65faefa82bbe564c74d3a89fb9415458fcb00b10f6",
+      "description": "Overhand grenade throw with timed forward release and recovery",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Shout": {
+      "frames": 241,
+      "fps": 120,
+      "duration": 2.0,
+      "sha256": "98cda823d7b18047508dc09c8b272b39ec0db248ac746841b9a2e782419b38fb",
+      "description": "Officer command gesture and recovery",
+      "source_motion": "Ready and arm performance authored for this officer"
+    },
+    "Die": {
+      "frames": 145,
+      "fps": 120,
+      "duration": 1.2,
+      "sha256": "51ce052ac453b5f61cd15b76137e68c9949971cc8aee16ee8e0575652ac5fe9b",
+      "description": "Native officer fall retimed to 1.2 seconds",
+      "source_motion": "Existing game motion fitted to the accepted officer; original source provenance retained"
+    }
+  },
+  "pistol_frame": {
+    "native_grip": [
+      4.25,
+      -1.5499999523162842,
+      -0.20000000298023224
+    ],
+    "native_muzzle": [
+      26.800899505615234,
+      -4.306739807128906,
+      -3.2916200160980225
+    ],
+    "native_forward": [
+      0.9786678552627563,
+      -0.17121998965740204,
+      0.11354698240756989
+    ],
+    "native_barrel_up": [
+      0.14450109004974365,
+      0.18078769743442535,
+      -0.9728490114212036
+    ],
+    "up_definition": "Actual handle grip toward actual muzzle, perpendicular to barrel; not the mesh +Z axis"
+  },
+  "ground_reference_Z": -0.6120949983596802,
+  "source_motion_sha256": {
+    "Attack": "1a23e45c6a08ec7507588ac206d14a9790b1a1bacc965a12f47722afac11e36e",
+    "Charge": "2ea97e0fe2f5fb0616979260de89aa6be7764e8784ed065a4e37d5a233f96e9f",
+    "ChargeDefense": "0eea9e6ab3c34c00e531d872cb33cc9b6c343b7267f513313244c872a8e6480d",
+    "Die": "161fd1d9084eb6c214ef23c37a51c38b50550b129fbcc0d4a9021c0e09382455",
+    "Grenade": "9f0dd043483fbfe411cdb637126d373f16126000206182e9cef785f1f1689701",
+    "Idle0": "ebf5e4a80d73c188ae02532a29c60d40697ea228abbb633355276b50f1702873",
+    "Idle1": "188bb719cc6a986d828cb5172f2633e7c164876ac0b0cb15e6086bd442d8ae6c",
+    "Idle2": "03d8ae5a01d19165b720fc91aa802040662d742267fdf7493cd2aef4e9e91fdc",
+    "Melee": "2a74278ef5f6feb0c4009b252c7c995ac434b277ad177e125ba07c95afe5012f",
+    "MeleeDefense": "b0279afcb36eeb451753bdcc0f9db33d09f5b88e3cb4d7e44f2da067e443c805",
+    "Move": "f4e3623d4e23a037055d59bd27d01d7c55c11f0aa9a3bafc7633df433b24dd31",
+    "MoveBegin": "622617f00e00aac302a0ef936d97371a420bcc434243f0e94d073dc780fabe47",
+    "MoveEnd": "d554218789babbc170dc90dbeac60b53154490dd2cecbe65dd3b3a9a3d3775da",
+    "Shout": "5a537fecd2c7fabb66a8480e6ff5fc4216eb4bcc2060d08786ad99be233c5cee"
+  },
+  "maximum_arm_length_error": 1.1097105854673828e-05,
+  "maximum_leg_length_error": 6.618830742155524e-06,
+  "integration_baseline_xml_sha256": "e9fd40c359f02e2fb33579360305df2297a93756006d8fd62a8b764526403512",
+  "unit_xml_sha256": "1ebf902e919ae1352a8e28da6c87ae6f2caf9070cc47b74a6fdc09f719dedc32",
+  "gameplay_preserved": true,
+  "events": {
+    "Attack": {
+      "shots": [
+        0.4,
+        0.75,
+        1.1,
+        1.45,
+        1.8,
+        2.15,
+        2.5
+      ],
+      "beginFire": 0.4,
+      "endFire": 2.53
+    },
+    "Melee": {
+      "beginSwing": 0.3,
+      "impact": 0.52,
+      "endSwing": 0.7
+    },
+    "MeleeDefense": {
+      "beginSwing": 0.2,
+      "endSwing": 0.55
+    },
+    "Grenade": {
+      "release": 0.9
+    }
+  },
+  "installed": false,
+  "published": false
+}

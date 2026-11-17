@@ -105,3 +105,12 @@ The approved bald, ragged-clothed standard trooper now replaces the existing
 Guardsman model directly in Penal Legion. The source-only handoff has been
 completed with native MSH/DDS/XML integration and 33 checked animation poses.
 See [the runtime model and validation](docs/PENAL_STANDARD_TROOPER.md).
+
+
+## Imperial Guardsman officer
+
+The accepted 892-triangle Guardsman-based officer now occupies the existing
+Penal Legion Officer slot, with 512-square masked textures and 14 fitted native
+animations. The existing laspistol and chainsword are reused. See [asset and
+animation verification](docs/IMPERIAL_GUARDSMAN_OFFICER.md). Local native checks
+pass; live engine playback remains untested.

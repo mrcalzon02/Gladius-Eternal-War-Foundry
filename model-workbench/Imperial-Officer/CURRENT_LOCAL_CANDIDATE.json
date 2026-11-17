@@ -1,0 +1,15 @@
+{
+  "source": "model-workbench/Imperial-Officer/animation-production/Officer-Animations.blend",
+  "runtime_review": "model-workbench/Imperial-Officer/animation-production/Officer-Native-Animation-Review.blend",
+  "runtime": "2525618649/Data/World/Units/AstraMilitarum/Officer.xml",
+  "body_triangles": 892,
+  "baseline_body_triangles": 894,
+  "textures": [
+    512,
+    512
+  ],
+  "native_clips": 14,
+  "new_animation_performances_authored": true,
+  "installed": false,
+  "published": false
+}

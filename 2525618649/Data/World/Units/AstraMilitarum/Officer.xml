@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unit>
 	<model>
-		<unit mesh="Units/AstraMilitarum/LordCommissar"
-				material="Units/AstraMilitarum/Officer"
-				idleAnimation="Units/AstraMilitarum/LordCommissarIdle"
+		<unit mesh="Units/Foundry/ImperialOfficerGuardsman"
+				material="Units/Foundry/ImperialOfficerGuardsman"
+				idleAnimation="Units/Foundry/ImperialOfficerGuardsmanIdle"
 				idleAnimationCount="3"
 				idleContinuously="1"
 				normalWeight="0.1"
@@ -14,19 +14,19 @@
 	<weapons>
 		<weapon name="BoltPistol" slotName="BoltPistol">
 			<model>
-				<projectileWeapon mesh="Weapons/AstraMilitarum/LordCommissarBoltPistol"
-						material="Weapons/AstraMilitarum/LordCommissarBoltPistol"
-						bone="RightHandBone"
-						muzzleBone=".Muzzle0"
+				<projectileWeapon mesh="Weapons/AstraMilitarum/PrimarisPsykerLaspistol"
+						material="Weapons/AstraMilitarum/WyrdvanePsykerLaspistol"
+						bone="OfficerPistolGrip"
+						muzzleBone="Muzzle0"
 						fireInterval="0.35"/>
 			</model>
 		</weapon>
 		<weapon name="PowerSword">
 			<model>
-				<powerWeapon effectBoundingVolume="Blade" 
-						mesh="Weapons/AstraMilitarum/LordCommissarSword"
-						material="Weapons/AstraMilitarum/LordCommissarSword"
-						bone="LeftHandBone"
+				<weapon
+						mesh="Weapons/SpaceMarines/Chainsword"
+						material="Weapons/SpaceMarines/Chainsword"
+						bone="OfficerChainswordGrip"
 						fireInterval="1.0"/>
 			</model>
 		</weapon>
@@ -74,26 +74,26 @@
 	<actions>
 		<attack>
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarAttack"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanAttack"
 						beginFire="0.4"
 						endFire="2.53"
-						chargeAnimation="Units/AstraMilitarum/LordCommissarCharge"
-						chargeBeginFire="0.25"
-						chargeEndFire="1.1"
-						chargeDefenseAnimation="Units/AstraMilitarum/LordCommissarChargeDefense"
-						chargeDefenseBeginFire="0.25"
-						chargeDefenseEndFire="0.9"
-						meleeAnimation="Units/AstraMilitarum/LordCommissarMelee"
-						meleeBeginSwing="0.15"
-						meleeEndSwing="0.5"
-						meleeDefenseAnimation="Units/AstraMilitarum/LordCommissarMeleeDefense"
-						meleeDefenseBeginSwing="0.15"
-						meleeDefenseEndSwing="0.5"/>
+						chargeAnimation="Units/Foundry/ImperialOfficerGuardsmanCharge"
+						chargeBeginFire="0.28"
+						chargeEndFire="0.92"
+						chargeDefenseAnimation="Units/Foundry/ImperialOfficerGuardsmanChargeDefense"
+						chargeDefenseBeginFire="0.22"
+						chargeDefenseEndFire="0.82"
+						meleeAnimation="Units/Foundry/ImperialOfficerGuardsmanMelee"
+						meleeBeginSwing="0.30"
+						meleeEndSwing="0.70"
+						meleeDefenseAnimation="Units/Foundry/ImperialOfficerGuardsmanMeleeDefense"
+						meleeDefenseBeginSwing="0.20"
+						meleeDefenseEndSwing="0.55"/>
 			</model>				
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarDie"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanDie"
 						sound="Units/MediumUnarmoredDie"
 						soundCount="4"
 						soundDelay="0.5"
@@ -108,7 +108,7 @@
 		</idle>
 		<move>
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarMove"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanMove"
 						sound="Units/AstraMilitarum/InfantryMove"
 						soundCount="4"/>
 			</model>
@@ -116,14 +116,14 @@
 		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
 				requiredUpgrade="AstraMilitarum/FragGrenade">
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarGrenade"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanGrenade"
 						beginFire="0.9"/>
 			</model>				
 		</throwGrenade>
 		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
 				requiredUpgrade="AstraMilitarum/KrakGrenade">
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarGrenade"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanGrenade"
 						beginFire="0.9"/>
 			</model>
 		</throwGrenade>
@@ -153,7 +153,7 @@
 				consumedMovement="0"
 				shoutString="Actions/BringItDown">
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarShout"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanShout"
 						bone="ChestBone"
 						sound="Actions/AstraMilitarumBuff"/>
 			</model>			
@@ -187,7 +187,7 @@
 				rank="-1"
 				rankMax="0">
 			<model>
-				<action animation="Units/AstraMilitarum/LordCommissarShout"
+				<action animation="Units/Foundry/ImperialOfficerGuardsmanShout"
 						sound="Actions/BombDrop"/>
 			</model>
 			<beginTargets>
