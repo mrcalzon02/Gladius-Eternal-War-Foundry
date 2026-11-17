@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unit>
 	<model>
-		<unit mesh="Units/Foundry/GrotReplacement"
-				material="Units/Foundry/GrotReplacement"
-				idleAnimation="Units/Foundry/GrotReplacementIdle"
+		<unit mesh="Units/Foundry/GrotTrio"
+				material="Units/Foundry/GrotTrio"
+				idleAnimation="Units/Foundry/GrotTrioIdle"
 				idleAnimationCount="1"
 				idleContinuously="1"
 				normalWeight="0.1"
 				scale="1 1 1"
-				bloodBone="Torso"
+				bloodBone="Gunner_chest"
 				walker="1"/>
 	</model>
-	<group size="6" rowSize="4" memberDeltaX="70" memberDeltaY="64"/>
+	<group size="1" rowSize="1" memberDeltaX="70" memberDeltaY="64"/>
 	<weapons>
-		<weapon name="Grotter">
+		<weapon name="Grotter" count="6">
 			<model>
-				<projectileWeapon mesh="Weapons/Foundry/GrotPistol"
-						material="Units/Foundry/GrotReplacement"
+				<projectileWeapon mesh="Weapons/Foundry/GrotTrioPistol"
+						material="Units/Foundry/GrotTrio"
 						muzzleBone=".Muzzle"
-						bone="RightHand"
+						bone="Gunner_hand.R"
 						fireInterval=".25"/>
 			</model>
 		</weapon>
-		<weapon name="Choppa">
+		<weapon name="Choppa" count="6">
 			<model>
-				<weapon mesh="Weapons/Foundry/GrotShank"
-						material="Units/Foundry/GrotReplacement"
-						bone="LeftHand"
+				<weapon mesh="Weapons/Foundry/GrotTrioChoppa"
+						material="Units/Foundry/GrotTrio"
+						bone="Cutter_hand.R"
 						fireInterval="0.5"/>
 			</model>
 		</weapon>
-		<weapon name="Stikkbomb" slotName="Stikkbomb" enabled="0">
+		<weapon name="Stikkbomb" count="6" slotName="Stikkbomb" enabled="0">
 			<model>
-				<grenadeWeapon muzzleBone="RightHand"/>
+				<grenadeWeapon muzzleBone="Gunner_hand.L"/>
 			</model>		
 		</weapon>
 	</weapons>
@@ -42,7 +42,7 @@
 				<armor base="1"/> <!-- %armor base armor=6+ -->
 				<foodUpkeep base="1.0"/> <!-- %foodUpkeep base tier=4 factor=1 -->
 				<foodCost base="1.0"/> <!-- %foodCost base tier=4 factor=0.5 -->
-				<hitpointsMax base="1.0"/> <!-- %hitpointsMax base toughness=4 wounds=1 -->
+				<hitpointsMax base="6.0"/> <!-- %hitpointsMax base toughness=4 wounds=1 -->
 				<influenceUpkeep base="1.0"/> <!-- %influenceUpkeep base tier=4 factor=1 -->
 				<meleeAccuracy base="3"/> <!-- %meleeAccuracy base weaponSkill=4 -->
 				<meleeAttacks base="1"/>
@@ -66,24 +66,24 @@
 	<actions>
 		<attack>
 			<model>
-				<action	animation="Units/Foundry/GrotReplacementRanged"
+				<action	animation="Units/Foundry/GrotTrioRanged"
 						beginFire="0.6666666666666666"
 						endFire="1.18"
-						chargeAnimation="Units/Foundry/GrotReplacementMelee"
+						chargeAnimation="Units/Foundry/GrotTrioMelee"
 						chargeBeginFire="0.6666666666666666"
 						chargeEndFire="0.7916666666666666"
-						chargeDefenseAnimation="Units/Foundry/GrotReplacementMelee"
+						chargeDefenseAnimation="Units/Foundry/GrotTrioMelee"
 						chargeDefenseBeginFire="0.6666666666666666"
 						chargeDefenseEndFire="0.7916666666666666"
-						meleeAnimation="Units/Foundry/GrotReplacementMelee"
-						meleeDefenseAnimation="Units/Foundry/GrotReplacementMelee"
+						meleeAnimation="Units/Foundry/GrotTrioMelee"
+						meleeDefenseAnimation="Units/Foundry/GrotTrioMelee"
 						meleeBeginSwing="0.6666666666666666"
 						meleeEndSwing="0.7916666666666666"/>
 			</model>
 		</attack>
 		<die>
 			<model>
-				<action animation="Units/Foundry/GrotReplacementDie"
+				<action animation="Units/Foundry/GrotTrioDie"
 						animationCount="1"
 						sound="Units/MediumUnarmoredDie"
 						soundCount="4"
@@ -99,7 +99,7 @@
 		</idle>
 		<move>
 			<model>
-				<action animation="Units/Foundry/GrotReplacementMove"
+				<action animation="Units/Foundry/GrotTrioMove"
 						sound="Units/Orks/InfantryMove"
 						soundCount="4"/>
 			</model>
@@ -132,13 +132,13 @@
 		<throwGrenade weaponSlotName="Stikkbomb" cooldown="3"
 				requiredUpgrade="Orks/Stikkbomb">
 			<model>
-				<action animation="Units/Foundry/GrotReplacementGrenade"
+				<action animation="Units/Foundry/GrotTrioGrenade"
 						beginFire="0.6666666666666666"/>
 			</model>
 		</throwGrenade>
 		<constructImperialStrongpoint icon="Units/Orks/Grotpost" cooldown="10" name="Orks/ConsGrotpost" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/Foundry/GrotReplacementConstruct" sound="Actions/Construct" />
+				<action animation="Units/Foundry/GrotTrioConstruct" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="0">
@@ -180,7 +180,7 @@
 		</constructImperialStrongpoint>
 		<constructNoctilithCrown icon="Units/Orks/Grotpost" cooldown="10" name="FoundryAI/Grotpost" useConditionsForVisiblity="1">
 			<model>
-				<action animation="Units/Foundry/GrotReplacementConstruct" sound="Actions/Construct" />
+				<action animation="Units/Foundry/GrotTrioConstruct" sound="Actions/Construct" />
 			</model>
 			<modifiers>
 				<modifier visible="0">

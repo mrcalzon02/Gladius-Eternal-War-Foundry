@@ -11,8 +11,8 @@ The seven original Workshop IDs are the runtime mod packages.
 
 The prior local AI pilot, Sergeant, Grot and Ripper overlays are superseded.
 Their effective behavior is preserved in the parent packages; no separate
-Foundry entries are required. Neutral Grot definitions retain their existing
-gameplay. Internal asset resource paths containing `Foundry` do not create mods.
+Foundry entries are required. The [Grot trio](GROT_REPLACEMENT.md) uses one shared casualty slot and preserves
+starting health and weapon copies in all four Grot definitions. Internal asset resource paths containing `Foundry` do not create mods.
 
 The construction branches retain the installed v3 settings: builders, costs,
 research, ranges and cooldowns; >60% health; nearby

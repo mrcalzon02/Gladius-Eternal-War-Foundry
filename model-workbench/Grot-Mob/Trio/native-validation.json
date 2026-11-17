@@ -1,0 +1,432 @@
+{
+  "status": "PASS",
+  "source_sha256": "cf1bd6e5d2b926965c9ce6e0957dcbbb82fbfc811dc3a48fe59cfc419c69cf1a",
+  "format": "MSH1.0 / ANM1.0 / legacy DDS with full mip chains",
+  "frames_checked": 365,
+  "events": {
+    "Idle": {
+      "frames": 49,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.100704070945488e-05,
+        "pistol": 1.2182667555426714e-05,
+        "choppa": 7.4046773178418205e-06
+      },
+      "max_socket_position_error": 7.881980794334471e-06,
+      "max_socket_axis_error_degrees": 0.00011652673319878481,
+      "ground_min_per_member": {
+        "mek": [
+          -2.5553522063866686e-08,
+          -2.5553522063866686e-08
+        ],
+        "gunner": [
+          -4.9863405770249055e-08,
+          -4.9863405770249055e-08
+        ],
+        "cutter": [
+          8.745574203749897e-08,
+          8.745574203749897e-08
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Move": {
+      "frames": 25,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.1434311883049125e-05,
+        "pistol": 1.0584682527737316e-05,
+        "choppa": 7.894261234391459e-06
+      },
+      "max_socket_position_error": 7.939753307602032e-06,
+      "max_socket_axis_error_degrees": 0.00010536129877708314,
+      "ground_min_per_member": {
+        "mek": [
+          -3.5862257765538058e-06,
+          1.0242396360859697e-06
+        ],
+        "gunner": [
+          -4.803490605251994e-06,
+          1.154360980652449e-07
+        ],
+        "cutter": [
+          -4.832476393931767e-06,
+          -1.4148217237652347e-08
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "MoveBegin": {
+      "frames": 9,
+      "per_part_peak_native_vertex_error": {
+        "body": 9.384215601196481e-06,
+        "pistol": 9.606470095848232e-06,
+        "choppa": 7.207255911962913e-06
+      },
+      "max_socket_position_error": 8.6026017347235e-06,
+      "max_socket_axis_error_degrees": 8.85384947939442e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -6.984571588562749e-07,
+          1.121578350957367e-06
+        ],
+        "gunner": [
+          -9.734113869640237e-08,
+          1.1460523754378005e-06
+        ],
+        "cutter": [
+          2.1398037031508665e-10,
+          1.994804374849999e-06
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "MoveEnd": {
+      "frames": 9,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.024219731626574e-05,
+        "pistol": 1.054056838674355e-05,
+        "choppa": 7.599040133397745e-06
+      },
+      "max_socket_position_error": 8.393327988427915e-06,
+      "max_socket_axis_error_degrees": 9.028679910929217e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -6.93143902285448e-07,
+          3.5767253749128397e-07
+        ],
+        "gunner": [
+          -3.509718724033911e-07,
+          1.2712178515603134e-06
+        ],
+        "cutter": [
+          -8.317548185442225e-08,
+          1.994804374849999e-06
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Run": {
+      "frames": 19,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.0189477739146754e-05,
+        "pistol": 1.259203697604671e-05,
+        "choppa": 7.1599144360652555e-06
+      },
+      "max_socket_position_error": 9.476435095283526e-06,
+      "max_socket_axis_error_degrees": 7.864283734464791e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -4.211223334094764e-06,
+          1.6251908484399108e-06
+        ],
+        "gunner": [
+          -6.472356257035132e-06,
+          -2.3296853247303648e-07
+        ],
+        "cutter": [
+          -5.124814301077457e-06,
+          6.965622507142062e-08
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Ranged": {
+      "frames": 49,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.0711061372473155e-05,
+        "pistol": 1.3186034382931766e-05,
+        "choppa": 6.557007584398909e-06
+      },
+      "max_socket_position_error": 9.218186660250738e-06,
+      "max_socket_axis_error_degrees": 9.560850959757116e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -2.4033398401379804e-06,
+          4.6744890448967643e-07
+        ],
+        "gunner": [
+          -2.9466508909285705e-06,
+          -4.7165672776940165e-07
+        ],
+        "cutter": [
+          -3.030147959238809e-06,
+          -7.587732783865035e-07
+        ]
+      },
+      "cross_member_surface_intersections": {},
+      "firing_and_recoil_frames": {
+        "17": {
+          "native_origin": [
+            33.9514008378041,
+            0.15759365565561678,
+            19.080012914248684
+          ],
+          "direction": [
+            0.9999999999988729,
+            5.863103649648989e-08,
+            -1.5003050699819794e-06
+          ],
+          "pitch_degrees": -8.596114849207928e-05,
+          "yaw_degrees": 3.35931093973015e-06
+        },
+        "18": {
+          "native_origin": [
+            31.944041879813764,
+            -1.1921792252611771,
+            23.982931405192208
+          ],
+          "direction": [
+            0.9914450575433762,
+            3.32024821029714e-07,
+            0.13052470215519063
+          ],
+          "pitch_degrees": 7.499913888888214,
+          "yaw_degrees": 1.9187771217222606e-05
+        },
+        "23": {
+          "native_origin": [
+            33.9514008378041,
+            0.15759365565561678,
+            19.080012914248684
+          ],
+          "direction": [
+            0.9999999999988729,
+            5.863103649648989e-08,
+            -1.5003050699819794e-06
+          ],
+          "pitch_degrees": -8.596114849207928e-05,
+          "yaw_degrees": 3.35931093973015e-06
+        },
+        "24": {
+          "native_origin": [
+            31.944041169158382,
+            -1.1921792037206869,
+            23.982931319371765
+          ],
+          "direction": [
+            0.99144505734036,
+            3.331680588129049e-07,
+            0.1305247036972662
+          ],
+          "pitch_degrees": 7.499913978005025,
+          "yaw_degrees": 1.9253839128265364e-05
+        },
+        "29": {
+          "native_origin": [
+            33.9514008378041,
+            0.15759365565561678,
+            19.080012914248684
+          ],
+          "direction": [
+            0.9999999999988729,
+            5.863103649648989e-08,
+            -1.5003050699819794e-06
+          ],
+          "pitch_degrees": -8.596114849207928e-05,
+          "yaw_degrees": 3.35931093973015e-06
+        },
+        "30": {
+          "native_origin": [
+            31.94403919411269,
+            -1.1921775792776321,
+            23.98293178795056
+          ],
+          "direction": [
+            0.9914450475200455,
+            5.375916453759987e-07,
+            0.13052477829012418
+          ],
+          "pitch_degrees": 7.499918288739073,
+          "yaw_degrees": 3.106751348305321e-05
+        }
+      },
+      "shot_marker_intersections_with_teammates": []
+    },
+    "Melee": {
+      "frames": 41,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.3616461925737801e-05,
+        "pistol": 1.3881738104979544e-05,
+        "choppa": 7.900459639044369e-06
+      },
+      "max_socket_position_error": 1.037673889238599e-05,
+      "max_socket_axis_error_degrees": 8.448939227144801e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -2.146983135501138e-06,
+          4.1656995676543596e-07
+        ],
+        "gunner": [
+          -2.271907599598685e-06,
+          -3.9452893434750027e-07
+        ],
+        "cutter": [
+          -2.5250177849429104e-06,
+          -1.2114990389619714e-08
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Hit": {
+      "frames": 25,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.178214661344166e-05,
+        "pistol": 9.922120789195041e-06,
+        "choppa": 7.352739802559211e-06
+      },
+      "max_socket_position_error": 8.043354220533021e-06,
+      "max_socket_axis_error_degrees": 8.992705933462182e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -2.6876309934074597e-06,
+          3.746719841680958e-07
+        ],
+        "gunner": [
+          -3.4677075008769666e-06,
+          -5.297320091974787e-07
+        ],
+        "cutter": [
+          -2.5849675087845424e-06,
+          -1.2835006623803387e-07
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Die": {
+      "frames": 49,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.400060024669416e-05,
+        "pistol": 1.1544820670877924e-05,
+        "choppa": 7.127822254499736e-06
+      },
+      "max_socket_position_error": 9.343713297893213e-06,
+      "max_socket_axis_error_degrees": 0.00012052742790479079,
+      "ground_min_per_member": {
+        "mek": [
+          -4.111688109098566e-06,
+          5.714918310140149e-06
+        ],
+        "gunner": [
+          -2.14629621986262e-06,
+          1.817042280904957e-05
+        ],
+        "cutter": [
+          -4.716125330261889e-06,
+          5.799924757354802e-06
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Construct": {
+      "frames": 49,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.1204663059255445e-05,
+        "pistol": 1.2562978954792499e-05,
+        "choppa": 6.9994316442927815e-06
+      },
+      "max_socket_position_error": 7.830582360696873e-06,
+      "max_socket_axis_error_degrees": 9.082682032259798e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -2.4399166814612043e-06,
+          4.715434600074897e-07
+        ],
+        "gunner": [
+          -2.4966826189615755e-06,
+          -6.428899262969496e-07
+        ],
+        "cutter": [
+          -2.6493216262512927e-06,
+          -6.03786781724426e-08
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    },
+    "Grenade": {
+      "frames": 41,
+      "per_part_peak_native_vertex_error": {
+        "body": 1.1288912381802633e-05,
+        "pistol": 1.176907547393325e-05,
+        "choppa": 7.285914390003377e-06
+      },
+      "max_socket_position_error": 8.546459308546421e-06,
+      "max_socket_axis_error_degrees": 8.73921735087112e-05,
+      "ground_min_per_member": {
+        "mek": [
+          -2.426647786691328e-06,
+          1.0214114879090448e-06
+        ],
+        "gunner": [
+          -2.4153319774278256e-06,
+          -3.510565705185787e-08
+        ],
+        "cutter": [
+          -2.7473196357657094e-06,
+          -4.655547358252163e-07
+        ]
+      },
+      "cross_member_surface_intersections": {}
+    }
+  },
+  "max_world_vertex_error": 1.400060024669416e-05,
+  "max_socket_position_error": 1.037673889238599e-05,
+  "max_socket_axis_error_degrees": 0.00012052742790479079,
+  "max_source_uv_error": 2.9802322387695312e-08,
+  "failures": [],
+  "engine_in_game_verified": false,
+  "materials": {
+    "Diffuse": {
+      "size": [
+        2048,
+        2048
+      ],
+      "codec": "DXT5",
+      "mip_levels": 12,
+      "bytes": 5592560,
+      "sha256": "5f24483b65b0d58020495842927e3df54531a303fb7e3f8e7c8593cdc4ee5446"
+    },
+    "Normal": {
+      "size": [
+        2048,
+        2048
+      ],
+      "codec": "DXT1",
+      "mip_levels": 12,
+      "bytes": 2796344,
+      "sha256": "e707e32738f95a822241f1a0fc599d0bc697843b17aefe2a6ddf13b0c86391d6"
+    },
+    "SIC": {
+      "size": [
+        2048,
+        2048
+      ],
+      "codec": "DXT1",
+      "mip_levels": 12,
+      "bytes": 2796344,
+      "sha256": "78a307869f57f730b1fa8d9acf35831d86f8f4574edd948a47d9841d05e91d58"
+    },
+    "source_colour_tile_comparison": {
+      "mek": {
+        "mean_error_8bit_rgb": 2.120567957560221,
+        "p99_error_8bit_rgb": 10.0
+      },
+      "gunner": {
+        "mean_error_8bit_rgb": 2.1640453338623047,
+        "p99_error_8bit_rgb": 11.0
+      },
+      "cutter": {
+        "mean_error_8bit_rgb": 2.1025209426879883,
+        "p99_error_8bit_rgb": 9.0
+      }
+    }
+  },
+  "mesh_triangles": {
+    "body": 4234,
+    "pistol": 128,
+    "choppa": 124
+  },
+  "native_bones": {
+    "body": 51,
+    "pistol": 2,
+    "choppa": 1
+  }
+}

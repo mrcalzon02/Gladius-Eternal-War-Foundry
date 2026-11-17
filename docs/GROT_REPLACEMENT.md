@@ -1,40 +1,14 @@
-# Grot replacement
+# Proper wagh! Grot trio
 
-The accepted Grot replaces the old half-scale Ork model in Proper wagh!
-`3038342810/Data`. Existing `Orks/Grotz`, `Orks/GrotzKamando`, `Neutral/Grotz`
-and `Neutral/GrotzKamando` definitions use the replacement. No unit is added.
-Costs, stats, traits, group sizes, recruitment and construction/AI effects are
-preserved; only model assembly and visual animation/timing references change.
+Regular Grotz and Grotz Kamando use the same three-figure character in the Ork and Neutral unit definitions. Each instance contains a spanner-carrying Mek, a slugga gunner, and a choppa fighter. Their formation fills one engine member slot. The combined native mesh keeps their individual skeletons and poses. The pistol attaches to the gunner's right hand and fires from its own muzzle socket. The choppa attaches to the cutter's right hand, and grenade throws use the gunner's free left hand.
 
-The 1,540-triangle character has a fitted 19-bone skeleton, textured eyes,
-36 outward snags and a closed continuous mouth/throat/body. Native body, pistol
-and shank MSH files share a 1024-square Diffuse/Normal/SIC atlas. The pistol has
-a `.Muzzle` socket. Existing group sizes remain six regular Grotz and three Sneaks.
+| Unit | Previous member count × HP | New member count × HP | Grotter, Choppa and unlocked Stikkbomb copies at full strength |
+| --- | --- | --- | ---: |
+| Regular Grotz | 6 × 1 | 1 × 6 | 6 of each |
+| Grotz Kamando | 3 × 2 | 1 × 6 | 3 of each |
 
-Idle, movement, firing, melee, death and construction references use fitted ANM
-clips at 24 fps. Charge/defense use melee; nine-frame MoveBegin/MoveEnd assets are
-included. The optional grenade action retains gameplay with a fitted raise-and-
-release visual fallback. Snarl, run and hit reaction are also included as assets.
-The old Ork clips are not used with the new fitted skeleton.
+The three figures share their six HP and die together. Formerly, the loss of each member also removed that member's weapons. The trio keeps its weapon copies until its shared HP reaches zero. Incoming damage caps, effects that count models, and casualty-based morale can therefore behave differently. Costs, upkeep, recruitment, weapon definitions, per-copy melee attacks, accuracy, upgrades, and construction actions retain their previous values.
 
-Actual MSH/ANM/DDS files were independently reimported across 35 poses. Maximum
-body/weapon world-vertex difference was below 0.00001 units. The animated GLB was
-also reimported and checked. Native asset checks pass; actual Gladius combat
-and gameplay timing have not been verified. Nothing is published to Steam by
-this repository integration.
+The native files live in the existing Workshop package, **Proper wagh!** (3038342810). The authoring and interchange files, preview, and native validation evidence are in the [trio workbench](../model-workbench/Grot-Mob/Trio/). The [manifest](grot/manifest.json) records hashes and the previous four unit signatures. Run `python tools/validate_grot_repository.py` to verify the binaries, material, textures, attachment names, animation skeletons, file hashes, and XML changes. This revision has not been launched in Gladius.
 
-![Native replacement](grot/native-ready.png)
-
-![Authored stab](grot/stab.gif)
-
-[Editable model and animations](../model-workbench/Grot-Sneak/README.md).
-[Native verification](grot/native-verification.json).
-[Animation verification](grot/animation-verification.json).
-
-Validate the repository package without Blender or third-party modules:
-`python tools/validate_grot_repository.py`.
-The runtime/source hashes and preserved gameplay signatures are recorded in
-`docs/grot/manifest.json`. Blender export/verification helpers are in `tools`;
-they require an installed Gladius copy and the local community importer used
-for the existing project workflow. Playable Grot AI construction is integrated into this same Proper wagh! package.
-No separate Grot or AI-pilot override is needed; see [installation](MOD_INTEGRATION.md).
+The [earlier single-Grot model](../model-workbench/Grot-Sneak/) and its [round-trip measurements](grot/native-verification.json) document the previous character.

@@ -2,6 +2,8 @@
 
 Open **Grot-Mob.blend** to edit the three painted, rigged figures together. Each character also has a standalone GLB with its own skeleton, actions, and embedded diffuse atlas. The individual files open with the origin between the boots.
 
+[Playable three-Grot formation](Trio/README.md) — the Mek, Gunner and Cutter as the native Grot replacement in Proper wagh!.
+
 [Six-member animated formation](Formation/README.md) — two of each role in one unit, with grouped idle, advance, and scrap actions.
 
 ![Three textured Grot models](Grot-Mob.jpg)
@@ -20,4 +22,4 @@ To preview an action in Blender, select the corresponding armature in the Mek, G
 
 [Character actions](Grot-role-actions.gif) · [Rear and elevated views](Grot-Mob-views.jpg) · [Same-scale comparison](Grot-scale-comparison.jpg)
 
-This is an appearance and animation review set. The Blender scene and all three GLBs were reopened and measured. [Verification results](verification.json) include scale, geometry, UVs, image embedding, skin weights, grip contact, boot motion, and return to rest. Native Gladius conversion and in-game testing are pending.
+This is an appearance and animation review set. The Blender scene and all three GLBs were reopened and measured. [Verification results](verification.json) include scale, geometry, UVs, image embedding, skin weights, grip contact, boot motion, and return to rest. The [playable trio](Trio/README.md) contains the native conversion and its verification results.

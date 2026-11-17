@@ -46,7 +46,7 @@ def validate(root):
         ('2525618649', 'AstraMilitarum/Guardsman', 'PenalStandardTrooper'),
         ('2525618649', 'AstraMilitarum/Sargent', 'VeteranSergeant'),
         ('2525618649', 'AstraMilitarum/CommissarYarrick', 'Yarrick'),
-        ('3038342810', 'Orks/Grotz', 'GrotReplacement'),
+        ('3038342810', 'Orks/Grotz', 'GrotTrio'),
         ('2525618729', 'Tyranids/Ripperswarm', 'Ripper'),
     ):
         data = root / mod / 'Data'
