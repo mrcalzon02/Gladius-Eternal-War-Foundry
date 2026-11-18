@@ -4,9 +4,9 @@
 	<entry name="ConsGrotpost" value="Construct <string name='Units/Orks/Grotpost'/>"/>
 	<entry name="ConsGrotpostDescription" value="<string name='Units/Orks/GrotpostDescription'/>"/>
 	<entry name="ConsGrotpostFlavor" value="<string name='Units/Orks/GrotpostFlavor'/>"/>
-	<entry name="Orks/ConsGrotpost" value="Construct Grotpost" />"/>
-	<entry name="Orks/ConsGrotpostDescription" value="Build Grotpost beside this builder." />"/>
-	<entry name="Orks/ConsGrotpostFlavor" value="Prepared positions support the army." />"/>
+	<entry name="Orks/ConsGrotpost" value="Construct Grotpost" />
+	<entry name="Orks/ConsGrotpostDescription" value="Build Grotpost beside this builder." />
+	<entry name="Orks/ConsGrotpostFlavor" value="Prepared positions support the army." />
 	<entry name="FoundryAI/Grotpost" value="Construct Grotpost" />
 	<entry name="FoundryAI/GrotpostDescription" value="AI construction test: build Grotpost beside this builder." />
 	<entry name="FoundryAI/GrotpostFlavor" value="Prepared positions support the army." />
