@@ -58,5 +58,29 @@
     "frame_duration_ms": 50,
     "folder": "motion-frames/Die",
     "native_clip_sha256": "3dbbf556c952944f54792a93b9ea728542b144bdcdf47543ff2c531dcb3e7bd3"
+  },
+  "Idle1": {
+    "frames": 50,
+    "frame_duration_ms": 50,
+    "folder": "motion-frames/Idle1",
+    "native_clip_sha256": "91ab7a276d0294035a84838d3fb26de8739d67bf17b94aa4be62f30a7a6cb282"
+  },
+  "Idle2": {
+    "frames": 50,
+    "frame_duration_ms": 50,
+    "folder": "motion-frames/Idle2",
+    "native_clip_sha256": "82858e833039cdbad42ca57f511f68ec16bb69bff88116d0a1f31d27f74cbf1f"
+  },
+  "MoveBegin": {
+    "frames": 7,
+    "frame_duration_ms": 50,
+    "folder": "motion-frames/MoveBegin",
+    "native_clip_sha256": "3a02016e395306866f9d94190682ea24d53c1d0ccc7e023c6df6fc18108fac25"
+  },
+  "MoveEnd": {
+    "frames": 7,
+    "frame_duration_ms": 50,
+    "folder": "motion-frames/MoveEnd",
+    "native_clip_sha256": "202c78f52d44df077fd316eada0b5786981dac0c485635d8d79e5385a0755765"
   }
 }

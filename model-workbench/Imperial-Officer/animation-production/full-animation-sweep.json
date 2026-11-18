@@ -1,0 +1,95 @@
+{
+  "status": "encoded from verified native export",
+  "clips": [
+    {
+      "clip": "Idle0",
+      "start_ms": 0,
+      "duration_ms": 2500,
+      "native_clip_sha256": "39f18f918dc5eeb0c97091fc8bf383e8476ef499be355715b12574519bbadfc5"
+    },
+    {
+      "clip": "Idle1",
+      "start_ms": 2500,
+      "duration_ms": 2500,
+      "native_clip_sha256": "91ab7a276d0294035a84838d3fb26de8739d67bf17b94aa4be62f30a7a6cb282"
+    },
+    {
+      "clip": "Idle2",
+      "start_ms": 5000,
+      "duration_ms": 2500,
+      "native_clip_sha256": "82858e833039cdbad42ca57f511f68ec16bb69bff88116d0a1f31d27f74cbf1f"
+    },
+    {
+      "clip": "MoveBegin",
+      "start_ms": 7500,
+      "duration_ms": 350,
+      "native_clip_sha256": "3a02016e395306866f9d94190682ea24d53c1d0ccc7e023c6df6fc18108fac25"
+    },
+    {
+      "clip": "Move",
+      "start_ms": 7850,
+      "duration_ms": 650,
+      "native_clip_sha256": "275eac342e3ea78f70bbcc853c3066b85ef0984ef8ce76240895a0efc1d8cbf0"
+    },
+    {
+      "clip": "MoveEnd",
+      "start_ms": 8500,
+      "duration_ms": 350,
+      "native_clip_sha256": "202c78f52d44df077fd316eada0b5786981dac0c485635d8d79e5385a0755765"
+    },
+    {
+      "clip": "Attack",
+      "start_ms": 8850,
+      "duration_ms": 3000,
+      "native_clip_sha256": "4a851643466eca8a8aa4bca310677c98845ad4a95b986a854c51bcfb0a81f065"
+    },
+    {
+      "clip": "Melee",
+      "start_ms": 11850,
+      "duration_ms": 1500,
+      "native_clip_sha256": "f50dfd3af0b7fcbcff23c8dc35fb0f76541711528dd715d3835a82c012c3c668"
+    },
+    {
+      "clip": "MeleeDefense",
+      "start_ms": 13350,
+      "duration_ms": 1500,
+      "native_clip_sha256": "790ce6273db5bf00255d0c49852f3f87e89134ba853e89e39bcdcd278f24c923"
+    },
+    {
+      "clip": "Charge",
+      "start_ms": 14850,
+      "duration_ms": 1500,
+      "native_clip_sha256": "c097fbec7e9686074f24ad2b27c66d6df6ba1264faba0bbbd08f6612ac1ea56a"
+    },
+    {
+      "clip": "ChargeDefense",
+      "start_ms": 16350,
+      "duration_ms": 1500,
+      "native_clip_sha256": "0449bc98608c4090a545bb5a60319a38a3972d0c21fe84fbba01b6e6d56512e3"
+    },
+    {
+      "clip": "Grenade",
+      "start_ms": 17850,
+      "duration_ms": 1150,
+      "native_clip_sha256": "453e4e9bd20d9dfa4ade124a5bf4cb6f14dc84d1730650706eecf4df4ee63bca"
+    },
+    {
+      "clip": "Shout",
+      "start_ms": 19000,
+      "duration_ms": 2000,
+      "native_clip_sha256": "ee18944a9d0516922fa99018074f8fba73838ca488105ab88f957bbc53fe4cfd"
+    },
+    {
+      "clip": "Die",
+      "start_ms": 21000,
+      "duration_ms": 1200,
+      "native_clip_sha256": "3dbbf556c952944f54792a93b9ea728542b144bdcdf47543ff2c531dcb3e7bd3"
+    }
+  ],
+  "clip_count": 14,
+  "frames": 444,
+  "duration_ms": 22200,
+  "gif_sha256": "ed82f0369e3e4d6f4a8365dd093213d8eff317f74fe499c9e1206cc9a84e1180",
+  "mesh_sha256": "fd668ff2b34f443f220d8e70da84b63b9686be502d1c0a6db1d8b7c699be8e4d",
+  "mp4_sha256": "16356b07cf8cdd3165b71eba35abf7cc4610f17812e0c24582e90037be20acb3"
+}

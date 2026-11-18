@@ -5,7 +5,7 @@ The seven original Workshop IDs are the runtime mod packages.
 | Existing mod | Integrated content |
 |---|---|
 | Veteran Marines (`2175959340`) | Marine Techpriest AI construction |
-| Penal Legion (`2525618649`) | Standard trooper, Veteran Sergeant, Yarrick, Guard Techpriest AI construction |
+| Penal Legion (`2525618649`) | Standard trooper, Officer with 14 animations, Veteran Sergeant, Yarrick, Guard Techpriest AI construction |
 | Proper wagh! (`3038342810`) | Playable/neutral Grot models; playable Grot AI construction |
 | Tyranid mod (`2525618729`) | Ripperswarm model and animations |
 
@@ -29,10 +29,13 @@ before installation.
 
 Use `tools/deploy_integrated_mods.py` with `--workshop`, `--config`, and a new
 `--backup` directory. Its default is a read-only plan; add `--apply` with Gladius
-closed to deploy. It checks the seven Steam IDs, backs up changed files and
-configuration, verifies installed packages, then archives the four old overlays
+closed to deploy. Add `--mod 2525618649` to deploy only Penal Legion; repeat
+`--mod` to select more parents. Deployment uses tracked runtime files and excludes
+untracked studies. It checks the selected Steam IDs, backs up changed files and
+configuration, verifies installed packages, then archives eligible old overlays
 outside Mods and removes their configuration entries. Original mod order and
-enabled/disabled states are preserved. Use this installer instead of the retired
+enabled/disabled states are preserved. An unchanged configuration stays byte-for-byte
+identical, including its encoding and line endings. Use this installer instead of the retired
 workspace overlay installers.
 
 Steam Workshop uploads remain a separate publishing step. Steam may replace

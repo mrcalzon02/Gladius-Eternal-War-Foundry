@@ -44,6 +44,7 @@ def validate(root):
                 assert name + suffix in keys, name + suffix
     for mod, unit, model in (
         ('2525618649', 'AstraMilitarum/Guardsman', 'PenalStandardTrooper'),
+        ('2525618649', 'AstraMilitarum/Officer', 'ImperialOfficerGuardsman'),
         ('2525618649', 'AstraMilitarum/Sargent', 'VeteranSergeant'),
         ('2525618649', 'AstraMilitarum/CommissarYarrick', 'Yarrick'),
         ('3038342810', 'Orks/Grotz', 'GrotTrio'),
@@ -55,7 +56,7 @@ def validate(root):
         assert node.get('mesh') == node.get('material') == expected, f'Approved model is not wired into {unit}'
         assert (data / ('Video/Meshes/' + expected + '.msh')).is_file(), unit
         assert (data / ('Video/Materials/' + expected + '.xml')).is_file(), unit
-    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; four AI actions; five approved models wired into their parent mods.')
+    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; four AI actions; six approved models wired into their parent mods.')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)

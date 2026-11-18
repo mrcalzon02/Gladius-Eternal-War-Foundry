@@ -12,7 +12,7 @@ cam.location=(85,-180,90);cam.rotation_euler=(Vector((7,0,34))-cam.location).to_
 # The floor makes foot planting visible without changing any asset geometry.
 bpy.ops.mesh.primitive_plane_add(size=1000,location=(0,0,json.loads((A/'animation-build.json').read_text())['ground_reference_Z']-.03));floor=bpy.context.object;floor.name='Preview ground only';mat=bpy.data.materials.new('Preview ground');mat.diffuse_color=(.10,.12,.14,1);floor.data.materials.append(mat)
 out=A/'motion-frames';out.mkdir(exist_ok=True);manifest=json.loads((A/'motion-frames.json').read_text()) if '--clip' in sys.argv and (A/'motion-frames.json').exists() else {}
-suffixes=['Idle0','Move','Attack','Melee','MeleeDefense','Charge','ChargeDefense','Grenade','Shout','Die']
+suffixes=['Idle0','Idle1','Idle2','MoveBegin','Move','MoveEnd','Attack','Melee','MeleeDefense','Charge','ChargeDefense','Grenade','Shout','Die']
 if '--clip' in sys.argv:suffixes=[sys.argv[sys.argv.index('--clip')+1]]
 for suffix in suffixes:
     target=Vector((-16,0,22)) if suffix=='Die' else Vector((7,0,34));cam.location=target+Vector((78,-180,56));cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=165 if suffix=='Die' else 112 if suffix in ('Charge','ChargeDefense') else 96

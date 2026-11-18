@@ -1,4 +1,6 @@
 {
+  "stage": "package validation; installation and GitHub sync are recorded separately",
+  "delivery_receipt": "docs/officer/local-installation.json",
   "status": "passed",
   "runtime_files": {
     "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanAttack.anm": "4a851643466eca8a8aa4bca310677c98845ad4a95b986a854c51bcfb0a81f065",
@@ -227,7 +229,7 @@
   "source_sha256": "4c9931cc987ac3d88a87f43154b0ffaada8787032ad865b74399fb227dca1937",
   "review_sha256": "98cb5c1e8eaf2d48df3f21d9a9f76462cff88b88e96cefb645cd946e557d4869",
   "archive": "game-ready/Imperial-Guardsman-Officer.zip",
-  "archive_sha256": "497ffc8c11fe94bb44f2555b545be33294ecea13dbdc188b35fe9a969f2f0f78",
+  "archive_sha256": "1a738188cba0d95dcc0e46c19d2272f25b282a9263a6e905c363e96a7ecc69bb",
   "installed": false,
   "published": false,
   "live_engine_verified": false

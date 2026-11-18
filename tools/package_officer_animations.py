@@ -61,6 +61,11 @@ the cutting edge and bow underneath, gripped near the guard.
 
 ## Animation set
 
+The complete fourteen-clip sweep is available as
+[MP4](../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.mp4)
+and [GIF](../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.gif).
+Individual previews include all three idles and both movement transitions.
+
 | Native suffix | Seconds | Performance |
 |---|---:|---|
 '''
@@ -93,8 +98,18 @@ weapon clearance. Passing numerical checks does not substitute for visual review
 or imply user acceptance of the animation.
 Rendered stills and motion previews come from the native export.
 
-This is local repository integration. No files are installed into Gladius and
-nothing is pushed or published. Live engine playback and combat remain untested.
+The user accepted the corrected officer and its fourteen native clips in
+`cc39902` for integration into the existing mod, locally and on GitHub.
+The runtime occupies the original Penal Legion Officer slot; no separate mod is
+created. The full sweep and editable source are part of the repository.
+
+Packaging itself does not install or upload files. The separate
+[local installation receipt](officer/local-installation.json) records deployment;
+its runtime hashes identify the same payload used by the repository and archive.
+Use `tools/validate_officer_package.py` to check the repository or installed copy.
+Use `tools/deploy_integrated_mods.py --mod 2525618649` to select Penal Legion
+without changing the other parent packages. Steam Workshop uploads remain a
+separate operation. Live engine playback and combat remain untested.
 Private photographic references are excluded from the package.
 
 Rebuild using the installed Blender and original game data:
@@ -113,17 +128,22 @@ build and verification. Preview GIF encoding uses an available Pillow installati
 '''
     docs=R/'docs/IMPERIAL_GUARDSMAN_OFFICER.md';docs.parent.mkdir(exist_ok=True);docs.write_text(text,encoding='utf-8')
     (A/'README.md').write_text('# Officer animation workbench\n\nSee [asset, animation and validation notes](../../../docs/IMPERIAL_GUARDSMAN_OFFICER.md).\n\nOpen `Officer-Animations.blend` for editable parts and named actions. Open\n`Officer-Native-Animation-Review.blend` to inspect the exported asset.\nSelect the desired action in the Action Editor; NLA library tracks are muted.\nScene playback is 60 fps; native clips preserve their recorded sample rate.\n',encoding='utf-8')
-    pointer={'source':'model-workbench/Imperial-Officer/animation-production/Officer-Animations.blend','runtime_review':'model-workbench/Imperial-Officer/animation-production/Officer-Native-Animation-Review.blend','runtime':'2525618649/Data/World/Units/AstraMilitarum/Officer.xml','body_triangles':892,'baseline_body_triangles':894,'textures':[512,512],'native_clips':14,'new_animation_performances_authored':True,'installed':False,'published':False}
+    pointer={'source':'model-workbench/Imperial-Officer/animation-production/Officer-Animations.blend','runtime_review':'model-workbench/Imperial-Officer/animation-production/Officer-Native-Animation-Review.blend','runtime':'2525618649/Data/World/Units/AstraMilitarum/Officer.xml','body_triangles':892,'baseline_body_triangles':894,'textures':[512,512],'native_clips':14,'new_animation_performances_authored':True,'deployment_receipt':'docs/officer/local-installation.json'}
     (A.parent/'CURRENT_LOCAL_CANDIDATE.json').write_text(json.dumps(pointer,indent=2))
     files={p.relative_to(D).as_posix():sha(p) for p in D.rglob('*') if p.is_file()};assert len(files)==20,len(files)
     package=R/'game-ready/Imperial-Guardsman-Officer.zip';package.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(package,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for relative in sorted(files):z.write(D/relative,'2525618649/Data/'+relative)
-        z.write(attribution,'SOURCE_ATTRIBUTION.txt');z.writestr('README.md',text)
+        z.write(attribution,'SOURCE_ATTRIBUTION.txt')
+        archive_text=text.replace('(../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.mp4)','(Full-Animation-Sweep.mp4)').replace('(../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.gif)','(https://github.com/mrcalzon02/Gladius-Eternal-War-Foundry/blob/main/model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.gif)').replace('(officer/local-installation.json)','(https://github.com/mrcalzon02/Gladius-Eternal-War-Foundry/blob/main/docs/officer/local-installation.json)')
+        z.writestr('README.md',archive_text)
+        sweep=A/'motion-previews/Full-Animation-Sweep.mp4'
+        if sweep.is_file():z.write(sweep,sweep.name)
+        if (A/'full-animation-sweep.json').is_file():z.write(A/'full-animation-sweep.json','full-animation-sweep.json')
     with zipfile.ZipFile(package) as z:
         assert z.testzip() is None
         for relative,digest in files.items():assert hashlib.sha256(z.read('2525618649/Data/'+relative)).hexdigest()==digest
-    manifest={'status':'passed','runtime_files':files,'runtime_file_count':len(files),'body_triangles':892,'baseline_body_triangles':894,'texture_sizes':{'Diffuse':[512,512],'Normal':[512,512],'SIC':[512,512]},'weapons':build['attachments'],'native_clips':14,'native_poses_checked':review['poses_tested'],'source_sha256':sha(A/'Officer-Animations.blend'),'review_sha256':sha(A/'Officer-Native-Animation-Review.blend'),'archive':'game-ready/'+package.name,'archive_sha256':sha(package),'installed':False,'published':False,'live_engine_verified':False}
+    manifest={'stage':'package validation; installation and GitHub sync are recorded separately','delivery_receipt':'docs/officer/local-installation.json','status':'passed','runtime_files':files,'runtime_file_count':len(files),'body_triangles':892,'baseline_body_triangles':894,'texture_sizes':{'Diffuse':[512,512],'Normal':[512,512],'SIC':[512,512]},'weapons':build['attachments'],'native_clips':14,'native_poses_checked':review['poses_tested'],'source_sha256':sha(A/'Officer-Animations.blend'),'review_sha256':sha(A/'Officer-Native-Animation-Review.blend'),'archive':'game-ready/'+package.name,'archive_sha256':sha(package),'installed':False,'published':False,'live_engine_verified':False}
     (O/'PACKAGE_VERIFICATION.json').write_text(json.dumps(manifest,indent=2));(A/'package-verification.json').write_text(json.dumps(manifest,indent=2));print('OFFICER_PACKAGE_VERIFIED',len(files),'files',package)
 
 if __name__=='__main__':main()

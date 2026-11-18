@@ -10,6 +10,5 @@
   ],
   "native_clips": 14,
   "new_animation_performances_authored": true,
-  "installed": false,
-  "published": false
+  "deployment_receipt": "docs/officer/local-installation.json"
 }

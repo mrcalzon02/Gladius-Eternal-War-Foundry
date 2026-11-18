@@ -23,17 +23,17 @@ def prepare(target):
     def add(source,relative):
         selected[relative]=source
     for rel,digest in package['runtime_files'].items():assert sha(D/rel)==digest;add(D/rel,'2525618649/Data/'+rel)
-    for rel in ['Officer-Animations.blend','Officer-Native-Animation-Review.blend','animation-build.json','animation-verification.json','package-verification.json','pistol-frame.json','hand-anatomy.json','REJECTED_ANIMATION_HISTORY.json','Officer-before-integration.xml','README.md','visual-review.json','ground-contact.json','motion-frames.json','motion-preview-hashes.json']:
+    for rel in ['Officer-Animations.blend','Officer-Native-Animation-Review.blend','animation-build.json','animation-verification.json','package-verification.json','pistol-frame.json','hand-anatomy.json','REJECTED_ANIMATION_HISTORY.json','Officer-before-integration.xml','README.md','visual-review.json','ground-contact.json','motion-frames.json','motion-preview-hashes.json','full-animation-sweep.json']:
         source=A/rel;assert source.is_file(),source;add(source,source.relative_to(R).as_posix())
     for folder in ['accepted-model','native-previews','motion-previews']:
         for source in (A/folder).rglob('*'):
-            if source.is_file() and source.suffix in ('.blend','.json','.dds','.xml','.msh','.anm','.txt','.png','.gif','.md'):add(source,source.relative_to(R).as_posix())
-    for name in ['build_officer_animations.py','build_officer_arm_rebuild.py','officer_arm_pose.py','officer_asset_preservation.py','officer_animation.py','officer_skinning.py','officer_unit_binding.py','verify_officer_animations.py','officer_triangle_intersections.py','render_officer_motion.py','render_officer_comparison.py','inspect_officer_death_ground.py','encode_officer_previews.py','package_officer_animations.py','prepare_officer_integration.py','native_gladius.py']:
+            if source.is_file() and source.suffix in ('.blend','.json','.dds','.xml','.msh','.anm','.txt','.png','.gif','.mp4','.md'):add(source,source.relative_to(R).as_posix())
+    for name in ['build_officer_animations.py','build_officer_arm_rebuild.py','officer_arm_pose.py','officer_asset_preservation.py','officer_animation.py','officer_skinning.py','officer_unit_binding.py','verify_officer_animations.py','officer_triangle_intersections.py','render_officer_motion.py','render_officer_comparison.py','inspect_officer_death_ground.py','encode_officer_previews.py','package_officer_animations.py','prepare_officer_integration.py','native_gladius.py','deploy_integrated_mods.py','validate_integrated_mods.py','validate_officer_package.py']:
         add(R/'tools'/name,'tools/'+name)
-    for rel in ['references/import_gladius.py','docs/IMPERIAL_GUARDSMAN_OFFICER.md','model-workbench/Imperial-Officer/CURRENT_LOCAL_CANDIDATE.json','game-ready/Imperial-Guardsman-Officer.zip','assets/imperial-officer-animated/SOURCE_ATTRIBUTION.txt']:
+    for rel in ['references/import_gladius.py','docs/IMPERIAL_GUARDSMAN_OFFICER.md','docs/MOD_INTEGRATION.md','docs/officer/local-installation.json','model-workbench/Imperial-Officer/CURRENT_LOCAL_CANDIDATE.json','game-ready/Imperial-Guardsman-Officer.zip','assets/imperial-officer-animated/SOURCE_ATTRIBUTION.txt']:
         add(R/rel,rel)
     readme=(target/'README.md').read_text(encoding='utf-8');marker='## Imperial Guardsman officer'
-    paragraph='The 892-triangle Guardsman-based officer occupies the existing Penal Legion\nOfficer slot, with 512-square masked textures and 14 native animations. Arm\nmotion uses guided elbows, physical wrist joints and coherent sleeve weights.\nThe existing laspistol and chainsword are reused. See [asset and animation\nverification](docs/IMPERIAL_GUARDSMAN_OFFICER.md). Local native checks and rendered\nreview are recorded; live engine playback remains untested.\n'
+    paragraph='The accepted 892-triangle officer occupies the existing Penal Legion Officer\nslot with all 14 native animations, 512-square masked textures, and the existing\nlaspistol and chainsword. The [complete animation sweep](model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.mp4)\nincludes idles, movement transitions, firing, melee, charge, grenade, command\nand death. See [asset and installation verification](docs/IMPERIAL_GUARDSMAN_OFFICER.md).\nLive engine playback remains untested.\n'
     if marker in readme:
         start=readme.index(marker);following=readme.find('\n## ',start+len(marker))
         readme=readme[:start]+marker+'\n\n'+paragraph+(readme[following:] if following>=0 else '')

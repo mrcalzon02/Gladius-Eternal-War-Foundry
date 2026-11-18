@@ -14,7 +14,7 @@
     "Right": 0
   },
   "hand_intersection_method": "Rest-space test and rigid affine proof at every native and half-frame sample",
-  "user_animation_approval": false,
+  "user_animation_approval": true,
   "visual_review_required": true,
   "status": "passed",
   "mesh_sha256": "fd668ff2b34f443f220d8e70da84b63b9686be502d1c0a6db1d8b7c699be8e4d",
@@ -1175,5 +1175,6 @@
     "charge.png": "0a15e8f58fdb09b851aea2060ba2d88ae0d2acdf88d1a2fffee0cd87e34b0704",
     "charge-defense.png": "5f5a0f12bda05b74803b86d15f9acbca9486d09b85d897b828863a767e74bd04",
     "grenade-windup.png": "e63c4a8e3b58171bbe578bfef0585664ed5642ad47a7e423fc56f9d8f31a3616"
-  }
+  },
+  "approval_reference": "visual-review.json"
 }

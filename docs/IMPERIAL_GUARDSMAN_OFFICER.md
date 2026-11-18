@@ -35,6 +35,11 @@ the cutting edge and bow underneath, gripped near the guard.
 
 ## Animation set
 
+The complete fourteen-clip sweep is available as
+[MP4](../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.mp4)
+and [GIF](../model-workbench/Imperial-Officer/animation-production/motion-previews/Full-Animation-Sweep.gif).
+Individual previews include all three idles and both movement transitions.
+
 | Native suffix | Seconds | Performance |
 |---|---:|---|
 | Idle0 | 2.500 | Natural ready breathing |
@@ -79,8 +84,18 @@ weapon clearance. Passing numerical checks does not substitute for visual review
 or imply user acceptance of the animation.
 Rendered stills and motion previews come from the native export.
 
-This is local repository integration. No files are installed into Gladius and
-nothing is pushed or published. Live engine playback and combat remain untested.
+The user accepted the corrected officer and its fourteen native clips in
+`cc39902` for integration into the existing mod, locally and on GitHub.
+The runtime occupies the original Penal Legion Officer slot; no separate mod is
+created. The full sweep and editable source are part of the repository.
+
+Packaging itself does not install or upload files. The separate
+[local installation receipt](officer/local-installation.json) records deployment;
+its runtime hashes identify the same payload used by the repository and archive.
+Use `tools/validate_officer_package.py` to check the repository or installed copy.
+Use `tools/deploy_integrated_mods.py --mod 2525618649` to select Penal Legion
+without changing the other parent packages. Steam Workshop uploads remain a
+separate operation. Live engine playback and combat remain untested.
 Private photographic references are excluded from the package.
 
 Rebuild using the installed Blender and original game data:
