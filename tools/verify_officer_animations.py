@@ -8,8 +8,16 @@ R=Path(__file__).resolve().parents[1];A=R/'model-workbench/Imperial-Officer/anim
 sys.path.insert(0,str(R/'tools'));from native_gladius import read_mesh,read_animation
 from officer_animation import read_clip
 from officer_unit_binding import gameplay_signature
-from officer_triangle_intersections import _intersect
+from officer_triangle_intersections import _intersect,proper_triangle_intersections
+from officer_asset_preservation import verify_preservation
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();build=json.loads((A/'animation-build.json').read_text());body_build=json.loads((W/'body-build.json').read_text())
+preserved=verify_preservation((W/'Data/Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh').read_bytes(),(D/'Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh').read_bytes(),build)
+for category in ('Video/Materials','Video/Textures'):
+    for path in (W/'Data'/category).rglob('*'):
+        if path.is_file():assert sha(path)==sha(D/path.relative_to(W/'Data'))
+for path in D.rglob('*.dds'):
+    import struct
+    raw=path.read_bytes();assert struct.unpack_from('<II',raw,12)==(512,512) and raw[84:88]==b'DXT5'
 for relative,digest in build['frozen_asset_sha256'].items():assert sha(D/relative)==digest,relative
 assert sha(A/'Officer-Animations.blend')==build['animation_source_sha256']
 bpy.ops.wm.open_mainfile(filepath=str(A/'Officer-Animations.blend'))
@@ -28,6 +36,17 @@ is_hand=lambda p,side:all(tuple(round(c,4) for c in rest[i]) in hand_positions[s
 hand_faces={side:[tuple(p.vertices) for p in body.data.polygons if is_hand(p,side)] for side in ('Left','Right')};outside_hand={side:[tuple(p.vertices) for p in body.data.polygons if not is_hand(p,side)] for side in ('Left','Right')}
 edges=[(e.vertices[0],e.vertices[1],(rest[e.vertices[0]]-rest[e.vertices[1]]).length) for e in body.data.edges if (rest[e.vertices[0]]-rest[e.vertices[1]]).length>.15]
 assert len(hand_faces['Left'])==98 and len(hand_faces['Right'])==56
+hand_ids={side:sorted({i for f in hand_faces[side] for i in f}) for side in ('Left','Right')}
+for side in ('Left','Right'):
+    assert not proper_triangle_intersections(rest,hand_faces[side]),side
+    assert all({body.vertex_groups[w.group].name:w.weight for w in body.data.vertices[i].groups if w.weight>1e-6}=={side+'HandBone':1.} for i in hand_ids[side]),side
+rings=json.loads((W/'sleeve-regions.json').read_text())
+for side in ('Left','Right'):
+    for ring in rings[side]['rings'][1:3]:
+        for point in ring:
+            ids=[i for i,p in enumerate(rest) if (p-Vector(point)).length<.0002]
+            assert ids and all({body.vertex_groups[w.group].name:w.weight for w in body.data.vertices[i].groups if w.weight>1e-6}=={side+'LowerArmBone':1.} for i in ids),(side,point)
+assert len(sword.data.polygons)==337 and len(pistol.data.polygons)==62
 metrics=read_mesh((D/'Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh').read_bytes());assert metrics['triangles']==892 and metrics['bones']==body_build['bone_order']
 actions={};native_clips={}
 for suffix,row in build['clips'].items():
@@ -44,7 +63,7 @@ for el in root.iter():
             for resource in resources:assert (D/('Video/Animations/'+resource+'.anm')).is_file(),resource
             references.extend(resources)
 entry=build['attachments'];hand_indices=sorted({i for f in hand_faces['Left'] for i in f});max_grip=0;max_hand_affine=0;poses=0;violations=[];rows={};loop_errors={}
-segment_pairs=[('LeftUpperArmBone','LeftLowerArmBone'),('LeftLowerArmBone','LeftHandBone'),('RightUpperArmBone','RightLowerArmBone'),('RightLowerArmBone','RightHandBone'),('LeftHipBone','LeftShinBone'),('LeftShinBone','LeftFootBone'),('RightHipBone','RightShinBone'),('RightShinBone','RightFootBone')]
+segment_pairs=[('LeftUpperArmBone','LeftLowerArmBone'),('RightUpperArmBone','RightLowerArmBone'),('LeftHipBone','LeftShinBone'),('LeftShinBone','LeftFootBone'),('RightHipBone','RightShinBone'),('RightShinBone','RightFootBone')]
 lengths={(a,b):(rig.data.bones[a].head_local-rig.data.bones[b].head_local).length for a,b in segment_pairs}
 muzzle=Vector(build['pistol_frame']['native_forward']);barrel_up=Vector(build['pistol_frame']['native_barrel_up']);source_geometry_hash=sha(D/'Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh')
 body_face_bones={}
@@ -69,10 +88,24 @@ for suffix,clip in native_clips.items():
     # Check every native sample, plus half-sample times through the fastest
     # attack interval. Numerical checks use actual imported native animation.
     times={i/clip['fps'] for i in range(clip['frames'])}
-    if suffix in ('Attack','Melee','MeleeDefense'):times.update((i+.5)/clip['fps'] for i in range(clip['frames']-1))
+    times.update((i+.5)/clip['fps'] for i in range(clip['frames']-1))
     row={'poses':len(times),'minimum_body_Z':1e9,'minimum_sword_Z':1e9,'maximum_edge_stretch_ratio':0.,'maximum_limb_length_relative_error':0.,'maximum_handle_error':0.,'sword_body_intersections':0,'pistol_body_intersections':0,'firing_muzzle_forward_minimum':1.,'firing_barrel_up_minimum':1.,'firing_muzzle_above_grip_minimum':1e9,'collision_body_bones':{'sword':{},'pistol':{}}}
+    row.update({'maximum_wrist_bend_degrees':{'Left':0.,'Right':0.},'maximum_physical_forearm_error':0.,'maximum_cuff_separation':0.,'maximum_hand_affine_error':0.,'maximum_chest_relative_arm_speed_degrees_per_second':0.})
+    previous=None
     for t in sorted(times):
         activate(suffix,t);deps=bpy.context.evaluated_depsgraph_get();ev=body.evaluated_get(deps);wp=[body.matrix_world@v.co for v in ev.data.vertices];row['minimum_body_Z']=min(row['minimum_body_Z'],min(p.z for p in wp));poses+=1
+        current={};chest_q=rig.pose.bones['ChestBone'].matrix.to_quaternion()
+        for side in ('Left','Right'):
+            h=build['hand_anatomy'][side];un=side+'UpperArmBone';ln=side+'LowerArmBone';hn=side+'HandBone';ld=rig.pose.bones[ln].matrix@rig.data.bones[ln].matrix_local.inverted();hd=rig.pose.bones[hn].matrix@rig.data.bones[hn].matrix_local.inverted();elbow=rig.pose.bones[ln].matrix.translation;cuff=ld@Vector(h['cuff_center']);palm=(hd.to_3x3()@Vector(h['palm_forward'])).normalized()
+            row['maximum_wrist_bend_degrees'][side]=max(row['maximum_wrist_bend_degrees'][side],math.degrees(palm.angle(cuff-elbow)))
+            row['maximum_physical_forearm_error']=max(row['maximum_physical_forearm_error'],abs((cuff-elbow).length-(Vector(h['cuff_center'])-rig.data.bones[ln].head_local).length))
+            row['maximum_cuff_separation']=max(row['maximum_cuff_separation'],(cuff-hd@Vector(h['cuff_center'])).length)
+            row['maximum_hand_affine_error']=max(row['maximum_hand_affine_error'],max((wp[i]-body.matrix_world@hd@rest[i]).length for i in hand_ids[side]))
+            for n in (un,ln,hn):
+                q=chest_q.inverted()@rig.pose.bones[n].matrix.to_quaternion();current[n]=q
+                if previous:
+                    degrees=math.degrees(2*math.acos(min(1.,abs(previous[1][n].dot(q)))));row['maximum_chest_relative_arm_speed_degrees_per_second']=max(row['maximum_chest_relative_arm_speed_degrees_per_second'],degrees/(t-previous[0]))
+        previous=(t,current)
         peak,i,j=max(((wp[i]-wp[j]).length/length,i,j) for i,j,length in edges)
         if peak>row['maximum_edge_stretch_ratio']:
             row['maximum_edge_stretch_ratio']=peak;row['peak_stretch']={'time':t,'rest_points':[list(rest[k]) for k in (i,j)],'weights':[[(body.vertex_groups[w.group].name,w.weight) for w in body.data.vertices[k].groups] for k in (i,j)]}
@@ -82,7 +115,7 @@ for suffix,clip in native_clips.items():
                 affine=max((wp[i]-body.matrix_world@deform@rest[i]).length for i in hand_indices);max_hand_affine=max(max_hand_affine,affine)
             weapon_points=[obj.matrix_world@v.co for v in obj.data.vertices];faces=[tuple(p.vertices) for p in obj.data.polygons]
             if key=='sword':row['minimum_sword_Z']=min(row['minimum_sword_Z'],min(p.z for p in weapon_points))
-            if suffix!='Die':
+            if True:
                 hit=BVHTree.FromPolygons(weapon_points,faces,all_triangles=True).overlap(BVHTree.FromPolygons(wp,outside_hand[side],all_triangles=True))
                 hit=[(a,b) for a,b in hit if _intersect([weapon_points[i] for i in faces[a]],[wp[i] for i in outside_hand[side][b]])]
                 if hit:
@@ -98,8 +131,14 @@ for suffix,clip in native_clips.items():
             height=(pistol.matrix_world@Vector(build['pistol_frame']['native_muzzle'])-pistol.matrix_world@Vector(build['pistol_frame']['native_grip'])).z;row['firing_muzzle_above_grip_minimum']=min(row['firing_muzzle_above_grip_minimum'],height)
     rows[suffix]=row;print('NATIVE_ANIMATION_CHECK',suffix,json.dumps(row),flush=True)
 passed=not violations and max_grip<.006 and max_hand_affine<.0001 and rows['Attack']['firing_barrel_up_minimum']>.98 and rows['Attack']['firing_muzzle_above_grip_minimum']>1 and all(row['minimum_body_Z']>build['ground_reference_Z']-.08 and row['maximum_limb_length_relative_error']<.02 and row['maximum_edge_stretch_ratio']<2. for row in rows.values())
-report={'status':'passed' if passed else 'needs repair','mesh_sha256':source_geometry_hash,'clips_tested':len(actions),'poses_tested':poses,'samples':rows,'loop_matrix_errors':loop_errors,'maximum_handle_attachment_error':max_grip,'maximum_left_hand_affine_error':max_hand_affine,'weapon_body_intersections':violations,'unit_animation_resource_references':sorted(set(references)),'geometry_materials_and_bind_frames_preserved':True,'source_blend_sha256':build['animation_source_sha256'],'gameplay_preserved':True,'images':{im.name:list(im.size) for im in bpy.data.images if im.source=='FILE'},'messages':messages,'installed':False,'published':False,'live_engine_verified':False}
+anatomy_failures=[]
+for suffix,row in rows.items():
+    checks={'wrist_limit':max(row['maximum_wrist_bend_degrees'].values())<16.25,'physical_forearm':row['maximum_physical_forearm_error']<.02,'connected_cuff':row['maximum_cuff_separation']<.006,'rigid_hands':row['maximum_hand_affine_error']<.0001,'no_arm_whip':row['maximum_chest_relative_arm_speed_degrees_per_second']<(150 if suffix.startswith('Move') else 600 if suffix=='Attack' else 950)}
+    anatomy_failures.extend((suffix,name) for name,ok in checks.items() if not ok)
+passed=passed and not anatomy_failures
+report={'anatomical_failures':anatomy_failures,'preservation':preserved,'forearm_cross_sections_rigid':True,'hand_rest_self_intersections':{'Left':0,'Right':0},'hand_intersection_method':'Rest-space test and rigid affine proof at every native and half-frame sample','user_animation_approval':False,'visual_review_required':True,'status':'passed' if passed else 'needs repair','mesh_sha256':source_geometry_hash,'clips_tested':len(actions),'poses_tested':poses,'samples':rows,'loop_matrix_errors':loop_errors,'maximum_handle_attachment_error':max_grip,'maximum_left_hand_affine_error':max_hand_affine,'weapon_body_intersections':violations,'unit_animation_resource_references':sorted(set(references)),'materials_uvs_and_original_bind_frames_preserved':True,'source_blend_sha256':build['animation_source_sha256'],'gameplay_preserved':True,'images':{im.name:list(im.size) for im in bpy.data.images if im.source=='FILE'},'messages':messages,'installed':False,'published':False,'live_engine_verified':False}
 (O/'ANIMATION_VERIFICATION.json').write_text(json.dumps(report,indent=2));(A/'animation-verification.json').write_text(json.dumps(report,indent=2))
+assert passed, (anatomy_failures, [(n,r['maximum_edge_stretch_ratio']) for n,r in rows.items() if r['maximum_edge_stretch_ratio']>=2.], violations[:5])
 if '--no-render' in sys.argv:
     assert passed,[(n,r['maximum_edge_stretch_ratio'],r['sword_body_intersections'],r['pistol_body_intersections']) for n,r in rows.items()]
     print('OFFICER_NATIVE_ANIMATIONS_VERIFIED_WITHOUT_RENDER',len(actions),poses,flush=True);sys.exit(0)
@@ -108,16 +147,16 @@ if '--no-render' in sys.argv:
 s.world=bpy.data.worlds.new('Officer motion studio');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.09,.105,.125,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=.55
 for loc,power in [((90,-85,130),180000),((30,110,95),110000),((-80,0,120),150000)]:
     light=bpy.data.lights.new('Motion softbox','AREA');light.energy=power;light.size=85;o=bpy.data.objects.new(light.name,light);s.collection.objects.link(o);o.location=loc;o.rotation_euler=(Vector((0,0,34))-o.location).to_track_quat('-Z','Y').to_euler()
-cam=bpy.data.objects.new('Native animation review',bpy.data.cameras.new('Native animation review'));s.collection.objects.link(cam);s.camera=cam;cam.data.type='ORTHO';cam.data.ortho_scale=96;s.render.engine='CYCLES';s.cycles.samples=8;s.cycles.use_denoising=True;s.render.resolution_x=800;s.render.resolution_y=900;s.render.resolution_percentage=100;s.view_settings.view_transform='Standard'
+cam=bpy.data.objects.new('Native animation review',bpy.data.cameras.new('Native animation review'));s.collection.objects.link(cam);s.camera=cam;cam.data.type='ORTHO';cam.data.ortho_scale=96;s.render.engine='CYCLES';s.cycles.samples=4;s.cycles.use_denoising=True;s.render.resolution_x=800;s.render.resolution_y=900;s.render.resolution_percentage=100;s.view_settings.view_transform='Standard'
 for o in bpy.data.objects:
     if 'Bounding' in o.name:o.hide_render=True
 preview=A/'native-previews';preview.mkdir(exist_ok=True)
-for name,suffix,t,loc in [('ready','Idle0',0,(150,-110,88)),('walk','Move',.27,(150,-110,88)),('pistol','Attack',.45,(150,-110,88)),('wind-up','Melee',.22,(100,160,85)),('sword-strike','Melee',.52,(100,160,85)),('follow-through','Melee',.70,(100,160,85)),('parry','MeleeDefense',.4,(100,160,85)),('command','Shout',1.,(150,-110,88)),('grenade','Grenade',.90,(150,-110,88)),('death','Die',1.2,(100,140,90))]:
+for name,suffix,t,loc in [('ready','Idle0',0,(150,-110,88)),('walk','Move',.27,(150,-110,88)),('pistol','Attack',.45,(150,-110,88)),('wind-up','Melee',.22,(100,160,85)),('sword-strike','Melee',.58,(100,160,85)),('follow-through','Melee',.77,(100,160,85)),('parry','MeleeDefense',.4,(100,160,85)),('command','Shout',1.,(150,-110,88)),('grenade','Grenade',.90,(150,-110,88)),('death','Die',1.2,(100,140,90)),('firing-profile','Attack',.5,(0,-180,65)),('charge','Charge',.5,(150,-110,88)),('charge-defense','ChargeDefense',.5,(150,-110,88)),('grenade-windup','Grenade',.4,(150,-110,88))]:
     activate(suffix,t);target=Vector((4,0,34));cam.data.ortho_scale=96
     if suffix=='Die':
         ev=body.evaluated_get(bpy.context.evaluated_depsgraph_get());points=[body.matrix_world@p.co for p in ev.data.vertices];target=Vector([(min(p[k] for p in points)+max(p[k] for p in points))/2 for k in range(3)]);loc=target+Vector((100,140,90));cam.data.ortho_scale=110
     cam.location=loc;cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();s.render.filepath=str(preview/(name+'.png'));bpy.ops.render.render(write_still=True)
 activate('Idle0',0);s.frame_start=0;s.frame_end=150;bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(A/'Officer-Native-Animation-Review.blend'),compress=True)
-report['native_review_blend_sha256']=sha(A/'Officer-Native-Animation-Review.blend');report['render_sha256']={name+'.png':sha(preview/(name+'.png')) for name in ('ready','walk','pistol','wind-up','sword-strike','follow-through','parry','command','grenade','death')};(O/'ANIMATION_VERIFICATION.json').write_text(json.dumps(report,indent=2));(A/'animation-verification.json').write_text(json.dumps(report,indent=2))
+report['native_review_blend_sha256']=sha(A/'Officer-Native-Animation-Review.blend');report['render_sha256']={name+'.png':sha(preview/(name+'.png')) for name in ('ready','walk','pistol','wind-up','sword-strike','follow-through','parry','command','grenade','death','firing-profile','charge','charge-defense','grenade-windup')};(O/'ANIMATION_VERIFICATION.json').write_text(json.dumps(report,indent=2));(A/'animation-verification.json').write_text(json.dumps(report,indent=2))
 assert report['status']=='passed',(max_grip,max_hand_affine,violations[:12]);assert rows['Attack']['firing_muzzle_forward_minimum']>.98 and rows['Attack']['firing_barrel_up_minimum']>.98,rows['Attack']
 print('OFFICER_NATIVE_ANIMATIONS_VERIFIED',len(actions),'clips',poses,'poses;',max_grip,'max grip error',flush=True)

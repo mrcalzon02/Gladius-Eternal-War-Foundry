@@ -7,15 +7,15 @@ report=json.loads((A/'animation-verification.json').read_text());assert report['
 review=A/'Officer-Native-Animation-Review.blend';assert hashlib.sha256(review.read_bytes()).hexdigest()==report['native_review_blend_sha256']
 spec=importlib.util.spec_from_file_location('officer_motion_preview',R/'references/import_gladius.py');g=importlib.util.module_from_spec(spec);sys.modules[spec.name]=g;spec.loader.exec_module(g)
 bpy.ops.wm.open_mainfile(filepath=str(review));s=bpy.context.scene;rig=bpy.data.objects['ImperialOfficerGuardsman_rig'];cam=s.camera
-s.render.resolution_x=480;s.render.resolution_y=600;s.cycles.samples=4;s.render.image_settings.file_format='PNG'
+s.render.resolution_x=400;s.render.resolution_y=500;s.cycles.samples=2;s.render.image_settings.file_format='PNG'
 cam.location=(85,-180,90);cam.rotation_euler=(Vector((7,0,34))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=96
 # The floor makes foot planting visible without changing any asset geometry.
 bpy.ops.mesh.primitive_plane_add(size=1000,location=(0,0,json.loads((A/'animation-build.json').read_text())['ground_reference_Z']-.03));floor=bpy.context.object;floor.name='Preview ground only';mat=bpy.data.materials.new('Preview ground');mat.diffuse_color=(.10,.12,.14,1);floor.data.materials.append(mat)
-out=A/'motion-frames';out.mkdir(exist_ok=True);manifest=json.loads((A/'motion-frames.json').read_text()) if (A/'motion-frames.json').exists() else {}
+out=A/'motion-frames';out.mkdir(exist_ok=True);manifest=json.loads((A/'motion-frames.json').read_text()) if '--clip' in sys.argv and (A/'motion-frames.json').exists() else {}
 suffixes=['Idle0','Move','Attack','Melee','MeleeDefense','Charge','ChargeDefense','Grenade','Shout','Die']
 if '--clip' in sys.argv:suffixes=[sys.argv[sys.argv.index('--clip')+1]]
 for suffix in suffixes:
-    target=Vector((-16,0,22)) if suffix=='Die' else Vector((7,0,34));cam.location=target+Vector((78,-180,56));cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=165 if suffix=='Die' else 96
+    target=Vector((-16,0,22)) if suffix=='Die' else Vector((7,0,34));cam.location=target+Vector((78,-180,56));cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=165 if suffix=='Die' else 112 if suffix in ('Charge','ChargeDefense') else 96
     clip=json.loads((A/'animation-build.json').read_text())['clips'][suffix];action,_=g._load_anm_to_rig(str(D/('Video/Animations/Units/Foundry/ImperialOfficerGuardsman'+suffix+'.anm')),rig,unit_name='Officer motion',anim_type=suffix);g._set_direct_animation(rig,action)
     count=max(2,round(clip['duration']*20));folder=out/suffix;folder.mkdir(exist_ok=True)
     for i in range(count):

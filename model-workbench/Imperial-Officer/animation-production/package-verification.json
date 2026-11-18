@@ -1,22 +1,22 @@
 {
   "status": "passed",
   "runtime_files": {
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanAttack.anm": "1491c8baea8d25d75f856c937531f3ee87d80ed0ee937ce612aab331b6e78d5e",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanCharge.anm": "cc57e9948e8f3fd767ab11ecc621b0b6615b71f3c39dcf95b3cf88d59f275836",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanChargeDefense.anm": "fac4baf04c34905d33cfc9f44a82e9d839747c90db1d63ecd6fce0d3df82f8b2",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanDie.anm": "51ce052ac453b5f61cd15b76137e68c9949971cc8aee16ee8e0575652ac5fe9b",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanGrenade.anm": "6d8e1d3db378bd348f403c65faefa82bbe564c74d3a89fb9415458fcb00b10f6",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle0.anm": "e473d35b08ddf6dff60fa529cd0bd60be6a4f65895fd42b0f065c29ed8b5b364",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle1.anm": "f582f6b10b0b5fd99b39cc1e006f4941558da7dd7d6a86f7193de83b8748cb03",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle2.anm": "5fd64b87ec4632e6e837f1f6796ea20ca9030d8c58514e94babe082a604eb7f3",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMelee.anm": "37106a9dfdd8ae47b1c4aded47874c268a2b57ffa4dd68e4d571bfd78a3f9ba9",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMeleeDefense.anm": "d910cb1f5c7c8d71ba3fd5bf75c50a309473eaba00a09105d1d9aa19c2ab97ac",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMove.anm": "92b406f4d5749b21413ee98e25820b8193b86808787a6f6eadb57c9f7dc5b6bd",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMoveBegin.anm": "38839c7ae4f4817993f2e5d8cf49955c21e37d69c7f8f117abda3d9304c350ca",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMoveEnd.anm": "d8622132e7f8000930cf765a4f92d0bbc755082ff1b9d2c3358d6bfa0e69d14c",
-    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanShout.anm": "98cda823d7b18047508dc09c8b272b39ec0db248ac746841b9a2e782419b38fb",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanAttack.anm": "4a851643466eca8a8aa4bca310677c98845ad4a95b986a854c51bcfb0a81f065",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanCharge.anm": "c097fbec7e9686074f24ad2b27c66d6df6ba1264faba0bbbd08f6612ac1ea56a",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanChargeDefense.anm": "0449bc98608c4090a545bb5a60319a38a3972d0c21fe84fbba01b6e6d56512e3",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanDie.anm": "3dbbf556c952944f54792a93b9ea728542b144bdcdf47543ff2c531dcb3e7bd3",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanGrenade.anm": "453e4e9bd20d9dfa4ade124a5bf4cb6f14dc84d1730650706eecf4df4ee63bca",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle0.anm": "39f18f918dc5eeb0c97091fc8bf383e8476ef499be355715b12574519bbadfc5",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle1.anm": "91ab7a276d0294035a84838d3fb26de8739d67bf17b94aa4be62f30a7a6cb282",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanIdle2.anm": "82858e833039cdbad42ca57f511f68ec16bb69bff88116d0a1f31d27f74cbf1f",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMelee.anm": "f50dfd3af0b7fcbcff23c8dc35fb0f76541711528dd715d3835a82c012c3c668",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMeleeDefense.anm": "790ce6273db5bf00255d0c49852f3f87e89134ba853e89e39bcdcd278f24c923",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMove.anm": "275eac342e3ea78f70bbcc853c3066b85ef0984ef8ce76240895a0efc1d8cbf0",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMoveBegin.anm": "3a02016e395306866f9d94190682ea24d53c1d0ccc7e023c6df6fc18108fac25",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanMoveEnd.anm": "202c78f52d44df077fd316eada0b5786981dac0c485635d8d79e5385a0755765",
+    "Video/Animations/Units/Foundry/ImperialOfficerGuardsmanShout.anm": "ee18944a9d0516922fa99018074f8fba73838ca488105ab88f957bbc53fe4cfd",
     "Video/Materials/Units/Foundry/ImperialOfficerGuardsman.xml": "31471a54555fde8b95084a0725041c1b5eec75aa9accf0b25013da7b1e17beac",
-    "Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh": "1d354977f3812808eabd9d0a4cd33bd99cbfb06d0dc741401fef2aa9a74a0cad",
+    "Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh": "fd668ff2b34f443f220d8e70da84b63b9686be502d1c0a6db1d8b7c699be8e4d",
     "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanDiffuse.dds": "5f3f1e8ec1c741604b84eaba86e4fd5683ff026ea3949cc3ee05901dd4765bce",
     "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanNormal.dds": "095efeec51b076f74024c25e458e2bc5cca5bacad3a71e2ac031ab90fb9164e8",
     "Video/Textures/Units/Foundry/ImperialOfficerGuardsmanSIC.dds": "4df66b3b90e1a22c0feee947101a12bb823d12677a483e3bbb3abef29c0e9e6c",
@@ -51,22 +51,22 @@
       ],
       "anchor_bind": [
         [
-          -0.2023138552904129,
-          0.412045955657959,
-          -0.029782794415950775,
-          10.410654067993164
+          0.0997384786605835,
+          0.4486841559410095,
+          -0.01829775981605053,
+          9.473292350769043
         ],
         [
-          0.26260092854499817,
-          0.15386688709259033,
-          0.3449138402938843,
-          -5.164046287536621
+          0.44453030824661255,
+          -0.09599635750055313,
+          0.06911952048540115,
+          -6.028967380523682
         ],
         [
-          0.31891945004463196,
-          0.13469554483890533,
-          -0.3028983175754547,
-          38.38328552246094
+          0.06360065937042236,
+          -0.03266912326216698,
+          -0.4544091820716858,
+          40.257774353027344
         ],
         [
           0.0,
@@ -79,17 +79,12 @@
       "native_model_unchanged": true,
       "bone": "OfficerPistolGrip",
       "rest_hand_grip": [
-        8.918105125427246,
-        -3.7554688453674316,
-        39.59049606323242
+        9.2053804397583,
+        -4.0047430992126465,
+        40.66959762573242
       ],
       "uniform_scale": 0.46,
-      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded",
-      "grip_adjustment": [
-        0.0,
-        0.6,
-        0.0
-      ]
+      "source_anchor": "Measured native weapon handle fitted between thumb and first finger bases; previous V3 anchor discarded"
     },
     "sword": {
       "mesh": "Weapons/SpaceMarines/Chainsword",
@@ -228,11 +223,11 @@
     }
   },
   "native_clips": 14,
-  "native_poses_checked": 4118,
-  "source_sha256": "4e905ab91fdaf113e7493e02c2b9b9b233dd6fb7cbbc39d607eb34e91fdc8a5f",
-  "review_sha256": "bc40fe7201e83e50cb6535164f103dcdd4c01ab9e56e32128d2a86481b471468",
+  "native_poses_checked": 6342,
+  "source_sha256": "4c9931cc987ac3d88a87f43154b0ffaada8787032ad865b74399fb227dca1937",
+  "review_sha256": "98cb5c1e8eaf2d48df3f21d9a9f76462cff88b88e96cefb645cd946e557d4869",
   "archive": "game-ready/Imperial-Guardsman-Officer.zip",
-  "archive_sha256": "0da426b946db9a6a27c4f4fb5bfa8c188eae571d28431911ea089ce3a9224e17",
+  "archive_sha256": "497ffc8c11fe94bb44f2555b545be33294ecea13dbdc188b35fe9a969f2f0f78",
   "installed": false,
   "published": false,
   "live_engine_verified": false

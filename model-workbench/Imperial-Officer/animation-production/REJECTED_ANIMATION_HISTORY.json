@@ -1,0 +1,7 @@
+{
+  "status": "rejected by user",
+  "commit": "c50edeb4df733ba42e5170e5e56a7fb5ea17d1c4",
+  "reason": "Arms twist and deform like S curves in movement and firing. Prior length, collision and texture checks did not establish anatomical motion quality.",
+  "body_geometry_and_textures_acceptance_not_revoked": true,
+  "replacement_status": "Replaced locally by anatomical arm correction; user animation approval remains pending"
+}

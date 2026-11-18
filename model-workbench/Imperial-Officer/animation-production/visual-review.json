@@ -2,129 +2,141 @@
   "status": "assistant visual review passed for local native export",
   "user_animation_approval": false,
   "live_engine_verified": false,
-  "mesh_sha256": "1d354977f3812808eabd9d0a4cd33bd99cbfb06d0dc741401fef2aa9a74a0cad",
-  "animation_source_sha256": "4e905ab91fdaf113e7493e02c2b9b9b233dd6fb7cbbc39d607eb34e91fdc8a5f",
+  "supersedes_rejected_animation_commit": "c50edeb4df733ba42e5170e5e56a7fb5ea17d1c4",
+  "mesh_sha256": "fd668ff2b34f443f220d8e70da84b63b9686be502d1c0a6db1d8b7c699be8e4d",
+  "animation_source_sha256": "4c9931cc987ac3d88a87f43154b0ffaada8787032ad865b74399fb227dca1937",
+  "native_review_blend_sha256": "98cb5c1e8eaf2d48df3f21d9a9f76462cff88b88e96cefb645cd946e557d4869",
   "native_clips": {
-    "Idle0": "e473d35b08ddf6dff60fa529cd0bd60be6a4f65895fd42b0f065c29ed8b5b364",
-    "Idle1": "f582f6b10b0b5fd99b39cc1e006f4941558da7dd7d6a86f7193de83b8748cb03",
-    "Idle2": "5fd64b87ec4632e6e837f1f6796ea20ca9030d8c58514e94babe082a604eb7f3",
-    "Move": "92b406f4d5749b21413ee98e25820b8193b86808787a6f6eadb57c9f7dc5b6bd",
-    "MoveBegin": "38839c7ae4f4817993f2e5d8cf49955c21e37d69c7f8f117abda3d9304c350ca",
-    "MoveEnd": "d8622132e7f8000930cf765a4f92d0bbc755082ff1b9d2c3358d6bfa0e69d14c",
-    "Attack": "1491c8baea8d25d75f856c937531f3ee87d80ed0ee937ce612aab331b6e78d5e",
-    "Melee": "37106a9dfdd8ae47b1c4aded47874c268a2b57ffa4dd68e4d571bfd78a3f9ba9",
-    "MeleeDefense": "d910cb1f5c7c8d71ba3fd5bf75c50a309473eaba00a09105d1d9aa19c2ab97ac",
-    "Charge": "cc57e9948e8f3fd767ab11ecc621b0b6615b71f3c39dcf95b3cf88d59f275836",
-    "ChargeDefense": "fac4baf04c34905d33cfc9f44a82e9d839747c90db1d63ecd6fce0d3df82f8b2",
-    "Grenade": "6d8e1d3db378bd348f403c65faefa82bbe564c74d3a89fb9415458fcb00b10f6",
-    "Shout": "98cda823d7b18047508dc09c8b272b39ec0db248ac746841b9a2e782419b38fb",
-    "Die": "51ce052ac453b5f61cd15b76137e68c9949971cc8aee16ee8e0575652ac5fe9b"
+    "Idle0": "39f18f918dc5eeb0c97091fc8bf383e8476ef499be355715b12574519bbadfc5",
+    "Idle1": "91ab7a276d0294035a84838d3fb26de8739d67bf17b94aa4be62f30a7a6cb282",
+    "Idle2": "82858e833039cdbad42ca57f511f68ec16bb69bff88116d0a1f31d27f74cbf1f",
+    "Move": "275eac342e3ea78f70bbcc853c3066b85ef0984ef8ce76240895a0efc1d8cbf0",
+    "MoveBegin": "3a02016e395306866f9d94190682ea24d53c1d0ccc7e023c6df6fc18108fac25",
+    "MoveEnd": "202c78f52d44df077fd316eada0b5786981dac0c485635d8d79e5385a0755765",
+    "Attack": "4a851643466eca8a8aa4bca310677c98845ad4a95b986a854c51bcfb0a81f065",
+    "Melee": "f50dfd3af0b7fcbcff23c8dc35fb0f76541711528dd715d3835a82c012c3c668",
+    "MeleeDefense": "790ce6273db5bf00255d0c49852f3f87e89134ba853e89e39bcdcd278f24c923",
+    "Charge": "c097fbec7e9686074f24ad2b27c66d6df6ba1264faba0bbbd08f6612ac1ea56a",
+    "ChargeDefense": "0449bc98608c4090a545bb5a60319a38a3972d0c21fe84fbba01b6e6d56512e3",
+    "Grenade": "453e4e9bd20d9dfa4ade124a5bf4cb6f14dc84d1730650706eecf4df4ee63bca",
+    "Shout": "ee18944a9d0516922fa99018074f8fba73838ca488105ab88f957bbc53fe4cfd",
+    "Die": "3dbbf556c952944f54792a93b9ea728542b144bdcdf47543ff2c531dcb3e7bd3"
   },
   "renders": {
-    "command.png": "889293a35d11fe4185d1635b7799f38eef34ddf5bf51574a7c72e012dc280565",
-    "comparison-close.png": "e6b97339877474b6f02acc89992cdb823b15b2e4df68fbac8baf09dcac56420e",
-    "comparison-front.png": "80f5f6740e0ad182cea5c707dc93b4dba33c967ca6e54edc164baba6d485d146",
-    "comparison-gameplay.png": "4f3f7b8b72d45492a515791b2d14b66d11c4db2794560cd761de1cc99f4baea3",
-    "comparison-left.png": "f63af06309fde3e4bf29ba1ef74db65c81a97f9a532c9445d2b2383e7b2d2655",
-    "comparison-overview.png": "950e1fe46e13c94d84a891cde51f1adfc276c3b1357af7ebfd20c5252a32dbde",
-    "comparison-rear.png": "783183b68dd95dc9b83a5045b2b7aa9bd82ba442a05bed2b2a53df8e4237619c",
-    "comparison-right.png": "ff0a8fe447ceffcaa7dae63c48714a213d7f41ac5801f476a2c4e50f4d072a21",
-    "death-ground.png": "d1e97a72c0fd91f80eb9afb37d144c3dd59520d48b97879743c04317ec58f7d2",
-    "death.png": "f519d10783818bd0a773bba4fc7dd158ec7bb07a5739613a2672c534f3941b57",
-    "follow-through.png": "b10fb61302ebec80c96251013ad80a677e9a5e2396cc4e039c12431c6311bf23",
-    "grenade.png": "2067ab331221eeccf7d7f397f23747f9112d3ce438ef911bb56337c1fe002ab9",
-    "Motion-Review-Poses.png": "3fd2ad7ffb765d4398b932c083308672fb9fc98adb8f8a18f690e027d4c022c4",
-    "parry.png": "cfa6218b0cca4daddc17e7143a18ff58f1975f13d8f3f607c8382d6a52901f79",
-    "pistol-grip.png": "b5b947b21ed0afcd0bbaa15acd80a53db9958b3e32f38e48b13860b97632b1b0",
-    "pistol-upright.png": "3dbb237181a7a168c007a4f8e4fc7a0ca9950f1b186d54b94417dbcf2e4b0ddc",
-    "pistol.png": "9a0833fb8005d612f66b41974029409154a4710bb93bce555d205c907d3386ea",
-    "ready.png": "f9d487e1efeb831b8b608fab2e9b2c1f0c1b9da5ee247231e850ee6dd8f49204",
-    "sword-strike.png": "bb6efeb8d059dc9198e9cc3fa223e11c0175c7ac32b7343f7a22547e2916a5a6",
-    "walk.png": "850b0944751b1c440740eb9231ec3ec9607a552fd23bb1614347ab89866356df",
-    "wind-up.png": "046eb819ca38dab6cdcd1552c18759c38e0fe18f9c32c3c448f44dbc5a1b6ca1"
+    "Attack-Motion-Sequence.png": "896cc151fa8ce34e88a1db19b497ca388941d94f1ada9298e744e46b14baca59",
+    "charge-defense.png": "5f5a0f12bda05b74803b86d15f9acbca9486d09b85d897b828863a767e74bd04",
+    "charge.png": "0a15e8f58fdb09b851aea2060ba2d88ae0d2acdf88d1a2fffee0cd87e34b0704",
+    "command.png": "4680e6eba14bc821b75e2e316ba75caa4ad679862d265b4a2f4ec00d724d483a",
+    "comparison-close.png": "8f7047ca16c2bf7178d866dcea0631fe88d6334a4d6da06dd82b410ae501c310",
+    "comparison-front.png": "9538894f3f5b02d15bbce774f4d75303aecfb2359e979388ce6743a92ad66bda",
+    "comparison-gameplay.png": "20375cbb5c50a2ebb1916c30e12ede41f5aad64d3930c5b5461a381af73e220c",
+    "comparison-left.png": "66497586651fc3547ae919072561b0642b50a4832e84bc5fa758e42c80205ecd",
+    "comparison-overview.png": "2c410333e06861c6a6376cb3f2b757f86a97715f2e6bfb7e494a20d13e19df27",
+    "comparison-rear.png": "e23bdd5af23c74f561ea826ee084c26fa6a75aaf63dfbfe11f945bb63d400b67",
+    "comparison-right.png": "452e6240d626d73fbbcc28f206cea647b764474b1f8799a12a4168c8f9afd8f9",
+    "death-ground.png": "605dcce4bc7fe9278406170603f13a1be3762fc3b7cee6c056963fd7b679d541",
+    "death.png": "8888c5b112b4400022d46b61da62fa35ec381d6a30a873628d2cedd90f57d1bc",
+    "firing-profile.png": "17d40ee2e91a43688e82bc5750d1c29acf8220b07d7be3bb2d12d27802019674",
+    "follow-through.png": "a585f60f8e0e63f455ad82291ffb2333c35a30494655cccf1bd35ed9843725a4",
+    "grenade-windup.png": "e63c4a8e3b58171bbe578bfef0585664ed5642ad47a7e423fc56f9d8f31a3616",
+    "grenade.png": "02f5012066ff747d7cdece8332573e953fb2219291871ba1d0310b3bb1fcdeaf",
+    "Motion-Review-Poses.png": "0f429dcab8e0df628702d4e8797f7e3b8fe0969b4951cb6f456f1d1fcc8431a9",
+    "Move-Motion-Sequence.png": "8302eef2c099f5b92fb20a01d93ec08b0ac7b3ed412ede8a935c9b51640b6704",
+    "parry.png": "3be318d6fe6e32c2c6a837f4e2c4a40c7fe5cb9a5d55a9eba89a4f9d176e41db",
+    "pistol-grip.png": "257e1c7bf4a2d76e28ed4256a90202bf10253c056787080916fb46e1d03c8e8d",
+    "pistol-upright.png": "a8c09d0186848c0a5ccca941923da5c54a3d8533900dee77a8bb6fafd50fa7e6",
+    "pistol.png": "28a6ece1575e7318235b84ee61e1c807db6f427a0777408ffd2115c279b3960f",
+    "ready.png": "62a1f03f793279f6f331352cd0e1824c93b21ea954933bd7c6151021d9681019",
+    "sword-strike.png": "061b5d58dbe98513a6176e2171694c48d2ada768b20c884bc303dc7fc06b6274",
+    "walk.png": "ff304db7f2ee2e12c7c5961f417ab221a7cc8e98899cc7112761337e71a6e668",
+    "wind-up.png": "f7391bed6626484627d72316a02f907dd8f23b10868bba5708805f4f8746d654"
   },
   "motion_previews": {
     "Idle0": {
-      "decoded_frames": 50,
+      "decoded_frames": 48,
       "duration_ms": 2500,
-      "native_clip_sha256": "e473d35b08ddf6dff60fa529cd0bd60be6a4f65895fd42b0f065c29ed8b5b364",
-      "gif_sha256": "5e68c7b6cee525364cfab9da2d739d9704c586d038e5eadb54c5b49700a0072c"
+      "native_clip_sha256": "39f18f918dc5eeb0c97091fc8bf383e8476ef499be355715b12574519bbadfc5",
+      "gif_sha256": "0b220f6aacd05631c264984ef3f09de44b2406a655d269120db997e68cf165f1"
     },
     "Move": {
       "decoded_frames": 13,
       "duration_ms": 650,
-      "native_clip_sha256": "92b406f4d5749b21413ee98e25820b8193b86808787a6f6eadb57c9f7dc5b6bd",
-      "gif_sha256": "dc9e6afaa9b29d1789b3f5db3c7aa3728bd3d0396657ff537cd6c2bbf5cf7476"
+      "native_clip_sha256": "275eac342e3ea78f70bbcc853c3066b85ef0984ef8ce76240895a0efc1d8cbf0",
+      "gif_sha256": "56a70933668f16432dab3f5d98e087b7f79eb4a7b69434626cbe983dc94ba478"
     },
     "Attack": {
-      "decoded_frames": 46,
+      "decoded_frames": 48,
       "duration_ms": 3000,
-      "native_clip_sha256": "1491c8baea8d25d75f856c937531f3ee87d80ed0ee937ce612aab331b6e78d5e",
-      "gif_sha256": "953fb61c34c8fe235fe9772f8fd12dec7f845b4de284051e222035e6e3ffbb91"
+      "native_clip_sha256": "4a851643466eca8a8aa4bca310677c98845ad4a95b986a854c51bcfb0a81f065",
+      "gif_sha256": "971c0f1b28fa3f24642721ec4cfc600909c158ba26bbc11b5adda5f296145aca"
     },
     "Melee": {
       "decoded_frames": 30,
       "duration_ms": 1500,
-      "native_clip_sha256": "37106a9dfdd8ae47b1c4aded47874c268a2b57ffa4dd68e4d571bfd78a3f9ba9",
-      "gif_sha256": "1d3de1eb7ce7c2d286e568b63d14e6ac8b6c9c89d9f55388b88af8077ab2800b"
+      "native_clip_sha256": "f50dfd3af0b7fcbcff23c8dc35fb0f76541711528dd715d3835a82c012c3c668",
+      "gif_sha256": "a72db1318599b011a04a887ab7bc42116f83e607f64d0c6a41e4aa2ca6e7eb04"
     },
     "MeleeDefense": {
       "decoded_frames": 22,
       "duration_ms": 1500,
-      "native_clip_sha256": "d910cb1f5c7c8d71ba3fd5bf75c50a309473eaba00a09105d1d9aa19c2ab97ac",
-      "gif_sha256": "0c2553a06f4fd2fcfbe0e10ee7e020ceb8f6b9d7c0c8936b7d7caf7a474de112"
+      "native_clip_sha256": "790ce6273db5bf00255d0c49852f3f87e89134ba853e89e39bcdcd278f24c923",
+      "gif_sha256": "57b7f9451867abbee84e3e73388df1aafb86678570209b4dd976f1c9d70ad28d"
     },
     "Charge": {
-      "decoded_frames": 30,
+      "decoded_frames": 20,
       "duration_ms": 1500,
-      "native_clip_sha256": "cc57e9948e8f3fd767ab11ecc621b0b6615b71f3c39dcf95b3cf88d59f275836",
-      "gif_sha256": "3cb62f2a2580f86f83997cf586c668e1039acd8466c7b2e7cd323465fd39a873"
+      "native_clip_sha256": "c097fbec7e9686074f24ad2b27c66d6df6ba1264faba0bbbd08f6612ac1ea56a",
+      "gif_sha256": "239db8cd476aebeeffbd7bb8ab6c7b75381203bd7e8dc055e88cc3e69a63bc7c"
     },
     "ChargeDefense": {
-      "decoded_frames": 30,
+      "decoded_frames": 20,
       "duration_ms": 1500,
-      "native_clip_sha256": "fac4baf04c34905d33cfc9f44a82e9d839747c90db1d63ecd6fce0d3df82f8b2",
-      "gif_sha256": "5be659bd38e1d75b1fc1a0ec40bdadcb4c869980f7d72c0e5778902da347d523"
+      "native_clip_sha256": "0449bc98608c4090a545bb5a60319a38a3972d0c21fe84fbba01b6e6d56512e3",
+      "gif_sha256": "8ff8561320a148368f93c969192565daac7a3114acb6191dfbdecbcc39120b8f"
     },
     "Grenade": {
-      "decoded_frames": 16,
+      "decoded_frames": 19,
       "duration_ms": 1150,
-      "native_clip_sha256": "6d8e1d3db378bd348f403c65faefa82bbe564c74d3a89fb9415458fcb00b10f6",
-      "gif_sha256": "1106192c9c2ae8583c662a4501ca439582c0c46c2e51e7c55ac61d4dab8758bf"
+      "native_clip_sha256": "453e4e9bd20d9dfa4ade124a5bf4cb6f14dc84d1730650706eecf4df4ee63bca",
+      "gif_sha256": "d18495654b30c9ac5008f78487e1349af25e19ab11b2da5d05f27ff8301a887f"
     },
     "Shout": {
-      "decoded_frames": 20,
+      "decoded_frames": 22,
       "duration_ms": 2000,
-      "native_clip_sha256": "98cda823d7b18047508dc09c8b272b39ec0db248ac746841b9a2e782419b38fb",
-      "gif_sha256": "ed4a38e88ee4ab9fce1a04d21c54180c88553ddc8b85469d3ba9ff9acf76db32"
+      "native_clip_sha256": "ee18944a9d0516922fa99018074f8fba73838ca488105ab88f957bbc53fe4cfd",
+      "gif_sha256": "3fc5aa70c7430153cda7cdceaa9f01361aa91b94d83bfb5456386a1715e4e474"
     },
     "Die": {
       "decoded_frames": 24,
       "duration_ms": 1200,
-      "native_clip_sha256": "51ce052ac453b5f61cd15b76137e68c9949971cc8aee16ee8e0575652ac5fe9b",
-      "gif_sha256": "c3e44cc8a7332e1d4adc7b389d8c103beba03d6db4a408450c04d7f8dc6c6df4"
+      "native_clip_sha256": "3dbbf556c952944f54792a93b9ea728542b144bdcdf47543ff2c531dcb3e7bd3",
+      "gif_sha256": "d41e9616a2e33fe5abe530833e309465a247827addd25604552437896ef89115"
     }
   },
-  "scores_out_of_5": {
-    "guardsman_scale_and_silhouette": 4,
-    "baseline_texture_density_and_masking": 4,
-    "weapon_orientation_and_grip": 4,
-    "motion_readability_and_recovery": 4,
-    "offline_rig_and_native_resource_contract": 5
-  },
+  "motion_contact_sheet_sha256": "6a847a66349765c339402e34da7807c627526ff6b76425c405143d36042129df",
+  "review_method": [
+    "Matching Guardsman comparison at front, sides, rear, gameplay distance and close inspection",
+    "All 13 rendered walk frames and 30 firing-sequence frames inspected in sequence sheets",
+    "Ten complete native performance previews rendered; representative phases inspected in the motion contact sheet",
+    "Raised sword, parry, throw wind-up, recovery and final death pose inspected at close range"
+  ],
   "findings": [
-    "Front, both profiles and rear retain the Guardsman body scale, upright silhouette and level of simplification. Cap, exposed head and officer uniform read separately at gameplay distance.",
-    "Matching close and gameplay views use the actual game Guardsman and the actual exported officer under shared lighting. Textures and neutral armor masking are preserved from the accepted body.",
-    "Pistol side and close views show the physical barrel above the grip; native recoil samples retain upright physical muzzle orientation. Existing laspistol and chainsword meshes/materials are reused.",
-    "Ready, walk, aim/recoil/recovery, sword anticipation/cut/follow-through, parry, charge/brace, throw, command and fall poses were inspected. Sleeve and knee spikes found during review were repaired with skin weights, preserving geometry and all original bind frames.",
-    "The final fall settles the spine and retains flat weapons beside the body; the back support gap is 0.02145 native units.",
-    "The model belongs to the same low-poly game asset set. Native and visual checks pass locally; no live-engine claim or new user approval is implied."
+    "Firing arm uses one elbow bend and a near-neutral wrist; pistol barrel remains upright",
+    "Forearm sleeve rings deform coherently without the previous cross-section twisting",
+    "Walking uses the stock Guardsman gait; both armed hands follow the chest with small controlled motion",
+    "Sword grip stays near the guard with the cutting edge and bow underneath in ready stance",
+    "Both accepted hands remain rigid, with unchanged geometry and UVs",
+    "Shoulder armor follows a limited hinge; cloth transitions smoothly into the torso",
+    "Full charge weapon silhouettes fit the revised motion-preview framing",
+    "Death back support gap is 0.002 native units"
   ],
-  "limitations": [
-    "Live Gladius playback and combat are pending under the instruction not to install.",
-    "The grenade action retains the original game held-weapon behavior."
+  "baseline_body_triangles": 894,
+  "officer_body_triangles": 892,
+  "body_texture_resolution": [
+    512,
+    512
   ],
-  "source_attribution": "accepted-model/SOURCE_ATTRIBUTION.txt",
+  "geometry_and_maps_preserved": true,
   "installed": false,
   "published": false
 }

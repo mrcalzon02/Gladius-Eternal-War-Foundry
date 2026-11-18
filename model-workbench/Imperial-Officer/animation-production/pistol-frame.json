@@ -19,5 +19,5 @@
     0.18078769743442535,
     -0.9728490114212036
   ],
-  "up_definition": "Actual handle grip toward actual muzzle, perpendicular to barrel; not the mesh +Z axis"
+  "up_definition": "Measured actual barrel and grip; socket fitted to the anatomical hand frame"
 }

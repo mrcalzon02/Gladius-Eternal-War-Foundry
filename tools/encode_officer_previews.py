@@ -10,8 +10,8 @@ def main():
     manifest=json.loads((A/'motion-frames.json').read_text());out=A/'motion-previews';out.mkdir(exist_ok=True);hashes={}
     for suffix,row in manifest.items():
         frames=[Image.open(A/row['folder']/f'{i:03}.png').convert('RGB') for i in range(row['frames'])]
-        palette=Image.new('RGB',(480,600*min(8,len(frames))));step=max(1,len(frames)//8)
-        for i,frame in enumerate(frames[::step][:8]):palette.paste(frame,(0,i*600))
+        fw,fh=frames[0].size;palette=Image.new('RGB',(fw,fh*min(8,len(frames))));step=max(1,len(frames)//8)
+        for i,frame in enumerate(frames[::step][:8]):palette.paste(frame,(0,i*fh))
         palette=palette.quantize(colors=192,method=Image.Quantize.MEDIANCUT);encoded=[f.quantize(palette=palette,dither=Image.Dither.NONE) for f in frames];path=out/(suffix+'.gif')
         encoded[0].save(path,save_all=True,append_images=encoded[1:],duration=row['frame_duration_ms'],loop=0 if suffix!='Die' else 1,optimize=False,disposal=2);hashes[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
         for f in frames:f.close()

@@ -109,8 +109,9 @@ See [the runtime model and validation](docs/PENAL_STANDARD_TROOPER.md).
 
 ## Imperial Guardsman officer
 
-The accepted 892-triangle Guardsman-based officer now occupies the existing
-Penal Legion Officer slot, with 512-square masked textures and 14 fitted native
-animations. The existing laspistol and chainsword are reused. See [asset and
-animation verification](docs/IMPERIAL_GUARDSMAN_OFFICER.md). Local native checks
-pass; live engine playback remains untested.
+The 892-triangle Guardsman-based officer occupies the existing Penal Legion
+Officer slot, with 512-square masked textures and 14 native animations. Arm
+motion uses guided elbows, physical wrist joints and coherent sleeve weights.
+The existing laspistol and chainsword are reused. See [asset and animation
+verification](docs/IMPERIAL_GUARDSMAN_OFFICER.md). Local native checks and rendered
+review are recorded; live engine playback remains untested.

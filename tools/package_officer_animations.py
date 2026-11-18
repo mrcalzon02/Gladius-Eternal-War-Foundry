@@ -1,6 +1,7 @@
 """Package the verified officer contribution; never install or publish it."""
 from pathlib import Path
 import json,hashlib,struct,zipfile,shutil
+from officer_asset_preservation import verify_preservation
 
 R=Path(__file__).resolve().parents[1];A=R/'model-workbench/Imperial-Officer/animation-production';O=R/'assets/imperial-officer-animated';D=O/'Data'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -13,14 +14,7 @@ def main():
     assert review['native_review_blend_sha256']==sha(A/'Officer-Native-Animation-Review.blend')
     assert review['mesh_sha256']==sha(D/'Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh')
     accepted=(A/'accepted-model/Data/Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh').read_bytes();final=(D/'Video/Meshes/Units/Foundry/ImperialOfficerGuardsman.msh').read_bytes()
-    at=8
-    for _ in range(final[7]):at=final.index(0,at)+65
-    at+=111;count=final[at];at+=1
-    for _ in range(count):at=final.index(0,at)+2
-    size=struct.unpack_from('<I',final,at)[0];at+=4
-    assert len(accepted)==len(final) and accepted[:at]==final[:at] and accepted[at+size*4:]==final[at+size*4:]
-    for i in range(size//20):
-        cursor=at+i*80;assert accepted[cursor:cursor+12]==final[cursor:cursor+12] and accepted[cursor+44:cursor+80]==final[cursor+44:cursor+80]
+    verify_preservation(accepted,final,build)
     for category in ['Video/Textures','Video/Materials']:
         for original in (A/'accepted-model/Data'/category).rglob('*'):
             if original.is_file():assert sha(original)==sha(D/original.relative_to(A/'accepted-model/Data'))
@@ -38,12 +32,17 @@ The original unit rules, stats, costs, abilities and weapon definitions remain.
 
 The original Guardsman body is 894 triangles; the officer is 892. Diffuse,
 Normal and SIC are each 512 x 512, legacy DXT5 DDS. Neutral gray/black armor uses
-the existing SIC blue player-color mask. Positions, topology, UVs, normals,
-tangents, materials, textures and all 28 original bind frames are preserved
-from the accepted model. Two existing weapon sockets remain appended.
+the existing SIC blue player-color mask. Topology, UVs, materials, textures and all 28 original bind frames are preserved
+from the accepted model. All positions, normals and tangents are unchanged,
+including the accepted hands and their UVs. Two weapon sockets remain appended; the pistol
+socket is fitted to the actual palm and thumb directions.
 
-Animation preparation refines sleeve, collar, knee and waist weights to remove
-finger-driven cloth spikes and hard joint seams. This adds no triangles.
+Arm motion uses two-bone IK with explicit elbow guides and the physical cuff as
+the wrist joint. Wrist bend is limited to 16 degrees. Each forearm cross-section
+follows one bone, with blends confined to the elbow and wrist. Both hands remain
+rigid. Shoulder armor follows a bounded hinge from the chest without inheriting wrist
+roll. Armhole weights follow the mesh connectivity, with smooth transitions to
+the native torso. Collar, knee and waist weights are also refined. This adds no triangles.
 The connected 98-triangle anatomical chainsword hand and its dedicated UVs remain.
 
 Weapons reuse the original game files, including their materials:
@@ -68,12 +67,13 @@ the cutting edge and bow underneath, gripped near the guard.
     for suffix,row in build['clips'].items():text+=f"| {suffix} | {row['duration']:.3f} | {row['description']} |\n"
     text+='''
 Ready, aiming, recoil, sword cuts, parries, command and throwing motions are
-authored for this officer. The existing game gait, charge and fall provide the
-movement foundation and retain their attribution. This is an adaptation of
+authored for this officer. The actual Guardsman gait and the existing game fall provide the
+movement foundation and retain their attribution. Charge is authored around the
+new ready pose. This is an adaptation of
 third-party game assets, not a claim of entirely original animation ownership.
 
 Seven pistol recoil pulses match the existing 0.35-second firing interval,
-starting at 0.40 seconds. Sword impact occurs at 0.52 seconds inside the configured
+starting at 0.40 seconds. Sword impact occurs at 0.58 seconds inside the configured
 0.30–0.70 swing window. Grenade release stays at the existing 0.90-second event.
 The grenade action retains the game's existing held-weapon behavior.
 
@@ -86,8 +86,11 @@ MSH/DDS/XML/ANM export. `accepted-model/` preserves the accepted model and motio
 references needed to reproduce this contribution without the rejected studies.
 
 `animation-verification.json` records every native sample plus intermediate
-samples through the fastest attacks, grip tracking, physical muzzle direction,
-limb lengths, ground contact, loop closure, mesh stretching and weapon clearance.
+half-frame samples through all actions, physical wrist angles, arm angular
+velocity, coherent forearm rings, rigid hand deformation, grip tracking, physical
+muzzle direction, limb lengths, ground contact, loop closure, mesh stretching and
+weapon clearance. Passing numerical checks does not substitute for visual review
+or imply user acceptance of the animation.
 Rendered stills and motion previews come from the native export.
 
 This is local repository integration. No files are installed into Gladius and

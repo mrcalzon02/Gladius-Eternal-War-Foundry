@@ -6,12 +6,17 @@ The original unit rules, stats, costs, abilities and weapon definitions remain.
 
 The original Guardsman body is 894 triangles; the officer is 892. Diffuse,
 Normal and SIC are each 512 x 512, legacy DXT5 DDS. Neutral gray/black armor uses
-the existing SIC blue player-color mask. Positions, topology, UVs, normals,
-tangents, materials, textures and all 28 original bind frames are preserved
-from the accepted model. Two existing weapon sockets remain appended.
+the existing SIC blue player-color mask. Topology, UVs, materials, textures and all 28 original bind frames are preserved
+from the accepted model. All positions, normals and tangents are unchanged,
+including the accepted hands and their UVs. Two weapon sockets remain appended; the pistol
+socket is fitted to the actual palm and thumb directions.
 
-Animation preparation refines sleeve, collar, knee and waist weights to remove
-finger-driven cloth spikes and hard joint seams. This adds no triangles.
+Arm motion uses two-bone IK with explicit elbow guides and the physical cuff as
+the wrist joint. Wrist bend is limited to 16 degrees. Each forearm cross-section
+follows one bone, with blends confined to the elbow and wrist. Both hands remain
+rigid. Shoulder armor follows a bounded hinge from the chest without inheriting wrist
+roll. Armhole weights follow the mesh connectivity, with smooth transitions to
+the native torso. Collar, knee and waist weights are also refined. This adds no triangles.
 The connected 98-triangle anatomical chainsword hand and its dedicated UVs remain.
 
 Weapons reuse the original game files, including their materials:
@@ -32,28 +37,29 @@ the cutting edge and bow underneath, gripped near the guard.
 
 | Native suffix | Seconds | Performance |
 |---|---:|---|
-| Idle0 | 2.500 | Forward-ready breathing loop |
-| Idle1 | 2.500 | Ready stance, scan left and return |
-| Idle2 | 2.500 | Ready stance, scan right and return |
-| Move | 0.667 | Native officer gait with fitted forward-ready arms |
-| MoveBegin | 0.333 | Ready-to-walk transition |
-| MoveEnd | 0.333 | Walk-to-ready transition |
-| Attack | 3.000 | One-handed laspistol aim, seven timed recoil pulses, recovery |
-| Melee | 1.500 | Chainsword anticipation, overhead cut, follow-through, recovery |
-| MeleeDefense | 1.500 | Raised chainsword parry and return |
-| Charge | 1.500 | Native charge stance with forward chainsword threat |
-| ChargeDefense | 1.500 | Native brace with raised chainsword guard |
-| Grenade | 1.167 | Overhand grenade throw with timed forward release and recovery |
-| Shout | 2.000 | Officer command gesture and recovery |
-| Die | 1.200 | Native officer fall retimed to 1.2 seconds |
+| Idle0 | 2.500 | Natural ready breathing |
+| Idle1 | 2.500 | Ready scan left |
+| Idle2 | 2.500 | Ready scan right |
+| Move | 0.667 | Native Guardsman gait with chest-relative guided arms |
+| MoveBegin | 0.333 | Enter walk |
+| MoveEnd | 0.333 | Return to ready |
+| Attack | 3.000 | Straight-wrist pistol aim, recoil and recovery |
+| Melee | 1.500 | Guided chainsword overhead cut and recovery |
+| MeleeDefense | 1.500 | Natural chainsword parry |
+| Charge | 1.500 | Forward chainsword charge |
+| ChargeDefense | 1.500 | Raised chainsword brace |
+| Grenade | 1.167 | Guided overhand throw |
+| Shout | 2.000 | Officer command gesture |
+| Die | 1.200 | Supported fall with relaxed arms beside body |
 
 Ready, aiming, recoil, sword cuts, parries, command and throwing motions are
-authored for this officer. The existing game gait, charge and fall provide the
-movement foundation and retain their attribution. This is an adaptation of
+authored for this officer. The actual Guardsman gait and the existing game fall provide the
+movement foundation and retain their attribution. Charge is authored around the
+new ready pose. This is an adaptation of
 third-party game assets, not a claim of entirely original animation ownership.
 
 Seven pistol recoil pulses match the existing 0.35-second firing interval,
-starting at 0.40 seconds. Sword impact occurs at 0.52 seconds inside the configured
+starting at 0.40 seconds. Sword impact occurs at 0.58 seconds inside the configured
 0.30–0.70 swing window. Grenade release stays at the existing 0.90-second event.
 The grenade action retains the game's existing held-weapon behavior.
 
@@ -66,8 +72,11 @@ MSH/DDS/XML/ANM export. `accepted-model/` preserves the accepted model and motio
 references needed to reproduce this contribution without the rejected studies.
 
 `animation-verification.json` records every native sample plus intermediate
-samples through the fastest attacks, grip tracking, physical muzzle direction,
-limb lengths, ground contact, loop closure, mesh stretching and weapon clearance.
+half-frame samples through all actions, physical wrist angles, arm angular
+velocity, coherent forearm rings, rigid hand deformation, grip tracking, physical
+muzzle direction, limb lengths, ground contact, loop closure, mesh stretching and
+weapon clearance. Passing numerical checks does not substitute for visual review
+or imply user acceptance of the animation.
 Rendered stills and motion previews come from the native export.
 
 This is local repository integration. No files are installed into Gladius and

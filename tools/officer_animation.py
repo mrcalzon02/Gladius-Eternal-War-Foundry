@@ -39,20 +39,6 @@ def rotate_pose(pose,names,pivot,rotation,translation=Vector((0,0,0))):
 def frame(forward,up):
     f=Vector(forward).normalized();z=Vector(up);z=(z-f*f.dot(z)).normalized();y=z.cross(f).normalized();return Matrix((f,y,z)).transposed()
 
-def solve_arm(pose,side,target,hint,hand_rotation,pad_follow=.22):
-    upper=side+'UpperArmBone';lower=side+'LowerArmBone';hand=side+'HandBone';shoulder='LeftSoulderBone' if side=='Left' else 'RightShoulderBone'
-    s,e,w=(pose[n][0].copy() for n in (upper,lower,hand));l1=(e-s).length;l2=(w-e).length;requested=Vector(target);v=requested-s
-    distance=min(max(v.length,abs(l1-l2)+.025),l1+l2-.025);axis=v.normalized();target=s+axis*distance
-    pole=Vector(hint)-s;pole-=axis*pole.dot(axis)
-    if pole.length<1e-5:pole=axis.orthogonal()
-    along=(l1*l1-l2*l2+distance*distance)/(2*distance);height=math.sqrt(max(0,l1*l1-along*along));elbow=s+axis*along+pole.normalized()*height
-    du=(e-s).rotation_difference(elbow-s);dl=(w-e).rotation_difference(target-elbow);dh=Quaternion(hand_rotation)@pose[hand][1].inverted()
-    pose[upper]=[s,du@pose[upper][1]];pose[lower]=[elbow,dl@pose[lower][1]]
-    descendants=[n for n in pose if n.startswith(side) and any(k in n for k in ('HandBone','FingerBone','ThumbBone'))]
-    for n in descendants:pose[n]=[target+dh@(pose[n][0]-w),dh@pose[n][1]]
-    pose[shoulder][1]=Quaternion().slerp(du,pad_follow)@pose[shoulder][1]
-    return max(abs((elbow-s).length-l1),abs((target-elbow).length-l2)),(target-requested).length
-
 def solve_leg(pose,side,target,hint,rest):
     hip=side+'HipBone';shin=side+'ShinBone';foot=side+'FootBone';s=pose[hip][0].copy()
     l1=(rest[shin]-rest[hip]).length;l2=(rest[foot]-rest[shin]).length
@@ -64,25 +50,6 @@ def solve_leg(pose,side,target,hint,rest):
     along=(l1*l1-l2*l2+distance*distance)/(2*distance);height=math.sqrt(max(0,l1*l1-along*along));knee=s+axis*along+pole.normalized()*height
     pose[hip]=[s,(e-s).rotation_difference(knee-s)@pose[hip][1]];pose[shin]=[knee,(w-e).rotation_difference(target-knee)@pose[shin][1]];pose[foot][0]=target
     return max(abs((knee-s).length-l1),abs((target-knee).length-l2))
-
-def solve_armed_pose(pose,side,target,hand_rotation,rest,reference):
-    """Move a held weapon through shoulder/elbow, preserving a neutral wrist.
-
-    Rotating the fist independently of the forearm folded the coarse sleeve
-    through the hilt. Keeping their accepted relative frame is also the proper
-    load path for a heavy chainsword and a stable one-handed pistol grip.
-    """
-    upper=side+'UpperArmBone';lower=side+'LowerArmBone';hand=side+'HandBone';shoulder='LeftSoulderBone' if side=='Left' else 'RightShoulderBone'
-    s=pose[upper][0].copy();l1=(rest[lower]-rest[upper]).length;span=rest[hand]-rest[lower];q=Quaternion(hand_rotation).normalized()
-    delta=q@reference[hand][1].inverted();lower_q=delta@reference[lower][1];forearm=lower_q@span;desired_elbow=Vector(target)-forearm
-    direction=desired_elbow-s
-    if direction.length<1e-6:direction=pose[upper][1]@(rest[lower]-rest[upper])
-    elbow=s+direction.normalized()*l1;wrist=elbow+forearm
-    old_axis=pose[upper][1]@(rest[lower]-rest[upper]);du=old_axis.rotation_difference(elbow-s);pose[upper]=[s,du@pose[upper][1]];pose[lower]=[elbow,lower_q]
-    for n in pose:
-        if n.startswith(side) and any(k in n for k in ('HandBone','FingerBone','ThumbBone')):pose[n]=[wrist+delta@(reference[n][0]-reference[hand][0]),delta@reference[n][1]]
-    pose[shoulder][1]=Quaternion().slerp(du,.10)@pose[shoulder][1]
-    return max(abs((elbow-s).length-l1),abs((wrist-elbow).length-span.length)),(wrist-Vector(target)).length
 
 def write_clip(path,poses,rest,binds,attachments,names,fps):
     tracks={n:[] for n in names};previous={}
