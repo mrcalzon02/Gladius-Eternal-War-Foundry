@@ -68,11 +68,11 @@ checks pass; live Gladius combat verification is pending.
 
 ## Grot replacement
 
-The accepted Grot model and fitted animations replace the miniature Ork model
-in the existing Ork and neutral Grot definitions. Stats and construction behavior
-are preserved. See [Grot integration notes](docs/GROT_REPLACEMENT.md) and
-[editable source](model-workbench/Grot-Sneak/README.md). Native asset checks pass;
-live Gladius combat verification remains pending.
+The Ork and neutral Grotz and Grotz Kamando each use a Mek, a gunner, and a
+choppa fighter in one three-figure mesh. They retain their starting health and
+full-strength weapon counts. The trio takes casualties as one engine member.
+[Integration and balance notes](docs/GROT_REPLACEMENT.md) ·
+[Editable trio and native validation](model-workbench/Grot-Mob/Trio/).
 
 ## Ripper model
 

@@ -1,65 +1,88 @@
 {
-  "base_commit": "d92ad20c07e07998e3bd1ff80c796497d2a2340b",
+  "base_commit": "ab852208af2207442946340794ac53aae7795b57",
   "mod": "3038342810",
   "units": {
-    "3038342810/Data/World/Units/Orks/Grotz.xml": {
-      "previous_sha256": "5b94d0c4ac79fd9b1f89bcf5c354368d589fdeb62d14b7d47f35be8276e59ed7",
-      "gameplay_signature": "1645ade17ed8fb582759a95c8e0b102b44b3f0eb9ef00afab48eac01d327c265",
-      "stats_traits_group_and_actions_preserved": false,
-      "pre_integration_gameplay_signature": "5fe5becadfba7aec40682e33d3432c7f679dbdd57d9d8e2b438bed69526c403b",
-      "stats_traits_group_preserved": true,
-      "construction_actions_integrated_from_enabled_v3_pilot": true,
-      "unsupported_stockpile_guards_removed": true
-    },
-    "3038342810/Data/World/Units/Orks/GrotzKamando.xml": {
-      "previous_sha256": "ebd6f6bbb07cf486760e51a6c28d739042f5db3f28350608aa959533cde80891",
-      "gameplay_signature": "b76720ee073f7d4f938761769a9c9ff6636c78fafb95d68cb289d7de949f9dd5",
-      "stats_traits_group_and_actions_preserved": true
-    },
     "3038342810/Data/World/Units/Neutral/Grotz.xml": {
-      "previous_sha256": "5b94d0c4ac79fd9b1f89bcf5c354368d589fdeb62d14b7d47f35be8276e59ed7",
-      "gameplay_signature": "5fe5becadfba7aec40682e33d3432c7f679dbdd57d9d8e2b438bed69526c403b",
-      "stats_traits_group_and_actions_preserved": true
+      "group": {
+        "size": "6",
+        "rowSize": "4",
+        "memberDeltaX": "70",
+        "memberDeltaY": "64"
+      },
+      "hp_per_member": "1.0",
+      "prior_gameplay_signature": "5fe5becadfba7aec40682e33d3432c7f679dbdd57d9d8e2b438bed69526c403b",
+      "gameplay_signature": "f56d4b7456eb93c6a17c8f57d14d3b50aa80b0f003aa867c46724ad1516fff01"
     },
     "3038342810/Data/World/Units/Neutral/GrotzKamando.xml": {
-      "previous_sha256": "ebd6f6bbb07cf486760e51a6c28d739042f5db3f28350608aa959533cde80891",
-      "gameplay_signature": "b76720ee073f7d4f938761769a9c9ff6636c78fafb95d68cb289d7de949f9dd5",
-      "stats_traits_group_and_actions_preserved": true
+      "group": {
+        "size": "3",
+        "rowSize": "2",
+        "memberDeltaX": "70",
+        "memberDeltaY": "64"
+      },
+      "hp_per_member": "2.0",
+      "prior_gameplay_signature": "b76720ee073f7d4f938761769a9c9ff6636c78fafb95d68cb289d7de949f9dd5",
+      "gameplay_signature": "6de24a8330fdb5679b9e24c3b221cc6a09cfebc17498dbf9723ed9744239e19f"
+    },
+    "3038342810/Data/World/Units/Orks/Grotz.xml": {
+      "group": {
+        "size": "6",
+        "rowSize": "4",
+        "memberDeltaX": "70",
+        "memberDeltaY": "64"
+      },
+      "hp_per_member": "1.0",
+      "prior_gameplay_signature": "1645ade17ed8fb582759a95c8e0b102b44b3f0eb9ef00afab48eac01d327c265",
+      "gameplay_signature": "0d7c6b28e034778954d46cee84f4666c201f1a9601c44307b93788865c4b45f0"
+    },
+    "3038342810/Data/World/Units/Orks/GrotzKamando.xml": {
+      "group": {
+        "size": "3",
+        "rowSize": "2",
+        "memberDeltaX": "70",
+        "memberDeltaY": "64"
+      },
+      "hp_per_member": "2.0",
+      "prior_gameplay_signature": "b76720ee073f7d4f938761769a9c9ff6636c78fafb95d68cb289d7de949f9dd5",
+      "gameplay_signature": "6de24a8330fdb5679b9e24c3b221cc6a09cfebc17498dbf9723ed9744239e19f"
     }
   },
-  "total_triangles": 1540,
-  "native_bones": 19,
+  "visual_figures_per_unit": 3,
+  "engine_members_per_unit": 1,
+  "total_triangles": 4486,
+  "native_bones": 51,
   "runtime_files": {
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementConstruct.anm": "f4f56a878ab5f21b1c4c8b2a58d1ac2426a67bd226989c5fb9aeb41839a8ead9",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementDie.anm": "04f7e9030d82d93d3d582fccd1608dff38c10bc1f1f7005271cc2b846e08091c",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementGrenade.anm": "2f526b22888d104fcba03d25015df4b8381fcd2b01350685edca0254b4c8fa79",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementHit.anm": "a81a975101d388408870392c073eeac76a3fb73b1473af6ac60dc422d45a686e",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementIdle.anm": "f4f56a878ab5f21b1c4c8b2a58d1ac2426a67bd226989c5fb9aeb41839a8ead9",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementMelee.anm": "8d253460c09f06ccd1fe4bfd891b48fcee8a8d97ba05fc7c9fd4ddf0a7f30709",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementMove.anm": "f2f3b1ce2d0fc31d41f2b14cf491f8191387d9e8c258e0d7516723e250eaf29f",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementMoveBegin.anm": "360592865f8725cd1b060646947f7de35541e0f1a4478204d7b0a820ede5770c",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementMoveEnd.anm": "ef6cb711c8ea77bdbadf59973265a58f5bbd8b8f61e99f930e3fb2139bfdffe7",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementRanged.anm": "2f526b22888d104fcba03d25015df4b8381fcd2b01350685edca0254b4c8fa79",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementRun.anm": "53d2c1c628196ef25c9f7a03c6b0b104edd3a783c997375227e788abd02a88a2",
-    "3038342810/Data/Video/Animations/Units/Foundry/GrotReplacementSnarl.anm": "7dc08ca95513cb01c2028fef3b62bfd105ec4ceabc75e9d874b518d3bd5f3f58",
-    "3038342810/Data/Video/Materials/Units/Foundry/GrotReplacement.xml": "2c612117c45cb6787c9b744b119bbceb8063375717e21564315fc28873c2d3e5",
-    "3038342810/Data/Video/Meshes/Units/Foundry/GrotReplacement.msh": "c7210bfc1c9bcf00fbfcb407e9fefa78c915aeef7b436f14383baeb463b3516c",
-    "3038342810/Data/Video/Meshes/Weapons/Foundry/GrotPistol.msh": "200b607bb7749327794548c7e356750724d9f1a2c138d276098005cd06a8751b",
-    "3038342810/Data/Video/Meshes/Weapons/Foundry/GrotShank.msh": "605470656a637d967e30d9a85955c2eeca965dc8ad8bafeea6cec7e71f0a3c2a",
-    "3038342810/Data/Video/Textures/Units/Foundry/GrotReplacementDiffuse.dds": "505f5db622f90497564bd617730d70b2e266244b1f1e5bc20be01289b4608b52",
-    "3038342810/Data/Video/Textures/Units/Foundry/GrotReplacementNormal.dds": "a58b7c369faa3b3d397059202f74eeb863bf46310187646f9747d6dcd2fe4601",
-    "3038342810/Data/Video/Textures/Units/Foundry/GrotReplacementSIC.dds": "11ffd6cd7467af9e1646b26dca124f9d21fac3559885cd4f6ff846b60c740233",
-    "3038342810/Data/World/Units/Orks/Grotz.xml": "449be3cd5a36c274992cf73bb6f3e9e376963f16b71d8be3aa335295595bde34",
-    "3038342810/Data/World/Units/Orks/GrotzKamando.xml": "766639b8ab4dbe621749191d933232048e0e2b977c07f520d8a07880f739181e",
-    "3038342810/Data/World/Units/Neutral/Grotz.xml": "d14bf218f094e93f68ddaf306718de6831db31477a29798f6b1b61bc01801621",
-    "3038342810/Data/World/Units/Neutral/GrotzKamando.xml": "766639b8ab4dbe621749191d933232048e0e2b977c07f520d8a07880f739181e"
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioConstruct.anm": "50399b5ecbbc5d0fc15c53275a2812b7ac22b8cf33de6e1090695a0d6aee1359",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioDie.anm": "738726046126b7440f40e8c0becac080610fb5348507a014a808f1353ed3264a",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioGrenade.anm": "de0d03eba5da6f2e96294858b6b4ed8e62aeb236ebe5f6ccd6902ba930ca7db4",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioHit.anm": "3eb0b94b52e71ad93f1c858158bc5f301620fae827d49d89cdca1328601be3a7",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioIdle.anm": "b019de5e0b2bd3cf33ad9145b9227acdc6028a047ca1914c91518da0cc0aa7dd",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioMelee.anm": "8de7608dc28c3fb1e166b2fb3649c7caf011c82bfd8bad3dd3d9bf99b884e680",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioMove.anm": "22b3bf1ee1f3f3b775e5806c928720199e9691cb5fcd2df913581730d36eb180",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioMoveBegin.anm": "0162c377e84b4cce1bce7a6fd0adb718adaa42d1c6e66988c7899934ae844d6e",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioMoveEnd.anm": "22d0215feac96b3a952dd7799556d74dc302cfe570b4b7185da993608442a0eb",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioRanged.anm": "3b4119e56604777e326fdaec5e4b279648e5053fce4817dcd81dbcf79fb4d207",
+    "3038342810/Data/Video/Animations/Units/Foundry/GrotTrioRun.anm": "64d6ebebbc346806ae089699493e10d25c6fa0917becb735f6e525484ca6bf3c",
+    "3038342810/Data/Video/Materials/Units/Foundry/GrotTrio.xml": "f438c0cc552b9c39d0228cbf3fd813e7c9ffde2e869ae53c8d4b747975791ab4",
+    "3038342810/Data/Video/Meshes/Units/Foundry/GrotTrio.msh": "d20a92ee0f7143893817517dcb680cec993e942458f12ff70b51ff8a3fd1f00f",
+    "3038342810/Data/Video/Meshes/Weapons/Foundry/GrotTrioChoppa.msh": "cb27a5e8ad669e1bf3219684dfb989c46da3a15a9a490cbe72159cc5d3f1a0d0",
+    "3038342810/Data/Video/Meshes/Weapons/Foundry/GrotTrioPistol.msh": "4164ff3b30e5764a370c4a3907c31774ae7d89ed488e89159689016b349aec8f",
+    "3038342810/Data/Video/Textures/Units/Foundry/GrotTrioDiffuse.dds": "5f24483b65b0d58020495842927e3df54531a303fb7e3f8e7c8593cdc4ee5446",
+    "3038342810/Data/Video/Textures/Units/Foundry/GrotTrioNormal.dds": "e707e32738f95a822241f1a0fc599d0bc697843b17aefe2a6ddf13b0c86391d6",
+    "3038342810/Data/Video/Textures/Units/Foundry/GrotTrioSIC.dds": "78a307869f57f730b1fa8d9acf35831d86f8f4574edd948a47d9841d05e91d58",
+    "3038342810/Data/World/Units/Neutral/Grotz.xml": "7a9184f5d5b3c3835e969166ac0ea33fe527afd7974941259ccf6403e6890af1",
+    "3038342810/Data/World/Units/Neutral/GrotzKamando.xml": "e03f3b662e918cadda53f33dd2e3bb4856cfffae19ecfbf6196a2441cf788ac5",
+    "3038342810/Data/World/Units/Orks/Grotz.xml": "9da926f57310449ffd44ec71b8ffc0024ab9c5bc868c41409802824760879387",
+    "3038342810/Data/World/Units/Orks/GrotzKamando.xml": "e03f3b662e918cadda53f33dd2e3bb4856cfffae19ecfbf6196a2441cf788ac5"
   },
   "editable_sources": {
-    "model-workbench/Grot-Sneak/Grot-Sneak.blend": "0b4ec5baba93f99fdf99f23fe196f27aa2faa31b85ad2277a33b800a6c3b79b0",
-    "model-workbench/Grot-Sneak/Grot-Animation-Work.blend": "c94ba0d4c2b504acc3b2820df0b50985b05be638befce861eb18885ea4917509",
-    "model-workbench/Grot-Sneak/Grot-Animated-review.glb": "bb506a10b845a24f45e01bc2580522c77604d5c7bda6c451fa56ac536c6c884d"
+    "model-workbench/Grot-Mob/Trio/Grot-Trio.blend": "cf1bd6e5d2b926965c9ce6e0957dcbbb82fbfc811dc3a48fe59cfc419c69cf1a",
+    "model-workbench/Grot-Mob/Trio/Grot-Trio.glb": "744a8fde9abd9dfb7cff375b2ef3b86aee52d961d938c08ede6310fdf2ed465c"
   },
-  "gameplay_preserved": true,
-  "private_references_excluded": true,
-  "runtime_hash_format": "SHA-256; XML line endings normalized to LF"
+  "native_verification": "model-workbench/Grot-Mob/Trio/native-validation.json",
+  "verification_files": {
+    "model-workbench/Grot-Mob/Trio/native-validation.json": "23e16318ac3135dc5d6599833865f764b64520566cf89054103d255039eadaa9",
+    "model-workbench/Grot-Mob/Trio/glb-validation.json": "a5527b7f24a537b4ab37ea5831b6d6439e3e4eec4dcc6e6b87c80fc9ea785c67"
+  },
+  "hash_format": "SHA-256; XML line endings normalized to LF"
 }

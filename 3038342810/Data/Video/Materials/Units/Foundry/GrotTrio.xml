@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<material>
+  <textures>
+    <texture name="Units/Foundry/GrotTrioDiffuse" />
+    <texture name="Units/Foundry/GrotTrioNormal" />
+    <texture name="Units/Foundry/GrotTrioSIC" />
+    <texture name="ShadowMapColor" />
+  </textures>
+</material>

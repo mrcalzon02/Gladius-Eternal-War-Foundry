@@ -1,0 +1,467 @@
+{
+  "source_sha256": "cf1bd6e5d2b926965c9ce6e0957dcbbb82fbfc811dc3a48fe59cfc419c69cf1a",
+  "glb_sha256": "744a8fde9abd9dfb7cff375b2ef3b86aee52d961d938c08ede6310fdf2ed465c",
+  "blender": "4.3.2",
+  "skins": 1,
+  "bones": 51,
+  "mesh_nodes": 104,
+  "mesh_nodes_per_role": {
+    "Mek": 34,
+    "Gunner": 37,
+    "Cutter": 33
+  },
+  "skinned_vertices": 6616,
+  "embedded_images": 3,
+  "clips": {
+    "Idle": {
+      "keys_frame_span": [
+        0,
+        48
+      ],
+      "duration_seconds": 2,
+      "max_geometry_difference_from_blend_units": 1.9868432751426406e-05,
+      "frames_compared_to_blend": [
+        1,
+        13,
+        25,
+        37,
+        49
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 0.7065702212646138,
+        "Gunner": 0.5492353432111204,
+        "Cutter": 0.7397696581084935
+      },
+      "loop_first_to_last_units": {
+        "Mek": 0.0,
+        "Gunner": 0.0,
+        "Cutter": 0.0
+      },
+      "range_of_lowest_world_z": [
+        -6.610323907807469e-06,
+        -6.610323907807469e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "MoveBegin": {
+      "keys_frame_span": [
+        0,
+        8
+      ],
+      "duration_seconds": 0.333333,
+      "max_geometry_difference_from_blend_units": 2.1855192629511575e-05,
+      "frames_compared_to_blend": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 4.087608323737856,
+        "Gunner": 5.408393570699983,
+        "Cutter": 1.645663126952365
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -5.656649591401219e-06,
+        -4.054800228914246e-08
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Move": {
+      "keys_frame_span": [
+        0,
+        24
+      ],
+      "duration_seconds": 1,
+      "max_geometry_difference_from_blend_units": 1.607295099495615e-05,
+      "frames_compared_to_blend": [
+        1,
+        7,
+        13,
+        19,
+        25
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 5.793796237758782,
+        "Gunner": 7.1504368288993225,
+        "Cutter": 7.4369081395854995
+      },
+      "loop_first_to_last_units": {
+        "Mek": 8.371853764571876e-06,
+        "Gunner": 5.415829034614824e-06,
+        "Cutter": 7.954038294607294e-06
+      },
+      "range_of_lowest_world_z": [
+        -7.537508281529881e-06,
+        -5.779464800070855e-07
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "MoveEnd": {
+      "keys_frame_span": [
+        0,
+        8
+      ],
+      "duration_seconds": 0.333333,
+      "max_geometry_difference_from_blend_units": 1.8014317198959577e-05,
+      "frames_compared_to_blend": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 4.087604299525136,
+        "Gunner": 5.4083955414165334,
+        "Cutter": 1.6456641024780456
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -5.656649591401219e-06,
+        2.6542693376541138e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Run": {
+      "keys_frame_span": [
+        0,
+        18
+      ],
+      "duration_seconds": 0.75,
+      "max_geometry_difference_from_blend_units": 2.02318926318735e-05,
+      "frames_compared_to_blend": [
+        1,
+        5,
+        10,
+        15,
+        19
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 8.172346733536434,
+        "Gunner": 8.013029164546513,
+        "Cutter": 7.983960264344929
+      },
+      "loop_first_to_last_units": {
+        "Mek": 7.0121007775558195e-06,
+        "Gunner": 5.9604644775390625e-06,
+        "Cutter": 8.543240007004221e-06
+      },
+      "range_of_lowest_world_z": [
+        -7.526005447289208e-06,
+        -2.2261019694269635e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Melee": {
+      "keys_frame_span": [
+        0,
+        40
+      ],
+      "duration_seconds": 1.666667,
+      "max_geometry_difference_from_blend_units": 2.9787207695997456e-05,
+      "frames_compared_to_blend": [
+        1,
+        11,
+        17,
+        18,
+        21,
+        31,
+        41
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 25.341860658003082,
+        "Gunner": 29.0507874115682,
+        "Cutter": 19.943874024226755
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -5.518995749298483e-06,
+        -2.683288812477258e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Ranged": {
+      "keys_frame_span": [
+        0,
+        48
+      ],
+      "duration_seconds": 2,
+      "max_geometry_difference_from_blend_units": 2.6846699486958e-05,
+      "frames_compared_to_blend": [
+        1,
+        13,
+        16,
+        17,
+        18,
+        23,
+        25,
+        29,
+        30,
+        37,
+        49
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 6.321837363125893,
+        "Gunner": 13.083467754230485,
+        "Cutter": 7.977571049008343
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -5.42910811418551e-06,
+        -2.2615183752350276e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Hit": {
+      "keys_frame_span": [
+        0,
+        24
+      ],
+      "duration_seconds": 1,
+      "max_geometry_difference_from_blend_units": 1.934833717272436e-05,
+      "frames_compared_to_blend": [
+        1,
+        7,
+        13,
+        19,
+        25
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 12.294699276449801,
+        "Gunner": 14.007885145259332,
+        "Cutter": 14.982909343952725
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -6.071209099900443e-06,
+        -2.3478355615225155e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Grenade": {
+      "keys_frame_span": [
+        0,
+        40
+      ],
+      "duration_seconds": 1.666667,
+      "max_geometry_difference_from_blend_units": 1.743289729545907e-05,
+      "frames_compared_to_blend": [
+        1,
+        11,
+        21,
+        31,
+        41
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 7.331730438309802,
+        "Gunner": 15.500607445128324,
+        "Cutter": 6.780953508557802
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -6.942867003090214e-06,
+        -2.6264128791808616e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Construct": {
+      "keys_frame_span": [
+        0,
+        48
+      ],
+      "duration_seconds": 2,
+      "max_geometry_difference_from_blend_units": 1.832883978325974e-05,
+      "frames_compared_to_blend": [
+        1,
+        13,
+        25,
+        37,
+        49
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 23.29202997815018,
+        "Gunner": 8.999069243607519,
+        "Cutter": 10.368914487452912
+      },
+      "loop_first_to_last_units": {
+        "Mek": 2.0230487285229133e-06,
+        "Gunner": 0.0,
+        "Cutter": 3.932099938981686e-06
+      },
+      "range_of_lowest_world_z": [
+        -5.3144990488362964e-06,
+        -2.5554884359735297e-06
+      ],
+      "final_maximum_z_by_member": null
+    },
+    "Die": {
+      "keys_frame_span": [
+        0,
+        48
+      ],
+      "duration_seconds": 2,
+      "max_geometry_difference_from_blend_units": 2.0999357464095728e-05,
+      "frames_compared_to_blend": [
+        1,
+        13,
+        25,
+        37,
+        49
+      ],
+      "max_deformed_vertex_motion_units": {
+        "Mek": 37.620112101112056,
+        "Gunner": 35.81937690246777,
+        "Cutter": 29.77504092552831
+      },
+      "loop_first_to_last_units": null,
+      "range_of_lowest_world_z": [
+        -9.5367431640625e-06,
+        -1.1920928955078125e-07
+      ],
+      "final_maximum_z_by_member": {
+        "Mek": 11.580977439880371,
+        "Gunner": 11.129108428955078,
+        "Cutter": 10.103227615356445
+      }
+    }
+  },
+  "independent_gltf_viewer": {
+    "reader": "VTK 9.3.1 vtkGLTFImporter",
+    "method": "Independent viewer evaluated each animation. Its 51 OpenGL skin matrices, vertex joint indices and weights reconstruct world positions; source and viewer point clouds compared both directions for each member.",
+    "actors": 104,
+    "clips": {
+      "Idle": {
+        "duration_seconds": 2.0,
+        "max_vertex_error_against_authored_mesh": 1.1770964151146995e-05,
+        "frames_compared": [
+          1,
+          13,
+          25,
+          37,
+          49
+        ]
+      },
+      "MoveBegin": {
+        "duration_seconds": 0.3333333432674408,
+        "max_vertex_error_against_authored_mesh": 1.29859363162227e-05,
+        "frames_compared": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "Move": {
+        "duration_seconds": 1.0,
+        "max_vertex_error_against_authored_mesh": 1.8371215077415985e-05,
+        "frames_compared": [
+          1,
+          7,
+          13,
+          19,
+          25
+        ]
+      },
+      "MoveEnd": {
+        "duration_seconds": 0.3333333432674408,
+        "max_vertex_error_against_authored_mesh": 1.4529066783906251e-05,
+        "frames_compared": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "Run": {
+        "duration_seconds": 0.75,
+        "max_vertex_error_against_authored_mesh": 1.4158946056531431e-05,
+        "frames_compared": [
+          1,
+          5,
+          10,
+          15,
+          19
+        ]
+      },
+      "Melee": {
+        "duration_seconds": 1.6666666269302368,
+        "max_vertex_error_against_authored_mesh": 2.4955572273591265e-05,
+        "frames_compared": [
+          1,
+          11,
+          17,
+          18,
+          21,
+          31,
+          41
+        ]
+      },
+      "Ranged": {
+        "duration_seconds": 2.0,
+        "max_vertex_error_against_authored_mesh": 2.4877412596335948e-05,
+        "frames_compared": [
+          1,
+          13,
+          16,
+          17,
+          18,
+          23,
+          25,
+          29,
+          30,
+          37,
+          49
+        ]
+      },
+      "Hit": {
+        "duration_seconds": 1.0,
+        "max_vertex_error_against_authored_mesh": 2.311677679684998e-05,
+        "frames_compared": [
+          1,
+          7,
+          13,
+          19,
+          25
+        ]
+      },
+      "Grenade": {
+        "duration_seconds": 1.6666666269302368,
+        "max_vertex_error_against_authored_mesh": 1.8347308236857888e-05,
+        "frames_compared": [
+          1,
+          11,
+          21,
+          31,
+          41
+        ]
+      },
+      "Construct": {
+        "duration_seconds": 2.0,
+        "max_vertex_error_against_authored_mesh": 1.893890244169863e-05,
+        "frames_compared": [
+          1,
+          13,
+          25,
+          37,
+          49
+        ]
+      },
+      "Die": {
+        "duration_seconds": 2.0,
+        "max_vertex_error_against_authored_mesh": 1.6141501270539834e-05,
+        "frames_compared": [
+          1,
+          13,
+          25,
+          37,
+          49
+        ]
+      }
+    }
+  }
+}

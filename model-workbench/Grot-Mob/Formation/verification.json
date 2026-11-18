@@ -1,0 +1,793 @@
+{
+  "file_sha256": "00c34000a9d59c241fe26e5beae28c708eaf50d6ab4e7681162cca1cbb63db3b",
+  "group_root": "Grot Mob",
+  "skins": {
+    "0": {
+      "role": "mek",
+      "mesh_nodes": 34,
+      "triangles": 1517
+    },
+    "1": {
+      "role": "cutter",
+      "mesh_nodes": 33,
+      "triangles": 1512
+    },
+    "2": {
+      "role": "cutter",
+      "mesh_nodes": 33,
+      "triangles": 1512
+    },
+    "3": {
+      "role": "mek",
+      "mesh_nodes": 34,
+      "triangles": 1517
+    },
+    "4": {
+      "role": "gunner",
+      "mesh_nodes": 37,
+      "triangles": 1457
+    },
+    "5": {
+      "role": "gunner",
+      "mesh_nodes": 37,
+      "triangles": 1457
+    }
+  },
+  "clips": {
+    "Mob Advance": {
+      "seconds": 5,
+      "joint_channels_per_skin": [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      "root_targeted": true
+    },
+    "Mob Idle": {
+      "seconds": 4,
+      "joint_channels_per_skin": [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      "root_targeted": false
+    },
+    "Mob Scrap": {
+      "seconds": 4,
+      "joint_channels_per_skin": [
+        51,
+        51,
+        51,
+        51,
+        51,
+        51
+      ],
+      "root_targeted": false
+    }
+  },
+  "embedded_atlas_sha256_by_role": {
+    "mek": "4b1c7bc6f802fec7a21d6a547a599a1c04843010b8925331b113fefc2f7dbfbd",
+    "gunner": "98af1442e129734a5eb1db9097ba5e34e745179aa4cf26be8a7efd9200b6b863",
+    "cutter": "b937d4b705bce3447136524accdeb6a594e54c74310e8555adec61122bf20e76"
+  },
+  "source_member_packed_atlas_sha256": {
+    "Nobble | Cutter": "b937d4b705bce3447136524accdeb6a594e54c74310e8555adec61122bf20e76",
+    "Snap | Gunner": "98af1442e129734a5eb1db9097ba5e34e745179aa4cf26be8a7efd9200b6b863",
+    "Rattle | Mek": "4b1c7bc6f802fec7a21d6a547a599a1c04843010b8925331b113fefc2f7dbfbd",
+    "Nip | Cutter": "b937d4b705bce3447136524accdeb6a594e54c74310e8555adec61122bf20e76",
+    "Soot | Gunner": "98af1442e129734a5eb1db9097ba5e34e745179aa4cf26be8a7efd9200b6b863",
+    "Clank | Mek": "4b1c7bc6f802fec7a21d6a547a599a1c04843010b8925331b113fefc2f7dbfbd"
+  },
+  "source_blend_sha256": "bc0433beb542291c1df2430e54315b68364dc839f4875d7354f86ed323a70263",
+  "source_vs_glb": {
+    "Mob Advance": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 2.826218918905917e-05
+    },
+    "Mob Scrap": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 3.216164298850711e-05
+    },
+    "Mob Idle": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 3.152422740620321e-05
+    }
+  },
+  "source_default_timeline_vs_isolated_clips": {
+    "Mob Advance": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 0.0
+    },
+    "Mob Scrap": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 0.0
+    },
+    "Mob Idle": {
+      "compared_frames": 15,
+      "max_symmetric_world_vertex_distance": 0.0
+    }
+  },
+  "reimported_clips": {
+    "Mob Advance": {
+      "first_frame": 1.0,
+      "last_frame": 121.0,
+      "frame_count_including_endpoints": 121,
+      "unit_translation": [
+        0.0,
+        -55.20000076293945,
+        0.0
+      ],
+      "peak_same_role_trajectory_difference": {
+        "mek": 0.28536941697519747,
+        "gunner": 1.324814097426112,
+        "cutter": 3.0137369147269175
+      },
+      "members": [
+        {
+          "member": "Clank | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 1.3873841106394043,
+          "max_gear_to_hand_error": 6.577944488096404e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  6,
+                  20
+                ],
+                [
+                  30,
+                  44
+                ],
+                [
+                  54,
+                  68
+                ],
+                [
+                  78,
+                  92
+                ],
+                [
+                  102,
+                  116
+                ]
+              ],
+              "sole_min_z": -8.401282229897333e-07,
+              "sole_max_z": 2.0675057628942284,
+              "max_expected_stance_drift": 8.518138357649207e-06,
+              "max_expected_stance_sole_height_error": 2.4481354934380306e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  7
+                ],
+                [
+                  18,
+                  31
+                ],
+                [
+                  42,
+                  55
+                ],
+                [
+                  66,
+                  79
+                ],
+                [
+                  90,
+                  103
+                ],
+                [
+                  114,
+                  120
+                ]
+              ],
+              "sole_min_z": -1.548649134264224e-06,
+              "sole_max_z": 1.9163114698816912,
+              "max_expected_stance_drift": 8.90102815540722e-06,
+              "max_expected_stance_sole_height_error": 4.846206270059383e-06
+            }
+          },
+          "loop_error_after_root_travel": 0.0
+        },
+        {
+          "member": "Nip | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 3.2238234182805416,
+          "max_gear_to_hand_error": 5.255731486687423e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  16
+                ],
+                [
+                  29,
+                  46
+                ],
+                [
+                  59,
+                  76
+                ],
+                [
+                  89,
+                  106
+                ]
+              ],
+              "sole_min_z": -5.317671096349841e-06,
+              "sole_max_z": 2.267280323968862,
+              "max_expected_stance_drift": 8.013087854707675e-06,
+              "max_expected_stance_sole_height_error": 5.317671096349841e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  14,
+                  31
+                ],
+                [
+                  44,
+                  61
+                ],
+                [
+                  74,
+                  91
+                ],
+                [
+                  104,
+                  120
+                ]
+              ],
+              "sole_min_z": -6.889780621577302e-06,
+              "sole_max_z": 2.086984009211392,
+              "max_expected_stance_drift": 8.666116797366908e-06,
+              "max_expected_stance_sole_height_error": 6.889780621577302e-06
+            }
+          },
+          "loop_error_after_root_travel": 0.0
+        },
+        {
+          "member": "Nobble | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 3.0727495743667737,
+          "max_gear_to_hand_error": 7.453560170650394e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  22,
+                  36
+                ],
+                [
+                  46,
+                  60
+                ],
+                [
+                  70,
+                  84
+                ],
+                [
+                  94,
+                  108
+                ],
+                [
+                  118,
+                  120
+                ]
+              ],
+              "sole_min_z": -3.4745082047038522e-06,
+              "sole_max_z": 2.2773105995825063,
+              "max_expected_stance_drift": 7.874969498385313e-06,
+              "max_expected_stance_sole_height_error": 3.4745082047038522e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  10,
+                  23
+                ],
+                [
+                  34,
+                  47
+                ],
+                [
+                  58,
+                  71
+                ],
+                [
+                  82,
+                  95
+                ],
+                [
+                  106,
+                  119
+                ]
+              ],
+              "sole_min_z": -1.3783621710672378e-06,
+              "sole_max_z": 2.0905951628610637,
+              "max_expected_stance_drift": 1.28784816715192e-05,
+              "max_expected_stance_sole_height_error": 4.024634932875415e-06
+            }
+          },
+          "loop_error_after_root_travel": 5.513350421082785e-06
+        },
+        {
+          "member": "Rattle | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 1.3480725492892163,
+          "max_gear_to_hand_error": 8.61839678748329e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  14,
+                  28
+                ],
+                [
+                  38,
+                  52
+                ],
+                [
+                  62,
+                  76
+                ],
+                [
+                  86,
+                  100
+                ],
+                [
+                  110,
+                  120
+                ]
+              ],
+              "sole_min_z": -6.490128310332466e-06,
+              "sole_max_z": 2.0674990773635784,
+              "max_expected_stance_drift": 7.563388817896857e-06,
+              "max_expected_stance_sole_height_error": 6.490128310332466e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  2,
+                  15
+                ],
+                [
+                  26,
+                  39
+                ],
+                [
+                  50,
+                  63
+                ],
+                [
+                  74,
+                  87
+                ],
+                [
+                  98,
+                  111
+                ]
+              ],
+              "sole_min_z": -3.456205433849391e-06,
+              "sole_max_z": 1.9163113245440684,
+              "max_expected_stance_drift": 8.125155048887093e-06,
+              "max_expected_stance_sole_height_error": 3.456205433849391e-06
+            }
+          },
+          "loop_error_after_root_travel": 0.0
+        },
+        {
+          "member": "Snap | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 2.0557648950739975,
+          "max_gear_to_hand_error": 9.81774409545529e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  16,
+                  33
+                ],
+                [
+                  46,
+                  63
+                ],
+                [
+                  76,
+                  93
+                ],
+                [
+                  106,
+                  120
+                ]
+              ],
+              "sole_min_z": -3.1544054674981226e-06,
+              "sole_max_z": 1.7945033852458323,
+              "max_expected_stance_drift": 9.973004707999569e-06,
+              "max_expected_stance_sole_height_error": 3.1544054674981226e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  1,
+                  18
+                ],
+                [
+                  31,
+                  48
+                ],
+                [
+                  61,
+                  78
+                ],
+                [
+                  91,
+                  108
+                ]
+              ],
+              "sole_min_z": -3.4471179084505366e-06,
+              "sole_max_z": 1.6493262885384326,
+              "max_expected_stance_drift": 6.752922872070533e-06,
+              "max_expected_stance_sole_height_error": 3.4471179084505366e-06
+            }
+          },
+          "loop_error_after_root_travel": 5.066009632316102e-06
+        },
+        {
+          "member": "Soot | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 1.907768264880341,
+          "max_gear_to_hand_error": 8.337528322738187e-06,
+          "boots": {
+            "L": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  9,
+                  26
+                ],
+                [
+                  39,
+                  56
+                ],
+                [
+                  69,
+                  86
+                ],
+                [
+                  99,
+                  116
+                ]
+              ],
+              "sole_min_z": -3.564202884831502e-06,
+              "sole_max_z": 1.7945024485660213,
+              "max_expected_stance_drift": 7.976323624756352e-06,
+              "max_expected_stance_sole_height_error": 3.564202884831502e-06
+            },
+            "R": {
+              "stance_intervals_in_frame_offsets": [
+                [
+                  0,
+                  11
+                ],
+                [
+                  24,
+                  41
+                ],
+                [
+                  54,
+                  71
+                ],
+                [
+                  84,
+                  101
+                ],
+                [
+                  114,
+                  120
+                ]
+              ],
+              "sole_min_z": -2.998292165656835e-06,
+              "sole_max_z": 1.64932691299164,
+              "max_expected_stance_drift": 7.729213324606735e-06,
+              "max_expected_stance_sole_height_error": 2.998292165656835e-06
+            }
+          },
+          "loop_error_after_root_travel": 2.4978128294605995e-06
+        }
+      ]
+    },
+    "Mob Scrap": {
+      "first_frame": 1.0,
+      "last_frame": 97.0,
+      "frame_count_including_endpoints": 97,
+      "unit_translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_same_role_trajectory_difference": {
+        "mek": 5.461899798212886,
+        "gunner": 5.13992727937576,
+        "cutter": 2.8803769584808645
+      },
+      "members": [
+        {
+          "member": "Clank | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 5.610743035866992,
+          "max_gear_to_hand_error": 8.458419556374944e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 3.4881029478128767e-06
+        },
+        {
+          "member": "Nip | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 3.264545744305913,
+          "max_gear_to_hand_error": 5.1429513041719436e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 2.453295020262182e-06
+        },
+        {
+          "member": "Nobble | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 3.028282283909195,
+          "max_gear_to_hand_error": 9.26227948834164e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 1.6355300135081215e-06
+        },
+        {
+          "member": "Rattle | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 5.733508189967352,
+          "max_gear_to_hand_error": 7.431333766721873e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 3.4423853365671034e-06
+        },
+        {
+          "member": "Snap | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 5.194350578284182,
+          "max_gear_to_hand_error": 1.059077303514233e-05,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 5.620078866286349e-06
+        },
+        {
+          "member": "Soot | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 5.325980605283034,
+          "max_gear_to_hand_error": 8.28965670062985e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 6.118366905155966e-06
+        }
+      ]
+    },
+    "Mob Idle": {
+      "first_frame": 1.0,
+      "last_frame": 97.0,
+      "frame_count_including_endpoints": 97,
+      "unit_translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_same_role_trajectory_difference": {
+        "mek": 0.24597241423539357,
+        "gunner": 1.3565228620228038,
+        "cutter": 0.8765592984237436
+      },
+      "members": [
+        {
+          "member": "Clank | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 0.5998725226015146,
+          "max_gear_to_hand_error": 9.61853720244033e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 3.4881029478128767e-06
+        },
+        {
+          "member": "Nip | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 1.1224801385517864,
+          "max_gear_to_hand_error": 5.6593786449658645e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 2.453295020262182e-06
+        },
+        {
+          "member": "Nobble | Cutter",
+          "role": "cutter",
+          "peak_gear_motion_relative_to_unit": 0.8598005595665494,
+          "max_gear_to_hand_error": 8.23408763260581e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 1.6355300135081215e-06
+        },
+        {
+          "member": "Rattle | Mek",
+          "role": "mek",
+          "peak_gear_motion_relative_to_unit": 0.5534346206139259,
+          "max_gear_to_hand_error": 7.75381991408404e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 3.4423853365671034e-06
+        },
+        {
+          "member": "Snap | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 1.3576379409732322,
+          "max_gear_to_hand_error": 1.0183361715074538e-05,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 5.620078866286349e-06
+        },
+        {
+          "member": "Soot | Gunner",
+          "role": "gunner",
+          "peak_gear_motion_relative_to_unit": 1.6599361070552145,
+          "max_gear_to_hand_error": 7.980183688653435e-06,
+          "boots": {
+            "L": {
+              "largest_world_displacement": 0.0
+            },
+            "R": {
+              "largest_world_displacement": 0.0
+            }
+          },
+          "loop_error_after_root_travel": 7.493438488381798e-06
+        }
+      ]
+    }
+  },
+  "status": "pass",
+  "formation_clearance": {
+    "blend_sha256": "bc0433beb542291c1df2430e54315b68364dc839f4875d7354f86ed323a70263",
+    "frames_by_clip": {
+      "Mob Idle": 97,
+      "Mob Scrap": 97,
+      "Mob Advance": 121
+    },
+    "outer_muzzle_radius": 1.0476630275229326,
+    "offsets": {},
+    "mesh_intersections": {},
+    "barrel_axis_hits": {},
+    "barrel_axis_minimum_clearance": {
+      "Mob Advance/Soot/Rattle": [
+        3.3743021848834776,
+        199
+      ],
+      "Mob Scrap/Soot/Rattle": [
+        4.467370929432556,
+        118
+      ],
+      "Mob Idle/Soot/Rattle": [
+        5.873557728609868,
+        24
+      ],
+      "Mob Advance/Snap/Nobble": [
+        8.830794334411621,
+        228
+      ],
+      "Mob Scrap/Snap/Nobble": [
+        14.094707489013672,
+        107
+      ],
+      "Mob Idle/Snap/Nobble": [
+        14.715682029724121,
+        16
+      ],
+      "Mob Advance/Soot/Nobble": [
+        26.46140633750912,
+        234
+      ],
+      "Mob Idle/Soot/Nobble": [
+        30.550095032993408,
+        16
+      ],
+      "Mob Scrap/Soot/Nobble": [
+        30.579305202943278,
+        166
+      ]
+    },
+    "sample_rate_fps": 24,
+    "evaluated_pose_frames": 315,
+    "character_pair_tests": 4725,
+    "gun_to_other_character_tests": 3150,
+    "barrel_ray_length_native_units": 140,
+    "minimum_clearance_beyond_outer_muzzle_radius": 2.326639157360545,
+    "method": "Evaluated deformed triangle surfaces in Blender; all 15 unordered member pairs per frame. Both barrel origins and axis directions measured from their animated muzzle rings; segment-to-triangle-edge and endpoint-to-surface distance plus intersection tests against each of the other five characters."
+  }
+}
