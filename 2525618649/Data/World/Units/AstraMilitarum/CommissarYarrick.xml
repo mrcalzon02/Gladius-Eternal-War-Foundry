@@ -143,15 +143,13 @@
         </target>
       </beginTargets>
     </orbitalStrike>
-    <livingIncubator name="Foundry/ArmageddonCalls" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
+    <livingIncubator name="Foundry/ArmageddonCalls" icon="Units/AstraMilitarum/Guardsman" cooldown="10" rank="-1" rankMax="4" useConditionsForVisiblity="1">
       <model>
         <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
       </model>
       <conditions>
         <unit>
           <noTrait name="Foundry/ArmourPending" />
-          <noTrait name="Foundry/ArmageddonCallsCooldown" />
-          <level greater="-0.5" less="0.5" />
         </unit>
       </conditions>
       <beginTargets>
@@ -175,6 +173,89 @@
               </modifiers>
             </area>
           </areas>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <addTrait name="Foundry/ArmageddonCallRank" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="-0.5" less="0.5" />
+                    </unit>
+                  </conditions>
+                  <effects>
+                    <level add="0" />
+                  </effects>
+                </modifier>
+                <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="0.5" less="1.5" />
+                    </unit>
+                  </conditions>
+                  <effects>
+                    <level add="0" />
+                  </effects>
+                </modifier>
+                <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="1.5" less="2.5" />
+                    </unit>
+                  </conditions>
+                  <effects>
+                    <level add="1" />
+                  </effects>
+                </modifier>
+                <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="2.5" less="3.5" />
+                    </unit>
+                  </conditions>
+                  <effects>
+                    <level add="2" />
+                  </effects>
+                </modifier>
+                <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="3.5" less="4.5" />
+                    </unit>
+                  </conditions>
+                  <effects>
+                    <level add="3" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmageddonCallRank" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
         </target>
         <selfTarget>
           <areas>
@@ -182,205 +263,59 @@
               <modifiers>
                 <modifier>
                   <effects>
-                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
+                    <addTrait name="Foundry/ArmageddonCallRank" />
                   </effects>
                 </modifier>
               </modifiers>
             </area>
           </areas>
-        </selfTarget>
-      </beginTargets>
-    </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCalls2" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
-      <model>
-        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
-      </model>
-      <conditions>
-        <unit>
-          <noTrait name="Foundry/ArmourPending" />
-          <noTrait name="Foundry/ArmageddonCallsCooldown" />
-          <level greater="0.5" less="1.5" />
-        </unit>
-      </conditions>
-      <beginTargets>
-        <target rangeMin="1" rangeMax="2">
-          <conditions>
-            <tile>
-              <land />
-              <noUnit />
-              <noEnemyCity />
-              <noFeature name="GravityWaves" />
-            </tile>
-          </conditions>
-          <areas>
-            <area affects="Tile">
-              <modifiers>
-                <modifier>
-                  <effects>
-                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="0" levelMax="0" />
-                  </effects>
-                </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </target>
-        <selfTarget>
           <areas>
             <area affects="Unit">
               <modifiers>
                 <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="0.5" less="1.5" />
+                    </unit>
+                  </conditions>
                   <effects>
-                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
                     <addTrait name="Foundry/ArmourPending" />
                     <addTrait name="Foundry/ArmourPendingTier0" />
                   </effects>
                 </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </selfTarget>
-      </beginTargets>
-    </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCalls3" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
-      <model>
-        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
-      </model>
-      <conditions>
-        <unit>
-          <noTrait name="Foundry/ArmourPending" />
-          <noTrait name="Foundry/ArmageddonCallsCooldown" />
-          <level greater="1.5" less="2.5" />
-        </unit>
-      </conditions>
-      <beginTargets>
-        <target rangeMin="1" rangeMax="2">
-          <conditions>
-            <tile>
-              <land />
-              <noUnit />
-              <noEnemyCity />
-              <noFeature name="GravityWaves" />
-            </tile>
-          </conditions>
-          <areas>
-            <area affects="Tile">
-              <modifiers>
                 <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="1.5" less="2.5" />
+                    </unit>
+                  </conditions>
                   <effects>
-                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="1" levelMax="1" />
-                  </effects>
-                </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </target>
-        <selfTarget>
-          <areas>
-            <area affects="Unit">
-              <modifiers>
-                <modifier>
-                  <effects>
-                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
                     <addTrait name="Foundry/ArmourPending" />
                     <addTrait name="Foundry/ArmourPendingTier1" />
                   </effects>
                 </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </selfTarget>
-      </beginTargets>
-    </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCalls4" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
-      <model>
-        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
-      </model>
-      <conditions>
-        <unit>
-          <noTrait name="Foundry/ArmourPending" />
-          <noTrait name="Foundry/ArmageddonCallsCooldown" />
-          <level greater="2.5" less="3.5" />
-        </unit>
-      </conditions>
-      <beginTargets>
-        <target rangeMin="1" rangeMax="2">
-          <conditions>
-            <tile>
-              <land />
-              <noUnit />
-              <noEnemyCity />
-              <noFeature name="GravityWaves" />
-            </tile>
-          </conditions>
-          <areas>
-            <area affects="Tile">
-              <modifiers>
                 <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="2.5" less="3.5" />
+                    </unit>
+                  </conditions>
                   <effects>
-                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="2" levelMax="2" />
-                  </effects>
-                </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </target>
-        <selfTarget>
-          <areas>
-            <area affects="Unit">
-              <modifiers>
-                <modifier>
-                  <effects>
-                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
                     <addTrait name="Foundry/ArmourPending" />
                     <addTrait name="Foundry/ArmourPendingTier2" />
                   </effects>
                 </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </selfTarget>
-      </beginTargets>
-    </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCalls5" icon="Units/AstraMilitarum/Guardsman" cooldown="10" useConditionsForVisiblity="1">
-      <model>
-        <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
-      </model>
-      <conditions>
-        <unit>
-          <noTrait name="Foundry/ArmourPending" />
-          <noTrait name="Foundry/ArmageddonCallsCooldown" />
-          <level greater="3.5" />
-        </unit>
-      </conditions>
-      <beginTargets>
-        <target rangeMin="1" rangeMax="2">
-          <conditions>
-            <tile>
-              <land />
-              <noUnit />
-              <noEnemyCity />
-              <noFeature name="GravityWaves" />
-            </tile>
-          </conditions>
-          <areas>
-            <area affects="Tile">
-              <modifiers>
                 <modifier>
+                  <conditions>
+                    <unit>
+                      <trait name="Foundry/ArmageddonCallRank" />
+                      <movementMax greater="3.5" less="4.5" />
+                    </unit>
+                  </conditions>
                   <effects>
-                    <addUnit name="AstraMilitarum/Guardsman" consumedAction="0" consumedMovement="0" levelMin="3" levelMax="3" />
-                  </effects>
-                </modifier>
-              </modifiers>
-            </area>
-          </areas>
-        </target>
-        <selfTarget>
-          <areas>
-            <area affects="Unit">
-              <modifiers>
-                <modifier>
-                  <effects>
-                    <addTrait name="Foundry/ArmageddonCallsCooldown" duration="10" />
                     <addTrait name="Foundry/ArmourPending" />
                     <addTrait name="Foundry/ArmourPendingTier3" />
                   </effects>
@@ -388,10 +323,21 @@
               </modifiers>
             </area>
           </areas>
+          <areas>
+            <area affects="Unit">
+              <modifiers>
+                <modifier>
+                  <effects>
+                    <removeTrait name="Foundry/ArmageddonCallRank" />
+                  </effects>
+                </modifier>
+              </modifiers>
+            </area>
+          </areas>
         </selfTarget>
       </beginTargets>
     </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCallsArmour" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+    <livingIncubator name="Foundry/ArmageddonCallsArmour" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" rank="0" rankMax="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
       <model>
         <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
       </model>
@@ -439,7 +385,7 @@
         </selfTarget>
       </beginTargets>
     </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCallsArmour1" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+    <livingIncubator name="Foundry/ArmageddonCallsArmour1" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" rank="0" rankMax="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
       <model>
         <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
       </model>
@@ -487,7 +433,7 @@
         </selfTarget>
       </beginTargets>
     </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCallsArmour2" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+    <livingIncubator name="Foundry/ArmageddonCallsArmour2" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" rank="0" rankMax="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
       <model>
         <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
       </model>
@@ -535,7 +481,7 @@
         </selfTarget>
       </beginTargets>
     </livingIncubator>
-    <livingIncubator name="Foundry/ArmageddonCallsArmour3" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
+    <livingIncubator name="Foundry/ArmageddonCallsArmour3" icon="Units/AstraMilitarum/LemanRussBattleTank" cooldown="0" rank="0" rankMax="0" requiredActionPoints="0" consumedActionPoints="0" consumedMovement="0" useConditionsForVisiblity="1">
       <model>
         <action animation="Units/Foundry/YarrickShout" bone="ChestBone" sound="Actions/AstraMilitarumBuff" />
       </model>

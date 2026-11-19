@@ -3,10 +3,10 @@
 	<entry name="Foundry/OldManOfArmageddonDescription" value="Restore 9 / 12 / 15 morale to allied units within 3 tiles. Starts trained at rank one. No execution required." />
 	<entry name="Foundry/TargetedBasiliskStrike" value="Targeted Basilisk Strike" />
 	<entry name="Foundry/TargetedBasiliskStrikeDescription" value="Order two standard Earthshaker ordnance hits against one enemy within 6 tiles. Five-round cooldown." />
-	<entry name="Foundry/ArmageddonCalls" value="Armageddon Calls" />
-	<entry name="Foundry/ArmageddonCallsDescription" value="Automatically improves with Yarrick: level 1 calls Guardsmen only; level 2 adds a Leman Russ; levels 3, 4 and 5 start both units with 1, 2 and 3 experience levels. Place units within 2 tiles. Shared ten-round cooldown." />
-	<entry name="Foundry/ArmageddonCallsArmour" value="Armageddon Calls — Place Tank" />
-	<entry name="Foundry/ArmageddonCallsArmourDescription" value="Complete the reserved reinforcement call: deploy one Leman Russ with 0 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
+	<entry name="Foundry/ArmageddonCalls" value="Call of Armageddon" />
+	<entry name="Foundry/ArmageddonCallsDescription" value="Spend skill points to upgrade this single ability. Rank 1: one fresh Guardsmen squad. Rank 2: adds one fresh Leman Russ. Ranks 3 / 4 / 5: both units start with 1 / 2 / 3 extra experience levels. Place the squad within 2 tiles, then complete the same call with a free tank placement within 2 tiles of Yarrick. Ten-round cooldown." />
+	<entry name="Foundry/ArmageddonCallsArmour" value="Call of Armageddon" />
+	<entry name="Foundry/ArmageddonCallsArmourDescription" value="Complete Call of Armageddon (free second placement): deploy one Leman Russ with 0 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
 	<entry name="Foundry/ThisEndsHere" value="This Ends Here" />
 	<entry name="Foundry/ThisEndsHereDescription" value="Grant one allied unit within 3 tiles +100% base weapon damage for 2 rounds. Five-round cooldown. Does not compound existing percentage bonuses." />
 	<entry name="Foundry/ArmageddonCalls2" value="Armageddon Calls" />
@@ -17,12 +17,12 @@
 	<entry name="Foundry/ArmageddonCalls4Description" value="Automatically improves with Yarrick: level 1 calls Guardsmen only; level 2 adds a Leman Russ; levels 3, 4 and 5 start both units with 1, 2 and 3 experience levels. Place units within 2 tiles. Shared ten-round cooldown." />
 	<entry name="Foundry/ArmageddonCalls5" value="Armageddon Calls" />
 	<entry name="Foundry/ArmageddonCalls5Description" value="Automatically improves with Yarrick: level 1 calls Guardsmen only; level 2 adds a Leman Russ; levels 3, 4 and 5 start both units with 1, 2 and 3 experience levels. Place units within 2 tiles. Shared ten-round cooldown." />
-	<entry name="Foundry/ArmageddonCallsArmour1" value="Armageddon Calls — Place Tank" />
-	<entry name="Foundry/ArmageddonCallsArmour1Description" value="Complete the reserved reinforcement call: deploy one Leman Russ with 1 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
-	<entry name="Foundry/ArmageddonCallsArmour2" value="Armageddon Calls — Place Tank" />
-	<entry name="Foundry/ArmageddonCallsArmour2Description" value="Complete the reserved reinforcement call: deploy one Leman Russ with 2 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
-	<entry name="Foundry/ArmageddonCallsArmour3" value="Armageddon Calls — Place Tank" />
-	<entry name="Foundry/ArmageddonCallsArmour3Description" value="Complete the reserved reinforcement call: deploy one Leman Russ with 3 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
+	<entry name="Foundry/ArmageddonCallsArmour1" value="Call of Armageddon" />
+	<entry name="Foundry/ArmageddonCallsArmour1Description" value="Complete Call of Armageddon (free second placement): deploy one Leman Russ with 1 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
+	<entry name="Foundry/ArmageddonCallsArmour2" value="Call of Armageddon" />
+	<entry name="Foundry/ArmageddonCallsArmour2Description" value="Complete Call of Armageddon (free second placement): deploy one Leman Russ with 2 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
+	<entry name="Foundry/ArmageddonCallsArmour3" value="Call of Armageddon" />
+	<entry name="Foundry/ArmageddonCallsArmour3Description" value="Complete Call of Armageddon (free second placement): deploy one Leman Russ with 3 experience levels within 2 tiles. Free action; experience is reserved when the call begins." />
 	<entry name="FoundryAI/ImperialStrongpoint" value="Construct Imperial Strongpoint" />
 	<entry name="FoundryAI/ImperialStrongpointDescription" value="AI construction test: build Imperial Strongpoint beside this builder." />
 	<entry name="FoundryAI/ImperialStrongpointFlavor" value="Prepared positions support the army." />

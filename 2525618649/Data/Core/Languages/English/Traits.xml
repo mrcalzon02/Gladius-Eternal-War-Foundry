@@ -15,7 +15,7 @@
 	<entry name="Foundry/ThisEndsHere" value="This Ends Here" />
 	<entry name="Foundry/ThisEndsHereDescription" value="+100% base weapon damage." />
 	<entry name="Foundry/ArmourPending" value="Armageddon Armour Inbound" />
-	<entry name="Foundry/ArmourPendingDescription" value="One Leman Russ is reserved. Use Armageddon Calls — Place Tank to deploy it." />
+	<entry name="Foundry/ArmourPendingDescription" value="One Leman Russ is reserved. Complete Call of Armageddon to place it for free." />
 	<entry name="Foundry/ArmourPendingTier0" value="Reserved Armour Experience" />
 	<entry name="Foundry/ArmourPendingTier0Description" value="The incoming Leman Russ starts with 0 experience levels." />
 	<entry name="Foundry/ArmourPendingTier1" value="Reserved Armour Experience" />

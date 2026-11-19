@@ -25,30 +25,16 @@ assert actions['Foundry/ArmageddonCalls'].find('.//addUnit').get('name')=='Astra
 assert actions['Foundry/ArmageddonCallsArmour'].find('.//addUnit').get('name')=='AstraMilitarum/LemanRussBattleTank'
 assert actions['Foundry/ArmageddonCallsArmour'].find('.//removeTrait').get('name')=='Foundry/ArmourPending'
 assert actions['Foundry/ArmageddonCallsArmour'].get('consumedActionPoints')=='0'
-calls=[a for name,a in actions.items() if name.startswith('Foundry/ArmageddonCalls') and not name.startswith('Foundry/ArmageddonCallsArmour')]
-assert len(calls)==5
-progression=[]
-for hero_level in range(1,11):
- internal=hero_level-1
- def matches(a):
-  gate=a.find('conditions/unit/level')
-  return internal>float(gate.get('greater')) and ('less' not in gate.attrib or internal<float(gate.get('less')))
- available=[a for a in calls if matches(a)];assert len(available)==1,(hero_level,len(available))
- a=available[0];experience=min(3,max(0,hero_level-2));spawn=a.find('.//addUnit')
- assert spawn.get('levelMin')==spawn.get('levelMax')==str(experience)
- assert a.find("conditions/unit/noTrait[@name='Foundry/ArmageddonCallsCooldown']") is not None
- assert a.find(".//addTrait[@name='Foundry/ArmageddonCallsCooldown']").get('duration')=='10'
- pending=a.find(".//addTrait[@name='Foundry/ArmourPending']")
- assert (pending is not None)==(hero_level>=2)
- if pending is not None:
-  tier='Foundry/ArmourPendingTier'+str(experience)
-  assert a.find(".//addTrait[@name='"+tier+"']") is not None
-  completions=[x for x in actions.values() if x.find("conditions/unit/trait[@name='"+tier+"']") is not None]
-  assert len(completions)==1
-  tank=completions[0];assert tank.find('conditions/unit/level') is None
-  assert tank.find('.//addUnit').get('levelMin')==tank.find('.//addUnit').get('levelMax')==str(experience)
-  assert tank.find(".//removeTrait[@name='"+tier+"']") is not None
- progression.append({'hero_level':hero_level,'infantry_experience':experience,'tank':pending is not None,'tank_experience':experience if pending is not None else None})
+from yarrick_call_progression import RANKS, CALL
+calls=[a for name,a in actions.items() if name.startswith(CALL) and not name.startswith(CALL+'Armour')]
+assert len(calls)==1
+assert calls[0].get('rank')=='-1' and calls[0].get('rankMax')=='4'
+assert calls[0].get('cooldown')=='10'
+assert not any(a.find('.//conditions/unit/level') is not None for a in actions.values())
+import unittest
+suite=unittest.defaultTestLoader.discover(str(R/'tools/tests'),pattern='test_yarrick_call_progression.py')
+assert unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful()
+progression=list(RANKS)
 resource=audit(R/'assets',G,['yarrick-build']);attach=attachments(R/'assets',G,['yarrick-build'])
 assert not resource['findings'],resource['findings'];assert not attach['errors'],attach['errors']
 files={p.relative_to(D).as_posix() for p in D.rglob('*') if p.is_file()};native={p.relative_to(G).as_posix() for p in G.rglob('*') if p.is_file()}
@@ -71,5 +57,5 @@ for p in (D/'Video/Animations').rglob('*.anm'):
  # Every original bone and every original frame stays byte-identical.
  assert raw[16:len(original)]==original[16:]
  assert raw[7]==original[7]+1 and 'YarrickEyeMuzzle' in clips[p.stem]['bones']
-report={'status':'passed','gameplay_contracts':'passed','reinforcement_progression':progression,'progression_basis':'Yarrick hero level; automatic','resource_findings':resource['findings'],'attachment_errors':attach['errors'],'custom_attachment_reviews':attach['reviews'],'meshes':meshes,'animations':clips,'engine_in_game_verified':False}
+report={'status':'passed','gameplay_contracts':'passed','reinforcement_progression':progression,'progression_basis':'Purchased Call of Armageddon skill rank; one five-rank skill','resource_findings':resource['findings'],'attachment_errors':attach['errors'],'custom_attachment_reviews':attach['reviews'],'meshes':meshes,'animations':clips,'engine_in_game_verified':False}
 (O/'VALIDATION.json').write_text(json.dumps(report,indent=2));print('YARRICK VALIDATED:',len(meshes),'meshes,',len(clips),'clips; gameplay contracts and resource references passed')

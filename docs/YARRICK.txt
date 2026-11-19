@@ -19,19 +19,21 @@ Targeted Basilisk Strike resolves two standard Earthshaker shells against one
 enemy within 6 tiles. Accuracy 6, damage 8, penetration 4, Large Blast,
 Barrage and Ordnance. Cooldown 5. Personal hero damage bonuses do not apply.
 
-Armageddon Calls currently follows Yarrick's HERO LEVEL automatically:
-  Level 1: one fresh Guardsmen squad.
-  Level 2: one fresh Guardsmen squad plus one fresh Leman Russ.
-  Level 3: both start with 1 experience level above a fresh recruit.
-  Level 4: both start with 2 experience levels above a fresh recruit.
-  Level 5 and higher: both start with 3 experience levels above a fresh recruit.
-The game stores fresh recruits at internal experience level zero.
-Both placements must be on empty land within 2 tiles. From hero level 2,
-the tank is placed with a free contextual completion command. The native
-addUnit effect cannot relocate a second unit from an occupied tile, so
-two explicit placements prevent a lost reinforcement. Cooldown 10 is shared
-across all stages, including level-ups. Tank experience is reserved when the
-call starts and does not change if Yarrick levels up before tank placement.
+Call of Armageddon is ONE trainable skill with FIVE purchased ranks.
+It starts untrained. Hero experience levels do not automatically unlock calls.
+  Rank 1: one fresh Guardsmen squad.
+  Rank 2: one fresh Guardsmen squad plus one fresh Leman Russ.
+  Rank 3: both start with 1 extra experience level.
+  Rank 4: both start with 2 extra experience levels.
+  Rank 5: both start with 3 extra experience levels.
+Experience increments preserve the game's difficulty bonuses.
+Both placements must be on empty land within 2 tiles of Yarrick. From rank 2,
+the same command changes to a free tank-placement completion step after the
+squad is placed. This step cannot be purchased or independently initiate a
+call. Only one Call of Armageddon command is eligible at a time. Cooldown 10
+belongs to the single purchased skill and persists through skill upgrades.
+Tank experience is reserved when the call starts and does not change if the
+skill is upgraded before tank placement.
 Reinforcements are permanent and pay normal upkeep.
 
 This Ends Here targets one ally within 3 tiles, adding +100% base damage for
@@ -50,12 +52,29 @@ VALIDATION
 Rules, reference integrity, mesh weights/bones and 14 native animation clips
 pass offline checks. Independent native import and render pass. The beam
 socket follows the head within 0.0001 model units in six animation types.
-Stage selection and starting experience are checked for hero levels 1-10.
+The five purchased ranks are checked independently of hero levels 1-10,
+including untrained heroes, blocked placements, cooldowns and serialized
+pending reservations. These are XML model tests, not live game acceptance.
 Live combat and save/load validation are pending; do not claim game acceptance.
 
 LIVE ACCEPTANCE
 Recruit Yarrick through the existing hero building. Verify 9-morale rally,
 pistol/claw/eye attacks, two artillery resolutions, and This Ends Here's
-two-round duration and five-round cooldown. Check all five reinforcement
-stages, blocked tiles, and level-ups during cooldown and tank reservation.
+two-round duration and five-round cooldown. Check all five purchased skill
+ranks, blocked tiles, and skill upgrades during cooldown and tank reservation.
+Verify no additional Call of Armageddon skills appear in the level-up menu.
+Verify Yarrick and summoned Guardsmen retain normal maximum movement after
+the action (the temporary rank-routing trait must be removed synchronously).
 Save/reload with both a pending tank and an active damage buff.
+
+IMPLEMENTATION NOTES
+The vanilla action rank range is -1 (untrained) through 4 (rank five).
+A temporary rankMax=4 trait inherits the source action rank and clamps
+movementMax to 0..4 solely during synchronous effect routing. Numeric
+movementMax conditions select the exact experience and armour reservation
+steps. Separate ordered areas attach, route and remove this trait. No hero
+level conditions, background companion or executable modifications are used.
+The level effect uses the same native mechanism as Forbidden Knowledge.
+Its increments avoid rounded addUnit interpolation for the 0/0/1/2/3 curve.
+The four internal tank completions are non-levelable (rank=rankMax=0),
+mutually exclusive, and share the main skill's visible name.

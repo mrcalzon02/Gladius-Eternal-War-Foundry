@@ -37,10 +37,11 @@ def stage(base,output):
   target=output/'2525618649'/relative;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
   inventory.append({'source':str(target),'destination':'2525618649/'+relative,'sha256':digest(target),'expected_previous_sha256':digest(prior)})
  additional=[(R/'model-workbench/Yarrick/Yarrick.blend','model-workbench/Yarrick/Yarrick.blend'),(R/'model-workbench/Yarrick/Yarrick-native-preview.png','model-workbench/Yarrick/Yarrick-native-preview.png'),(R/'model-workbench/Yarrick/README.txt','model-workbench/Yarrick/README.txt'),(R/'docs/YARRICK.txt','docs/YARRICK.txt'),(build/'VALIDATION.json','docs/yarrick/validation.json'),(R/'model-workbench/Yarrick/native-review.json','docs/yarrick/native-review.json'),(output/'merge-validation.json','docs/yarrick/merge-validation.json')]
- for name in ('build_yarrick_rules.py','build_yarrick_model.py','package_yarrick.py','verify_yarrick.py','review_yarrick_native.py','prepare_yarrick.py','integrate_yarrick.py','verify_yarrick_integration.py'):
+ for name in ('build_yarrick_rules.py','yarrick_call_progression.py','build_yarrick_model.py','package_yarrick.py','verify_yarrick.py','review_yarrick_native.py','prepare_yarrick.py','integrate_yarrick.py','verify_yarrick_integration.py'):
   additional.append((R/'tools'/name,'tools/'+name))
  for source,relative in additional:
   inventory.append({'source':str(source),'destination':relative,'sha256':digest(source),'expected_previous_sha256':digest(base/relative)})
+ additional.append((R/'tools/tests/test_yarrick_call_progression.py','tools/tests/test_yarrick_call_progression.py'))
  readme=(base/'README.md').read_text(encoding='utf-8-sig')
  if '## Commissar Sebastian Yarrick' not in readme:
   readme+='\n\n## Commissar Sebastian Yarrick\n\nYarrick joins the existing Penal Legion mod (`2525618649`) with a red power\nclaw, bionic laser eye, Basilisk support and Armageddon reinforcements. See\n[the unit rules and validation notes](docs/YARRICK.txt) and\n[editable source](model-workbench/Yarrick/README.txt). Offline checks pass;\nlive combat validation is pending. No separate mod or Workshop ID is created.\n'

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<trait rankMax="4">
+  <modifiers>
+    <modifier>
+      <effects>
+        <movementMax minMin="0" minMax="4" maxMin="0" maxMax="4" />
+      </effects>
+    </modifier>
+  </modifiers>
+</trait>
