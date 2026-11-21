@@ -1,3 +1,5 @@
+> **Superseded 20 November 2026:** The AI construction probe below is retained for historical diagnostics only. Proper wagh! now uses a Grotz death-triggered Grotpost attempt. Do not install the old probe with the updated mod. See [death conversion](GROTPOST_DEATH_CONVERSION.md).
+
 # Grotpost AI construction refusal — 20 November 2026
 
 **Status: source-level diagnostic and opt-in probe; actual gameplay fix not yet verified.**

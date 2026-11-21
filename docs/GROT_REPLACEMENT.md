@@ -12,3 +12,19 @@ The three figures share their six HP and die together. Formerly, the loss of eac
 The native files live in the existing Workshop package, **Proper wagh!** (3038342810). The authoring and interchange files, preview, and native validation evidence are in the [trio workbench](../model-workbench/Grot-Mob/Trio/). The [manifest](grot/manifest.json) records hashes and the previous four unit signatures. Run `python tools/validate_grot_repository.py` to verify the binaries, material, textures, attachment names, animation skeletons, file hashes, and XML changes. This revision has not been launched in Gladius.
 
 The [earlier single-Grot model](../model-workbench/Grot-Sneak/) and its [round-trip measurements](grot/native-verification.json) document the previous character.
+
+## Grotpost death conversion (20 November 2026)
+
+Playable **regular** Orks/Grotz now carry the passive `Orks/GrotpostOnDeath`
+trait. A destroyed one-slot, three-figure Grotz unit attempts to create one
+`Orks/Grotpost` on its former hex, subject to normal legal-land and no-unit
+conditions. No AI action choice, build order, or ore payment is required.
+The old AI-only `constructNoctilithCrown` workaround is removed; the human
+20-ore adjacent construction command remains. Neutral Grotz and Grotz
+Kamando are not changed. The existing Grotpost combat, transport and
+resource-harvesting traits are preserved.
+
+This is **source integrated but not yet game validated**. Engine behavior
+on disband, transport destruction, death-tile occupancy, simultaneous
+deaths, ownership, save loading and multiplayer has not been proven.
+See [the acceptance plan](GROTPOST_DEATH_CONVERSION.md).

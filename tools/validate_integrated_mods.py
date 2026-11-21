@@ -8,7 +8,6 @@ import xml.etree.ElementTree as ET
 SPECS = (
     ('2175959340', 'SpaceMarines/TechpriestEnginseer', ('MarineStrongpoint',)),
     ('2525618649', 'AstraMilitarum/TechpriestEnginseer', ('ImperialStrongpoint', 'VoidShieldGenerator')),
-    ('3038342810', 'Orks/Grotz', ('Grotpost',)),
 )
 
 def validate(root):
@@ -42,6 +41,34 @@ def validate(root):
             assert action.find('model/action').get('animation', '').startswith('Units/'), name
             for suffix in ('', 'Description', 'Flavor'):
                 assert name + suffix in keys, name + suffix
+    # Proper wagh! uses a passive death trigger, not an AI-selected build action.
+    ork_data = root / '3038342810' / 'Data'
+    grotz = ET.parse(ork_data / 'World/Units/Orks/Grotz.xml').getroot()
+    neutral = ET.parse(ork_data / 'World/Units/Neutral/Grotz.xml').getroot()
+    kamando = ET.parse(ork_data / 'World/Units/Orks/GrotzKamando.xml').getroot()
+    assert len(grotz.findall("traits/trait[@name='Orks/GrotpostOnDeath']")) == 1
+    assert not neutral.findall("traits/trait[@name='Orks/GrotpostOnDeath']")
+    assert not kamando.findall("traits/trait[@name='Orks/GrotpostOnDeath']")
+    assert not grotz.findall("actions/constructNoctilithCrown")
+    human = grotz.find("actions/constructImperialStrongpoint[@name='Orks/ConsGrotpost']")
+    assert human is not None
+    assert human.find('modifiers/modifier/effects/oreCost').get('base') == '20'
+    trait = ET.parse(ork_data / 'World/Traits/Orks/GrotpostOnDeath.xml').getroot()
+    area = trait.find('onUnitDisappeared/area')
+    assert area is not None and area.get('affects') == 'Tile' and area.get('radius') == '0'
+    conditions = area.find('modifiers/modifier/conditions/tile')
+    assert conditions is not None
+    for tag in ('land', 'noUnit', 'noEnemyCity'):
+        assert conditions.find(tag) is not None
+    for name in ('Resource', 'WireWeed'):
+        assert conditions.find(f"noFeatureCategory[@name='{name}']") is not None
+    assert conditions.find("noFeature[@name='GravityWaves']") is not None
+    assert area.find('modifiers/modifier/effects/addUnit').get('name') == 'Orks/Grotpost'
+    assert ET.parse(ork_data / 'World/Units/Orks/Grotpost.xml').find(
+        "traits/trait[@name='HarvestResourceFeatures']") is not None
+    trait_language = (ork_data / 'Core/Languages/English/Traits.xml').read_text(encoding='utf-8-sig')
+    assert all(('name="Orks/GrotpostOnDeath' + suffix + '"') in trait_language
+               for suffix in ('', 'Description', 'Flavor'))
     for mod, unit, model in (
         ('2525618649', 'AstraMilitarum/Guardsman', 'PenalStandardTrooper'),
         ('2525618649', 'AstraMilitarum/Officer', 'ImperialOfficerGuardsman'),
@@ -56,7 +83,7 @@ def validate(root):
         assert node.get('mesh') == node.get('material') == expected, f'Approved model is not wired into {unit}'
         assert (data / ('Video/Meshes/' + expected + '.msh')).is_file(), unit
         assert (data / ('Video/Materials/' + expected + '.xml')).is_file(), unit
-    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; four AI actions; six approved models wired into their parent mods.')
+    print(f'Integrated mod validation passed: {textures} engine-compatible DDS files; three AI actions, Grotz death-to-Grotpost trigger; six approved models wired into their parent mods.')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)

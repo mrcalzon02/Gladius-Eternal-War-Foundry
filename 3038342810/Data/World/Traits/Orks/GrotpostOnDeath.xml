@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait>
+	<!-- Native Gladius 1.5+ disappearance area trigger; one placement attempt per Grotz unit.
+	     Conditions match the established Grotpost build target restrictions.
+	     The event's timing, ownership and disband behavior require headed game testing. -->
+	<onUnitDisappeared>
+		<area affects="Tile" radius="0">
+			<modifiers>
+				<modifier>
+					<conditions>
+						<tile>
+							<land/>
+							<noUnit/>
+							<noEnemyCity/>
+							<noFeatureCategory name="Resource"/>
+							<noFeatureCategory name="WireWeed"/>
+							<noFeature name="GravityWaves"/>
+						</tile>
+					</conditions>
+					<effects>
+						<addUnit name="Orks/Grotpost"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</area>
+	</onUnitDisappeared>
+</trait>

@@ -178,57 +178,11 @@
 				</player>
 			</conditions>
 		</constructImperialStrongpoint>
-		<constructNoctilithCrown icon="Units/Orks/Grotpost" cooldown="10" name="FoundryAI/Grotpost" useConditionsForVisiblity="1">
-			<model>
-				<action animation="Units/Foundry/GrotTrioConstruct" sound="Actions/Construct" />
-			</model>
-			<modifiers>
-				<modifier visible="0">
-					<effects>
-						<oreCost base="20" />
-					</effects>
-				</modifier>
-			</modifiers>
-			<beginTargets>
-				<target rangeMax="1">
-					<conditions>
-						<tile>
-							<noFeatureCategory name="Resource" />
-							<noFeatureCategory name="WireWeed" />
-							<land />
-							<noEnemyCity />
-							<noUnit />
-							<noFeature name="GravityWaves" />
-						</tile>
-					</conditions>
-					<areas>
-						<area affects="Tile">
-							<modifiers>
-								<modifier>
-									<effects>
-										<addUnit name="Orks/Grotpost" />
-									</effects>
-								</modifier>
-							</modifiers>
-						</area>
-					</areas>
-				</target>
-			</beginTargets>
-			<conditions>
-				<player>
-					<aiControlled />
-					<noFaction name="Neutral" />
-
-				</player>
-				<unit>
-					<hitpointsFraction greater="0.6" />
-				</unit>
-			</conditions>
-		</constructNoctilithCrown>
-	</actions>
+		</actions>
 	<traits>
 		<trait name="Bosspole" requiredUpgrade="Orks/Bosspole"/>
 		<trait name="Orks/CreateOrkoidFungusOnDeath"/>
+		<trait name="Orks/GrotpostOnDeath"/>
 		<trait name="Orks/GreenTideHealing"/>
 		<trait name="OrkoidFungusBonusHealingRate" requiredUpgrade="Orks/OrkoidFungusBonusHealingRate"/>
 		<trait name="Orks/Scavenger"/>
